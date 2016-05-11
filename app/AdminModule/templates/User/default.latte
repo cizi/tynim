@@ -43,7 +43,7 @@
 										<td>{$user->getLastLogin()}</td>
 										<td class="alignRight">
 											<a href={link User:EditUser, $user->getId()} title={=USER_EDIT}><span class="glyphicon glyphicon-pencil"></span></a> &nbsp;&nbsp;
-											<a href={link User:DeleteUser, $user->getId()} class="colorRed" title={=USER_DELETE}><span class="glyphicon glyphicon-remove"></span></a>
+											<a href="#" data-href={link User:DeleteUser, $user->getId()} class="colorRed" data-toggle="modal" data-target="#confirm-delete" title={=USER_DELETE}><span class="glyphicon glyphicon-remove"></span></a>
 										</td>
 									</tr>
 								{/foreach}
@@ -58,9 +58,30 @@
 			</div>
 		</div>
 		<!-- /#page-content-wrapper -->
-
 	</div>
 	<!-- /#wrapper -->
 
+	<div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					{=USER_CONFIRM_DELETE_TITLE}
+				</div>
+				<div class="modal-body">
+					{=USER_CONFIRM_DELETE}
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">{=USER_CONFIRM_DELETE_CANCEL}</button>
+					<a class="btn btn-danger btn-ok">{=USER_CONFIRM_DELETE_OK}</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		$('#confirm-delete').on('show.bs.modal', function(e) {
+			$(this).find('.btn-ok').attr('href', $(e.relatedTarget).data('href'));
+		});
+	</script>
 {/block}
 

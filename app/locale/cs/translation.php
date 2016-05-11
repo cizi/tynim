@@ -38,3 +38,8 @@ define("USER_DELETED_FAILED", "Uživatele se nepovedlo smazat, opakujte později
 define("USER_DELETE", 'Odstranit uživatele');
 define("USER_EDIT", 'Editovat uživatele');
 define("USER_ADD_USER", 'Přidat uživatele');
+define("USER_CONFIRM_DELETE_TITLE", 'Smazání uživatele');
+define("USER_CONFIRM_DELETE", 'Opravdu smazat uživatele?');
+define("USER_CONFIRM_DELETE_CANCEL", 'Zpět');
+define("USER_CONFIRM_DELETE_OK", 'Smazat');
+
