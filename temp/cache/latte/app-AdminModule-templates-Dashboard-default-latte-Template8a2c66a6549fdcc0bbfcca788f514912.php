@@ -15,7 +15,6 @@ if (!function_exists($_b->blocks['content'][] = '_lb6967cf46b1_content')) { func
 ?>	<div id="wrapper">
 <?php $_b->templates['7054fe6917']->renderChildTemplate('../@menu.latte', $template->getParameters()) ?>
 
-
 		<!-- Page Content -->
 		<div id="page-content-wrapper">
 			<div class="container-fluid">
@@ -33,8 +32,6 @@ if (!function_exists($_b->blocks['content'][] = '_lb6967cf46b1_content')) { func
 
 	</div>
 	<!-- /#wrapper -->
-
-
 
 <?php
 }}

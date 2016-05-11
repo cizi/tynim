@@ -56,7 +56,23 @@ div.menu {
 	min-height: 100%;
 	background-color: #524e4e;
 }
-
 div.adminBody{
 	height: 100%;
+}
+img.adminMenuHeader{
+	margin-top: 10px;
+	width: 250px;
+	height: auto;
+}
+img.adminMenuFooter {
+	width: 200px;
+	margin-left: 16px;
+	margin-top: 680px;
+}
+span.menuItem{
+	margin-left: -20px;
+	margin-right: 10px;
+}
+.colorWhite{
+	color: white;
 }
