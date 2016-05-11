@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="{$basePath}/css/style.css">
 	<link rel="stylesheet" href="{$basePath}/css/simple-sidebar.css">
 	<link rel="stylesheet" href="{$basePath}/boostrap/css/bootstrap.css">
+	<link rel="stylesheet" href="{$basePath}/css/bootstrap2-toggle.min.css">
 	{* favicon *}
 	<link rel="apple-touch-icon" sizes="57x57" href="{$basePath}/favicon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="{$basePath}/favicon/apple-icon-60x60.png">
@@ -33,6 +34,7 @@
 	{block scripts}
 		<script src="https://nette.github.io/resources/js/netteForms.min.js"></script>
 		<script src="{$basePath}/js/jquery-2.2.3.min.js"></script>
+		<script src="{$basePath}/js/bootstrap2-toggle.min.js"></script>
 		<script src="{$basePath}/boostrap/js/bootstrap.js"></script>
 		<script src="{$basePath}/js/main.js"></script>
 	{/block}
@@ -42,7 +44,6 @@
 </head>
 
 <body>
-<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
 
 {include content}
 

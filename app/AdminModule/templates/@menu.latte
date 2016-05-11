@@ -6,7 +6,9 @@
 			<span class="colorWhite">{=MENU_TITLE}</span>
 		</li>
 		<li>
-			<a href="#"><span class="glyphicon glyphicon-dashboard menuItem"></span>{=MENU_DASHBOARD}</a>
+			<a href={link Dashboard:Default} {if $item == "dashboard"} style="color: white" {/if}>
+				<span class="glyphicon glyphicon-dashboard menuItem"></span>{=MENU_DASHBOARD}
+			</a>
 		</li>
 		<li>
 			<a href="#"><span class="glyphicon glyphicon-bookmark menuItem"></span>{=MENU_HEADER}</a>
@@ -26,8 +28,9 @@
 				{=MENU_FOOTER}</a>
 		</li>
 		<li>
-			<a href="#"><span class="glyphicon glyphicon-user menuItem"></span>
-				{=MENU_USERS}</a>
+			<a href={link User:Default} {if $item == "user"} style="color: white"{/if}>
+				<span class="glyphicon glyphicon-user menuItem"></span>{=MENU_USERS}
+			</a>
 		</li>
 		<li>
 			<a href="#"><span class="glyphicon glyphicon-cog menuItem"></span>

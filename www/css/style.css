@@ -76,3 +76,22 @@ span.menuItem{
 .colorWhite{
 	color: white;
 }
+.colorRed{
+	color: darkred;
+}
+a.menuToggle {
+	width: 20px;
+	height: 20px;
+	background-color: black;
+	color: white;
+	font-size: 16px;
+	padding: 0;
+	position: absolute;
+	z-index: 999;
+}
+a.menuToggle:hover {
+	color: lightgrey;
+}
+.alignRight{
+	text-align: right;
+}

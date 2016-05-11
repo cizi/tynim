@@ -13,10 +13,14 @@ list($_b, $_g, $_l) = $template->initialize('7054fe6917', 'html')
 //
 if (!function_exists($_b->blocks['content'][] = '_lb6967cf46b1_content')) { function _lb6967cf46b1_content($_b, $_args) { foreach ($_args as $__k => $__v) $$__k = $__v
 ?>	<div id="wrapper">
-<?php $_b->templates['7054fe6917']->renderChildTemplate('../@menu.latte', $template->getParameters()) ?>
+<?php $_b->templates['7054fe6917']->renderChildTemplate('../@menu.latte', array('item' => 'dashboard') + $template->getParameters()) ?>
+		<a href="#menu-toggle" class="menuToggle" id="menu-toggle"><span class="glyphicon glyphicon-chevron-left">&nbsp;&nbsp;</span></a>
 
 		<!-- Page Content -->
 		<div id="page-content-wrapper">
+<?php $iterations = 0; foreach ($flashes as $flash) { ?>			<div<?php if ($_l->tmp = array_filter(array('flash', $flash->type))) echo ' class="', Latte\Runtime\Filters::escapeHtml(implode(" ", array_unique($_l->tmp)), ENT_COMPAT), '"' ?>
+><?php echo Latte\Runtime\Filters::escapeHtml($flash->message, ENT_NOQUOTES) ?></div>
+<?php $iterations++; } ?>
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-lg-12">
