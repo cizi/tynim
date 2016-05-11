@@ -46,31 +46,6 @@ class SignForm extends Nette\Object {
 		$form->addSubmit('send', ADMIN_LOGIN_LOGIN)
 			->setAttribute("class", "btn btn-lg btn-primary btn-block");
 
-		$form->onSuccess[] = $this->formSucceeded;
-
 		return $form;
 	}
-
-	/**
-	 * @param Form $form
-	 * @param $values
-	 */
-	public function formSucceeded(Form $form, $values) {
-		if ($values->remember) {
-			$this->user->setExpiration('14 days', false);
-		} else {
-			$this->user->setExpiration('20 minutes', true);
-		}
-
-		//$this->user->getAuthenticator()->add("test", "test", 99);
-
-		try {
-			$credentials = [$values['login'], $values['password']];
-			$identity = $this->user->getAuthenticator()->authenticate($credentials);
-			$this->user->login($identity);
-		} catch (Nette\Security\AuthenticationException $e) {
-			$form->addError(ADMIN_LOGIN_FAILED);
-		}
-	}
-
 }

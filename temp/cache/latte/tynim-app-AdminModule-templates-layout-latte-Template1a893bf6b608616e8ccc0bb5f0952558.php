@@ -19,9 +19,10 @@ if (!function_exists($_b->blocks['head'][] = '_lbdf866bfbcd_head')) { function _
 // block scripts
 //
 if (!function_exists($_b->blocks['scripts'][] = '_lb07d2aa00fc_scripts')) { function _lb07d2aa00fc_scripts($_b, $_args) { foreach ($_args as $__k => $__v) $$__k = $__v
-?>	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-	<script src="https://nette.github.io/resources/js/netteForms.min.js"></script>
+?>	<script src="https://nette.github.io/resources/js/netteForms.min.js"></script>
 	<script src="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/js/main.js"></script>
+	<script src="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/boostrap/js/bootstrap.js"></script>
+	<script src="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/js/jquery-2.2.3.min.js"></script>
 <?php
 }}
 
@@ -53,11 +54,9 @@ if (empty($_l->extends) && !empty($_control->snippetMode)) {
 
 	<title><?php if (isset($_b->blocks["title"])) { ob_start(function () {}); Latte\Macros\BlockMacrosRuntime::callBlock($_b, 'title', $template->getParameters()); echo $template->striptags(ob_get_clean()) ?>
  | <?php } ?>Nette Sandbox</title>
-
 	<link rel="stylesheet" href="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/css/style.css">
+	<link rel="stylesheet" href="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/css/simple-sidebar.css">
 	<link rel="stylesheet" href="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/boostrap/css/bootstrap.css">
-	<script src="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/boostrap/js/bootstrap.js"></script>
-
 	<meta name="viewport" content="width=device-width">
 	<?php if ($_l->extends) { ob_end_clean(); return $template->renderChildTemplate($_l->extends, get_defined_vars()); }
 call_user_func(reset($_b->blocks['head']), $_b, get_defined_vars())  ?>
@@ -72,7 +71,15 @@ call_user_func(reset($_b->blocks['head']), $_b, get_defined_vars())  ?>
 <?php Latte\Macros\BlockMacrosRuntime::callBlock($_b, 'content', $template->getParameters()) ?>
 
 <?php call_user_func(reset($_b->blocks['scripts']), $_b, get_defined_vars())  ?>
-</body>
+
+		<!-- Menu Toggle Script -->
+		<script>
+			$("#menu-toggle").click(function(e) {
+				e.preventDefault();
+				$("#wrapper").toggleClass("toggled");
+			});
+		</script>
+	</body>
 </html>
 <?php
 }}

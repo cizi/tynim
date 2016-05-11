@@ -11,6 +11,6 @@ use Nette\Application\UI\Presenter;
 abstract class BasePresenter extends Presenter {
 
 	/** @var \Dibi\Connection @inject */
-	public $db;
+	public $connection;
 
 }

@@ -8,11 +8,9 @@
 	<meta charset="utf-8">
 
 	<title>{ifset title}{include title|striptags} | {/ifset}Nette Sandbox</title>
-
 	<link rel="stylesheet" href="{$basePath}/css/style.css">
+	<link rel="stylesheet" href="{$basePath}/css/simple-sidebar.css">
 	<link rel="stylesheet" href="{$basePath}/boostrap/css/bootstrap.css">
-	<script src="{$basePath}/boostrap/js/bootstrap.js"></script>
-
 	<meta name="viewport" content="width=device-width">
 	{block head}{/block}
 </head>
@@ -23,9 +21,18 @@
 {include content}
 
 {block scripts}
-	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 	<script src="https://nette.github.io/resources/js/netteForms.min.js"></script>
 	<script src="{$basePath}/js/main.js"></script>
+	<script src="{$basePath}/boostrap/js/bootstrap.js"></script>
+	<script src="{$basePath}/js/jquery-2.2.3.min.js"></script>
 {/block}
-</body>
+
+		<!-- Menu Toggle Script -->
+		<script>
+			$("#menu-toggle").click(function(e) {
+				e.preventDefault();
+				$("#wrapper").toggleClass("toggled");
+			});
+		</script>
+	</body>
 </html>
