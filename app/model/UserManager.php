@@ -1,6 +1,6 @@
 <?php
 
-namespace App\AdminModule\model;
+namespace App\Model;
 
 use Nette;
 use Nette\Security\Passwords;
@@ -33,7 +33,7 @@ class UserManager extends Nette\Object implements Nette\Security\IAuthenticator 
 	public function authenticate(array $credentials) {
 		list($username, $password) = $credentials;
 
-		$query = ["select * from ". self::TABLE_NAME . " where " . self::COLUMN_NAME . " = %s", $username];
+		$query = ["select * from ". self::TABLE_NAME . " where " . self::COLUMN_NAME . " = %s", $username, " and active = 1"];
 		$row = $this->connection->query($query)->fetch();
 
 		if (!$row) {

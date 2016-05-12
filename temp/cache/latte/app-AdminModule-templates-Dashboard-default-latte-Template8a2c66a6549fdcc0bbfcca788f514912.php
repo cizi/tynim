@@ -18,7 +18,7 @@ if (!function_exists($_b->blocks['content'][] = '_lb6967cf46b1_content')) { func
 
 		<!-- Page Content -->
 		<div id="page-content-wrapper">
-<?php $iterations = 0; foreach ($flashes as $flash) { ?>			<div<?php if ($_l->tmp = array_filter(array('flash', $flash->type))) echo ' class="', Latte\Runtime\Filters::escapeHtml(implode(" ", array_unique($_l->tmp)), ENT_COMPAT), '"' ?>
+<?php $iterations = 0; foreach ($flashes as $flash) { ?>			<div<?php if ($_l->tmp = array_filter(array('alert', $flash->type))) echo ' class="', Latte\Runtime\Filters::escapeHtml(implode(" ", array_unique($_l->tmp)), ENT_COMPAT), '"' ?>
 ><?php echo Latte\Runtime\Filters::escapeHtml($flash->message, ENT_NOQUOTES) ?></div>
 <?php $iterations++; } ?>
 			<div class="container-fluid">

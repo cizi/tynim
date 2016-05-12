@@ -4,19 +4,17 @@ namespace App\Forms;
 
 use Nette;
 use Nette\Application\UI\Form;
-use Nette\Security\User;
 
 class SignForm extends Nette\Object {
 
 	/** @var FormFactory */
 	private $factory;
 
-	/** @var User */
-	private $user;
-
-	public function __construct(FormFactory $factory, User $user) {
+	/**
+	 * @param FormFactory $factory
+	 */
+	public function __construct(FormFactory $factory) {
 		$this->factory = $factory;
-		$this->user = $user;
 	}
 
 	/**

@@ -2,6 +2,7 @@
 
 namespace App\AdminModule\Presenters;
 
+use App\Model\UserRepository;
 use App\Forms\SignForm;
 use App\FrontendModule\Presenters\BasePresenter;
 use Nette\Application\UI\Form;
@@ -9,8 +10,16 @@ use App\AdminModule\Presenters;
 
 class DefaultPresenter extends BasePresenter {
 
-	/** @var SignForm @inject */
+	/** @var SignForm */
 	public $singInForm;
+
+	/** @var UserRepository */
+	public $userRepository;
+
+	public function __construct(SignForm $signForm, UserRepository $userRepository) {
+		$this->singInForm = $signForm;
+		$this->userRepository = $userRepository;
+	}
 
 	/**
 	 * Pokud usem již přihlášen, přesměruji na Dashboard
@@ -49,6 +58,7 @@ class DefaultPresenter extends BasePresenter {
 			$credentials = [$values['login'], $values['password']];
 			$identity = $this->user->getAuthenticator()->authenticate($credentials);
 			$this->user->login($identity);
+			$this->userRepository->updateLostLogin($identity->getId());
 			$this->redirect("Dashboard:Default");
 		} catch (\Nette\Security\AuthenticationException $e) {
 			$form->addError(ADMIN_LOGIN_FAILED);

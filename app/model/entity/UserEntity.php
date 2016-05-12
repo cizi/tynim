@@ -1,6 +1,6 @@
 <?php
 
-namespace App\AdminModule\Model\Entity;
+namespace App\Model\Entity;
 
 class UserEntity {
 

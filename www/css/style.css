@@ -95,3 +95,6 @@ a.menuToggle:hover {
 .alignRight{
 	text-align: right;
 }
+div.userTable{
+	width: 95%;
+}
