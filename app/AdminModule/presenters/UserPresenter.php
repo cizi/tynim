@@ -4,7 +4,9 @@ namespace App\AdminModule\Presenters;
 
 use App\AdminModule\Model;
 use App\Forms\UserForm;
+use App\Model\Entity\UserEntity;
 use App\Model\UserRepository;
+use Nette\Security\User;
 
 class UserPresenter extends SignPresenter {
 
@@ -50,10 +52,16 @@ class UserPresenter extends SignPresenter {
 	}
 
 	public function saveUser($form, $values) {
-		dump($form, $values); die;
+		$userEntity = new UserEntity();
+		$userEntity->hydrate((array)$values);
 
+		$this->userRepository->saveUser($userEntity);
+		if (isset($values['id']) && $values['id'] != "") {
+			$this->flashMessage(USER_EDITED, "alert-success");
+		} else {
+			$this->flashMessage(USER_ADDED, "alert-success");
+		}
 		$this->redirect("Default");
-
 	}
 
 	/**
@@ -61,6 +69,13 @@ class UserPresenter extends SignPresenter {
 	 */
 	public function actionEdit($id) {
 		$this->template->user = null;
+		$userEntity = $this->userRepository->getUser($id);
+
+		if ($userEntity) {
+			$this['editForm']->addHidden('id', $userEntity->getId());
+			$this['editForm']['login']->setDisabled();
+			$this['editForm']->setDefaults($userEntity->extract());
+		}
 	}
 
 	/**

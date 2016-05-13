@@ -34,6 +34,8 @@ define("USER_TABLE_HEADER_ROLE", "Role");
 define("USER_TABLE_HEADER_ACTIVE", "Aktivní");
 define("USER_TABLE_HEADER_LAST_LOGIN", "Poslední přihlášení");
 define("USER_DELETED", "Uživatel byl smazán");
+define("USER_ADDED", "Uživatel přidán");
+define("USER_EDITED", "Uživatel upraven");
 define("USER_DELETED_FAILED", "Uživatele se nepovedlo smazat, opakujte později.");
 define("USER_DELETE", 'Odstranit uživatele');
 define("USER_EDIT", 'Editovat uživatele');

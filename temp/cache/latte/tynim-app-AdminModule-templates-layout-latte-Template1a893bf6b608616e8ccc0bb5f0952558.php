@@ -111,9 +111,9 @@ call_user_func(reset($_b->blocks['scripts']), $_b, get_defined_vars())  ?>
 					console.log($(this).val());
 					if ($(this).val() == "") {
 						$(this).addClass("form-control-danger");
-						$(this).focus();
 						$("#tinym_info_modal_message").text($(this).attr("validation"));
 						$("#tinym_info_modal").modal();
+						$(this).focus();
 						submitForm = false;
 					} else {
 						$(this).removeClass("form-control-danger");

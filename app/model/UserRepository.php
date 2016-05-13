@@ -24,6 +24,20 @@ class UserRepository extends BaseRepository {
 	}
 
 	/**
+	 * @param int $id
+	 * @return UserEntity
+	 */
+	public function getUser($id) {
+		$query = ["select * from user where id = %i", $id];
+		$row = $this->connection->query($query)->fetch();
+		if ($row) {
+			$userEntity = new UserEntity();
+			$userEntity->hydrate($row->toArray());
+			return $userEntity;
+		}
+	}
+
+	/**
 	 * @param $id
 	 * @return bool
 	 */
@@ -37,7 +51,7 @@ class UserRepository extends BaseRepository {
 		return $return;
 	}
 
-	public function addUser(UserEntity $userEntity) {
+	public function saveUser(UserEntity $userEntity) {
 
 	}
 
