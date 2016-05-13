@@ -64,6 +64,10 @@ define("USER_ROLE_CONTENT_CHANGER", "Uživatel může měnit obsah");
 define("USER_ROLE_GUEST", "Host");
 define("USER_ROLE_ADMINISTRATOR", "Administrátor");
 
+// modal window
+define("MODAL_BUTTON_OK", 'OK');
+define("MODAL_WINDOWS_WARNING_TITLE", 'Varování');
+
 
 
 

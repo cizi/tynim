@@ -23,35 +23,37 @@ class UserForm extends Nette\Object {
 	 */
 	public function create(Nette\Application\UI\Presenter $presenter) {
 		$form = $this->factory->create();
+		$form->getElementPrototype()->addAttributes(["onsubmit" => "return requiredFields();"]);
 
 		$form->addText("email", USER_EDIT_EMAIL_LABEL)
 			->setAttribute("type","email")
-			->setAttribute("class", "form-control")
+			->setAttribute("class", "tinym_required_field form-control")
 			->setAttribute("placeholder", USER_EDIT_EMAIL_LABEL)
-			->setRequired(USER_EDIT_EMAIL_REQ)
-			->addRule(Form::EMAIL, USER_EDIT_EMAIL_VALIDATION);
+			->setAttribute("validation", USER_EDIT_EMAIL_VALIDATION);
 
 		$form->addPassword("password", USER_EDIT_PASS_LABEL)
 			->setAttribute("type","password")
-			->setAttribute("class", "form-control")
-			->setAttribute("placeholder", USER_EDIT_EMAIL_LABEL)
-			->setRequired(USER_EDIT_PASS_REQ);
+			->setAttribute("class", "tinym_required_field form-control")
+			->setAttribute("placeholder", USER_EDIT_PASS_LABEL)
+			->setAttribute("validation", USER_EDIT_PASS_REQ);
 
 		$form->addPassword("passwordConfirm", USER_EDIT_PASS_AGAIN_LABEL)
 			->setAttribute("type","password")
-			->setAttribute("class", "form-control")
+			->setAttribute("class", "tinym_required_field form-control")
 			->setAttribute("placeholder", USER_EDIT_PASS_AGAIN_LABEL)
-			->setRequired(USER_EDIT_PASS_AGAIN_LABEL);
+			->setAttribute("validation", USER_EDIT_PASS_AGAIN_REQ);
 
 		$userRole = new UserRoleEnum();
 		$form->addSelect("userRole", USER_EDIT_ROLE_LABEL, $userRole->translatedForSelect())
-			->setAttribute("class", "form-control");
+			->setAttribute("class", "form-control")
+			->setDisabled()
+			->setDefaultValue(99);
 
 		$form->addCheckbox('active')
-			->setAttribute("checked")
 			->setAttribute("data-toggle", "toggle")
 			->setAttribute("data-height", "25")
-			->setAttribute("data-width", "50");
+			->setAttribute("data-width", "50")
+			->setDefaultValue("checked");
 
 		$form->addSubmit("confirm", USER_EDIT_SAVE_BTN_LABEL)
 			->setAttribute("class","btn btn-primary");

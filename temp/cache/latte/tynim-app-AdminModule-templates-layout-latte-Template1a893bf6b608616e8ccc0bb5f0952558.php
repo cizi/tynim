@@ -88,8 +88,42 @@ call_user_func(reset($_b->blocks['scripts']), $_b, get_defined_vars())  ?>
 
 <?php Latte\Macros\BlockMacrosRuntime::callBlock($_b, 'content', $template->getParameters()) ?>
 
+				<div class="modal fade" id="tinym_info_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<?php echo Latte\Runtime\Filters::escapeHtml(MODAL_WINDOWS_WARNING_TITLE, ENT_NOQUOTES) ?>
+
+					</div>
+					<div class="modal-body" id="tinym_info_modal_message"></div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal"><?php echo Latte\Runtime\Filters::escapeHtml(MODAL_BUTTON_OK, ENT_NOQUOTES) ?></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!-- Menu Toggle Script -->
 		<script>
+			function requiredFields() {
+				submitForm = true;
+				$($(".tinym_required_field").get().reverse()).each(function() {
+					console.log($(this).val());
+					if ($(this).val() == "") {
+						$(this).addClass("form-control-danger");
+						$(this).focus();
+						$("#tinym_info_modal_message").text($(this).attr("validation"));
+						$("#tinym_info_modal").modal();
+						submitForm = false;
+					} else {
+						$(this).removeClass("form-control-danger");
+						$(this).addClass("form-control-success");
+					}
+				});
+
+				return submitForm;
+			}
+
 			$("#menu-toggle").click(function(e) {
 				e.preventDefault();
 				$("#wrapper").toggleClass("toggled");

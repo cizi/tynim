@@ -10,6 +10,10 @@
 				<div class="container-fluid">
 
 					<div class="row">
+						<div class="col-lg-3 col-md-2 col-sm-1">
+					</div>
+
+					<div class="row">
 						<div class="col-lg-6 col-md-8 col-sm-12">
 							{if $user == null}
 								<h1>{=USER_EDIT_FORM_ADD}</h1>
@@ -50,8 +54,8 @@
 									</div>
 								</div>
 
-								<div class="form-group row">
-									<div class="col-sm-offset-2 col-sm-10 alignRight">
+								<div class="form-group row alignRight">
+									<div class="col-sm-offset-2 col-sm-8 col-md-8 col-lg-8">
 										{input confirm}
 										{input back}
 									</div>
@@ -65,22 +69,5 @@
 		{/form}
 	</div>
 	<!-- /#wrapper -->
-
-	<div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					{=USER_CONFIRM_DELETE_TITLE}
-				</div>
-				<div class="modal-body">
-					{=USER_CONFIRM_DELETE}
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">{=USER_CONFIRM_DELETE_CANCEL}</button>
-					<a class="btn btn-danger btn-ok">{=USER_CONFIRM_DELETE_OK}</a>
-				</div>
-			</div>
-		</div>
-	</div>
 {/block}
 
