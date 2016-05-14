@@ -52,10 +52,8 @@ class DefaultPresenter extends BasePresenter {
 			$this->user->setExpiration('20 minutes', true);
 		}
 
-		//$this->user->getAuthenticator()->add("test", "test", 99);
-
 		try {
-			$credentials = [$values['login'], $values['password']];
+			$credentials = ['email' => $values['login'], 'password' => $values['password']];
 			$identity = $this->user->getAuthenticator()->authenticate($credentials);
 			$this->user->login($identity);
 			$this->userRepository->updateLostLogin($identity->getId());

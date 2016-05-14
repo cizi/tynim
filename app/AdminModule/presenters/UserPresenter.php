@@ -3,9 +3,11 @@
 namespace App\AdminModule\Presenters;
 
 use App\AdminModule\Model;
+use App\Enum\UserRoleEnum;
 use App\Forms\UserForm;
 use App\Model\Entity\UserEntity;
 use App\Model\UserRepository;
+use Nette\Security\Passwords;
 use Nette\Security\User;
 
 class UserPresenter extends SignPresenter {
@@ -29,7 +31,9 @@ class UserPresenter extends SignPresenter {
 	 * defaultní akce presenteru naète uživatele
 	 */
 	public function actionDefault() {
+		$userRoles = new UserRoleEnum();
 		$this->template->users = $this->userRepository->findUsers();
+		$this->template->roles = $userRoles->translatedForSelect();
 	}
 
 	/**
@@ -54,12 +58,17 @@ class UserPresenter extends SignPresenter {
 	public function saveUser($form, $values) {
 		$userEntity = new UserEntity();
 		$userEntity->hydrate((array)$values);
+		$userEntity->setPassword(Passwords::hash($userEntity->getPassword()));
 
-		$this->userRepository->saveUser($userEntity);
-		if (isset($values['id']) && $values['id'] != "") {
-			$this->flashMessage(USER_EDITED, "alert-success");
-		} else {
-			$this->flashMessage(USER_ADDED, "alert-success");
+		try {
+			$this->userRepository->saveUser($userEntity);
+			if (isset($values['id']) && $values['id'] != "") {
+				$this->flashMessage(USER_EDITED, "alert-success");
+			} else {
+				$this->flashMessage(USER_ADDED, "alert-success");
+			}
+		} catch (\Exception $e) {
+			$this->flashMessage(USER_EDIT_SAVE_FAILED, "alert-danger");
 		}
 		$this->redirect("Default");
 	}
@@ -73,7 +82,7 @@ class UserPresenter extends SignPresenter {
 
 		if ($userEntity) {
 			$this['editForm']->addHidden('id', $userEntity->getId());
-			$this['editForm']['login']->setDisabled();
+			$this['editForm']['email']->setAttribute("readonly", "readonly");
 			$this['editForm']->setDefaults($userEntity->extract());
 		}
 	}

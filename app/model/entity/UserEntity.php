@@ -8,7 +8,7 @@ class UserEntity {
 	private $id;
 
 	/** @var string */
-	private $login;
+	private $email;
 
 	/** @var string */
 	private $password;
@@ -21,6 +21,9 @@ class UserEntity {
 
 	/** @var string  */
 	private $lastLogin;
+
+	/** @var string  */
+	private $registerTimestamp;
 
 	/**
 	 * @return int
@@ -53,15 +56,15 @@ class UserEntity {
 	/**
 	 * @return string
 	 */
-	public function getLogin() {
-		return $this->login;
+	public function getEmail() {
+		return $this->email;
 	}
 
 	/**
 	 * @param string $login
 	 */
-	public function setLogin($login) {
-		$this->login = $login;
+	public function setEmail($email) {
+		$this->login = $email;
 	}
 
 	/**
@@ -107,15 +110,30 @@ class UserEntity {
 	}
 
 	/**
+	 * @return string
+	 */
+	public function getRegisterTimestamp() {
+		return $this->registerTimestamp;
+	}
+
+	/**
+	 * @param string $registerTimestamp
+	 */
+	public function setRegisterTimestamp($registerTimestamp) {
+		$this->registerTimestamp = $registerTimestamp;
+	}
+
+	/**
 	 * @param array $data
 	 */
 	public function hydrate(array $data) {
-		$this->id = $data['id'];
-		$this->login = $data['login'];
-		$this->password = $data['password'];
-		$this->role = $data['role'];
-		$this->active = $data['active'];
-		$this->lastLogin = $data['last_login'];
+		$this->id = (isset($data['id']) ? $data['id'] : null);
+		$this->email = (isset($data['email']) ? $data['email']: null);
+		$this->password = (isset($data['password']) ? $data['password'] : null);
+		$this->role = (isset($data['role']) ? $data['role'] : null);
+		$this->active = (isset($data['active']) ? $data['active'] : null);
+		$this->lastLogin = (isset($data['last_login']) ? $data['last_login'] : null);
+		$this->registerTimestamp = (isset($data['register_timestamp']) ? $data['register_timestamp'] : null);
 	}
 
 	/**
@@ -124,11 +142,12 @@ class UserEntity {
 	public function extract() {
 		return [
 			'id' => $this->id,
-			'login' => $this->login,
+			'email' => $this->email,
 			'password' => $this->password,
 			'role' => $this->role,
 			'active' => $this->active,
-			'last_login' => $this->lastLogin
+			'last_login' => $this->lastLogin,
+			'register_timestamp' => $this->registerTimestamp
 		];
 	}
 }

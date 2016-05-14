@@ -33,6 +33,7 @@ define("USER_TABLE_HEADER_LOGIN", "Login");
 define("USER_TABLE_HEADER_ROLE", "Role");
 define("USER_TABLE_HEADER_ACTIVE", "Aktivní");
 define("USER_TABLE_HEADER_LAST_LOGIN", "Poslední přihlášení");
+define("USER_TABLE_HEADER_REGISTERED_DATE", "Datum registrace");
 define("USER_DELETED", "Uživatel byl smazán");
 define("USER_ADDED", "Uživatel přidán");
 define("USER_EDITED", "Uživatel upraven");
@@ -59,6 +60,7 @@ define("USER_EDIT_ROLE_LABEL", 'Role');
 define("USER_EDIT_ACTIVE_LABEL", 'Aktivní');
 define("USER_EDIT_SAVE_BTN_LABEL", 'Uložit');
 define("USER_EDIT_BACK_BTN_LABEL", 'Zpět');
+define("USER_EDIT_SAVE_FAILED", 'Nepovedlo se zpracovat změny, opakujte prosím později');
 
 // user roles
 define("USER_ROLE_LAYOUT_CHANGER", "Plná práva");

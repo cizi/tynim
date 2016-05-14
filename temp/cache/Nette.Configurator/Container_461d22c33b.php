@@ -22,8 +22,7 @@ class Container_461d22c33b extends Nette\DI\Container
 					'25_App_Forms_FormFactory',
 					'26_App_Forms_SignForm',
 					'27_App_Forms_UserForm',
-					'28_App_Model_UserManager',
-					'29_App_Model_UserRepository',
+					'28_App_Model_UserRepository',
 					'application.1',
 					'application.2',
 					'application.3',
@@ -80,13 +79,14 @@ class Container_461d22c33b extends Nette\DI\Container
 			'App\Forms\FormFactory' => array(1 => array('25_App_Forms_FormFactory')),
 			'App\Forms\SignForm' => array(1 => array('26_App_Forms_SignForm')),
 			'App\Forms\UserForm' => array(1 => array('27_App_Forms_UserForm')),
-			'Nette\Security\IAuthenticator' => array(1 => array('28_App_Model_UserManager')),
-			'App\Model\UserManager' => array(1 => array('28_App_Model_UserManager')),
 			'App\Model\BaseRepository' => array(
-				1 => array('29_App_Model_UserRepository'),
+				1 => array('28_App_Model_UserRepository'),
+			),
+			'Nette\Security\IAuthenticator' => array(
+				1 => array('28_App_Model_UserRepository'),
 			),
 			'App\Model\UserRepository' => array(
-				1 => array('29_App_Model_UserRepository'),
+				1 => array('28_App_Model_UserRepository'),
 			),
 			'Dibi\Connection' => array(1 => array('connection')),
 			'App\AdminModule\Presenters\SignPresenter' => array(
@@ -243,8 +243,7 @@ class Container_461d22c33b extends Nette\DI\Container
 			'25_App_Forms_FormFactory' => 'App\Forms\FormFactory',
 			'26_App_Forms_SignForm' => 'App\Forms\SignForm',
 			'27_App_Forms_UserForm' => 'App\Forms\UserForm',
-			'28_App_Model_UserManager' => 'App\Model\UserManager',
-			'29_App_Model_UserRepository' => 'App\Model\UserRepository',
+			'28_App_Model_UserRepository' => 'App\Model\UserRepository',
 			'application.1' => 'App\AdminModule\Presenters\DashboardPresenter',
 			'application.2' => 'App\AdminModule\Presenters\DefaultPresenter',
 			'application.3' => 'App\AdminModule\Presenters\SignPresenter',
@@ -381,19 +380,9 @@ class Container_461d22c33b extends Nette\DI\Container
 
 
 	/**
-	 * @return App\Model\UserManager
-	 */
-	public function createService__28_App_Model_UserManager()
-	{
-		$service = new App\Model\UserManager($this->getService('connection'));
-		return $service;
-	}
-
-
-	/**
 	 * @return App\Model\UserRepository
 	 */
-	public function createService__29_App_Model_UserRepository()
+	public function createService__28_App_Model_UserRepository()
 	{
 		$service = new App\Model\UserRepository($this->getService('connection'));
 		return $service;
@@ -419,7 +408,7 @@ class Container_461d22c33b extends Nette\DI\Container
 	 */
 	public function createServiceApplication__2()
 	{
-		$service = new App\AdminModule\Presenters\DefaultPresenter($this->getService('26_App_Forms_SignForm'), $this->getService('29_App_Model_UserRepository'));
+		$service = new App\AdminModule\Presenters\DefaultPresenter($this->getService('26_App_Forms_SignForm'), $this->getService('28_App_Model_UserRepository'));
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
@@ -447,7 +436,7 @@ class Container_461d22c33b extends Nette\DI\Container
 	 */
 	public function createServiceApplication__4()
 	{
-		$service = new App\AdminModule\Presenters\UserPresenter($this->getService('29_App_Model_UserRepository'), $this->getService('27_App_Forms_UserForm'));
+		$service = new App\AdminModule\Presenters\UserPresenter($this->getService('28_App_Model_UserRepository'), $this->getService('27_App_Forms_UserForm'));
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
@@ -754,7 +743,7 @@ class Container_461d22c33b extends Nette\DI\Container
 	 */
 	public function createServiceSecurity__user()
 	{
-		$service = new Nette\Security\User($this->getService('security.userStorage'), $this->getService('28_App_Model_UserManager'));
+		$service = new Nette\Security\User($this->getService('security.userStorage'), $this->getService('28_App_Model_UserRepository'));
 		$this->getService('tracy.bar')->addPanel(new Nette\Bridges\SecurityTracy\UserPanel($service));
 		return $service;
 	}

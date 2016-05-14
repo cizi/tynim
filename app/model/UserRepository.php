@@ -2,9 +2,42 @@
 
 namespace App\Model;
 
+use Nette;
 use App\Model\Entity\UserEntity;
+use Nette\InvalidStateException;
+use Nette\Security\Passwords;
 
-class UserRepository extends BaseRepository {
+class UserRepository extends BaseRepository implements Nette\Security\IAuthenticator {
+
+	const PASSWORD_COLUMN = 'password';
+
+	/**
+	 * Performs an authentication.
+	 *
+	 * @return Nette\Security\Identity
+	 * @throws Nette\Security\AuthenticationException
+	 */
+	public function authenticate(array $credentials) {
+		$email = (isset($credentials['email']) ? $credentials['email'] : "");
+		$password = (isset($credentials['password']) ? $credentials['password'] : "");
+
+		$query = ["select * from user where email = %s", $email, " and active = 1"];
+		$row = $this->connection->query($query)->fetch();
+
+		if (!$row) {
+			throw new Nette\Security\AuthenticationException('The username is incorrect.', self::IDENTITY_NOT_FOUND);
+		} elseif (!Passwords::verify($password, $row[self::PASSWORD_COLUMN])) {
+			throw new Nette\Security\AuthenticationException('The password is incorrect.', self::INVALID_CREDENTIAL);
+		}
+
+		$userEntity = new UserEntity();
+		$userEntity->hydrate($row->toArray());
+
+		$arr = $row->toArray();
+		unset($arr[self::PASSWORD_COLUMN]);
+
+		return new Nette\Security\Identity($userEntity->getId(), $userEntity->getRole(), $arr);
+	}
 
 	/**
 	 * @return UserEntity[]
@@ -52,7 +85,19 @@ class UserRepository extends BaseRepository {
 	}
 
 	public function saveUser(UserEntity $userEntity) {
+		if ($userEntity->getId() == null) {
+			$userEntity->setLastLogin('0000-00-00 00:00:00');
+			$userEntity->setRegisterTimestamp(date('Y-m-d H:i:s'));
+			$query = ["insert into user ", $userEntity->extract()];
+		} else {
+			$updateArray = $userEntity->extract();
+			unset($updateArray['id']);
+			$query = ["update user set ", $updateArray, "where id=%i", $userEntity->getId()];
+		}
 
+		if (!$this->connection->query($query)) {
+			throw new InvalidStateException("Bad");
+		}
 	}
 
 	public function changePassword($id, $oldPass, $newPass) {

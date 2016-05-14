@@ -20,6 +20,7 @@
 										<th>{=USER_TABLE_HEADER_LOGIN}</th>
 										<th>{=USER_TABLE_HEADER_ROLE}</th>
 										<th>{=USER_TABLE_HEADER_ACTIVE}</th>
+										<th>{=USER_TABLE_HEADER_REGISTERED_DATE}</th>
 										<th>{=USER_TABLE_HEADER_LAST_LOGIN}</th>
 										<th class="alignRight">
 											<button type="button" class="btn btn-success" onclick="window.location.assign({link User:Edit});">
@@ -31,8 +32,14 @@
 								<tbody>
 								{foreach $users as $user}
 									<tr>
-										<td>{$user->getLogin()}</td>
-										<td>{$user->getRole()}</td>
+										<td>{$user->getEmail()}</td>
+										<td>
+											{if isset($roles[$user->getRole()])}
+											{$roles[$user->getRole()]}
+											{else}
+											""
+											{/if}
+										</td>
 										<td>
 											{if $user->isActive()}
 												<label class="checkbox-inline">
@@ -44,6 +51,7 @@
 												</label>
 											{/if}
 										</td>
+										<td>{$user->getRegisterTimestamp()|date: 'j.n.Y G:i:s'}</td>
 										<td>{$user->getLastLogin()|date: 'j.n.Y G:i:s'}</td>
 										<td class="alignRight">
 											<a href={link User:Edit, $user->getId()} title={=USER_EDIT}><span class="glyphicon glyphicon-pencil"></span></a> &nbsp;&nbsp;
