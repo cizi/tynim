@@ -79,6 +79,7 @@ class UserPresenter extends SignPresenter {
 	public function actionEdit($id) {
 		$this->template->user = null;
 		$userEntity = $this->userRepository->getUser($id);
+		$this->template->user = $userEntity;
 
 		if ($userEntity) {
 			$this['editForm']->addHidden('id', $userEntity->getId());

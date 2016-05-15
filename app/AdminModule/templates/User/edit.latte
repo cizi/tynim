@@ -18,7 +18,7 @@
 							{if $user == null}
 								<h1>{=USER_EDIT_FORM_ADD}</h1>
 							{else}
-								<h1>{sprintf(USER_EDIT_FORM_EDIT, $user->getLogin())}</h1>
+								<h1>{sprintf(USER_EDIT_FORM_EDIT, $user->getEmail())}</h1>
 							{/if}
 							<br /><br />
 

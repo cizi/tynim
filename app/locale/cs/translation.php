@@ -62,11 +62,25 @@ define("USER_EDIT_SAVE_BTN_LABEL", 'Uložit');
 define("USER_EDIT_BACK_BTN_LABEL", 'Zpět');
 define("USER_EDIT_SAVE_FAILED", 'Nepovedlo se zpracovat změny, opakujte prosím později');
 
-// user roles
+// user roles - select
 define("USER_ROLE_LAYOUT_CHANGER", "Plná práva");
 define("USER_ROLE_CONTENT_CHANGER", "Uživatel může měnit obsah");
 define("USER_ROLE_GUEST", "Host");
 define("USER_ROLE_ADMINISTRATOR", "Administrátor");
+
+// webconfig
+define("WEBCONFIG_TITLE", "Nastavení webu");
+define("WEBCONFIG_TITLE_INFO", "Zde je možné konfigurovat rozložená webu, jeho šířku, případně vložení Google Analitics. ");
+define("WEBCONFIG_WEB_NAME", "Název webu");
+define("WEBCONFIG_WEB_NAME_INFO", "Tento název bude zobrazen v hlavičce prohlížeče. Je taktéž důležitý pro vyhledavače");
+define("WEBCONFIG_WEB_WIDTH", "Šířka webu");
+define("WEBCONFIG_WEB_WIDTH_INFO", "Určuje šířku webu v prohlížeči. Tento údaj nemá vliv na responzivitu webu.");
+define("WEBCONFIG_WEB_GOOGLE_ANALYTICS", "Google Analytics");
+define("WEBCONFIG_WEB_GOOGLE_ANALYTICS_INFO", "Google Analytics Vám pomáhá identifikovat odkad přišel návštěvník Vaěich stránek,
+												jak dlouho se zdržel a co ho na Vašich stránkách zajímalo nejvíce. Kód Google Analytics je
+												Javascriptový kód, který se vkládá přímo do každé stránky. Více o registraci a použití se
+												můžete dočíst zde:
+												<a target='_blank' href='https://www.google.com/analytics/'>https://www.google.com/analytics/</a>");
 
 // modal window
 define("MODAL_BUTTON_OK", 'OK');

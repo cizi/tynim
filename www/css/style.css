@@ -98,3 +98,8 @@ a.menuToggle:hover {
 div.userTable{
 	width: 95%;
 }
+.field_info {
+	color: grey;
+	font-size: 11px;
+	margin: 4px;
+}
