@@ -14,18 +14,18 @@
 			<a href="#"><span class="glyphicon glyphicon-bookmark menuItem"></span>{=MENU_HEADER}</a>
 		</li>
 		<li>
-			<a href="#"><span class="glyphicon glyphicon-picture menuItem"></span>{=MENU_LOGO}</a>
+			<a href={link Slider:Default} {if $item == "slider"} style="color: white" {/if}>
+				<span class="glyphicon glyphicon-picture menuItem"></span>{=MENU_LOGO}
+			</a>
 		</li>
 		<li>
 			<a href="#"><span class="glyphicon glyphicon-menu-hamburger menuItem"></span>{=MENU_MENU}</a>
 		</li>
 		<li>
-			<a href="#"><span class="glyphicon glyphicon-link menuItem"></span>
-				{=MENU_BLOCK}</a>
+			<a href="#"><span class="glyphicon glyphicon-link menuItem"></span>{=MENU_BLOCK}</a>
 		</li>
 		<li>
-			<a href="#"><span class="glyphicon glyphicon-chevron-down menuItem"></span>
-				{=MENU_FOOTER}</a>
+			<a href="#"><span class="glyphicon glyphicon-chevron-down menuItem"></span>{=MENU_FOOTER}</a>
 		</li>
 		<li>
 			<a href={link User:Default} {if $item == "user"} style="color: white"{/if}>
@@ -34,8 +34,7 @@
 		</li>
 		<li>
 			<a href="{link Webconfig:Default}" {if $item == "webconfig"} style="color: white" {/if}>
-				<span class="glyphicon glyphicon-cog menuItem"></span>
-				{=MENU_SETTINGS}</a>
+				<span class="glyphicon glyphicon-cog menuItem"></span>{=MENU_SETTINGS}</a>
 		</li>
 	</ul>
 	<img id="adminMenuFooter" class="adminMenuFooter" src="{$basePath}/images/menuFooter.png" />

@@ -43,12 +43,19 @@ class WebconfigPresenter extends SignPresenter {
 			if ($key == WebconfigForm::FILE_FAVICON) {
 				/** @var FileUpload $file */
 				$file = $value;
+				if (empty($file->name)) continue;
+				if (substr($file->name, -3) != "ico" || substr($file->name, -3) != "ico") {
+					$this->flashMessage(WEBCONFIG_WEB_FAVICON_FORMAT, "alert-danger");
+					continue;
+				}
+				$pathDb = '/upload/' . date("Ymd-His") . "-" . $file->name;
 				$path = UPLOAD_PATH . '/' . date("Ymd-His") . "-" . $file->name;
 				$file->move($path);
-				$value = $path;
+				$value = $pathDb;
 			}
 			$this->webconfigRepository->save($key, $value);
 		}
+		$this->flashMessage(WEBCONFIG_WEB_SAVE_SUCCESS, "alert-success");
 		$this->redirect("default");
 	}
 

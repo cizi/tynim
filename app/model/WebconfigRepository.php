@@ -16,6 +16,8 @@ class WebconfigRepository extends BaseRepository{
 	/** @const for google analytics */
 	const KEY_WEG_GOOGLE_ANALYTICS = "WEG_GOOGLE_ANALYTICS";
 
+	const KEY_BODY_BACKGROUND_COLOR = "WEB_CONFIG_BACKGROUND_COLOR";
+
 	/**
 	 * @return array
 	 */

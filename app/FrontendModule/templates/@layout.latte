@@ -8,26 +8,35 @@
 	<meta charset="utf-8">
 
 	<title>{$title}</title>
+	{if $favicon != ""}
+		<link rel='shortcut icon' type='image/x-icon' href="{$basePath}{$favicon}" />
+	{/if}
 
 	<link rel="stylesheet" href="{$basePath}/css/style.css">
 	<link rel="stylesheet" href="{$basePath}/boostrap/css/bootstrap.css">
-	<script src="{$basePath}/boostrap/js/bootstrap.js"></script>
-
 	<meta name="viewport" content="width=device-width">
+
 	{block head}{/block}
 </head>
 
-<body>
-	<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
+<body {if $bodyBackgroundColor != ""}style="background-color: {!$bodyBackgroundColor}"{/if}>
+	<div style="{if $bodyWidth != ""}width: {!$bodyWidth};{/if} margin: 0 auto;">
+		<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
 
-	<div class="container">
-		{include content}
+		<div class="container">
+			{include content}
+		</div>
+
+		{block scripts}
+			<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+			<script src="https://nette.github.io/resources/js/netteForms.min.js"></script>
+			<script src="{$basePath}/js/main.js"></script>
+			<script src="{$basePath}/boostrap/js/bootstrap.js"></script>
+		{/block}
+
+		{if $googleAnalytics != ""}
+			{!$googleAnalytics}
+		{/if}
 	</div>
-
-	{block scripts}
-	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-	<script src="https://nette.github.io/resources/js/netteForms.min.js"></script>
-	<script src="{$basePath}/js/main.js"></script>
-	{/block}
 </body>
 </html>

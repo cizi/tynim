@@ -79,12 +79,17 @@ define("WEBCONFIG_WEB_FAVICON", "Ikona webu");
 define("WEBCONFIG_WEB_FAVICON_INFO", "Ikona se zobrazuje v adresním řádku, na panelu se stránkou a v nabídce záložek/oblíbených položek.
 										Ikona musí mít, pro správné zobrazení, určitá pravidla. nejčastěji jde o ikonu 16x16 pixelů.
 										Formát musí být ICO (ikona).");
+define("WEBCONFIG_WEB_FAVICON_FORMAT", "Obrázek musí být ikona, formát ICO!");
 define("WEBCONFIG_WEB_GOOGLE_ANALYTICS", "Google Analytics");
 define("WEBCONFIG_WEB_GOOGLE_ANALYTICS_INFO", "Google Analytics Vám pomáhá identifikovat odkad přišel návštěvník Vaěich stránek,
 												jak dlouho se zdržel a co ho na Vašich stránkách zajímalo nejvíce. Kód Google Analytics je
 												Javascriptový kód, který se vkládá přímo do každé stránky. Více o registraci a použití se
 												můžete dočíst zde:
 												<a target='_blank' href='https://www.google.com/analytics/'>https://www.google.com/analytics/</a>");
+define("WEBCONFIG_WEB_SAVE_SUCCESS", "Změny byly v pořádku uloženy");
+define("WEBCONFIG_WEB_BACKGROUND_COLOR", "Barva pozadí");
+define("WEBCONFIG_WEB_BACKGROUND_COLOR_INFO", "Zde můžete vybrat barvu pozadí pro Váš web. Barva bude použita na celý podklad webu.
+												Pro bílou (žádnou barvu) smažte hodnotu z pole.");
 
 // modal window
 define("MODAL_BUTTON_OK", 'OK');
