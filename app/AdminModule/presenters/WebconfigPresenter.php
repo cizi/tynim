@@ -4,6 +4,7 @@ namespace App\AdminModule\Presenters;
 
 use App\Forms\WebconfigForm;
 use App\Model\WebconfigRepository;
+use Nette\Http\FileUpload;
 
 class WebconfigPresenter extends SignPresenter {
 
@@ -39,6 +40,13 @@ class WebconfigPresenter extends SignPresenter {
 	 */
 	public function saveValue($form, $values) {
 		foreach ($values as $key => $value) {
+			if ($key == WebconfigForm::FILE_FAVICON) {
+				/** @var FileUpload $file */
+				$file = $value;
+				$path = UPLOAD_PATH . '/' . date("Ymd-His") . "-" . $file->name;
+				$file->move($path);
+				$value = $path;
+			}
 			$this->webconfigRepository->save($key, $value);
 		}
 		$this->redirect("default");

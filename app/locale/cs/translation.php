@@ -75,6 +75,10 @@ define("WEBCONFIG_WEB_NAME", "Název webu");
 define("WEBCONFIG_WEB_NAME_INFO", "Tento název bude zobrazen v hlavičce prohlížeče. Je taktéž důležitý pro vyhledavače");
 define("WEBCONFIG_WEB_WIDTH", "Šířka webu");
 define("WEBCONFIG_WEB_WIDTH_INFO", "Určuje šířku webu v prohlížeči. Tento údaj nemá vliv na responzivitu webu.");
+define("WEBCONFIG_WEB_FAVICON", "Ikona webu");
+define("WEBCONFIG_WEB_FAVICON_INFO", "Ikona se zobrazuje v adresním řádku, na panelu se stránkou a v nabídce záložek/oblíbených položek.
+										Ikona musí mít, pro správné zobrazení, určitá pravidla. nejčastěji jde o ikonu 16x16 pixelů.
+										Formát musí být ICO (ikona).");
 define("WEBCONFIG_WEB_GOOGLE_ANALYTICS", "Google Analytics");
 define("WEBCONFIG_WEB_GOOGLE_ANALYTICS_INFO", "Google Analytics Vám pomáhá identifikovat odkad přišel návštěvník Vaěich stránek,
 												jak dlouho se zdržel a co ho na Vašich stránkách zajímalo nejvíce. Kód Google Analytics je

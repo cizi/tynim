@@ -7,6 +7,8 @@ use Nette;
 
 class WebconfigForm extends Nette\Object {
 
+	const FILE_FAVICON = "WEB_FAVICON";
+
 	/** @var FormFactory */
 	private $factory;
 
@@ -33,9 +35,13 @@ class WebconfigForm extends Nette\Object {
 			->setAttribute("tabindex", "2")
 			->setDefaultValue(key($defaultValue));
 
-		$form->addTextArea("WEG_GOOGLE_ANALYTICS", WEBCONFIG_WEB_GOOGLE_ANALYTICS)
+		$form->addUpload(self::FILE_FAVICON, WEBCONFIG_WEB_FAVICON)
 			->setAttribute("class", "form-control")
 			->setAttribute("tabindex", "3");
+
+		$form->addTextArea("WEG_GOOGLE_ANALYTICS", WEBCONFIG_WEB_GOOGLE_ANALYTICS, null, 8)
+			->setAttribute("class", "form-control")
+			->setAttribute("tabindex", "4");
 
 		$form->addSubmit("confirm", USER_EDIT_SAVE_BTN_LABEL)
 			->setAttribute("class","btn btn-primary")

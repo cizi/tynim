@@ -15,6 +15,7 @@ class RouterFactory {
 	public static function createRouter() {
 		$router = new RouteList;
 
+		// admin routing
 		$router[] = new Route('admin/<presenter>/<action>[/<id>]', array(
 			'module' => 'Admin',
 			'presenter' => 'Default',
@@ -22,7 +23,13 @@ class RouterFactory {
 			'id' => NULL,
 		));
 
-		$router[] = new Route('<presenter>/<action>[/<id>]', 'Homepage:default');
+		// frontend routing
+		$router[] = new Route('<presenter>/<action>[/<id>]', array(
+			'module' => 'Frontend',
+			'presenter' => 'Homepage',
+			'action' => 'default',
+			'id' => NULL,
+		));
 
 		return $router;
 	}

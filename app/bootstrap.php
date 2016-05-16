@@ -3,6 +3,9 @@
 $translation = __DIR__ . DIRECTORY_SEPARATOR . 'locale' . DIRECTORY_SEPARATOR . 'cs' . DIRECTORY_SEPARATOR . 'translation.php';
 require_once $translation;
 
+$paths = __DIR__ . DIRECTORY_SEPARATOR . 'path.php';
+require_once $paths;
+
 require __DIR__ . '/../vendor/autoload.php';
 
 $configurator = new Nette\Configurator;

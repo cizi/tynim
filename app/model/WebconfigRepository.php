@@ -4,6 +4,21 @@ namespace App\Model;
 
 class WebconfigRepository extends BaseRepository{
 
+	/** @const for favicon */
+	const KEY_FAVICON = "WEB_FAVICON";
+
+	/** @const for title */
+	const KEY_WEB_TITLE = "WEB_TITLE";
+
+	/** @const for web width */
+	const KEY_WEB_WIDTH = "WEB_WIDTH";
+
+	/** @const for google analytics */
+	const KEY_WEG_GOOGLE_ANALYTICS = "WEG_GOOGLE_ANALYTICS";
+
+	/**
+	 * @return array
+	 */
 	public function load() {
 		$query = "select * from web_config";
 		$result = $this->connection->query($query)->fetchAll();
@@ -32,4 +47,18 @@ class WebconfigRepository extends BaseRepository{
 		return $this->connection->query($query);
 	}
 
+	/**
+	 * @param string $key
+	 * @return string
+	 */
+	public function getByKey($key) {
+		$ret = "";
+		$query = ["select * from web_config where id = %s", $key];
+		$result = $this->connection->query($query)->fetch();
+		if ($result) {
+			$ret = $result->value;
+		}
+
+		return $ret;
+	}
 }
