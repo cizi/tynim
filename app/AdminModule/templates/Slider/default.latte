@@ -3,69 +3,61 @@
 		{include '../@menu.latte', item => 'slider'}
 		<a href="#menu-toggle" class="menuToggle" id="menu-toggle"><span class="glyphicon glyphicon-chevron-left">&nbsp;&nbsp;</span></a>
 
-		{form configForm}
-			<!-- Page Content -->
-			<div id="page-content-wrapper">
-				<div n:foreach="$flashes as $flash" n:class="alert, $flash->type">{$flash->message}</div>
-				<div class="container-fluid">
+		{form editForm}
+		<!-- Page Content -->
+		<div id="page-content-wrapper">
+			<div n:foreach="$flashes as $flash" n:class="alert, $flash->type">{$flash->message}</div>
+			<div class="container-fluid">
 
-					<div class="row">
-						<div class="col-lg-3 col-md-2 col-sm-1">
+				<div class="row">
+					<div class="col-lg-3 col-md-2 col-sm-1">
 					</div>
 
 					<div class="row">
 						<div class="col-lg-6 col-md-8 col-sm-12">
-							<h1>{=WEBCONFIG_TITLE}</h1>
-							<span>{=WEBCONFIG_TITLE_INFO}</span>
+							{if $user == null}
+								<h1>{=USER_EDIT_FORM_ADD}</h1>
+							{else}
+								<h1>{sprintf(USER_EDIT_FORM_EDIT, $user->getEmail())}</h1>
+							{/if}
 							<br /><br />
 
 							<form>
 								<div class="form-group row">
-
 									<div class="col-sm-10">
-										{label WEB_TITLE/}
-										{input WEB_TITLE}
+										{label email/}
+										{input email}
 									</div>
-									<div class="col-sm-10 field_info">
-										{!=WEBCONFIG_WEB_NAME_INFO}
-									</div>
-
+								</div>
+								<div class="form-group row">
 									<div class="col-sm-10">
-										{label WEB_WIDTH/}
-										{input WEB_WIDTH}
+										{label password/}
+										{input password}
 									</div>
-									<div class="col-sm-10 field_info">
-										{!=WEBCONFIG_WEB_WIDTH_INFO}
-									</div>
-
+								</div>
+								<div class="form-group row">
 									<div class="col-sm-10">
-										{label WEB_FAVICON/}
-										{input WEB_FAVICON}
+										{label passwordConfirm/}
+										{input passwordConfirm}
 									</div>
-									<div class="col-sm-10 field_info">
-										{!=WEBCONFIG_WEB_FAVICON_INFO}
-									</div>
-
+								</div>
+								<div class="form-group row">
 									<div class="col-sm-10">
-										{label WEB_CONFIG_BACKGROUND_COLOR/}
-										{input WEB_CONFIG_BACKGROUND_COLOR}
+										{label role/}
+										{input role}
 									</div>
-									<div class="col-sm-10 field_info">
-										{!=WEBCONFIG_WEB_BACKGROUND_COLOR_INFO}
-									</div>
-
+								</div>
+								<div class="form-group row">
 									<div class="col-sm-10">
-										{label WEG_GOOGLE_ANALYTICS/}
-										{input WEG_GOOGLE_ANALYTICS}
+										<label class="form-control-label">{=USER_EDIT_ACTIVE_LABEL}</label> &nbsp;&nbsp;
+										{input active}
 									</div>
-									<div class="col-sm-10 field_info">
-										{!=WEBCONFIG_WEB_GOOGLE_ANALYTICS_INFO}
-									</div>
+								</div>
 
-									<div class="form-group row alignRight">
-										<div class="col-sm-offset-2 col-sm-8 col-md-8 col-lg-8">
-											{input confirm}
-										</div>
+								<div class="form-group row alignRight">
+									<div class="col-sm-offset-2 col-sm-8 col-md-8 col-lg-8">
+										{input confirm}
+										{input back}
 									</div>
 								</div>
 							</form>
@@ -73,7 +65,7 @@
 					</div>
 				</div>
 			</div>
-			<!-- /#page-content-wrapper -->
+		<!-- /#page-content-wrapper -->
 		{/form}
 	</div>
 	<!-- /#wrapper -->

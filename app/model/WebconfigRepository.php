@@ -22,11 +22,14 @@ class WebconfigRepository extends BaseRepository{
 	/** @const for web keywords */
 	const KEY_WEB_KEYWORDS = "WEB_KEYWORDS";
 
+	/** @const for web language */
+	const KEY_WEB_MUTATION = "WEB_MUTATION";
+
 	/**
 	 * @return array
 	 */
-	public function load() {
-		$query = "select * from web_config";
+	public function load($lang) {
+		$query = ["select * from web_config where lang = %s", $lang];
 		$result = $this->connection->query($query)->fetchAll();
 
 		$ret = [];
@@ -40,14 +43,15 @@ class WebconfigRepository extends BaseRepository{
 	/**
 	 * @param string $key
 	 * @param string $value
+	 * @param string $lang
 	 * @return \Dibi\Result|int
 	 */
-	public function save($key, $value) {
+	public function save($key, $value, $lang) {
 		$query = ["select * from web_config where id = %s", $key];
 		if ($this->connection->query($query)->fetch()) { // update
-			$query = ["update web_config set value = %s where id = %s", $value, $key];
+			$query = ["update web_config set value = %s where id = %s and lang = %s", $value, $key, $lang];
 		} else {	// insert
-			$query = ["insert into web_config values (%s, %s)", $key, $value];
+			$query = ["insert into web_config values (%s, %s ,%s)", $key, $lang, $value];
 		}
 
 		return $this->connection->query($query);
@@ -57,9 +61,9 @@ class WebconfigRepository extends BaseRepository{
 	 * @param string $key
 	 * @return string
 	 */
-	public function getByKey($key) {
+	public function getByKey($key, $lang = "cs") {
 		$ret = "";
-		$query = ["select * from web_config where id = %s", $key];
+		$query = ["select * from web_config where id = %s and lang = %s", $key, $lang];
 		$result = $this->connection->query($query)->fetch();
 		if ($result) {
 			$ret = $result->value;
