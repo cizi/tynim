@@ -103,6 +103,20 @@ define("WEBCONFIG_WEB_BACKGROUND_COLOR_INFO", "Zde můžete vybrat barvu pozadí
 define("MODAL_BUTTON_OK", 'OK');
 define("MODAL_WINDOWS_WARNING_TITLE", 'Varování');
 
+// slider
+define("SLIDER_SETTINGS", "Nastavení obrázku (slider)");
+define("SLIDER_SETTINGS_INFO", "Slider může být buď jeden obrázek nebo několik obrázků, které se budou náhodně střídat v záhlaví webové stránky. <br />
+								<b>Důležité: </b> Pokud bude nahráváno více obrázků je <b>nutné</b>, aby byly všechny obrázky ve stejném rozlišení.");
+define("SLIDER_SETTINGS_PICS", "Nahrát obrázky slideru");
+define("SLIDER_SETTINGS_PICS_INFO", "Obrázky je možné nahrávat po jednom nebo po více najednou.");
+define("SLIDER_SETTINGS_CURRENT_PICS", "Nynější obrázky slideru");
+define("SLIDER_SETTINGS_SAVE_BTN_LABEL", 'Uložit');
+define("SLIDER_SETTINGS_PIC_FORMAT", "Jsou podporovány jen obrázky (BMP, JPG, PNG)! Nahrajte prosím obrázky v tomto formátu.");
+define("SLIDER_SETTINGS_CONFIRM_MODAL_DELETE_TITLE", 'Smazaní položky slideru');
+define("SLIDER_SETTINGS_CONFIRM_MODAL_DELETE_MSG", 'Opravdu chcete smazat položku slideru?');
+define("SLIDER_SETTINGS_CONFIRM_MODAL_OK", 'Smazat');
+define("SLIDER_SETTINGS_CONFIRM_MODAL_CANCEL", 'Zpět');
+
 
 
 
