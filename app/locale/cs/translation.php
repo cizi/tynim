@@ -69,10 +69,18 @@ define("USER_ROLE_GUEST", "Host");
 define("USER_ROLE_ADMINISTRATOR", "Administrátor");
 
 // webconfig
+define("WEBCONFIG_WEBMUTATION", "Jazyková mutace");
+define("WEBCONFIG_WEBMUTATION_INFO", "Právě editované nastavení bude použito pro zvolenou jazykovou mutaci. Pokud máte více jazykových mutací
+										je nutné provést toto nastavení pro všechny jazykové mutace.");
 define("WEBCONFIG_TITLE", "Nastavení webu");
 define("WEBCONFIG_TITLE_INFO", "Zde je možné konfigurovat rozložená webu, jeho šířku, případně vložení Google Analitics. ");
 define("WEBCONFIG_WEB_NAME", "Název webu");
 define("WEBCONFIG_WEB_NAME_INFO", "Tento název bude zobrazen v hlavičce prohlížeče. Je taktéž důležitý pro vyhledavače");
+define("WEBCONFIG_WEB_KEYWORDS", "Klíčová slova");
+define("WEBCONFIG_WEB_KEYWORDS_INFO", "Jednotlivá klíčová slova od sebe oddělujte čárkou (,).
+										<b>Poznámka:</b> klíčová slova v meta tagu keywords dnešní vyhledávače ignorují, ale i tak se
+										doporučuje klíčova slova použít");
+
 define("WEBCONFIG_WEB_WIDTH", "Šířka webu");
 define("WEBCONFIG_WEB_WIDTH_INFO", "Určuje šířku webu v prohlížeči. Tento údaj nemá vliv na responzivitu webu.");
 define("WEBCONFIG_WEB_FAVICON", "Ikona webu");

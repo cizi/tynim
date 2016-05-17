@@ -40,7 +40,7 @@ class WebconfigPresenter extends SignPresenter {
 	 */
 	public function saveValue($form, $values) {
 		foreach ($values as $key => $value) {
-			if ($key == WebconfigForm::FILE_FAVICON) {
+			if ($key == WebconfigRepository::KEY_FAVICON) {
 				/** @var FileUpload $file */
 				$file = $value;
 				if (empty($file->name)) continue;

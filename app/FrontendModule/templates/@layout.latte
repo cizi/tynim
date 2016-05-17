@@ -8,6 +8,11 @@
 	<meta charset="utf-8">
 
 	<title>{$title}</title>
+	<meta name="description" content={$title}>
+	{if $webKeywords != ""}<meta name="keywords" content={$webKeywords}>{/if}
+	<meta name="robots" content="index,follow">
+	<meta name="googlebot" content="snippet,archive">
+	<meta name="author" content="Jan Cimler">
 	{if $favicon != ""}
 		<link rel='shortcut icon' type='image/x-icon' href="{$basePath}{$favicon}" />
 	{/if}

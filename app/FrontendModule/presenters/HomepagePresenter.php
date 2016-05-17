@@ -27,10 +27,11 @@ class HomepagePresenter extends BasePresenter {
 
 		$widthEnum = new WebWidthEnum();
 		$this->template->title = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_WEB_TITLE);
-		$this->template->googleAnalytics = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_WEG_GOOGLE_ANALYTICS);
+		$this->template->googleAnalytics = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_WEB_GOOGLE_ANALYTICS);
 		$this->template->favicon = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_FAVICON);
 		$this->template->bodyWidth = $widthEnum->getValueByKey($this->webconfigRepository->getByKey(WebconfigRepository::KEY_WEB_WIDTH));
 		$this->template->bodyBackgroundColor = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_BODY_BACKGROUND_COLOR);
+		$this->template->webKeywords = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_WEB_KEYWORDS);
 	}
 
 	public function renderDefault() {

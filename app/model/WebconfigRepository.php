@@ -14,9 +14,13 @@ class WebconfigRepository extends BaseRepository{
 	const KEY_WEB_WIDTH = "WEB_WIDTH";
 
 	/** @const for google analytics */
-	const KEY_WEG_GOOGLE_ANALYTICS = "WEG_GOOGLE_ANALYTICS";
+	const KEY_WEB_GOOGLE_ANALYTICS = "WEG_GOOGLE_ANALYTICS";
 
+	/** @const for background color */
 	const KEY_BODY_BACKGROUND_COLOR = "WEB_CONFIG_BACKGROUND_COLOR";
+
+	/** @const for web keywords */
+	const KEY_WEB_KEYWORDS = "WEB_KEYWORDS";
 
 	/**
 	 * @return array
