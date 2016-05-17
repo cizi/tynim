@@ -26,6 +26,14 @@ class SliderPresenter extends SignPresenter {
 	}
 
 	/**
+	 * @param int $id
+	 */
+	public function actionPicDelete($id) {
+		$this->sliderPicRepository->delete($id);
+		$this->redirect("default");
+	}
+
+	/**
 	 * @return Form
 	 */
 	public function createComponentSliderForm() {

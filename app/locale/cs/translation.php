@@ -116,8 +116,17 @@ define("SLIDER_SETTINGS_CONFIRM_MODAL_DELETE_TITLE", 'Smazaní položky slideru'
 define("SLIDER_SETTINGS_CONFIRM_MODAL_DELETE_MSG", 'Opravdu chcete smazat položku slideru?');
 define("SLIDER_SETTINGS_CONFIRM_MODAL_OK", 'Smazat');
 define("SLIDER_SETTINGS_CONFIRM_MODAL_CANCEL", 'Zpět');
-
-
-
+define("SLIDER_SETTINGS_DELETE_TITLE", 'Smazání obrázku');
+define("SLIDER_SETTINGS_SLIDER_ACTIVE_LABEL", 'Zapnout slider');
+define("SLIDER_SETTINGS_SLIDER_ACTIVE_INFO", 'Pokud bude slider zapnut budou se obrázky střídat v určitém a naáhodném intervalu.
+											Pokud zůstane slider vypnutý, bude vždy zobrazen staticky jen obrázek. Ovšem pokud bude ve slideru nahráno
+											více obrázku bude při každém obnovení stránky zobrazen obrázek jiný.');
+define("SLIDER_SETTINGS_SLIDER_WITDH", 'Šířka slideru');
+define("SLIDER_SETTINGS_SLIDER_WITDH_INFO", 'Udává hodnotu jak široký má být slider vůči obsahu. <br />
+											100% = bude zabírat celou šírku těla stránek <br />
+											50%  = bude zabírat polovinu šířky stránek <br />
+											<b>Poznámka:</b> 100% je výchozí a nejvíce chtěné nastavení pro většinu uživatelů');
+define("SLIDER_SETTINGS_TIMING", 'Časování slideru (s)');
+define("SLIDER_SETTINGS_TIMING_INFO", 'Číslo určuje jak často se bude vyměnovat obrázek ve slideru. Hodnota je udávána ve vteřinách.');
 
 

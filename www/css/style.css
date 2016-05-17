@@ -104,3 +104,16 @@ div.userTable{
 	margin: 4px;
 	padding-bottom: 15px;
 }
+img.sliderPic{
+	width: 10%;
+	padding: 4px;
+	float: right;
+	height: auto;
+}
+a.sliderPicDelete{
+
+}
+a.sliderPicDelete:hover{
+	color: white;
+	opacity: 0.5;
+}

@@ -4,9 +4,16 @@ namespace App\Model;
 
 use App\Model\Entity\SliderPicEntity;
 
-class SliderPicRepository extends BaseRepository {
+class SliderSettingRepository extends BaseRepository {
 
-	const KEY_SLIDER_FILES_UPLOAD = "SLIDER_FILES_UPLOAD";
+	/** @const for slider enabled/disabled */
+	const KEY_SLIDER_ON = "SLIDER_ON";
+
+	/** @const for slider width */
+	const KEY_SLIDER_WIDTH = "SLIDER_WIDTH";
+
+	/** @const for slider timing */
+	const KEY_SLIDER_TIMING = "SLIDER_TIMING";
 
 	/**
 	 * @return SliderPicEntity

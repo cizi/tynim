@@ -2,7 +2,9 @@
 
 namespace App\Forms;
 
+use App\Enum\WebWidthEnum;
 use App\Model\SliderPicRepository;
+use App\Model\SliderSettingRepository;
 use Nette;
 use Nette\Application\UI\Form;
 
@@ -27,9 +29,29 @@ class SliderForm extends Nette\Object {
 			->setAttribute("class", "form-control")
 			->setAttribute("tabindex", "1");
 
+		$form->addCheckbox(SliderSettingRepository::KEY_SLIDER_ON)
+			->setAttribute("data-toggle", "toggle")
+			->setAttribute("data-height", "25")
+			->setAttribute("data-width", "50")
+			->setDefaultValue("checked")
+			->setAttribute("tabindex", "2");
+
+		$widthSelect = new WebWidthEnum();
+		$defaultValue = $widthSelect->arrayKeyValue();
+		end($defaultValue);
+		$form->addSelect(SliderSettingRepository::KEY_SLIDER_WIDTH, SLIDER_SETTINGS_SLIDER_WITDH, $widthSelect->arrayKeyValue())
+			->setAttribute("class", "form-control")
+			->setAttribute("tabindex", "4")
+			->setDefaultValue(key($defaultValue));
+
+		$form->addText(SliderSettingRepository::KEY_SLIDER_TIMING, SLIDER_SETTINGS_TIMING)
+			->setAttribute("class", "form-control")
+			->setAttribute("id", "sliderTiming")
+			->setAttribute("tabindex", "3");
+
 		$form->addSubmit("confirm", SLIDER_SETTINGS_SAVE_BTN_LABEL)
 			->setAttribute("class","btn btn-primary")
-			->setAttribute("tabindex", "2");
+			->setAttribute("tabindex", "4");
 
 		return $form;
 	}
