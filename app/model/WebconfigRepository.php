@@ -47,7 +47,7 @@ class WebconfigRepository extends BaseRepository{
 	 * @return \Dibi\Result|int
 	 */
 	public function save($key, $value, $lang) {
-		$query = ["select * from web_config where id = %s", $key];
+		$query = ["select * from web_config where id = %s and lang = %s", $key, $lang];
 		if ($this->connection->query($query)->fetch()) { // update
 			$query = ["update web_config set value = %s where id = %s and lang = %s", $value, $key, $lang];
 		} else {	// insert

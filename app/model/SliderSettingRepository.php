@@ -16,37 +16,49 @@ class SliderSettingRepository extends BaseRepository {
 	const KEY_SLIDER_TIMING = "SLIDER_TIMING";
 
 	/**
-	 * @return SliderPicEntity
+	 * @return array
 	 */
-	public function findPics() {
-		$query = "select * from slider_pic";
-		$result = $this->connection->query($query);
+	public function load() {
+		$query = ["select * from slider_setting"];
+		$result = $this->connection->query($query)->fetchAll();
 
-		$return = [];
-		foreach($result->fetchAll() as $pic) {
-			$picEntity = new SliderPicEntity();
-			$picEntity->hydrate($pic->toArray());
-			$return[] = $picEntity;
+		$ret = [];
+		foreach($result as $line) {
+			$ret[$line->id] = $line->value;
 		}
 
-		return $return;
+		return $ret;
 	}
 
 	/**
-	 * @param SliderPicEntity $sliderPicEntity
+	 * @param string $key
+	 * @param string $value
+	 * @param string $lang
 	 * @return \Dibi\Result|int
 	 */
-	public function save(SliderPicEntity $sliderPicEntity) {
-		$query = ["insert into slider_pic", $sliderPicEntity->extract()];
+	public function save($key, $value) {
+		$query = ["select * from slider_setting where id = %s", $key];
+		if ($this->connection->query($query)->fetch()) { // update
+			$query = ["update slider_setting set value = %s where id = %s", $value, $key];
+		} else {	// insert
+			$query = ["insert into slider_setting values (%s, %s)", $key, $value];
+		}
+
 		return $this->connection->query($query);
 	}
 
 	/**
-	 * @param int $idPic
-	 * @return \Dibi\Result|int
+	 * @param string $key
+	 * @return string
 	 */
-	public function delete($idPic) {
-		$query = ["delete from slider_pic where id = %i", $idPic];
-		return $this->connection->query($query);
+	public function getByKey($key) {
+		$ret = "";
+		$query = ["select * from slider_setting where id = %s", $key];
+		$result = $this->connection->query($query)->fetch();
+		if ($result) {
+			$ret = $result->value;
+		}
+
+		return $ret;
 	}
 }
