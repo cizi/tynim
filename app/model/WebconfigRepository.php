@@ -4,6 +4,9 @@ namespace App\Model;
 
 class WebconfigRepository extends BaseRepository{
 
+	/** @const for showing menu input */
+	const KEY_WEB_SHOW_HOME = "WEB_SHOW_HOME";
+
 	/** @const for favicon */
 	const KEY_FAVICON = "WEB_FAVICON";
 

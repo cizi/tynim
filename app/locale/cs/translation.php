@@ -98,6 +98,8 @@ define("WEBCONFIG_WEB_SAVE_SUCCESS", "Změny byly v pořádku uloženy");
 define("WEBCONFIG_WEB_BACKGROUND_COLOR", "Barva pozadí");
 define("WEBCONFIG_WEB_BACKGROUND_COLOR_INFO", "Zde můžete vybrat barvu pozadí pro Váš web. Barva bude použita na celý podklad webu.
 												Pro bílou (žádnou barvu) smažte hodnotu z pole.");
+define("WEBCONFIG_SETTINGS_SHOW_HOME", 'Zobrazovat odkaz domů');
+define("WEBCONFIG_SETTINGS_SHOW_HOME_INFO", 'Na první pozici v menu zobrazí domeček, který bude odkazovat na úvodní stránku.');
 
 // modal window
 define("MODAL_BUTTON_OK", 'OK');
@@ -118,9 +120,14 @@ define("SLIDER_SETTINGS_CONFIRM_MODAL_OK", 'Smazat');
 define("SLIDER_SETTINGS_CONFIRM_MODAL_CANCEL", 'Zpět');
 define("SLIDER_SETTINGS_DELETE_TITLE", 'Smazání obrázku');
 define("SLIDER_SETTINGS_SLIDER_ACTIVE_LABEL", 'Zapnout slider');
-define("SLIDER_SETTINGS_SLIDER_ACTIVE_INFO", 'Pokud bude slider zapnut budou se obrázky střídat v určitém a naáhodném intervalu.
-											Pokud zůstane slider vypnutý, bude vždy zobrazen staticky jen obrázek. Ovšem pokud bude ve slideru nahráno
-											více obrázku bude při každém obnovení stránky zobrazen obrázek jiný.');
+define("SLIDER_SETTINGS_SLIDER_ACTIVE_INFO", 'Zapíná nebo vypíná slider v záhlaví stránky.');
+define("SLIDER_SETTINGS_SLIDER_SLIDING_LABEL", 'Zapnout slideshow');
+define("SLIDER_SETTINGS_SLIDER_SLIDING_INFO", 'Pokud bude slideshow zapnuta budou se obrázky náhodně střídat ve Vámi zvoleném intervalu.
+											Pokud zůstane slideshow vypnuta, bude vždy zobrazen staticky jen jeden obrázek. Ovšem pokud
+											bude ve slideru nahráno více obrázku bude při každém obnovení stránky zobrazen obrázek jiný.');
+define("SLIDER_SETTINGS_SLIDER_ARROWS_LABEL", 'Zobrazit ovládání slideru');
+define("SLIDER_SETTINGS_SLIDER_ARROWS_INFO", 'Zobrazí šipky na krajích slideru, se kterými je možné přpínat obrázky ručně.');
+
 define("SLIDER_SETTINGS_SLIDER_WITDH", 'Šířka slideru');
 define("SLIDER_SETTINGS_SLIDER_WITDH_INFO", 'Udává hodnotu jak široký má být slider vůči obsahu. <br />
 											100% = bude zabírat celou šírku těla stránek <br />
@@ -128,5 +135,13 @@ define("SLIDER_SETTINGS_SLIDER_WITDH_INFO", 'Udává hodnotu jak široký má b�
 											<b>Poznámka:</b> 100% je výchozí a nejvíce chtěné nastavení pro většinu uživatelů');
 define("SLIDER_SETTINGS_TIMING", 'Časování slideru (s)');
 define("SLIDER_SETTINGS_TIMING_INFO", 'Číslo určuje jak často se bude vyměnovat obrázek ve slideru. Hodnota je udávána ve vteřinách.');
+define("SLIDER_SETTINGS_SAVE_OK", "Změny byly úspěšně uloženy.");
 
 
+// menu
+define("MENU_SETTINGS_TITLE", 'Konfigurace menu');
+define("MENU_SETTINGS_INFO", 'V této sekci je možno nakonfigurovat menu a jeho položky. Z hlediska přehlednosti není možné vnořovat do více
+								než dvou úrovní.');
+define("MENU_SETTINGS_ITEM_NAME", 'Název položky v menu');
+define("MENU_SETTINGS_ITEM_LINK", 'Odkaz v URL');
+define("MENU_SETTINGS_ITEM_LINK_INFO", 'Název položky menu v URL. <b>DŮLEŽITÉ pro SEO</b>.');

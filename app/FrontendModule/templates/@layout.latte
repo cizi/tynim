@@ -19,6 +19,7 @@
 
 	<link rel="stylesheet" href="{$basePath}/css/style.css">
 	<link rel="stylesheet" href="{$basePath}/boostrap/css/bootstrap.css">
+	<link rel="stylesheet" href="{$basePath}/css/jquery.bxslider.css">
 	<meta name="viewport" content="width=device-width">
 
 	{block head}{/block}
@@ -26,6 +27,54 @@
 
 <body {if $bodyBackgroundColor != ""}style="background-color: {!$bodyBackgroundColor}"{/if}>
 	<div style="{if $bodyWidth != ""}width: {!$bodyWidth};{/if} margin: 0 auto;">
+
+		{* slider *}
+		{if sliderEnabled}
+			<ul class="bxslider" style="opacity: 0">
+				{foreach $sliderPics as $pic}
+					<li><img src="{!$basePath}/{$pic->getPath()}" /></li>
+				{/foreach}
+			</ul>
+		{/if}
+		{*slider end  *}
+
+		{* menu *}
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed menuToggleItem" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand menuLink" href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="#" class="menuLink">O společnoti</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle menuLink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reference <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">One more separated link</a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="menuLink">Kontakt</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+		{* menu end *}
+
 		<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
 
 		<div class="container">
@@ -37,11 +86,34 @@
 			<script src="https://nette.github.io/resources/js/netteForms.min.js"></script>
 			<script src="{$basePath}/js/main.js"></script>
 			<script src="{$basePath}/boostrap/js/bootstrap.js"></script>
+
+			<script src="{$basePath}/js/jquery.easing.1.3.js"></script>
+			<script src="{$basePath}/js/jquery.fitvids.js"></script>
+			<script src="{$basePath}/js/jquery.bxslider.min.js"></script>
 		{/block}
 
 		{if $googleAnalytics != ""}
 			{!$googleAnalytics}
 		{/if}
 	</div>
+
+	{* init JS slider *}
+	{if $sliderEnabled}
+		<script>
+			var widthForSlider = ($('body').width() * {substr($sliderWidth,0, -1)}) / 100;
+			$(function(){
+				var bxslider = $('.bxslider');
+				bxslider.bxSlider({
+					slideWidth: parseInt(widthForSlider),
+					auto: {$slideShow},
+					pause: {!$sliderSpeed},
+					randomStart: true,
+					pager: false,
+					controls: {$sliderControls}
+				});
+				bxslider.css("opacity", "1.0");
+			});
+		</script>
+	{/if}
 </body>
 </html>

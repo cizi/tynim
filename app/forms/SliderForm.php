@@ -36,6 +36,20 @@ class SliderForm extends Nette\Object {
 			->setDefaultValue("checked")
 			->setAttribute("tabindex", "2");
 
+		$form->addCheckbox(SliderSettingRepository::KEY_SLIDER_SLIDE_SHOW)
+			->setAttribute("data-toggle", "toggle")
+			->setAttribute("data-height", "25")
+			->setAttribute("data-width", "50")
+			->setDefaultValue("checked")
+			->setAttribute("tabindex", "3");
+
+		$form->addCheckbox(SliderSettingRepository::KEY_SLIDER_CONTROLS)
+			->setAttribute("data-toggle", "toggle")
+			->setAttribute("data-height", "25")
+			->setAttribute("data-width", "50")
+			->setDefaultValue("checked")
+			->setAttribute("tabindex", "3");
+
 		$widthSelect = new WebWidthEnum();
 		$defaultValue = $widthSelect->arrayKeyValue();
 		end($defaultValue);
@@ -47,11 +61,11 @@ class SliderForm extends Nette\Object {
 		$form->addText(SliderSettingRepository::KEY_SLIDER_TIMING, SLIDER_SETTINGS_TIMING)
 			->setAttribute("class", "form-control")
 			->setAttribute("id", "sliderTiming")
-			->setAttribute("tabindex", "3");
+			->setAttribute("tabindex", "5");
 
 		$form->addSubmit("confirm", SLIDER_SETTINGS_SAVE_BTN_LABEL)
 			->setAttribute("class","btn btn-primary")
-			->setAttribute("tabindex", "4");
+			->setAttribute("tabindex", "6");
 
 		return $form;
 	}

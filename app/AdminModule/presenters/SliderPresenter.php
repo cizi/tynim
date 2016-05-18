@@ -88,6 +88,7 @@ class SliderPresenter extends SignPresenter {
 				$this->sliderSettingRepository->save($key, $inputValue);
 			}
 		}
+		$this->flashMessage(SLIDER_SETTINGS_SAVE_OK, "alert-success");
 		$this->redirect("default");
 	}
 }

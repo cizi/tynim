@@ -61,6 +61,7 @@ if (empty($_l->extends) && !empty($_control->snippetMode)) {
 	<link rel="stylesheet" href="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/boostrap/css/bootstrap.css">
 	<link rel="stylesheet" href="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/css/bootstrap2-toggle.min.css">
 	<link rel="stylesheet" href="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/css/jquery.minicolors.css">
+
 		<link rel="apple-touch-icon" sizes="57x57" href="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/favicon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/favicon/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/favicon/apple-icon-72x72.png">
@@ -105,8 +106,8 @@ call_user_func(reset($_b->blocks['scripts']), $_b, get_defined_vars())  ?>
 			</div>
 		</div>
 
-		<!-- Menu Toggle Script -->
 		<script>
+			// modal for errors
 			function requiredFields() {
 				submitForm = true;
 				$($(".tinym_required_field").get().reverse()).each(function() {
@@ -126,6 +127,7 @@ call_user_func(reset($_b->blocks['scripts']), $_b, get_defined_vars())  ?>
 				return submitForm;
 			}
 
+			 // -- Menu Toggle Script --
 			$("#menu-toggle").click(function(e) {
 				e.preventDefault();
 				$("#wrapper").toggleClass("toggled");

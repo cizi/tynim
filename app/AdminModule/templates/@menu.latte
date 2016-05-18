@@ -19,7 +19,9 @@
 			</a>
 		</li>
 		<li>
-			<a href="#"><span class="glyphicon glyphicon-menu-hamburger menuItem"></span>{=MENU_MENU}</a>
+			<a href={link Menu:Default} {if $item == "menu"} style="color: white"{/if}>
+				<span class="glyphicon glyphicon-menu-hamburger menuItem"></span>{=MENU_MENU}
+			</a>
 		</li>
 		<li>
 			<a href="#"><span class="glyphicon glyphicon-link menuItem"></span>{=MENU_BLOCK}</a>

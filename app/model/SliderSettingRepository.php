@@ -15,6 +15,12 @@ class SliderSettingRepository extends BaseRepository {
 	/** @const for slider timing */
 	const KEY_SLIDER_TIMING = "SLIDER_TIMING";
 
+	/** @const for slider slideshow */
+	const KEY_SLIDER_SLIDE_SHOW = "SLIDER_SLIDE_SHOW";
+
+	/** @const for slider controls */
+	const KEY_SLIDER_CONTROLS = "SLIDER_CONTROLS";
+
 	/**
 	 * @return array
 	 */

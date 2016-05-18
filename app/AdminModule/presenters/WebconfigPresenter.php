@@ -43,10 +43,9 @@ class WebconfigPresenter extends SignPresenter {
 		return $form;
 	}
 
-	public function actionLangChange() {
-		$lang = $this->request->getParameters()['id'];
+	public function actionLangChange($id) {
 		$langSession = $this->session->getSection('webLang');
-		$langSession->langId = $lang;
+		$langSession->langId = $id;
 		$this->redirect("default");
 	}
 

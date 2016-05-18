@@ -105,7 +105,7 @@ div.userTable{
 	padding-bottom: 15px;
 }
 img.sliderPic{
-	width: 10%;
+	width: 15%;
 	padding: 4px;
 	float: right;
 	height: auto;
@@ -114,6 +114,15 @@ a.sliderPicDelete{
 
 }
 a.sliderPicDelete:hover{
-	color: white;
+	color: darkred;
 	opacity: 0.5;
 }
+
+/* slider override */
+.bx-viewport {
+	position: static!important;
+	border: 0!important;
+	-webkit-box-shadow: none!important;
+	box-shadow: none!important;
+}
+/* slider override end */
