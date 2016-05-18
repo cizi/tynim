@@ -7,20 +7,28 @@ class WebconfigRepository extends BaseRepository{
 	/** @const for showing menu input */
 	const KEY_WEB_SHOW_HOME = "WEB_SHOW_HOME";
 
-	/** @const for favicon */
-	const KEY_FAVICON = "WEB_FAVICON";
+	/** @const for show menu */
+	const KEY_WEB_SHOW_MENU = "WEB_SHOW_MENU";
 
-	/** @const for title */
-	const KEY_WEB_TITLE = "WEB_TITLE";
+	/** @const for bg color for menu */
+	const KEY_WEB_MENU_BG = "WEB_MENU_BG";
 
 	/** @const for web width */
 	const KEY_WEB_WIDTH = "WEB_WIDTH";
 
-	/** @const for google analytics */
-	const KEY_WEB_GOOGLE_ANALYTICS = "WEG_GOOGLE_ANALYTICS";
+	/** @const for favicon */
+	const KEY_FAVICON = "WEB_FAVICON";
 
 	/** @const for background color */
 	const KEY_BODY_BACKGROUND_COLOR = "WEB_CONFIG_BACKGROUND_COLOR";
+
+	// -- language depends --
+
+	/** @const for title */
+	const KEY_WEB_TITLE = "WEB_TITLE";
+
+	/** @const for google analytics */
+	const KEY_WEB_GOOGLE_ANALYTICS = "WEG_GOOGLE_ANALYTICS";
 
 	/** @const for web keywords */
 	const KEY_WEB_KEYWORDS = "WEB_KEYWORDS";

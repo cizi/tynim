@@ -2,6 +2,7 @@
 
 namespace App\AdminModule\Presenters;
 
+use App\Forms\WebconfigCommonForm;
 use App\Forms\WebconfigForm;
 use App\Model\LangRepository;
 use App\Model\WebconfigRepository;
@@ -18,10 +19,19 @@ class WebconfigPresenter extends SignPresenter {
 	/** @var WebconfigForm */
 	private $configForm;
 
-	public function __construct(WebconfigRepository $webconfigRepository, WebconfigForm $webconfigForm, LangRepository $langRepository) {
+	/** @var WebconfigCommonForm  */
+	private $configFormCommon;
+
+	public function __construct(
+		WebconfigRepository $webconfigRepository,
+		WebconfigForm $webconfigForm,
+		LangRepository $langRepository,
+		WebconfigCommonForm $configFormCommon
+	) {
 		$this->webconfigRepository = $webconfigRepository;
 		$this->configForm = $webconfigForm;
 		$this->langRepository = $langRepository;
+		$this->configFormCommon = $configFormCommon;
 	}
 
 	public function actionDefault() {
@@ -39,6 +49,12 @@ class WebconfigPresenter extends SignPresenter {
 	public function createComponentConfigForm() {
 		$form = $this->configForm->create($this->presenter);
 		$form->onSuccess[] = $this->saveValue;
+
+		return $form;
+	}
+
+	public function createComponentConfigFormCommon() {
+		$form = $this->configFormCommon->create();
 
 		return $form;
 	}

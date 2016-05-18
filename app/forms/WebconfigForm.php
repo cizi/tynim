@@ -34,48 +34,23 @@ class WebconfigForm extends Nette\Object {
 			->setAttribute("id", "languageSwitcher")
 			->setAttribute("onchange", "langChangeRedir('". $link . "')");
 
-		$form->addCheckbox(WebconfigRepository::KEY_WEB_SHOW_HOME)
-			->setAttribute("data-toggle", "toggle")
-			->setAttribute("data-height", "25")
-			->setAttribute("data-width", "50")
-			->setDefaultValue("checked")
-			->setAttribute("tabindex", "2");
-
 		$form->addText(WebconfigRepository::KEY_WEB_TITLE, WEBCONFIG_WEB_NAME)
 			->setAttribute("class", "form-control")
 			->setAttribute("placeholder", WEBCONFIG_WEB_NAME)
-			->setAttribute("tabindex", "3");
+			->setAttribute("tabindex", "2");
 
 		$form->addText(WebconfigRepository::KEY_WEB_KEYWORDS, WEBCONFIG_WEB_KEYWORDS)
 			->setAttribute("class", "form-control")
 			->setAttribute("placeholder", WEBCONFIG_WEB_KEYWORDS)
-			->setAttribute("tabindex", "4");
-
-		$widthSelect = new WebWidthEnum();
-		$defaultValue = $widthSelect->arrayKeyValue();
-		end($defaultValue);
-		$form->addSelect(WebconfigRepository::KEY_WEB_WIDTH, WEBCONFIG_WEB_WIDTH, $widthSelect->arrayKeyValue())
-			->setAttribute("class", "form-control")
-			->setAttribute("tabindex", "5")
-			->setDefaultValue(key($defaultValue));
-
-		$form->addUpload(WebconfigRepository::KEY_FAVICON, WEBCONFIG_WEB_FAVICON)
-			->setAttribute("class", "form-control")
-			->setAttribute("tabindex", "6");
+			->setAttribute("tabindex", "3");
 
 		$form->addTextArea(WebconfigRepository::KEY_WEB_GOOGLE_ANALYTICS, WEBCONFIG_WEB_GOOGLE_ANALYTICS, null, 8)
 			->setAttribute("class", "form-control")
-			->setAttribute("tabindex", "7");
-
-		$form->addText(WebconfigRepository::KEY_BODY_BACKGROUND_COLOR, WEBCONFIG_WEB_BACKGROUND_COLOR)
-			->setAttribute("id", "minicolorsPicker")
-			->setAttribute("class", "form-control minicolors-input")
-			->setAttribute("tabindex", "8");
-
+			->setAttribute("tabindex", "4");
 
 		$form->addSubmit("confirm", USER_EDIT_SAVE_BTN_LABEL)
 			->setAttribute("class","btn btn-primary")
-			->setAttribute("tabindex", "9");
+			->setAttribute("tabindex", "5");
 
 		return $form;
 	}

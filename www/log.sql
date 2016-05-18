@@ -9438,3 +9438,269 @@ OK: select * from slider_setting;
 -- driver: mysqli/
 -- 2016-05-18 17:39:00
 
+OK: 
+-- takes: 3.716 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:25
+-- driver: mysqli/
+-- 2016-05-18 20:48:53
+
+OK: select * from user where email = 'cizi@email.cz'  and active = 1;
+-- rows: 1
+-- takes: 3.880 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:25
+-- driver: mysqli/
+-- 2016-05-18 20:48:53
+
+OK: update user set last_login = NOW() where id = 7
+-- takes: 3.417 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:131
+-- driver: mysqli/
+-- 2016-05-18 20:48:54
+
+OK: 
+-- takes: 3.755 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:36
+-- driver: mysqli/
+-- 2016-05-18 20:48:56
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 3.844 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:36
+-- driver: mysqli/
+-- 2016-05-18 20:48:56
+
+OK: 
+-- takes: 8.815 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:36
+-- driver: mysqli/
+-- 2016-05-18 20:48:57
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 3.816 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:36
+-- driver: mysqli/
+-- 2016-05-18 20:48:57
+
+OK: 
+-- takes: 2.609 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:36
+-- driver: mysqli/
+-- 2016-05-18 20:50:32
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 3.574 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:36
+-- driver: mysqli/
+-- 2016-05-18 20:50:32
+
+OK: 
+-- takes: 2.603 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:36
+-- driver: mysqli/
+-- 2016-05-18 20:52:15
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 2.579 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:36
+-- driver: mysqli/
+-- 2016-05-18 20:52:15
+
+OK: 
+-- takes: 2.700 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:36
+-- driver: mysqli/
+-- 2016-05-18 20:55:29
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 3.623 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:36
+-- driver: mysqli/
+-- 2016-05-18 20:55:29
+
+OK: 
+-- takes: 2.439 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:36
+-- driver: mysqli/
+-- 2016-05-18 20:56:42
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 2.465 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:36
+-- driver: mysqli/
+-- 2016-05-18 20:56:42
+
+OK: 
+-- takes: 2.448 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:36
+-- driver: mysqli/
+-- 2016-05-18 20:58:15
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 3.127 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:36
+-- driver: mysqli/
+-- 2016-05-18 20:58:15
+
+OK: 
+-- takes: 2.380 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:36
+-- driver: mysqli/
+-- 2016-05-18 20:58:31
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 2.483 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:36
+-- driver: mysqli/
+-- 2016-05-18 20:58:31
+
+OK: 
+-- takes: 2.441 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:36
+-- driver: mysqli/
+-- 2016-05-18 20:58:51
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 2.382 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:36
+-- driver: mysqli/
+-- 2016-05-18 20:58:51
+
+OK: 
+-- takes: 2.543 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:36
+-- driver: mysqli/
+-- 2016-05-18 20:59:17
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 3.035 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:36
+-- driver: mysqli/
+-- 2016-05-18 20:59:17
+
+OK: 
+-- takes: 3.359 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:36
+-- driver: mysqli/
+-- 2016-05-18 21:00:29
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 2.249 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:36
+-- driver: mysqli/
+-- 2016-05-18 21:00:29
+
+OK: 
+-- takes: 2.620 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:44
+-- driver: mysqli/
+-- 2016-05-18 21:15:06
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 2.759 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:44
+-- driver: mysqli/
+-- 2016-05-18 21:15:06
+
+OK: 
+-- takes: 2.260 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:44
+-- driver: mysqli/
+-- 2016-05-18 21:16:09
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 2.319 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:44
+-- driver: mysqli/
+-- 2016-05-18 21:16:09
+
+OK: 
+-- takes: 2.356 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:44
+-- driver: mysqli/
+-- 2016-05-18 21:16:32
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 2.371 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:44
+-- driver: mysqli/
+-- 2016-05-18 21:16:32
+
+OK: 
+-- takes: 2.300 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:44
+-- driver: mysqli/
+-- 2016-05-18 21:16:48
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 2.582 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:44
+-- driver: mysqli/
+-- 2016-05-18 21:16:48
+
+OK: 
+-- takes: 2.186 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:44
+-- driver: mysqli/
+-- 2016-05-18 21:17:07
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 2.993 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:44
+-- driver: mysqli/
+-- 2016-05-18 21:17:07
+
+OK: 
+-- takes: 2.264 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:44
+-- driver: mysqli/
+-- 2016-05-18 21:20:46
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 3.244 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:44
+-- driver: mysqli/
+-- 2016-05-18 21:20:46
+
+OK: 
+-- takes: 2.066 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:44
+-- driver: mysqli/
+-- 2016-05-18 21:21:16
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 2.375 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:44
+-- driver: mysqli/
+-- 2016-05-18 21:21:16
+
+OK: 
+-- takes: 2.159 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:44
+-- driver: mysqli/
+-- 2016-05-18 21:22:50
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 2.441 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:44
+-- driver: mysqli/
+-- 2016-05-18 21:22:50
+

@@ -98,8 +98,15 @@ define("WEBCONFIG_WEB_SAVE_SUCCESS", "Změny byly v pořádku uloženy");
 define("WEBCONFIG_WEB_BACKGROUND_COLOR", "Barva pozadí");
 define("WEBCONFIG_WEB_BACKGROUND_COLOR_INFO", "Zde můžete vybrat barvu pozadí pro Váš web. Barva bude použita na celý podklad webu.
 												Pro bílou (žádnou barvu) smažte hodnotu z pole.");
+define("WEBCONFIG_WEB_MENU_SHOW", "Zobrazit hlavní nabídku");
+define("WEBCONFIG_WEB_MENU_SHOW_INFO", "Určuje zda bude zobrazena hlavní nabídka (menu).");
+define("WEBCONFIG_WEB_MENU_BACKGROUND_COLOR", "Barva hlavní nabídky");
+define("WEBCONFIG_WEB_MENU_BACKGROUND_COLOR_INFO", "Zde můžete vybrat barvu hlavní nabídky (menu).");
+
 define("WEBCONFIG_SETTINGS_SHOW_HOME", 'Zobrazovat odkaz domů');
 define("WEBCONFIG_SETTINGS_SHOW_HOME_INFO", 'Na první pozici v menu zobrazí domeček, který bude odkazovat na úvodní stránku.');
+define("WEBCONFIG_SETTINGS_LANG_DEPENDS", 'Nastavení závislé na jazyku');
+define("WEBCONFIG_SETTINGS_LANG_COMMON", 'Obecné nástavení');
 
 // modal window
 define("MODAL_BUTTON_OK", 'OK');
