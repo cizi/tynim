@@ -9704,3 +9704,2970 @@ OK: select * from web_config where lang = 'cs';
 -- driver: mysqli/
 -- 2016-05-18 21:22:50
 
+OK: 
+-- takes: 9.080 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:25
+-- driver: mysqli/
+-- 2016-05-19 08:24:08
+
+OK: select * from user where email = 'cizi@email.cz'  and active = 1;
+-- rows: 1
+-- takes: 5.347 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:25
+-- driver: mysqli/
+-- 2016-05-19 08:24:08
+
+OK: update user set last_login = NOW() where id = 7
+-- takes: 3.650 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:131
+-- driver: mysqli/
+-- 2016-05-19 08:24:08
+
+OK: 
+-- takes: 2.622 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:44
+-- driver: mysqli/
+-- 2016-05-19 08:24:11
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 8.678 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:44
+-- driver: mysqli/
+-- 2016-05-19 08:24:11
+
+OK: 
+-- takes: 2.779 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:44
+-- driver: mysqli/
+-- 2016-05-19 08:24:11
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 3.098 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:44
+-- driver: mysqli/
+-- 2016-05-19 08:24:11
+
+OK: 
+-- takes: 3.503 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:25
+-- driver: mysqli/
+-- 2016-05-19 08:53:41
+
+OK: select * from user where email = 'cizi@email.cz'  and active = 1;
+-- rows: 1
+-- takes: 2.933 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:25
+-- driver: mysqli/
+-- 2016-05-19 08:53:41
+
+OK: update user set last_login = NOW() where id = 7
+-- takes: 5.749 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:131
+-- driver: mysqli/
+-- 2016-05-19 08:53:41
+
+OK: 
+-- takes: 2.844 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:53:42
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 3.876 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:53:42
+
+OK: select * from web_config where lang = ''
+-- takes: 1.544 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:53:42
+
+OK: 
+-- takes: 2.948 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:53:43
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 4.027 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:53:43
+
+OK: select * from web_config where lang = ''
+-- takes: 1.295 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:53:43
+
+OK: 
+-- takes: 2.617 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:54:03
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 3.439 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:54:03
+
+OK: select * from web_config where lang = ''
+-- takes: 1.002 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:54:03
+
+OK: select * from web_config where id = 'WEB_MUTATION' and lang = 'cs';
+-- rows: 1
+-- takes: 0.872 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 08:54:03
+
+OK: update web_config set value = 'cs' where id = 'WEB_MUTATION' and lang = 'cs'
+-- takes: 6.486 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 08:54:03
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.003 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 08:54:03
+
+OK: update web_config set value = 'Prezentace webu 1212' where id = 'WEB_TITLE' and lang = 'cs'
+-- takes: 2.959 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 08:54:03
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.979 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 08:54:03
+
+OK: update web_config set value = 'moje klíčová slova 111' where id = 'WEB_KEYWORDS' and lang = 'cs'
+-- takes: 2.974 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 08:54:03
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.160 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 08:54:03
+
+OK: update web_config set value = '<script type=\"text/javascript\">\n var a =\"\";\n  var _gaq = _gaq || [];\n  _gaq.push([\'_setAccount\', \'UA-XXXXX-X\']);\n  _gaq.push([\'_trackPageview\']);\n\n  (function() {\n    var ga = document.createElement(\'script\'); ga.type = \'text/javascript\'; ga.async = true;\n    ga.src = (\'https:\' == document.location.protocol ? \'https://ssl\' : \'http://www\') + \'.google-analytics.com/ga.js\';\n    var s = document.getElementsByTagName(\'script\')[0]; s.parentNode.insertBefore(ga, s);\n  })();\n\n</script>' where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs'
+-- takes: 3.624 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 08:54:03
+
+OK: 
+-- takes: 2.717 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:54:03
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 2.384 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:54:03
+
+OK: select * from web_config where lang = ''
+-- takes: 0.935 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:54:03
+
+OK: 
+-- takes: 2.414 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:54:09
+
+OK: select * from web_config where lang = 'en';
+-- rows: 7
+-- takes: 3.848 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:54:09
+
+OK: select * from web_config where lang = ''
+-- takes: 1.166 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:54:09
+
+OK: 
+-- takes: 2.162 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:54:24
+
+OK: select * from web_config where lang = 'en';
+-- rows: 7
+-- takes: 3.542 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:54:24
+
+OK: select * from web_config where lang = ''
+-- takes: 0.990 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:54:24
+
+OK: select * from web_config where id = 'WEB_MUTATION' and lang = 'en';
+-- rows: 1
+-- takes: 1.001 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 08:54:24
+
+OK: update web_config set value = 'en' where id = 'WEB_MUTATION' and lang = 'en'
+-- takes: 9.706 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 08:54:24
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'en';
+-- rows: 1
+-- takes: 0.989 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 08:54:24
+
+OK: update web_config set value = 'webname 111' where id = 'WEB_TITLE' and lang = 'en'
+-- takes: 2.850 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 08:54:24
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'en';
+-- rows: 1
+-- takes: 0.943 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 08:54:24
+
+OK: update web_config set value = 'Keyword' where id = 'WEB_KEYWORDS' and lang = 'en'
+-- takes: 3.010 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 08:54:24
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'en';
+-- rows: 1
+-- takes: 1.251 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 08:54:24
+
+OK: update web_config set value = '<script>\n</script>' where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'en'
+-- takes: 16.035 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 08:54:24
+
+OK: 
+-- takes: 2.453 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:54:24
+
+OK: select * from web_config where lang = 'en';
+-- rows: 7
+-- takes: 2.334 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:54:24
+
+OK: select * from web_config where lang = ''
+-- takes: 1.095 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:54:24
+
+OK: 
+-- takes: 2.373 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:54:27
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 2.421 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:54:27
+
+OK: select * from web_config where lang = ''
+-- takes: 1.068 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:54:28
+
+OK: 
+-- takes: 2.104 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:55:24
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 3.395 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:55:24
+
+OK: select * from web_config where lang = ''
+-- takes: 0.876 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:55:24
+
+OK: select * from web_config where id = 'WEB_MUTATION' and lang = 'cs';
+-- rows: 1
+-- takes: 0.876 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 08:55:24
+
+OK: update web_config set value = 'cs' where id = 'WEB_MUTATION' and lang = 'cs'
+-- takes: 9.602 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 08:55:24
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 0.942 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 08:55:24
+
+OK: update web_config set value = 'Prezentace webu 007' where id = 'WEB_TITLE' and lang = 'cs'
+-- takes: 9.293 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 08:55:24
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.990 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 08:55:24
+
+OK: update web_config set value = 'moje klíčová slova' where id = 'WEB_KEYWORDS' and lang = 'cs'
+-- takes: 3.088 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 08:55:24
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.095 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 08:55:24
+
+OK: update web_config set value = '<script type=\"text/javascript\">\n\n  var _gaq = _gaq || [];\n  _gaq.push([\'_setAccount\', \'UA-XXXXX-X\']);\n  _gaq.push([\'_trackPageview\']);\n\n  (function() {\n    var ga = document.createElement(\'script\'); ga.type = \'text/javascript\'; ga.async = true;\n    ga.src = (\'https:\' == document.location.protocol ? \'https://ssl\' : \'http://www\') + \'.google-analytics.com/ga.js\';\n    var s = document.getElementsByTagName(\'script\')[0]; s.parentNode.insertBefore(ga, s);\n  })();\n\n</script>' where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs'
+-- takes: 3.968 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 08:55:24
+
+OK: 
+-- takes: 2.335 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:55:24
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 2.631 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:55:24
+
+OK: select * from web_config where lang = ''
+-- takes: 1.114 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:55:24
+
+OK: 
+-- takes: 2.290 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:55:44
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 3.439 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:55:44
+
+OK: select * from web_config where lang = ''
+-- takes: 1.003 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:55:44
+
+OK: 
+-- takes: 3.246 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:57:13
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 2.513 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:57:13
+
+OK: select * from web_config where lang = ''
+-- takes: 1.266 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:57:13
+
+OK: 
+-- takes: 3.127 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:58:02
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 2.430 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:58:02
+
+OK: select * from web_config where lang = ''
+-- takes: 0.607 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:58:02
+
+OK: 
+-- takes: 2.146 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:59:21
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 2.344 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:59:21
+
+OK: select * from web_config where lang = ''
+-- takes: 0.674 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:59:21
+
+OK: 
+-- takes: 2.947 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:59:40
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 2.522 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:59:40
+
+OK: select * from web_config where lang = ''
+-- takes: 0.791 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 08:59:40
+
+OK: 
+-- takes: 3.667 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:00:41
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 2.653 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:00:41
+
+OK: select * from web_config where lang = ''
+-- takes: 0.832 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:00:41
+
+OK: 
+-- takes: 2.989 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:09:50
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 4.290 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:09:50
+
+OK: select * from web_config where lang = ''
+-- takes: 1.319 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:09:50
+
+OK: 
+-- takes: 2.525 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:09:58
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 3.846 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:09:58
+
+OK: select * from web_config where lang = ''
+-- takes: 1.389 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:09:58
+
+OK: 
+-- takes: 2.328 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:10:25
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 2.449 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:10:25
+
+OK: select * from web_config where lang = ''
+-- takes: 0.661 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:10:25
+
+OK: 
+-- takes: 3.451 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:10:34
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 2.675 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:10:34
+
+OK: select * from web_config where lang = ''
+-- takes: 0.931 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:10:34
+
+OK: 
+-- takes: 2.432 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:10:39
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 3.083 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:10:39
+
+OK: select * from web_config where lang = ''
+-- takes: 1.112 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:10:39
+
+OK: 
+-- takes: 2.311 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:11:09
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 2.935 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:11:09
+
+OK: select * from web_config where lang = ''
+-- takes: 0.860 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:11:09
+
+OK: 
+-- takes: 2.311 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:11:54
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 4.286 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:11:54
+
+OK: select * from web_config where lang = ''
+-- takes: 0.869 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:11:54
+
+OK: 
+-- takes: 2.119 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:11:54
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 2.435 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:11:54
+
+OK: select * from web_config where lang = ''
+-- takes: 0.743 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:11:54
+
+OK: 
+-- takes: 3.669 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:12:02
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 2.948 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:12:02
+
+OK: select * from web_config where lang = ''
+-- takes: 1.091 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:12:02
+
+OK: 
+-- takes: 2.287 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:12:28
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 3.111 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:12:28
+
+OK: select * from web_config where lang = ''
+-- takes: 0.777 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:12:28
+
+OK: 
+-- takes: 3.093 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:13:19
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 2.150 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:13:19
+
+OK: select * from web_config where lang = ''
+-- takes: 0.955 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:13:19
+
+OK: 
+-- takes: 2.273 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:13:23
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 3.356 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:13:23
+
+OK: select * from web_config where lang = ''
+-- takes: 0.815 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:13:23
+
+OK: 
+-- takes: 2.518 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:13:32
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 2.927 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:13:32
+
+OK: select * from web_config where lang = ''
+-- takes: 1.967 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:13:32
+
+OK: 
+-- takes: 2.330 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:13:34
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 4.419 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:13:34
+
+OK: select * from web_config where lang = ''
+-- takes: 1.334 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:13:34
+
+OK: 
+-- takes: 2.469 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:13:39
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 2.701 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:13:39
+
+OK: select * from web_config where lang = ''
+-- takes: 0.869 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:13:39
+
+OK: 
+-- takes: 2.744 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:18:38
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 2.475 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:18:38
+
+OK: select * from web_config where lang = ''
+-- takes: 0.686 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:18:38
+
+OK: 
+-- takes: 2.442 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:22:04
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 3.228 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:22:04
+
+OK: select * from web_config where lang = ''
+-- takes: 0.833 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:22:04
+
+OK: 
+-- takes: 2.481 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:24:58
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 8
+-- takes: 2.439 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:24:58
+
+OK: select * from web_config where lang = ''
+-- takes: 0.869 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:24:58
+
+OK: 
+-- takes: 2.350 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:25:05
+
+OK: select * from web_config where lang = 'en';
+-- rows: 7
+-- takes: 3.782 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:25:05
+
+OK: select * from web_config where lang = ''
+-- takes: 0.778 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:25:05
+
+OK: 
+-- takes: 1.906 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:25:09
+
+OK: select * from web_config where lang = 'en';
+-- rows: 7
+-- takes: 3.234 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:25:09
+
+OK: select * from web_config where lang = ''
+-- takes: 0.843 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:25:09
+
+OK: select * from web_config where id = 'WEB_MUTATION' and lang = 'en';
+-- rows: 1
+-- takes: 1.001 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:25:09
+
+OK: update web_config set value = 'en' where id = 'WEB_MUTATION' and lang = 'en'
+-- takes: 6.420 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:25:09
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'en';
+-- rows: 1
+-- takes: 0.791 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:25:09
+
+OK: update web_config set value = 'webname 111' where id = 'WEB_TITLE' and lang = 'en'
+-- takes: 2.646 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:25:09
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'en';
+-- rows: 1
+-- takes: 0.676 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:25:09
+
+OK: update web_config set value = 'Keyword' where id = 'WEB_KEYWORDS' and lang = 'en'
+-- takes: 2.909 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:25:09
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'en';
+-- rows: 1
+-- takes: 1.592 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:25:09
+
+OK: update web_config set value = '<script>\n</script>' where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'en'
+-- takes: 2.765 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:25:09
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = 'en';
+-- rows: 1
+-- takes: 0.663 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:25:09
+
+OK: update web_config set value = 'WIDTH_3' where id = 'WEB_WIDTH' and lang = 'en'
+-- takes: 3.946 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:25:09
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = 'en'
+-- takes: 0.576 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:25:09
+
+OK: 
+-- takes: 2.488 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:25:44
+
+OK: select * from web_config where lang = 'en';
+-- rows: 7
+-- takes: 3.339 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:25:44
+
+OK: select * from web_config where lang = 'undef'
+-- takes: 1.196 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:25:44
+
+OK: select * from web_config where id = 'WEB_MUTATION' and lang = 'en';
+-- rows: 1
+-- takes: 0.701 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:25:44
+
+OK: update web_config set value = 'en' where id = 'WEB_MUTATION' and lang = 'en'
+-- takes: 6.120 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:25:44
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'en';
+-- rows: 1
+-- takes: 0.683 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:25:44
+
+OK: update web_config set value = 'webname 111' where id = 'WEB_TITLE' and lang = 'en'
+-- takes: 3.106 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:25:44
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'en';
+-- rows: 1
+-- takes: 0.820 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:25:44
+
+OK: update web_config set value = 'Keyword' where id = 'WEB_KEYWORDS' and lang = 'en'
+-- takes: 2.815 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:25:44
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'en';
+-- rows: 1
+-- takes: 0.795 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:25:44
+
+OK: update web_config set value = '<script>\n</script>' where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'en'
+-- takes: 3.035 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:25:44
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = 'en';
+-- rows: 1
+-- takes: 0.702 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:25:44
+
+OK: update web_config set value = 'WIDTH_3' where id = 'WEB_WIDTH' and lang = 'en'
+-- takes: 3.006 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:25:44
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = 'en'
+-- takes: 0.863 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:25:44
+
+OK: 
+-- takes: 2.478 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:26:12
+
+OK: select * from web_config where lang = 'en';
+-- rows: 7
+-- takes: 2.125 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:26:12
+
+OK: select * from web_config where lang = 'undef'
+-- takes: 1.522 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:26:12
+
+OK: select * from web_config where id = 'WEB_MUTATION' and lang = 'en';
+-- rows: 1
+-- takes: 0.722 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:26:12
+
+OK: update web_config set value = 'en' where id = 'WEB_MUTATION' and lang = 'en'
+-- takes: 10.926 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:71
+-- driver: mysqli/
+-- 2016-05-19 09:26:12
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'en';
+-- rows: 1
+-- takes: 1.389 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:26:12
+
+OK: update web_config set value = 'webname 111' where id = 'WEB_TITLE' and lang = 'en'
+-- takes: 2.951 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:71
+-- driver: mysqli/
+-- 2016-05-19 09:26:12
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'en';
+-- rows: 1
+-- takes: 0.711 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:26:12
+
+OK: update web_config set value = 'Keyword' where id = 'WEB_KEYWORDS' and lang = 'en'
+-- takes: 8.916 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:71
+-- driver: mysqli/
+-- 2016-05-19 09:26:12
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'en';
+-- rows: 1
+-- takes: 1.006 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:26:12
+
+OK: update web_config set value = '<script>\n</script>' where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'en'
+-- takes: 2.959 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:71
+-- driver: mysqli/
+-- 2016-05-19 09:26:12
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = 'en';
+-- rows: 1
+-- takes: 0.755 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:26:12
+
+OK: update web_config set value = 'WIDTH_3' where id = 'WEB_WIDTH' and lang = 'en'
+-- takes: 2.802 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:71
+-- driver: mysqli/
+-- 2016-05-19 09:26:12
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = 'en'
+-- takes: 0.713 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:26:12
+
+OK: 
+-- takes: 2.633 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:27:05
+
+OK: select * from web_config where lang = 'en';
+-- rows: 7
+-- takes: 2.290 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:27:05
+
+OK: select * from web_config where lang = 'undef'
+-- takes: 1.019 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:27:05
+
+OK: select * from web_config where id = 'WEB_MUTATION' and lang = 'en';
+-- rows: 1
+-- takes: 0.696 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:27:05
+
+OK: update web_config set value = 'en' where id = 'WEB_MUTATION' and lang = 'en'
+-- takes: 6.359 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:71
+-- driver: mysqli/
+-- 2016-05-19 09:27:05
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'en';
+-- rows: 1
+-- takes: 0.850 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:27:05
+
+OK: update web_config set value = 'webname 111' where id = 'WEB_TITLE' and lang = 'en'
+-- takes: 3.161 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:71
+-- driver: mysqli/
+-- 2016-05-19 09:27:05
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'en';
+-- rows: 1
+-- takes: 0.918 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:27:05
+
+OK: update web_config set value = 'Keyword' where id = 'WEB_KEYWORDS' and lang = 'en'
+-- takes: 2.625 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:71
+-- driver: mysqli/
+-- 2016-05-19 09:27:05
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'en';
+-- rows: 1
+-- takes: 0.929 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:27:05
+
+OK: update web_config set value = '<script>\n</script>' where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'en'
+-- takes: 2.971 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:71
+-- driver: mysqli/
+-- 2016-05-19 09:27:05
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = 'en';
+-- rows: 1
+-- takes: 0.983 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:27:05
+
+OK: update web_config set value = 'WIDTH_3' where id = 'WEB_WIDTH' and lang = 'en'
+-- takes: 3.111 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:71
+-- driver: mysqli/
+-- 2016-05-19 09:27:05
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = 'en'
+-- takes: 0.978 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:27:05
+
+OK: 
+-- takes: 2.457 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:30:53
+
+OK: select * from web_config where lang = 'en';
+-- rows: 7
+-- takes: 2.251 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:30:53
+
+OK: select * from web_config where lang = 'undef'
+-- takes: 0.944 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:30:53
+
+OK: select * from web_config where id = 'WEB_MUTATION' and lang = 'en';
+-- rows: 1
+-- takes: 0.729 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:30:53
+
+OK: update web_config set value = 'en' where id = 'WEB_MUTATION' and lang = 'en'
+-- takes: 3.644 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:71
+-- driver: mysqli/
+-- 2016-05-19 09:30:53
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'en';
+-- rows: 1
+-- takes: 0.775 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:30:53
+
+OK: update web_config set value = 'webname 111' where id = 'WEB_TITLE' and lang = 'en'
+-- takes: 2.619 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:71
+-- driver: mysqli/
+-- 2016-05-19 09:30:53
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'en';
+-- rows: 1
+-- takes: 1.321 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:30:53
+
+OK: update web_config set value = 'Keyword' where id = 'WEB_KEYWORDS' and lang = 'en'
+-- takes: 2.891 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:71
+-- driver: mysqli/
+-- 2016-05-19 09:30:53
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'en';
+-- rows: 1
+-- takes: 0.838 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:30:53
+
+OK: update web_config set value = '<script>\n</script>' where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'en'
+-- takes: 2.750 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:71
+-- driver: mysqli/
+-- 2016-05-19 09:30:53
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = 'en';
+-- rows: 1
+-- takes: 0.723 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:30:53
+
+OK: update web_config set value = 'WIDTH_3' where id = 'WEB_WIDTH' and lang = 'en'
+-- takes: 2.807 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:71
+-- driver: mysqli/
+-- 2016-05-19 09:30:53
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = 'en'
+-- takes: 1.606 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:30:53
+
+OK: 
+-- takes: 2.639 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:25
+-- driver: mysqli/
+-- 2016-05-19 09:54:36
+
+OK: select * from user where email = 'cizi@email.cz'  and active = 1;
+-- rows: 1
+-- takes: 3.606 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:25
+-- driver: mysqli/
+-- 2016-05-19 09:54:36
+
+OK: update user set last_login = NOW() where id = 7
+-- takes: 5.959 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:131
+-- driver: mysqli/
+-- 2016-05-19 09:54:36
+
+OK: 
+-- takes: 2.218 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:54:38
+
+OK: select * from web_config where lang = 'en';
+-- rows: 7
+-- takes: 2.580 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:54:38
+
+OK: select * from web_config where lang = ''
+-- takes: 0.798 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:54:38
+
+OK: 
+-- takes: 2.266 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:54:38
+
+OK: select * from web_config where lang = 'en';
+-- rows: 7
+-- takes: 4.361 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:54:38
+
+OK: select * from web_config where lang = ''
+-- takes: 1.456 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:54:38
+
+OK: 
+-- takes: 1.868 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:54:53
+
+OK: select * from web_config where lang = 'en';
+-- rows: 7
+-- takes: 3.147 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:54:53
+
+OK: select * from web_config where lang = ''
+-- takes: 1.282 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:54:53
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'en';
+-- rows: 1
+-- takes: 0.810 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:54:53
+
+OK: update web_config set value = 'webname 111' where id = 'WEB_TITLE' and lang = 'en'
+-- takes: 12.227 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:71
+-- driver: mysqli/
+-- 2016-05-19 09:54:53
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'en';
+-- rows: 1
+-- takes: 0.849 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:54:53
+
+OK: update web_config set value = 'Keyword' where id = 'WEB_KEYWORDS' and lang = 'en'
+-- takes: 2.646 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:71
+-- driver: mysqli/
+-- 2016-05-19 09:54:53
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'en';
+-- rows: 1
+-- takes: 0.855 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:54:53
+
+OK: update web_config set value = '<script>\n</script>' where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'en'
+-- takes: 2.928 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:71
+-- driver: mysqli/
+-- 2016-05-19 09:54:53
+
+OK: select * from web_config where id = 'WEB_MUTATION' and lang = ''
+-- takes: 0.801 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:54:53
+
+OK: insert into web_config values ('WEB_MUTATION', '' ,'en')
+-- takes: 4.357 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:71
+-- driver: mysqli/
+-- 2016-05-19 09:54:53
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = ''
+-- takes: 0.832 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:54:53
+
+OK: insert into web_config values ('WEB_WIDTH', '' ,'WIDTH_3')
+-- takes: 2.774 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:71
+-- driver: mysqli/
+-- 2016-05-19 09:54:53
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = ''
+-- takes: 0.850 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:54:53
+
+OK: insert into web_config values ('WEB_CONFIG_BACKGROUND_COLOR', '' ,'#ff0000')
+-- takes: 3.354 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:71
+-- driver: mysqli/
+-- 2016-05-19 09:54:53
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = ''
+-- takes: 0.902 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:54:53
+
+OK: insert into web_config values ('WEB_SHOW_MENU', '' ,'1')
+-- takes: 9.374 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:71
+-- driver: mysqli/
+-- 2016-05-19 09:54:53
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = ''
+-- takes: 1.614 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:54:53
+
+OK: insert into web_config values ('WEB_SHOW_HOME', '' ,'1')
+-- takes: 6.582 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:71
+-- driver: mysqli/
+-- 2016-05-19 09:54:53
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = ''
+-- takes: 1.195 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:54:53
+
+OK: insert into web_config values ('WEB_MENU_BG', '' ,'#0077ff')
+-- takes: 2.647 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:71
+-- driver: mysqli/
+-- 2016-05-19 09:54:53
+
+OK: 
+-- takes: 2.197 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:55:29
+
+OK: select * from web_config where lang = 'en';
+-- rows: 7
+-- takes: 2.114 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:55:29
+
+OK: select * from web_config where lang = '';
+-- rows: 6
+-- takes: 2.061 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:55:29
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'en';
+-- rows: 1
+-- takes: 0.822 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:55:29
+
+OK: update web_config set value = 'webname 111' where id = 'WEB_TITLE' and lang = 'en'
+-- takes: 13.328 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:55:29
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'en';
+-- rows: 1
+-- takes: 1.018 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:55:29
+
+OK: update web_config set value = 'Keyword' where id = 'WEB_KEYWORDS' and lang = 'en'
+-- takes: 2.871 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:55:29
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'en';
+-- rows: 1
+-- takes: 1.122 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:55:29
+
+OK: update web_config set value = '<script>\n</script>' where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'en'
+-- takes: 3.107 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:55:29
+
+OK: select * from web_config where id = 'WEB_MUTATION' and lang = '';
+-- rows: 1
+-- takes: 1.047 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:55:29
+
+OK: update web_config set value = 'en' where id = 'WEB_MUTATION' and lang = ''
+-- takes: 3.435 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:55:29
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.097 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:55:29
+
+OK: update web_config set value = 'WIDTH_3' where id = 'WEB_WIDTH' and lang = ''
+-- takes: 3.279 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:55:29
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.268 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:55:29
+
+OK: update web_config set value = '#ff0000' where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = ''
+-- takes: 7.289 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:55:29
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.689 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:55:29
+
+OK: update web_config set value = '1' where id = 'WEB_SHOW_MENU' and lang = ''
+-- takes: 2.418 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:55:29
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.020 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:55:29
+
+OK: update web_config set value = '1' where id = 'WEB_SHOW_HOME' and lang = ''
+-- takes: 2.669 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:55:29
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.678 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:55:29
+
+OK: update web_config set value = '#0077ff' where id = 'WEB_MENU_BG' and lang = ''
+-- takes: 10.209 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:55:29
+
+OK: 
+-- takes: 2.811 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:55:30
+
+OK: select * from web_config where lang = 'en';
+-- rows: 7
+-- takes: 1.981 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:55:30
+
+OK: select * from web_config where lang = '';
+-- rows: 6
+-- takes: 0.846 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:55:30
+
+OK: 
+-- takes: 2.389 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:55:45
+
+OK: select * from web_config where lang = 'en';
+-- rows: 7
+-- takes: 2.632 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:55:45
+
+OK: select * from web_config where lang = '';
+-- rows: 6
+-- takes: 1.105 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:55:45
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'en';
+-- rows: 1
+-- takes: 0.683 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:55:45
+
+OK: update web_config set value = 'webname 111' where id = 'WEB_TITLE' and lang = 'en'
+-- takes: 9.970 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:55:45
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'en';
+-- rows: 1
+-- takes: 1.241 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:55:45
+
+OK: update web_config set value = 'Keyword' where id = 'WEB_KEYWORDS' and lang = 'en'
+-- takes: 8.667 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:55:45
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'en';
+-- rows: 1
+-- takes: 0.784 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:55:45
+
+OK: update web_config set value = '<script>\n</script>' where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'en'
+-- takes: 2.710 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:55:45
+
+OK: select * from web_config where id = 'WEB_MUTATION' and lang = '';
+-- rows: 1
+-- takes: 0.654 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:55:45
+
+OK: update web_config set value = 'en' where id = 'WEB_MUTATION' and lang = ''
+-- takes: 2.626 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:55:45
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.931 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:55:45
+
+OK: update web_config set value = 'WIDTH_9' where id = 'WEB_WIDTH' and lang = ''
+-- takes: 3.026 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:55:46
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = ''
+-- takes: 0.953 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:55:46
+
+OK: insert into web_config values ('WEB_FAVICON', '' ,'/upload/20160519-095546-20160516-184539-favicon.ico')
+-- takes: 2.923 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:55:46
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.970 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:55:46
+
+OK: update web_config set value = '#ff0000' where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = ''
+-- takes: 3.338 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:55:46
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.331 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:55:46
+
+OK: update web_config set value = '' where id = 'WEB_SHOW_MENU' and lang = ''
+-- takes: 2.810 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:55:46
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.735 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:55:46
+
+OK: update web_config set value = '' where id = 'WEB_SHOW_HOME' and lang = ''
+-- takes: 9.118 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:55:46
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 1.102 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:55:46
+
+OK: update web_config set value = '#0077ff' where id = 'WEB_MENU_BG' and lang = ''
+-- takes: 9.382 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:55:46
+
+OK: 
+-- takes: 2.333 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:55:46
+
+OK: select * from web_config where lang = 'en';
+-- rows: 7
+-- takes: 2.783 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:55:46
+
+OK: select * from web_config where lang = '';
+-- rows: 7
+-- takes: 1.165 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:55:46
+
+OK: 
+-- takes: 2.740 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:57:31
+
+OK: select * from web_config where lang = 'en'
+-- takes: 2.586 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:57:31
+
+OK: select * from web_config where lang = ''
+-- takes: 0.921 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:57:31
+
+OK: 
+-- takes: 2.341 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:57:32
+
+OK: select * from web_config where lang = 'en'
+-- takes: 1.878 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:57:32
+
+OK: select * from web_config where lang = ''
+-- takes: 1.006 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:57:32
+
+OK: 
+-- takes: 2.526 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:57:34
+
+OK: select * from web_config where lang = 'cs'
+-- takes: 3.482 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:57:34
+
+OK: select * from web_config where lang = ''
+-- takes: 1.417 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:57:34
+
+OK: 
+-- takes: 2.657 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:58:01
+
+OK: select * from web_config where lang = 'cs'
+-- takes: 3.431 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:58:01
+
+OK: select * from web_config where lang = ''
+-- takes: 3.018 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:58:01
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs'
+-- takes: 0.720 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:01
+
+OK: insert into web_config values ('WEB_TITLE', 'cs' ,'Můj název webu')
+-- takes: 5.667 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:01
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs'
+-- takes: 1.087 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:01
+
+OK: insert into web_config values ('WEB_KEYWORDS', 'cs' ,'moje klíčová slova')
+-- takes: 2.701 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:01
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs'
+-- takes: 0.715 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:01
+
+OK: insert into web_config values ('WEG_GOOGLE_ANALYTICS', 'cs' ,'')
+-- takes: 15.852 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:01
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = ''
+-- takes: 0.765 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:01
+
+OK: insert into web_config values ('WEB_WIDTH', '' ,'WIDTH_10')
+-- takes: 2.637 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:01
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = ''
+-- takes: 0.710 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:01
+
+OK: insert into web_config values ('WEB_CONFIG_BACKGROUND_COLOR', '' ,'')
+-- takes: 2.846 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:01
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = ''
+-- takes: 0.923 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:01
+
+OK: insert into web_config values ('WEB_SHOW_MENU', '' ,'1')
+-- takes: 2.771 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:01
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = ''
+-- takes: 0.720 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:01
+
+OK: insert into web_config values ('WEB_SHOW_HOME', '' ,'1')
+-- takes: 2.825 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:01
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = ''
+-- takes: 0.720 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:01
+
+OK: insert into web_config values ('WEB_MENU_BG', '' ,'')
+-- takes: 2.894 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:01
+
+OK: 
+-- takes: 2.515 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:58:01
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 3.003 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:58:01
+
+OK: select * from web_config where lang = '';
+-- rows: 5
+-- takes: 1.977 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:58:01
+
+OK: 
+-- takes: 1.804 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:58:28
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.274 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:58:28
+
+OK: select * from web_config where lang = '';
+-- rows: 5
+-- takes: 1.209 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:58:28
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.015 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:28
+
+OK: update web_config set value = 'Můj název webu' where id = 'WEB_TITLE' and lang = 'cs'
+-- takes: 4.914 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:28
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.774 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:28
+
+OK: update web_config set value = 'moje klíčová slova' where id = 'WEB_KEYWORDS' and lang = 'cs'
+-- takes: 8.950 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:28
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.853 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:28
+
+OK: update web_config set value = '<script>\n</script>' where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs'
+-- takes: 3.678 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:28
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.756 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:28
+
+OK: update web_config set value = 'WIDTH_10' where id = 'WEB_WIDTH' and lang = ''
+-- takes: 2.541 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:28
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.970 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:28
+
+OK: update web_config set value = '' where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = ''
+-- takes: 9.530 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:28
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.758 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:28
+
+OK: update web_config set value = '1' where id = 'WEB_SHOW_MENU' and lang = ''
+-- takes: 9.533 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:28
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.211 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:28
+
+OK: update web_config set value = '1' where id = 'WEB_SHOW_HOME' and lang = ''
+-- takes: 2.767 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:28
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.739 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:28
+
+OK: update web_config set value = '' where id = 'WEB_MENU_BG' and lang = ''
+-- takes: 2.732 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:28
+
+OK: 
+-- takes: 4.236 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:58:28
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.367 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:58:28
+
+OK: select * from web_config where lang = '';
+-- rows: 5
+-- takes: 0.928 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:58:28
+
+OK: 
+-- takes: 1.890 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:58:31
+
+OK: select * from web_config where lang = 'en'
+-- takes: 3.554 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:58:31
+
+OK: select * from web_config where lang = '';
+-- rows: 5
+-- takes: 1.393 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:58:31
+
+OK: 
+-- takes: 2.693 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:58:46
+
+OK: select * from web_config where lang = 'en'
+-- takes: 1.914 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:58:46
+
+OK: select * from web_config where lang = '';
+-- rows: 5
+-- takes: 0.807 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:58:46
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'en'
+-- takes: 0.688 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:46
+
+OK: insert into web_config values ('WEB_TITLE', 'en' ,'My web title')
+-- takes: 6.391 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:46
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'en'
+-- takes: 0.710 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:46
+
+OK: insert into web_config values ('WEB_KEYWORDS', 'en' ,'Keyword')
+-- takes: 2.608 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:46
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'en'
+-- takes: 0.775 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:46
+
+OK: insert into web_config values ('WEG_GOOGLE_ANALYTICS', 'en' ,'')
+-- takes: 2.767 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:46
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.598 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:46
+
+OK: update web_config set value = 'WIDTH_10' where id = 'WEB_WIDTH' and lang = ''
+-- takes: 3.338 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:46
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.786 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:46
+
+OK: update web_config set value = '' where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = ''
+-- takes: 3.157 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:46
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.718 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:46
+
+OK: update web_config set value = '1' where id = 'WEB_SHOW_MENU' and lang = ''
+-- takes: 3.603 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:46
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.088 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:46
+
+OK: update web_config set value = '1' where id = 'WEB_SHOW_HOME' and lang = ''
+-- takes: 9.880 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:46
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.731 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:46
+
+OK: update web_config set value = '' where id = 'WEB_MENU_BG' and lang = ''
+-- takes: 3.431 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:46
+
+OK: 
+-- takes: 1.915 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:58:47
+
+OK: select * from web_config where lang = 'en';
+-- rows: 3
+-- takes: 1.904 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:58:47
+
+OK: select * from web_config where lang = '';
+-- rows: 5
+-- takes: 1.972 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:58:47
+
+OK: 
+-- takes: 1.692 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:58:47
+
+OK: select * from web_config where lang = 'en';
+-- rows: 3
+-- takes: 1.753 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:58:47
+
+OK: select * from web_config where lang = '';
+-- rows: 5
+-- takes: 0.656 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:58:47
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'en';
+-- rows: 1
+-- takes: 0.842 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:47
+
+OK: update web_config set value = 'My web title' where id = 'WEB_TITLE' and lang = 'en'
+-- takes: 6.020 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:47
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'en';
+-- rows: 1
+-- takes: 1.065 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:47
+
+OK: update web_config set value = 'Keyword' where id = 'WEB_KEYWORDS' and lang = 'en'
+-- takes: 2.621 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:47
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'en';
+-- rows: 1
+-- takes: 0.755 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:47
+
+OK: update web_config set value = '' where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'en'
+-- takes: 2.720 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:47
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 2.058 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:47
+
+OK: update web_config set value = 'WIDTH_10' where id = 'WEB_WIDTH' and lang = ''
+-- takes: 3.220 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:47
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.784 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:47
+
+OK: update web_config set value = '' where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = ''
+-- takes: 2.827 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:47
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.988 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:47
+
+OK: update web_config set value = '1' where id = 'WEB_SHOW_MENU' and lang = ''
+-- takes: 9.761 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:47
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.745 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:47
+
+OK: update web_config set value = '1' where id = 'WEB_SHOW_HOME' and lang = ''
+-- takes: 2.765 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:47
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.860 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:58:47
+
+OK: update web_config set value = '' where id = 'WEB_MENU_BG' and lang = ''
+-- takes: 3.072 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:58:47
+
+OK: 
+-- takes: 2.382 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:58:47
+
+OK: select * from web_config where lang = 'en';
+-- rows: 3
+-- takes: 3.629 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:58:47
+
+OK: select * from web_config where lang = '';
+-- rows: 5
+-- takes: 0.862 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:58:47
+
+OK: 
+-- takes: 2.194 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:59:12
+
+OK: select * from web_config where lang = 'en';
+-- rows: 3
+-- takes: 2.666 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:59:12
+
+OK: select * from web_config where lang = '';
+-- rows: 5
+-- takes: 1.300 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:59:12
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'en';
+-- rows: 1
+-- takes: 1.311 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:59:12
+
+OK: update web_config set value = 'My web title' where id = 'WEB_TITLE' and lang = 'en'
+-- takes: 12.748 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:59:12
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'en';
+-- rows: 1
+-- takes: 0.784 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:59:12
+
+OK: update web_config set value = 'Keyword' where id = 'WEB_KEYWORDS' and lang = 'en'
+-- takes: 2.979 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:59:12
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'en';
+-- rows: 1
+-- takes: 0.963 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:59:12
+
+OK: update web_config set value = '' where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'en'
+-- takes: 3.334 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:59:12
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.828 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:59:12
+
+OK: update web_config set value = 'WIDTH_3' where id = 'WEB_WIDTH' and lang = ''
+-- takes: 4.976 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:59:12
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = ''
+-- takes: 1.092 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:59:12
+
+OK: insert into web_config values ('WEB_FAVICON', '' ,'/upload/20160519-095912-20160516-184539-favicon.ico')
+-- takes: 3.422 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:59:12
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.919 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:59:12
+
+OK: update web_config set value = '#ff0000' where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = ''
+-- takes: 2.974 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:59:12
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.161 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:59:12
+
+OK: update web_config set value = '1' where id = 'WEB_SHOW_MENU' and lang = ''
+-- takes: 3.050 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:59:12
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.208 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:59:12
+
+OK: update web_config set value = '' where id = 'WEB_SHOW_HOME' and lang = ''
+-- takes: 3.086 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:59:12
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 1.268 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:59:12
+
+OK: update web_config set value = '#a87575' where id = 'WEB_MENU_BG' and lang = ''
+-- takes: 2.771 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:59:12
+
+OK: 
+-- takes: 2.851 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:59:12
+
+OK: select * from web_config where lang = 'en';
+-- rows: 3
+-- takes: 4.353 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:59:12
+
+OK: select * from web_config where lang = '';
+-- rows: 6
+-- takes: 1.446 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:59:12
+
+OK: 
+-- takes: 3.207 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:59:25
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.703 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:59:25
+
+OK: select * from web_config where lang = '';
+-- rows: 6
+-- takes: 1.064 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:59:25
+
+OK: 
+-- takes: 2.352 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:59:34
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.084 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:59:34
+
+OK: select * from web_config where lang = '';
+-- rows: 6
+-- takes: 1.443 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:59:34
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 0.938 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:59:34
+
+OK: update web_config set value = 'Můj název webu' where id = 'WEB_TITLE' and lang = 'cs'
+-- takes: 5.641 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:59:34
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.987 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:59:34
+
+OK: update web_config set value = 'moje klíčová slova' where id = 'WEB_KEYWORDS' and lang = 'cs'
+-- takes: 2.560 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:59:34
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.233 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:59:34
+
+OK: update web_config set value = '<script>\n</script>' where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs'
+-- takes: 3.506 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:59:34
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 2.026 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:59:34
+
+OK: update web_config set value = 'WIDTH_8' where id = 'WEB_WIDTH' and lang = ''
+-- takes: 10.415 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:59:34
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.961 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:59:34
+
+OK: update web_config set value = '#ff0000' where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = ''
+-- takes: 3.476 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:59:34
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.040 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:59:34
+
+OK: update web_config set value = '1' where id = 'WEB_SHOW_MENU' and lang = ''
+-- takes: 3.090 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:59:34
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.888 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:59:34
+
+OK: update web_config set value = '1' where id = 'WEB_SHOW_HOME' and lang = ''
+-- takes: 2.511 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:59:34
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.658 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 09:59:34
+
+OK: update web_config set value = '#a87575' where id = 'WEB_MENU_BG' and lang = ''
+-- takes: 3.285 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 09:59:34
+
+OK: 
+-- takes: 2.579 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:59:34
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.204 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:59:34
+
+OK: select * from web_config where lang = '';
+-- rows: 6
+-- takes: 0.801 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 09:59:34
+
+OK: 
+-- takes: 2.355 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 10:02:00
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.105 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 10:02:00
+
+OK: select * from web_config where lang = '';
+-- rows: 6
+-- takes: 0.836 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 10:02:00
+
+OK: 
+-- takes: 2.242 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 10:02:18
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.793 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 10:02:18
+
+OK: select * from web_config where lang = '';
+-- rows: 6
+-- takes: 1.467 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 10:02:18
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 0.729 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 10:02:18
+
+OK: update web_config set value = 'Můj název webu up' where id = 'WEB_TITLE' and lang = 'cs'
+-- takes: 5.435 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 10:02:18
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.805 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 10:02:18
+
+OK: update web_config set value = 'moje klíčová slova' where id = 'WEB_KEYWORDS' and lang = 'cs'
+-- takes: 2.794 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 10:02:18
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.142 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 10:02:18
+
+OK: update web_config set value = '<script>\n</script>' where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs'
+-- takes: 9.132 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 10:02:18
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.797 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 10:02:18
+
+OK: update web_config set value = 'WIDTH_7' where id = 'WEB_WIDTH' and lang = ''
+-- takes: 3.495 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 10:02:18
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.790 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 10:02:18
+
+OK: update web_config set value = '#26ff00' where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = ''
+-- takes: 2.736 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 10:02:18
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.808 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 10:02:18
+
+OK: update web_config set value = '1' where id = 'WEB_SHOW_MENU' and lang = ''
+-- takes: 2.627 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 10:02:18
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.047 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 10:02:18
+
+OK: update web_config set value = '1' where id = 'WEB_SHOW_HOME' and lang = ''
+-- takes: 2.952 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 10:02:18
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 1.369 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:64
+-- driver: mysqli/
+-- 2016-05-19 10:02:18
+
+OK: update web_config set value = '#00ffd9' where id = 'WEB_MENU_BG' and lang = ''
+-- takes: 2.714 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:70
+-- driver: mysqli/
+-- 2016-05-19 10:02:18
+
+OK: 
+-- takes: 2.549 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 10:02:18
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.213 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 10:02:18
+
+OK: select * from web_config where lang = '';
+-- rows: 6
+-- takes: 0.824 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:46
+-- driver: mysqli/
+-- 2016-05-19 10:02:18
+

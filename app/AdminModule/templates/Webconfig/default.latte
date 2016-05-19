@@ -54,102 +54,78 @@
 										<div class="col-sm-10 field_info">
 											{!=WEBCONFIG_WEB_GOOGLE_ANALYTICS_INFO}
 										</div>
-
-										<div class="form-group row alignRight">
-											<div class="col-sm-offset-2 col-sm-8 col-md-8 col-lg-8">
-												{input confirm}
-											</div>
-										</div>
 									</div>
 								</fieldset>
+
+
+								<div class="form-group row">
+									<fieldset>
+										<legend>{=WEBCONFIG_SETTINGS_LANG_COMMON}</legend>
+
+										<div class="col-sm-10">
+											{label WEB_WIDTH/}
+											{input WEB_WIDTH}
+										</div>
+										<div class="col-sm-10 field_info">
+											{!=WEBCONFIG_WEB_WIDTH_INFO}
+										</div>
+
+										<div class="col-sm-10">
+											{label WEB_FAVICON/}
+											{input WEB_FAVICON}
+										</div>
+										<div class="col-sm-10 field_info">
+											{!=WEBCONFIG_WEB_FAVICON_INFO}
+										</div>
+
+										<div class="col-sm-10">
+											{label WEB_CONFIG_BACKGROUND_COLOR/}
+											{input WEB_CONFIG_BACKGROUND_COLOR}
+										</div>
+										<div class="col-sm-10 field_info">
+											{!=WEBCONFIG_WEB_BACKGROUND_COLOR_INFO}
+										</div>
+
+										<div class="col-sm-10">
+											<label>{=WEBCONFIG_WEB_MENU_SHOW}</label>
+											{input WEB_SHOW_MENU}
+										</div>
+										<div class="col-sm-10 field_info">
+											{!=WEBCONFIG_WEB_MENU_SHOW_INFO}
+										</div>
+
+										<div class="col-sm-10">
+											<label>{=WEBCONFIG_SETTINGS_SHOW_HOME}</label>
+											{input WEB_SHOW_HOME}
+										</div>
+										<div class="col-sm-10 field_info">
+											{!=WEBCONFIG_SETTINGS_SHOW_HOME_INFO}
+										</div>
+
+										<div class="col-sm-10">
+											{label WEB_MENU_BG/}
+											{input WEB_MENU_BG}
+										</div>
+										<div class="col-sm-10 field_info">
+											{!=WEBCONFIG_WEB_MENU_BACKGROUND_COLOR_INFO}
+										</div>
+									</fieldset>
+
+
+									<div class="form-group row alignRight">
+										<div class="col-sm-offset-2 col-sm-8 col-md-8 col-lg-8">
+											{input confirm}
+										</div>
+									</div>
+								</div>
+
 							</form>
 						</div>
 					</div>
 				</div>
 			{/form}
-
-
-			{* commaon form *}
-			{form configFormCommon}
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-lg-3 col-md-2 col-sm-1">
-							</div>
-
-							<div class="row">
-								<div class="col-lg-6 col-md-8 col-sm-12">
-									<form>
-										<fieldset class="form-group">
-											<legend>{=WEBCONFIG_SETTINGS_LANG_COMMON}</legend>
-											<div class="form-group row">
-
-												<div class="col-sm-10">
-													{label WEB_WIDTH/}
-													{input WEB_WIDTH}
-												</div>
-												<div class="col-sm-10 field_info">
-													{!=WEBCONFIG_WEB_WIDTH_INFO}
-												</div>
-
-												<div class="col-sm-10">
-													{label WEB_FAVICON/}
-													{input WEB_FAVICON}
-												</div>
-												<div class="col-sm-10 field_info">
-													{!=WEBCONFIG_WEB_FAVICON_INFO}
-												</div>
-
-												<div class="col-sm-10">
-													{label WEB_CONFIG_BACKGROUND_COLOR/}
-													{input WEB_CONFIG_BACKGROUND_COLOR}
-												</div>
-												<div class="col-sm-10 field_info">
-													{!=WEBCONFIG_WEB_BACKGROUND_COLOR_INFO}
-												</div>
-
-												<div class="col-sm-10">
-													<label>{=WEBCONFIG_WEB_MENU_SHOW}</label>
-													{input WEB_SHOW_MENU}
-												</div>
-												<div class="col-sm-10 field_info">
-													{!=WEBCONFIG_WEB_MENU_SHOW_INFO}
-												</div>
-
-												<div class="col-sm-10">
-													<label>{=WEBCONFIG_SETTINGS_SHOW_HOME}</label>
-													{input WEB_SHOW_HOME}
-												</div>
-												<div class="col-sm-10 field_info">
-													{!=WEBCONFIG_SETTINGS_SHOW_HOME_INFO}
-												</div>
-
-												<div class="col-sm-10">
-													{label WEB_MENU_BG/}
-													{input WEB_MENU_BG}
-												</div>
-												<div class="col-sm-10 field_info">
-													{!=WEBCONFIG_WEB_MENU_BACKGROUND_COLOR_INFO}
-												</div>
-
-												<div class="form-group row alignRight">
-													<div class="col-sm-offset-2 col-sm-8 col-md-8 col-lg-8">
-														{input confirm}
-													</div>
-												</div>
-											</div>
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-			{/form}
-
-
-
-
 		</div>
 		<!-- /#page-content-wrapper -->
-
 	</div>
 	<!-- /#wrapper -->
 	<script>

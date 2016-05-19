@@ -2,13 +2,16 @@
 
 namespace App\AdminModule\Presenters;
 
-use App\Forms\WebconfigCommonForm;
 use App\Forms\WebconfigForm;
 use App\Model\LangRepository;
 use App\Model\WebconfigRepository;
+use Nette\Application\UI\Form;
 use Nette\Http\FileUpload;
 
 class WebconfigPresenter extends SignPresenter {
+
+	/** @consts depends on language */
+	private $LANG_DEPENDS = [WebconfigRepository::KEY_WEB_TITLE, WebconfigRepository::KEY_WEB_GOOGLE_ANALYTICS, WebconfigRepository::KEY_WEB_KEYWORDS];
 
 	/** @var WebconfigRepository */
 	private $webconfigRepository;
@@ -19,19 +22,19 @@ class WebconfigPresenter extends SignPresenter {
 	/** @var WebconfigForm */
 	private $configForm;
 
-	/** @var WebconfigCommonForm  */
-	private $configFormCommon;
-
+	/**
+	 * @param WebconfigRepository $webconfigRepository
+	 * @param WebconfigForm $webconfigForm
+	 * @param LangRepository $langRepository
+	 */
 	public function __construct(
 		WebconfigRepository $webconfigRepository,
 		WebconfigForm $webconfigForm,
-		LangRepository $langRepository,
-		WebconfigCommonForm $configFormCommon
+		LangRepository $langRepository
 	) {
 		$this->webconfigRepository = $webconfigRepository;
 		$this->configForm = $webconfigForm;
 		$this->langRepository = $langRepository;
-		$this->configFormCommon = $configFormCommon;
 	}
 
 	public function actionDefault() {
@@ -40,11 +43,16 @@ class WebconfigPresenter extends SignPresenter {
 
 		$defaults = $this->webconfigRepository->load($lang);
 		$defaults[WebconfigRepository::KEY_WEB_MUTATION] = $lang;
+
+		$defaultsCommon = $this->webconfigRepository->load(WebconfigRepository::KEY_LANG_FOR_COMMON);
+		foreach ($defaultsCommon as $key => $value) {
+			$defaults[$key] = $value;
+		}
 		$this['configForm']->setDefaults($defaults);
 	}
 
 	/**
-	 * @return \Nette\Application\UI\Form
+	 * @return Form
 	 */
 	public function createComponentConfigForm() {
 		$form = $this->configForm->create($this->presenter);
@@ -53,12 +61,9 @@ class WebconfigPresenter extends SignPresenter {
 		return $form;
 	}
 
-	public function createComponentConfigFormCommon() {
-		$form = $this->configFormCommon->create();
-
-		return $form;
-	}
-
+	/**
+	 * @param string $id
+	 */
 	public function actionLangChange($id) {
 		$langSession = $this->session->getSection('webLang');
 		$langSession->langId = $id;
@@ -71,11 +76,22 @@ class WebconfigPresenter extends SignPresenter {
 	 */
 	public function saveValue($form, $values) {
 		$lang = $values[WebconfigRepository::KEY_WEB_MUTATION];
+		unset($values[WebconfigRepository::KEY_WEB_MUTATION]); // no more needed
+		foreach ($values as $key => $value) {
+			if (in_array($key, $this->LANG_DEPENDS)) {
+				$this->webconfigRepository->save($key, $value, $lang);
+				unset($values[$key]);
+			}
+		}
+
+		$lang = WebconfigRepository::KEY_LANG_FOR_COMMON;	// its going on common parameters, no language need
 		foreach ($values as $key => $value) {
 			if ($key == WebconfigRepository::KEY_FAVICON) {
 				/** @var FileUpload $file */
 				$file = $value;
-				if (empty($file->name)) continue;
+				if (empty($file->name)) {
+					continue;
+				}
 				if (substr($file->name, -3) != "ico" || substr($file->name, -3) != "ico") {
 					$this->flashMessage(WEBCONFIG_WEB_FAVICON_FORMAT, "alert-danger");
 					continue;

@@ -23,6 +23,8 @@ class WebconfigRepository extends BaseRepository{
 	const KEY_BODY_BACKGROUND_COLOR = "WEB_CONFIG_BACKGROUND_COLOR";
 
 	// -- language depends --
+	/** @const for key in common parameters */
+	const KEY_LANG_FOR_COMMON = '';
 
 	/** @const for title */
 	const KEY_WEB_TITLE = "WEB_TITLE";

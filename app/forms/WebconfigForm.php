@@ -48,9 +48,45 @@ class WebconfigForm extends Nette\Object {
 			->setAttribute("class", "form-control")
 			->setAttribute("tabindex", "4");
 
+		$widthSelect = new WebWidthEnum();
+		$defaultValue = $widthSelect->arrayKeyValue();
+		end($defaultValue);
+		$form->addSelect(WebconfigRepository::KEY_WEB_WIDTH, WEBCONFIG_WEB_WIDTH, $widthSelect->arrayKeyValue())
+			->setAttribute("class", "form-control")
+			->setAttribute("tabindex", "5")
+			->setDefaultValue(key($defaultValue));
+
+		$form->addUpload(WebconfigRepository::KEY_FAVICON, WEBCONFIG_WEB_FAVICON)
+			->setAttribute("class", "form-control")
+			->setAttribute("tabindex", "6");
+
+		$form->addText(WebconfigRepository::KEY_BODY_BACKGROUND_COLOR, WEBCONFIG_WEB_BACKGROUND_COLOR)
+			->setAttribute("id", "minicolorsPickerWebBg")
+			->setAttribute("class", "form-control minicolors-input")
+			->setAttribute("tabindex", "7");
+
+		$form->addCheckbox(WebconfigRepository::KEY_WEB_SHOW_MENU)
+			->setAttribute("data-toggle", "toggle")
+			->setAttribute("data-height", "25")
+			->setAttribute("data-width", "50")
+			->setDefaultValue("checked")
+			->setAttribute("tabindex", "8");
+
+		$form->addCheckbox(WebconfigRepository::KEY_WEB_SHOW_HOME)
+			->setAttribute("data-toggle", "toggle")
+			->setAttribute("data-height", "25")
+			->setAttribute("data-width", "50")
+			->setDefaultValue("checked")
+			->setAttribute("tabindex", "9");
+
+		$form->addText(WebconfigRepository::KEY_WEB_MENU_BG, WEBCONFIG_WEB_MENU_BACKGROUND_COLOR)
+			->setAttribute("id", "minicolorsPickerMenuBg")
+			->setAttribute("class", "form-control minicolors-input")
+			->setAttribute("tabindex", "10");
+
 		$form->addSubmit("confirm", USER_EDIT_SAVE_BTN_LABEL)
 			->setAttribute("class","btn btn-primary")
-			->setAttribute("tabindex", "5");
+			->setAttribute("tabindex", "11");
 
 		return $form;
 	}
