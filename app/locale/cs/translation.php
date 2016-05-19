@@ -20,6 +20,8 @@ define("MENU_HEADER", 'Hlavička');
 define("MENU_LOGO", 'Slider');
 define("MENU_MENU", 'Nabídka');
 define("MENU_BLOCK", 'Bloky');
+define("MENU_MENU_BLOCK", 'Nabídka vs bloky');
+define("MENU_CONTACT_FORM", 'Kontaktní formulář');
 define("MENU_FOOTER", 'Patička');
 define("MENU_USERS", 'Uživatelé');
 define("MENU_SETTINGS", 'Nastavení');
