@@ -84,9 +84,14 @@ class WebconfigForm extends Nette\Object {
 			->setAttribute("class", "form-control minicolors-input")
 			->setAttribute("tabindex", "10");
 
+		$form->addText(WebconfigRepository::KEY_WEB_MENU_LINK_COLOR, WEBCONFIG_WEB_MENU_LINK_COLOR)
+			->setAttribute("id", "minicolorsPickerMenuLink")
+			->setAttribute("class", "form-control minicolors-input")
+			->setAttribute("tabindex", "11");
+
 		$form->addSubmit("confirm", USER_EDIT_SAVE_BTN_LABEL)
 			->setAttribute("class","btn btn-primary")
-			->setAttribute("tabindex", "11");
+			->setAttribute("tabindex", "12");
 
 		return $form;
 	}

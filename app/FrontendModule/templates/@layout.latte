@@ -23,6 +23,26 @@
 	<meta name="viewport" content="width=device-width">
 
 	{block head}{/block}
+
+	{* menu links color *}
+	{if $showMenu && $menuLinkColor != ""}
+		<style type="text/css">
+			.navbar-default .navbar-nav li a {
+				color: {!$menuLinkColor}!important;
+			}
+			.navbar-brand{
+				color: {!$menuLinkColor}!important;
+			}
+			{if $menuColor != ""} {* if bg color for menu changed need to change submenu bgcolor *}
+				.dropdown-menu {
+					background-color: {!$menuColor}!important;
+				}
+				.divider {
+					background-color: {!$menuColor}!important;
+				}
+			{/if}
+		</style>
+	{/if}
 </head>
 
 <body {if $bodyBackgroundColor != ""}style="background-color: {!$bodyBackgroundColor}"{/if}>
@@ -39,7 +59,10 @@
 		{*slider end  *}
 
 		{* menu *}
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-default" style="
+				{if $showMenu == false} display: none;{/if}
+				{if $menuColor != ""}background-color: {!$menuColor}; border: 2px solid {!$menuColor};{/if}
+			">
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
@@ -49,7 +72,9 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand menuLink" href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+					{if $showHomeButtonInMenu}
+						<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+					{/if}
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->

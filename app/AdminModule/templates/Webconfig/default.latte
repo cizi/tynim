@@ -109,8 +109,15 @@
 										<div class="col-sm-10 field_info">
 											{!=WEBCONFIG_WEB_MENU_BACKGROUND_COLOR_INFO}
 										</div>
-									</fieldset>
 
+										<div class="col-sm-10">
+											{label WEB_MENU_LINK_COLOR/}
+											{input WEB_MENU_LINK_COLOR}
+										</div>
+										<div class="col-sm-10 field_info">
+											{!=WEBCONFIG_WEB_MENU_LINK_COLOR_INFO}
+										</div>
+									</fieldset>
 
 									<div class="form-group row alignRight">
 										<div class="col-sm-offset-2 col-sm-8 col-md-8 col-lg-8">
@@ -144,6 +151,19 @@
 			});
 
 			$("#minicolorsPickerMenuBg").minicolors({
+				control: $(this).attr('data-control') || 'hue',
+				defaultValue: $(this).attr('data-defaultValue') || '',
+				format: $(this).attr('data-format') || 'hex',
+				keywords: $(this).attr('data-keywords') || '',
+				inline: $(this).attr('data-inline') === 'true',
+				letterCase: $(this).attr('data-letterCase') || 'lowercase',
+				opacity: $(this).attr('data-opacity'),
+				position: $(this).attr('data-position') || 'bottom left',
+				swatches: $(this).attr('data-swatches') ? $(this).attr('data-swatches').split('|') : [],
+				theme: 'bootstrap'
+			});
+
+			$("#minicolorsPickerMenuLink").minicolors({
 				control: $(this).attr('data-control') || 'hue',
 				defaultValue: $(this).attr('data-defaultValue') || '',
 				format: $(this).attr('data-format') || 'hex',

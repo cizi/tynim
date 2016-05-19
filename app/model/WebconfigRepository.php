@@ -13,6 +13,9 @@ class WebconfigRepository extends BaseRepository{
 	/** @const for bg color for menu */
 	const KEY_WEB_MENU_BG = "WEB_MENU_BG";
 
+	/** @const for background color for menu links */
+	const KEY_WEB_MENU_LINK_COLOR = "WEB_MENU_LINK_COLOR";
+
 	/** @const for web width */
 	const KEY_WEB_WIDTH = "WEB_WIDTH";
 
@@ -38,6 +41,9 @@ class WebconfigRepository extends BaseRepository{
 	/** @const for web language */
 	const KEY_WEB_MUTATION = "WEB_MUTATION";
 
+	/** @var array cache for values => less queris to DB */
+	private $cache = [];
+
 	/**
 	 * @return array
 	 */
@@ -48,6 +54,7 @@ class WebconfigRepository extends BaseRepository{
 		$ret = [];
 		foreach($result as $line) {
 			$ret[$line->id] = $line->value;
+			$cache[$line->id] = $line->value;
 		}
 
 		return $ret;
@@ -75,11 +82,18 @@ class WebconfigRepository extends BaseRepository{
 	 * @return string
 	 */
 	public function getByKey($key, $lang = "cs") {
-		$ret = "";
-		$query = ["select * from web_config where id = %s and lang = %s", $key, $lang];
-		$result = $this->connection->query($query)->fetch();
-		if ($result) {
-			$ret = $result->value;
+		// fill the cache
+		if (count($this->cache) == 0 || !isset($this->cache[$key])) {
+			$this->load($lang);
+		}
+
+		$ret = isset($this->cache[$key]) ? $this->cache[$key] : "";
+		if (empty($ret)) {	// last chance to find it directly
+			$query = ["select * from web_config where id = %s and lang = %s", $key, $lang];
+			$result = $this->connection->query($query)->fetch();
+			if ($result) {
+				$ret = $result->value;
+			}
 		}
 
 		return $ret;
