@@ -43,6 +43,10 @@ class HomepagePresenter extends BasePresenter {
 
 	}
 
+	public function createComponentContactForm() {
+
+	}
+
 	/**
 	 * It loads config from admin to page
 	 */
@@ -87,6 +91,5 @@ class HomepagePresenter extends BasePresenter {
 			$this->template->sliderEnabled = false;
 			$this->template->sliderPics = [];
 		}
-
 	}
 }

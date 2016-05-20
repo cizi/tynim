@@ -18,6 +18,7 @@ if (!function_exists($_b->blocks['scripts'][] = '_lb07d2aa00fc_scripts')) { func
 		<script src="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/boostrap/js/bootstrap.js"></script>
 		<script src="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/js/main.js"></script>
 		<script src="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/js/jquery.minicolors.min.js"></script>
+		<script src="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/js/tinymce/tinymce.min.js"></script>
 <?php
 }}
 

@@ -155,4 +155,48 @@ define("MENU_SETTINGS_INFO", 'V této sekci je možno nakonfigurovat menu a jeho
 								než dvou úrovní.');
 define("MENU_SETTINGS_ITEM_NAME", 'Název položky v menu');
 define("MENU_SETTINGS_ITEM_LINK", 'Odkaz v URL');
+define("MENU_SETTINGS_ITEM_LINK_ADDED", 'Položka byla úspěšně vložena');
 define("MENU_SETTINGS_ITEM_LINK_INFO", 'Název položky menu v URL. <b>DŮLEŽITÉ pro SEO</b>.');
+
+// constact form
+define("CONTACT_FORM_SETTING_TITLE", 'Nastavení kontakního formuláře');
+define("CONTACT_FORM_SETTING_TITLE_INFO", 'Zde je možné nastavit některé vlastnosti kontakního fomuláře.');
+define("CONTACT_FORM_NAME", 'Vaše jméno');
+define("CONTACT_FORM_NAME_REQ", 'Pole jméno nesmí být prázdné!');
+define("CONTACT_FORM_EMAIL", 'Kontaktní email');
+define("CONTACT_FORM_EMAIL_REQ", 'Pole email nesmí být prázdné!');
+define("CONTACT_FORM_SUBJECT", 'Předmět');
+define("CONTACT_FORM_SUBJECT_REQ", 'Pole předmět nesmí být prázdné');
+define("CONTACT_FORM_ATTACHMENT", 'Příloha');
+define("CONTACT_FORM_ATTACHMENT_INFO", 'Umožní do kontaktního fomuláře vložit uživateli přílohu a odeslat ji spolu s emailem.');
+define("CONTACT_FORM_IN_MENU", 'Zobrazit odkaz na formulář v menu');
+define("CONTACT_FORM_IN_MENU_INFO", 'V menu stránek bude zobrazena položka "kontaktní formulář, odkazující na stránku s kontakním formulářem.');
+define("CONTACT_FORM_TEXT", 'Vaše zpráva');
+define("CONTACT_FORM_TEXT_REQ", 'Tělo zprávy nesmí být prázdné');
+define("CONTACT_FORM_BUTTON_CONFIRM", 'Odeslat');
+
+define("CONTACT_FORM_SETTING_BACKGROUND_COLOR", 'Barva pozadí kontaktního formuláře');
+define("CONTACT_FORM_SETTING_COLOR", 'Barva textu kontaktního formuláře');
+define("CONTACT_FORM_SETTING_ATTACHMENT", 'Umožnit poslat přílohu');
+define("CONTACT_FORM_SETTING_SAVE", 'Uložit');
+define("CONTACT_FORM_SETTING_COMPLETE_SAVE", 'Nastavení kontaktního formuláře bylo uloženo');
+
+// footer
+define("FOOTER_CONTENT", 'Obsah patičky');
+define("FOOTER_BUTTON_SAVE", "Uložit");
+define("FOOTER_TITLE", "Nastavení patičky");
+define("FOOTER_INFO", "Patička slouží k zobrazení určitého obsahu na každé stránce. ");
+define("FOOTER_CONTACT", "Zobrazit kontaktní formulář v poatičce stránek");
+define("FOOTER_CONTENT_TEXT", 'Obsah patičky můžete naformátovat pomocí WYSIWYG editoru. Pokud bude chtít zobrazit v patičce zobrazit obrázky
+								je nutné je prvně nahrát a následně vložit URL obrázku do editoru.');
+define("FOOTER_CONTENT_PICS", 'Zde nahrajde obrázky, které byste rádi vložily do patičky.');
+define("FOOTER_BACKGROUND_COLOR", 'Barva pozadí patičky');
+define("FOOTER_SETTING_COLOR", 'Barva textu patičky');
+define("FOOTER_SETTING_SAVED", 'Nastavení patičky bylo uloženo');
+define("FOOTER_PIC_FORMAT", "Jsou podporovány jen obrázky (BMP, JPG, PNG)! Nahrajte prosím obrázky v tomto formátu.");
+define("FOOTER_PIC_DELETE", 'Odstranění obrázku');
+define("FOOTER_PIC_DELETED", 'Obrázek byl úspěšně odstraněn');
+define("FOOTER_CONFIRM_DELETE_TITLE", 'Smazání obrázku');
+define("FOOTER_CONFIRM_DELETE", 'Opravdu smazat obrázek?');
+define("FOOTER_CONFIRM_DELETE_CANCEL", 'Zpět');
+define("FOOTER_CONFIRM_DELETE_OK", 'Smazat');

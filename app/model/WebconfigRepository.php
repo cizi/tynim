@@ -25,6 +25,33 @@ class WebconfigRepository extends BaseRepository{
 	/** @const for background color */
 	const KEY_BODY_BACKGROUND_COLOR = "WEB_CONFIG_BACKGROUND_COLOR";
 
+	/** @const for contact form background color */
+	const KEY_CONTACT_FORM_BACKGROUND_COLOR = "CONTACT_FORM_BACKGROUND_COLOR";
+
+	/** @const for contact form font color */
+	const KEY_CONTACT_FORM_COLOR = "CONTACT_FORM_COLOR";
+
+	/** @const for contact form attachment  */
+	const KEY_CONTACT_FORM_ATTACHMENT = "CONTACT_FORM_ATTACHMENT";
+
+	/** @const for to show contact form in menu */
+	const KEY_CONTACT_FORM_IN_MENU = "CONTACT_FORM_IN_MENU";
+
+	/** @const for showing contact form in footer */
+	const KEY_SHOW_CONTACT_FORM_IN_FOOTER = "SHOW_CONTACT_FORM_IN_FOOTER";
+
+	/** @const for footer content */
+	const KEY_FOOTER_CONTENT = "FOOTER_CONTENT";
+
+	/** @const for footer files */
+	const KEY_FOOTER_FILES = "FOOTER_FILES";
+
+	/** @const for footer background color */
+	const KEY_FOOTER_BACKGROUND_COLOR = "FOOTER_BACKGROUND_COLOR";
+
+	/** @const for footer font color */
+	const KEY_FOOTER_COLOR = "FOOTER_COLOR";
+
 	// -- language depends --
 	/** @const for key in common parameters */
 	const KEY_LANG_FOR_COMMON = '';

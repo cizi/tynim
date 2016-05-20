@@ -30,10 +30,13 @@
 			<a href="#"><span class="glyphicon glyphicon-link menuItem"></span>{=MENU_MENU_BLOCK}</a>
 		</li>
 		<li>
-			<a href="#"><span class="glyphicon glyphicon-envelope menuItem"></span>{=MENU_CONTACT_FORM}</a>
+			<a href={link Contact:Default} {if $item == "contact"} style="color: white"{/if}>
+				<span class="glyphicon glyphicon-envelope menuItem"></span>{=MENU_CONTACT_FORM}
+			</a>
 		</li>
 		<li>
-			<a href="#"><span class="glyphicon glyphicon-chevron-down menuItem"></span>{=MENU_FOOTER}</a>
+			<a href={link Footer:Default} {if $item == "footer"} style="color: white"{/if}>
+				<span class="glyphicon glyphicon-chevron-down menuItem"></span>{=MENU_FOOTER}</a>
 		</li>
 		<li>
 			<a href={link User:Default} {if $item == "user"} style="color: white"{/if}>

@@ -42,6 +42,7 @@ class MenuPresenter extends SignPresenter {
 			$menuTopEntity->setOrder($this->menuRepository->getMaxCurrentOrderInTop() + 1);
 			$this->menuRepository->saveTopMenu($menuTopEntity);
 		}
+		$this->flashMessage(MENU_SETTINGS_ITEM_LINK_ADDED, "alert-success");
 		$this->redirect("default");
 	}
 }
