@@ -186,7 +186,7 @@ define("FOOTER_CONTENT", 'Obsah patičky');
 define("FOOTER_BUTTON_SAVE", "Uložit");
 define("FOOTER_TITLE", "Nastavení patičky");
 define("FOOTER_INFO", "Patička slouží k zobrazení určitého obsahu na každé stránce. ");
-define("FOOTER_CONTACT", "Zobrazit kontaktní formulář v poatičce stránek");
+define("FOOTER_CONTACT", "Zobrazit kontaktní formulář v patičce stránek");
 define("FOOTER_CONTENT_TEXT", 'Obsah patičky můžete naformátovat pomocí WYSIWYG editoru. Pokud bude chtít zobrazit v patičce zobrazit obrázky
 								je nutné je prvně nahrát a následně vložit URL obrázku do editoru.');
 define("FOOTER_CONTENT_PICS", 'Zde nahrajde obrázky, které byste rádi vložily do patičky.');
@@ -200,3 +200,7 @@ define("FOOTER_CONFIRM_DELETE_TITLE", 'Smazání obrázku');
 define("FOOTER_CONFIRM_DELETE", 'Opravdu smazat obrázek?');
 define("FOOTER_CONFIRM_DELETE_CANCEL", 'Zpět');
 define("FOOTER_CONFIRM_DELETE_OK", 'Smazat');
+define("FOOTER_SHOW_FOOTER", 'Zapnout patičku');
+define("FOOTER_WIDTH", 'Šířka patičky');
+define("FOOTER_WIDTH_INFO", 'Nastaví šíři patičky vůči šíři stránek (počítává se do šíře obsahu stránek)');
+define("FOOTER_PIC_CONTENT", 'Obrázky, které je možné vložit do patičky');

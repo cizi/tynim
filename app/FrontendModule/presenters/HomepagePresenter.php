@@ -2,6 +2,7 @@
 
 namespace App\FrontendModule\Presenters;
 
+use App\Forms\ContactForm;
 use Nette;
 use App\Enum\WebWidthEnum;
 use App\Model\SliderSettingRepository;
@@ -20,14 +21,19 @@ class HomepagePresenter extends BasePresenter {
 	/** var SliderPicRepository */
 	private $sliderPicRepository;
 
+	/** @var ContactForm */
+	private $contactForm;
+
 	public function __construct(
 		WebconfigRepository $webconfigRepository,
 		SliderSettingRepository $sliderSettingRepository,
-		SliderPicRepository $sliderPicRepository
+		SliderPicRepository $sliderPicRepository,
+		ContactForm $contactForm
 	) {
 		$this->webconfigRepository = $webconfigRepository;
 		$this->sliderSettingRepository = $sliderSettingRepository;
 		$this->sliderPicRepository = $sliderPicRepository;
+		$this->contactForm = $contactForm;
 	}
 
 	/**
@@ -37,14 +43,22 @@ class HomepagePresenter extends BasePresenter {
 		parent::startup();
 		$this->loadWebConfig();
 		$this->loadSliderConfig();
+		$this->loadFooterConfig();
 	}
 
 	public function renderDefault() {
 
 	}
 
-	public function createComponentContactForm() {
+	public function contactFormSubmitted() {
+		$this->redirect("default");
 
+	}
+
+	public function createComponentContactForm() {
+		$form = $this->contactForm->create();
+		$form->onSuccess[] = $this->contactFormSubmitted;
+		return $form;
 	}
 
 	/**
@@ -90,6 +104,25 @@ class HomepagePresenter extends BasePresenter {
 		} else {
 			$this->template->sliderEnabled = false;
 			$this->template->sliderPics = [];
+		}
+	}
+
+	/**
+	 * It loads info about footer
+	 */
+	private function loadFooterConfig() {
+		$langCommon = WebconfigRepository::KEY_LANG_FOR_COMMON;
+		$this->template->showFooter = $showFooter = ($this->webconfigRepository->getByKey(WebconfigRepository::KEY_SHOW_FOOTER, $langCommon) == 1 ? true : false);
+		if ($showFooter) {
+			$widthEnum = new WebWidthEnum();
+
+			$this->template->footerBg = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_FOOTER_BACKGROUND_COLOR, $langCommon);
+			$this->template->footerColor = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_FOOTER_COLOR, $langCommon);
+			$this->template->footerWidth = $widthEnum->getValueByKey($this->webconfigRepository->getByKey(WebconfigRepository::KEY_FOOTER_WIDTH, $langCommon));
+
+			// img path fixing
+			$footerContent = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_FOOTER_CONTENT, $langCommon);
+			$this->template->footerContent = str_replace("../../upload/", "./upload/", $footerContent);
 		}
 	}
 }

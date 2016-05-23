@@ -126,3 +126,11 @@ a.sliderPicDelete:hover{
 	box-shadow: none!important;
 }
 /* slider override end */
+img.footerList{
+	width: auto;
+	height: 100px;
+	padding: 4px;
+}
+table.footerPic{
+
+}

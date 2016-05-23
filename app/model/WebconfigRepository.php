@@ -37,6 +37,12 @@ class WebconfigRepository extends BaseRepository{
 	/** @const for to show contact form in menu */
 	const KEY_CONTACT_FORM_IN_MENU = "CONTACT_FORM_IN_MENU";
 
+	/** @const for enabling/disabling footer */
+	const KEY_SHOW_FOOTER = "SHOW_FOOTER";
+
+	/** @const for enabling/disabling footer */
+	const KEY_FOOTER_WIDTH = "FOOTER_WIDTH";
+
 	/** @const for showing contact form in footer */
 	const KEY_SHOW_CONTACT_FORM_IN_FOOTER = "SHOW_CONTACT_FORM_IN_FOOTER";
 
