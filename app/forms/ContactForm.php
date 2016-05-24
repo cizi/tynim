@@ -22,6 +22,7 @@ class ContactForm extends Nette\Object {
 	 */
 	public function create() {
 		$form = $this->factory->create();
+		$form->getElementPrototype()->addAttributes(["onsubmit" => "return requiredFields();"]);
 
 		$form->addText("name")
 			->setAttribute("tabindex", "1")

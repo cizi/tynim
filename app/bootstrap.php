@@ -6,6 +6,8 @@ require_once $translation;
 $paths = __DIR__ . DIRECTORY_SEPARATOR . 'path.php';
 require_once $paths;
 
+require_once(__DIR__ . '/../vendor/PHPMailer-master/PHPMailerAutoload.php');
+
 require __DIR__ . '/../vendor/autoload.php';
 
 $configurator = new Nette\Configurator;

@@ -182,6 +182,9 @@ define("CONTACT_FORM_SETTING_ATTACHMENT", 'Umožnit poslat přílohu');
 define("CONTACT_FORM_SETTING_SAVE", 'Uložit');
 define("CONTACT_FORM_SETTING_COMPLETE_SAVE", 'Nastavení kontaktního formuláře bylo uloženo');
 define("CONTACT_FORM_WAS_SENT", 'Váš dotaz byl úspěšně odeslán.');
+define("CONTACT_FORM_SENT_FAILED", 'Nebyly vyplněny všechny povinné položky pro odeslání.');
+define("CONTACT_FORM_UNSUPPORTED_FILE_FORMAT", 'Pokoušíte se přidat přílohu, která není podporována!');
+define("CONTACT_FORM_EMAIL_MY_SUBJECT", 'Poptávka z webového formuláře');
 
 // footer
 define("FOOTER_CONTENT", 'Obsah patičky');

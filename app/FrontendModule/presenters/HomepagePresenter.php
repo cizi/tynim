@@ -9,6 +9,7 @@ use App\Model\SliderSettingRepository;
 use App\Model\SliderPicRepository;
 use App\Model\WebconfigRepository;
 use App\FrontendModule\Presenters;
+use Nette\Http\FileUpload;
 
 class HomepagePresenter extends BasePresenter {
 
@@ -50,9 +51,63 @@ class HomepagePresenter extends BasePresenter {
 
 	}
 
+
+	/**
+	 * Proceed contact form
+	 *
+	 * @param Nette\Application\UI\Form $form
+	 * @param $values
+	 * @throws \Exception
+	 * @throws \phpmailerException
+	 */
 	public function contactFormSubmitted($form, $values) {
-		//dump($values); die;
-		$this->flashMessage(CONTACT_FORM_WAS_SENT, "alert-success");
+		if (
+			isset($values['contactEmail']) && $values['contactEmail'] != ""
+			&& isset($values['name']) && $values['name'] != ""
+			&& isset($values['subject']) && $values['subject'] != ""
+			&& isset($values['text']) && $values['text'] != ""
+		) {
+			$path = "";
+			$send = true;
+			if (!empty($values['attachment'])) {
+				/** @var FileUpload $file */
+				$file = $values['attachment'];
+				if (!empty($file->name)) {
+					if (
+						substr($file->name, -3) != "png" && substr($file->name, -3) != "PNG"
+						&& substr($file->name, -3) != "jpg" && substr($file->name, -3) != "JPG"
+						&& substr($file->name, -3) != "bmp" && substr($file->name, -3) != "BMP"
+						&& substr($file->name, -3) != "pdf" && substr($file->name, -3) != "PDF"
+						&& substr($file->name, -3) != "doc" && substr($file->name, -3) != "DOC"
+						&& substr($file->name, -3) != "xls" && substr($file->name, -3) != "XLS"
+						&& substr($file->name, -4) != "docx" && substr($file->name, -4) != "DOCX"
+						&& substr($file->name, -3) != "xlsx" && substr($file->name, -3) != "XLSX"
+					) {
+						$this->flashMessage(CONTACT_FORM_UNSUPPORTED_FILE_FORMAT, "alert-danger");
+						$send = false;
+					} else {
+						$path = UPLOAD_PATH . '/' . date("Ymd-His") . "-" . $file->name;
+						$file->move($path);
+					}
+				}
+			}
+
+			if ($send) {
+				$email = new \PHPMailer();
+				$email->From = $values['contactEmail'];
+				$email->FromName = $values['name'];
+				$email->Subject = CONTACT_FORM_EMAIL_MY_SUBJECT . $values['subject'];
+				$email->Body = $values['text'];
+				$email->AddAddress('cizi@email.cz');
+				if (!empty($path)) {
+					$email->AddAttachment($path);
+				}
+				$email->Send();
+				$this->flashMessage(CONTACT_FORM_WAS_SENT, "alert-success");
+			}
+		} else {
+			$this->flashMessage(CONTACT_FORM_SENT_FAILED, "alert-danger");
+		}
 		$this->redirect("default");
 	}
 
