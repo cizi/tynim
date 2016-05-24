@@ -50,9 +50,10 @@ class HomepagePresenter extends BasePresenter {
 
 	}
 
-	public function contactFormSubmitted() {
+	public function contactFormSubmitted($form, $values) {
+		//dump($values); die;
+		$this->flashMessage(CONTACT_FORM_WAS_SENT, "alert-success");
 		$this->redirect("default");
-
 	}
 
 	public function createComponentContactForm() {
@@ -123,6 +124,17 @@ class HomepagePresenter extends BasePresenter {
 			// img path fixing
 			$footerContent = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_FOOTER_CONTENT, $langCommon);
 			$this->template->footerContent = str_replace("../../upload/", "./upload/", $footerContent);
+		}
+
+		$contactFormInFooter = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_SHOW_CONTACT_FORM_IN_FOOTER, $langCommon);
+		$this->template->isContactFormInFooter = ($contactFormInFooter == "1" ? true : false);
+		if ($contactFormInFooter) {
+			$this->template->contactFormHeader = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_CONTACT_FORM_TITLE, $langCommon);
+			$this->template->contactFormBackground = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_CONTACT_FORM_BACKGROUND_COLOR, $langCommon);
+			$this->template->contactFormColor = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_CONTACT_FORM_COLOR, $langCommon);
+
+			$allowAttachmetn = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_CONTACT_FORM_ATTACHMENT, $langCommon);
+			$this->template->allowAttachmetn =  ($allowAttachmetn == "1" ? true : false);
 		}
 	}
 }

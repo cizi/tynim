@@ -25,37 +25,38 @@ class ContactForm extends Nette\Object {
 
 		$form->addText("name")
 			->setAttribute("tabindex", "1")
-			->setAttribute("class", "tinym_required_field form-control")
+			->setAttribute("class", "tinym_required_field form-control contactForm")
 			->setAttribute("placeholder", CONTACT_FORM_NAME)
 			->setAttribute("validation", CONTACT_FORM_NAME_REQ);
 
 		$form->addText("contactEmail")
 			->setAttribute("type","email")
 			->setAttribute("tabindex", "2")
-			->setAttribute("class", "tinym_required_field form-control")
+			->setAttribute("class", "tinym_required_field form-control contactForm")
 			->setAttribute("placeholder", CONTACT_FORM_EMAIL)
 			->setAttribute("validation", CONTACT_FORM_EMAIL_REQ);
 
 		$form->addText("subject")
 			->setAttribute("tabindex", "3")
-			->setAttribute("class", "tinym_required_field form-control")
+			->setAttribute("class", "tinym_required_field form-control contactForm")
 			->setAttribute("placeholder", CONTACT_FORM_SUBJECT)
 			->setAttribute("validation", CONTACT_FORM_SUBJECT_REQ);
 
 		$form->addUpload("attachment")
 			->setAttribute("tabindex", "4")
 			->setAttribute("placeholder", CONTACT_FORM_ATTACHMENT)
-			->setAttribute("class", "form-control");
+			->setAttribute("class", "form-control contactForm");
 
-		$form->addTextArea("text", null, 50, 100)
+		$form->addTextArea("text", null, null, 7)
 			->setAttribute("tabindex", "5")
 			->setAttribute("placeholder", CONTACT_FORM_TEXT)
 			->setAttribute("validation", CONTACT_FORM_TEXT_REQ)
-			->setAttribute("class", "tinym_required_field form-control");
+			->setAttribute("class", "tinym_required_field form-control contactForm")
+			->setAttribute("style", "margin-top: 5px;");
 
 		$form->addSubmit("confirm")
 			->setAttribute("tabindex", "6")
-			->setAttribute("class","btn btn-primary");
+			->setAttribute("class","btn btn-success");
 
 		return $form;
 	}

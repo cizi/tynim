@@ -175,11 +175,13 @@ define("CONTACT_FORM_TEXT", 'Vaše zpráva');
 define("CONTACT_FORM_TEXT_REQ", 'Tělo zprávy nesmí být prázdné');
 define("CONTACT_FORM_BUTTON_CONFIRM", 'Odeslat');
 
+define("CONTACT_FORM_SETTING_BACKEND_TITLE", 'Nadpis kontaktního formuláře');
 define("CONTACT_FORM_SETTING_BACKGROUND_COLOR", 'Barva pozadí kontaktního formuláře');
 define("CONTACT_FORM_SETTING_COLOR", 'Barva textu kontaktního formuláře');
 define("CONTACT_FORM_SETTING_ATTACHMENT", 'Umožnit poslat přílohu');
 define("CONTACT_FORM_SETTING_SAVE", 'Uložit');
 define("CONTACT_FORM_SETTING_COMPLETE_SAVE", 'Nastavení kontaktního formuláře bylo uloženo');
+define("CONTACT_FORM_WAS_SENT", 'Váš dotaz byl úspěšně odeslán.');
 
 // footer
 define("FOOTER_CONTENT", 'Obsah patičky');
@@ -202,5 +204,5 @@ define("FOOTER_CONFIRM_DELETE_CANCEL", 'Zpět');
 define("FOOTER_CONFIRM_DELETE_OK", 'Smazat');
 define("FOOTER_SHOW_FOOTER", 'Zapnout patičku');
 define("FOOTER_WIDTH", 'Šířka patičky');
-define("FOOTER_WIDTH_INFO", 'Nastaví šíři patičky vůči šíři stránek (počítává se do šíře obsahu stránek)');
+define("FOOTER_WIDTH_INFO", 'Nastaví šíři patičky vůči celé možné šíři stránek (nepočítává se do šíře obsahu stránek)');
 define("FOOTER_PIC_CONTENT", 'Obrázky, které je možné vložit do patičky');

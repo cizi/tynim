@@ -100,21 +100,11 @@
 		</nav>
 		{* menu end *}
 
-		<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
+		<div n:foreach="$flashes as $flash" n:class="alert, $flash->type">{$flash->message}</div>
 
 		<div class="container">
 			{include content}
 		</div>
-
-		{if $showFooter}
-			<div class="container" style="
-				{if $footerBg != ""} background-color: {!$footerBg}; {/if}
-				{if $footerColor != ""} color: {!$footerColor}; {/if}
-				{if $footerWidth != ""} width: {!$footerWidth}; {/if}
-			">
-				{!$footerContent}
-			</div>
-		{/if}
 
 		{block scripts}
 			<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
@@ -131,6 +121,21 @@
 			{!$googleAnalytics}
 		{/if}
 	</div>
+
+	{if $showFooter}
+		<div class="container" style="
+		{if $footerBg != ""} background-color: {!$footerBg}; {/if}
+		{if $footerColor != ""} color: {!$footerColor}; {/if}
+		{if $footerWidth != ""} width: {!$footerWidth}; {/if}
+				">
+			{if $isContactFormInFooter}
+				{include 'contactForm.latte'}
+			{/if}
+			{!$footerContent}
+		</div>
+	{/if}
+
+
 
 	{* init JS slider *}
 	{if $sliderEnabled}

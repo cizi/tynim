@@ -24,6 +24,10 @@ class ContactSettingForm  extends Nette\Object {
 	public function create() {
 		$form = $this->factory->create();
 
+		$form->addText(WebconfigRepository::KEY_CONTACT_FORM_TITLE, CONTACT_FORM_SETTING_BACKEND_TITLE)
+			->setAttribute("class", "form-control")
+			->setAttribute("tabindex", "0");
+
 		$form->addText(WebconfigRepository::KEY_CONTACT_FORM_BACKGROUND_COLOR, CONTACT_FORM_SETTING_BACKGROUND_COLOR)
 			->setAttribute("id", "contactFormBackgroundColor")
 			->setAttribute("class", "form-control minicolors-input")

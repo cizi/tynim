@@ -134,3 +134,9 @@ img.footerList{
 table.footerPic{
 
 }
+div.contactForm{
+	padding: 10px;
+}
+input.contactForm {
+	margin: 5px;
+}

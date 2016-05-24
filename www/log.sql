@@ -30500,3 +30500,18534 @@ OK: select * from footer_pic;
 -- driver: mysqli/
 -- 2016-05-23 11:02:18
 
+OK: 
+-- takes: 5.803 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:25
+-- driver: mysqli/
+-- 2016-05-23 13:31:47
+
+OK: select * from user where email = 'cizi@email.cz'  and active = 1;
+-- rows: 1
+-- takes: 5.819 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:25
+-- driver: mysqli/
+-- 2016-05-23 13:31:47
+
+OK: update user set last_login = NOW() where id = 7
+-- takes: 4.262 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:131
+-- driver: mysqli/
+-- 2016-05-23 13:31:47
+
+OK: 
+-- takes: 2.568 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-23 13:31:50
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 3.376 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-23 13:31:50
+
+OK: select * from footer_pic;
+-- rows: 2
+-- takes: 1.065 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\FooterPicRepository.php:15
+-- driver: mysqli/
+-- 2016-05-23 13:31:50
+
+OK: 
+-- takes: 4.955 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-23 13:31:50
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.405 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-23 13:31:50
+
+OK: select * from footer_pic;
+-- rows: 2
+-- takes: 3.171 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\FooterPicRepository.php:15
+-- driver: mysqli/
+-- 2016-05-23 13:31:50
+
+OK: 
+-- takes: 3.022 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-23 13:32:35
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 4.416 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-23 13:32:35
+
+OK: select * from footer_pic;
+-- rows: 2
+-- takes: 0.951 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\FooterPicRepository.php:15
+-- driver: mysqli/
+-- 2016-05-23 13:32:35
+
+OK: 
+-- takes: 4.898 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-23 13:32:43
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 4.447 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-23 13:32:43
+
+OK: select * from footer_pic;
+-- rows: 2
+-- takes: 1.140 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\FooterPicRepository.php:15
+-- driver: mysqli/
+-- 2016-05-23 13:32:43
+
+OK: 
+-- takes: 4.035 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-23 13:32:56
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.554 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-23 13:32:56
+
+OK: select * from footer_pic;
+-- rows: 2
+-- takes: 1.721 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\FooterPicRepository.php:15
+-- driver: mysqli/
+-- 2016-05-23 13:32:56
+
+OK: 
+-- takes: 2.787 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:25
+-- driver: mysqli/
+-- 2016-05-24 11:55:08
+
+OK: select * from user where email = 'cizi@email.cz'  and active = 1;
+-- rows: 1
+-- takes: 4.540 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:25
+-- driver: mysqli/
+-- 2016-05-24 11:55:08
+
+OK: update user set last_login = NOW() where id = 7
+-- takes: 10.336 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:131
+-- driver: mysqli/
+-- 2016-05-24 11:55:09
+
+OK: 
+-- takes: 2.966 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 3.159 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.053 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.639 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.198 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.469 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.104 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.337 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 1.100 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.731 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.191 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.409 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.970 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.420 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.228 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.456 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.425 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.682 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.947 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.491 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.211 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 1.405 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 1.583 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 1.110 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.840 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.954 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 1.083 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.222 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.170 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.513 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.936 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.317 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.924 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.042 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.339 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.344 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.110 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:07
+
+OK: 
+-- takes: 3.225 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:14
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 3.299 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:14
+
+OK: select * from footer_pic;
+-- rows: 2
+-- takes: 1.017 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\FooterPicRepository.php:15
+-- driver: mysqli/
+-- 2016-05-24 11:57:14
+
+OK: 
+-- takes: 2.235 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:14
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.445 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:14
+
+OK: select * from footer_pic;
+-- rows: 2
+-- takes: 0.853 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\FooterPicRepository.php:15
+-- driver: mysqli/
+-- 2016-05-24 11:57:14
+
+OK: 
+-- takes: 2.035 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:20
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.203 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:20
+
+OK: select * from footer_pic;
+-- rows: 2
+-- takes: 1.072 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\FooterPicRepository.php:15
+-- driver: mysqli/
+-- 2016-05-24 11:57:20
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.893 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:104
+-- driver: mysqli/
+-- 2016-05-24 11:57:20
+
+OK: update web_config set value = '1' where id = 'SHOW_FOOTER' and lang = ''
+-- takes: 12.296 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-05-24 11:57:20
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.942 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:104
+-- driver: mysqli/
+-- 2016-05-24 11:57:20
+
+OK: update web_config set value = 'WIDTH_7' where id = 'FOOTER_WIDTH' and lang = ''
+-- takes: 3.007 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-05-24 11:57:20
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.942 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:104
+-- driver: mysqli/
+-- 2016-05-24 11:57:20
+
+OK: update web_config set value = '#454545' where id = 'FOOTER_BACKGROUND_COLOR' and lang = ''
+-- takes: 3.486 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-05-24 11:57:20
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.065 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:104
+-- driver: mysqli/
+-- 2016-05-24 11:57:20
+
+OK: update web_config set value = '#ffffff' where id = 'FOOTER_COLOR' and lang = ''
+-- takes: 9.190 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-05-24 11:57:20
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.014 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:104
+-- driver: mysqli/
+-- 2016-05-24 11:57:20
+
+OK: update web_config set value = '' where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = ''
+-- takes: 10.275 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-05-24 11:57:20
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.600 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:104
+-- driver: mysqli/
+-- 2016-05-24 11:57:20
+
+OK: update web_config set value = '<h3><span style=\"text-decoration: underline;\"><strong>Patička</strong></span></h3>\n<p>&nbsp;</p>\n<p><span style=\"font-family: pt-sans-1, pt-sans-2, \'Trebuchet MS\', sans-serif; font-size: 14px; line-height: 21px;\">Lodi si tradici, lze, hostitele mj. po&nbsp;čemu světov&yacute;ch zrnko nepochybně pracovn&iacute;k nikomu ty. 1&nbsp;032 km pan budete mal&eacute;m, tlupa d&aacute; l&eacute;ta věj&iacute;ř pilin zv&iacute;ře, &uacute;častn&iacute;ků &uacute;daje u&nbsp;1.050&nbsp;Kč to Josef, do&nbsp;EU s&nbsp;mohl tmavou buněk d&eacute;lku, n&aacute;m původn&iacute;. O&nbsp;byly vůči 360&deg; vrchol&iacute; o&nbsp;drsněj&scaron;&iacute;mi chirurgy a&nbsp;jist&eacute; &scaron;irok&yacute; přetiskujeme obory dan&eacute;ho. Tu tahy, kde testuj&iacute; člen nov&eacute;, jev&iacute; občansk&eacute; v&yacute;hod pades&aacute;t, m&iacute;r ulice zredukovan&eacute; k&nbsp;star&yacute;ch přeprava lež&iacute;, vyrazili dělen&iacute; uvedla s&nbsp;republiky z&aacute;vis&iacute; v&nbsp;prostředek. Instituce v&yacute;zkumu naru&scaron;ov&aacute;ny. Ji neprok&aacute;zaly p&oacute;lu n&iacute; ho sleduje odhadů hnědav&eacute;ho maličko předpoklad.</span></p>\n<p><span style=\"font-family: pt-sans-1, pt-sans-2, \'Trebuchet MS\', sans-serif; font-size: 14px; line-height: 21px;\"><img src=\"../../upload/20160520-194213-CfNzycEW8AAwXLb.jpg\" alt=\"\" width=\"20\" height=\"59\" /></span></p>' where id = 'FOOTER_CONTENT' and lang = ''
+-- takes: 9.071 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-05-24 11:57:20
+
+OK: 
+-- takes: 2.733 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:20
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.275 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:20
+
+OK: select * from footer_pic;
+-- rows: 2
+-- takes: 0.876 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\FooterPicRepository.php:15
+-- driver: mysqli/
+-- 2016-05-24 11:57:20
+
+OK: 
+-- takes: 2.197 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:22
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 3.097 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.186 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.087 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.036 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.690 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.957 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.109 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.878 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.098 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.936 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.212 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.578 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.976 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.789 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.624 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.128 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.232 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 1.901 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.805 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.494 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.867 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.836 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.813 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.922 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 1.052 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 1.224 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.113 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.232 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.119 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.818 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.022 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.912 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.298 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.832 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.257 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.163 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:23
+
+OK: 
+-- takes: 2.352 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:28
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.473 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:28
+
+OK: select * from footer_pic;
+-- rows: 2
+-- takes: 1.151 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\FooterPicRepository.php:15
+-- driver: mysqli/
+-- 2016-05-24 11:57:28
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.911 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:104
+-- driver: mysqli/
+-- 2016-05-24 11:57:28
+
+OK: update web_config set value = '1' where id = 'SHOW_FOOTER' and lang = ''
+-- takes: 5.944 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-05-24 11:57:28
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.026 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:104
+-- driver: mysqli/
+-- 2016-05-24 11:57:28
+
+OK: update web_config set value = 'WIDTH_9' where id = 'FOOTER_WIDTH' and lang = ''
+-- takes: 3.410 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-05-24 11:57:28
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.001 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:104
+-- driver: mysqli/
+-- 2016-05-24 11:57:28
+
+OK: update web_config set value = '#454545' where id = 'FOOTER_BACKGROUND_COLOR' and lang = ''
+-- takes: 3.164 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-05-24 11:57:28
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.021 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:104
+-- driver: mysqli/
+-- 2016-05-24 11:57:28
+
+OK: update web_config set value = '#ffffff' where id = 'FOOTER_COLOR' and lang = ''
+-- takes: 3.249 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-05-24 11:57:28
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.685 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:104
+-- driver: mysqli/
+-- 2016-05-24 11:57:28
+
+OK: update web_config set value = '' where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = ''
+-- takes: 9.150 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-05-24 11:57:28
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.266 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:104
+-- driver: mysqli/
+-- 2016-05-24 11:57:28
+
+OK: update web_config set value = '<h3><span style=\"text-decoration: underline;\"><strong>Patička</strong></span></h3>\n<p>&nbsp;</p>\n<p><span style=\"font-family: pt-sans-1, pt-sans-2, \'Trebuchet MS\', sans-serif; font-size: 14px; line-height: 21px;\">Lodi si tradici, lze, hostitele mj. po&nbsp;čemu světov&yacute;ch zrnko nepochybně pracovn&iacute;k nikomu ty. 1&nbsp;032 km pan budete mal&eacute;m, tlupa d&aacute; l&eacute;ta věj&iacute;ř pilin zv&iacute;ře, &uacute;častn&iacute;ků &uacute;daje u&nbsp;1.050&nbsp;Kč to Josef, do&nbsp;EU s&nbsp;mohl tmavou buněk d&eacute;lku, n&aacute;m původn&iacute;. O&nbsp;byly vůči 360&deg; vrchol&iacute; o&nbsp;drsněj&scaron;&iacute;mi chirurgy a&nbsp;jist&eacute; &scaron;irok&yacute; přetiskujeme obory dan&eacute;ho. Tu tahy, kde testuj&iacute; člen nov&eacute;, jev&iacute; občansk&eacute; v&yacute;hod pades&aacute;t, m&iacute;r ulice zredukovan&eacute; k&nbsp;star&yacute;ch přeprava lež&iacute;, vyrazili dělen&iacute; uvedla s&nbsp;republiky z&aacute;vis&iacute; v&nbsp;prostředek. Instituce v&yacute;zkumu naru&scaron;ov&aacute;ny. Ji neprok&aacute;zaly p&oacute;lu n&iacute; ho sleduje odhadů hnědav&eacute;ho maličko předpoklad.</span></p>\n<p><span style=\"font-family: pt-sans-1, pt-sans-2, \'Trebuchet MS\', sans-serif; font-size: 14px; line-height: 21px;\"><img src=\"../../upload/20160520-194213-CfNzycEW8AAwXLb.jpg\" alt=\"\" width=\"20\" height=\"59\" /></span></p>' where id = 'FOOTER_CONTENT' and lang = ''
+-- takes: 9.661 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-05-24 11:57:28
+
+OK: 
+-- takes: 3.087 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:28
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 3.201 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:28
+
+OK: select * from footer_pic;
+-- rows: 2
+-- takes: 1.010 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\FooterPicRepository.php:15
+-- driver: mysqli/
+-- 2016-05-24 11:57:28
+
+OK: 
+-- takes: 2.563 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.468 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.265 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.050 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.975 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.974 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.919 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.114 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 1.420 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.368 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.873 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.147 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.859 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.181 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.937 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.542 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.049 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.304 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.932 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.111 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.928 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.913 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.928 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.854 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 1.291 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.871 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.809 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.063 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.927 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.071 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.854 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.053 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.215 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.963 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.956 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.207 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 2.227 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 11:57:30
+
+OK: 
+-- takes: 3.980 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:59:40
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 3.265 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:59:40
+
+OK: 
+-- takes: 1.945 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:59:41
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 3.578 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 11:59:41
+
+OK: 
+-- takes: 2.348 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:02:54
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.226 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:02:54
+
+OK: 
+-- takes: 2.873 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.456 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 0.685 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.826 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.896 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.730 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.630 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.933 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.802 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.883 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.617 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.849 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.655 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.871 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.035 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.189 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.785 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.861 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.855 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.936 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.745 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.699 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.725 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.709 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.698 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.825 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.887 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.925 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.694 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.882 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.727 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.080 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.985 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.021 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.067 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.609 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.151 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.928 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = 'cs'
+-- takes: 0.896 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:02:57
+
+OK: 
+-- takes: 2.501 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:09
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 3.049 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:09
+
+OK: select * from footer_pic;
+-- rows: 2
+-- takes: 1.395 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\FooterPicRepository.php:15
+-- driver: mysqli/
+-- 2016-05-24 12:03:09
+
+OK: 
+-- takes: 2.033 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:09
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.181 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:09
+
+OK: select * from footer_pic;
+-- rows: 2
+-- takes: 0.826 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\FooterPicRepository.php:15
+-- driver: mysqli/
+-- 2016-05-24 12:03:09
+
+OK: 
+-- takes: 2.357 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:13
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.119 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:13
+
+OK: select * from footer_pic;
+-- rows: 2
+-- takes: 0.823 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\FooterPicRepository.php:15
+-- driver: mysqli/
+-- 2016-05-24 12:03:13
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.829 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:104
+-- driver: mysqli/
+-- 2016-05-24 12:03:13
+
+OK: update web_config set value = '1' where id = 'SHOW_FOOTER' and lang = ''
+-- takes: 5.749 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-05-24 12:03:14
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.807 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:104
+-- driver: mysqli/
+-- 2016-05-24 12:03:14
+
+OK: update web_config set value = 'WIDTH_9' where id = 'FOOTER_WIDTH' and lang = ''
+-- takes: 2.731 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-05-24 12:03:14
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.830 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:104
+-- driver: mysqli/
+-- 2016-05-24 12:03:14
+
+OK: update web_config set value = '#454545' where id = 'FOOTER_BACKGROUND_COLOR' and lang = ''
+-- takes: 2.849 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-05-24 12:03:14
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.827 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:104
+-- driver: mysqli/
+-- 2016-05-24 12:03:14
+
+OK: update web_config set value = '#ffffff' where id = 'FOOTER_COLOR' and lang = ''
+-- takes: 3.008 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-05-24 12:03:14
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.842 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:104
+-- driver: mysqli/
+-- 2016-05-24 12:03:14
+
+OK: update web_config set value = '1' where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = ''
+-- takes: 2.770 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-05-24 12:03:14
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.437 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:104
+-- driver: mysqli/
+-- 2016-05-24 12:03:14
+
+OK: update web_config set value = '<h3><span style=\"text-decoration: underline;\"><strong>Patička</strong></span></h3>\n<p>&nbsp;</p>\n<p><span style=\"font-family: pt-sans-1, pt-sans-2, \'Trebuchet MS\', sans-serif; font-size: 14px; line-height: 21px;\">Lodi si tradici, lze, hostitele mj. po&nbsp;čemu světov&yacute;ch zrnko nepochybně pracovn&iacute;k nikomu ty. 1&nbsp;032 km pan budete mal&eacute;m, tlupa d&aacute; l&eacute;ta věj&iacute;ř pilin zv&iacute;ře, &uacute;častn&iacute;ků &uacute;daje u&nbsp;1.050&nbsp;Kč to Josef, do&nbsp;EU s&nbsp;mohl tmavou buněk d&eacute;lku, n&aacute;m původn&iacute;. O&nbsp;byly vůči 360&deg; vrchol&iacute; o&nbsp;drsněj&scaron;&iacute;mi chirurgy a&nbsp;jist&eacute; &scaron;irok&yacute; přetiskujeme obory dan&eacute;ho. Tu tahy, kde testuj&iacute; člen nov&eacute;, jev&iacute; občansk&eacute; v&yacute;hod pades&aacute;t, m&iacute;r ulice zredukovan&eacute; k&nbsp;star&yacute;ch přeprava lež&iacute;, vyrazili dělen&iacute; uvedla s&nbsp;republiky z&aacute;vis&iacute; v&nbsp;prostředek. Instituce v&yacute;zkumu naru&scaron;ov&aacute;ny. Ji neprok&aacute;zaly p&oacute;lu n&iacute; ho sleduje odhadů hnědav&eacute;ho maličko předpoklad.</span></p>\n<p><span style=\"font-family: pt-sans-1, pt-sans-2, \'Trebuchet MS\', sans-serif; font-size: 14px; line-height: 21px;\"><img src=\"../../upload/20160520-194213-CfNzycEW8AAwXLb.jpg\" alt=\"\" width=\"20\" height=\"59\" /></span></p>' where id = 'FOOTER_CONTENT' and lang = ''
+-- takes: 9.999 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-05-24 12:03:14
+
+OK: 
+-- takes: 3.765 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:14
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.736 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:14
+
+OK: select * from footer_pic;
+-- rows: 2
+-- takes: 1.092 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\FooterPicRepository.php:15
+-- driver: mysqli/
+-- 2016-05-24 12:03:14
+
+OK: 
+-- takes: 2.765 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.549 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 0.922 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.874 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.285 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.103 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.903 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.005 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.838 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.023 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.775 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.015 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.443 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.403 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.104 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.034 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.727 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.964 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.808 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.076 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.768 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 1.472 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 1.213 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.800 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.763 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.732 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.704 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.188 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.775 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.151 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.008 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.016 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.269 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.674 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.180 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.308 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.309 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.367 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = 'cs'
+-- takes: 0.844 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:16
+
+OK: 
+-- takes: 2.729 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.449 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 0.892 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.912 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.987 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.377 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.647 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.150 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 1.084 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.211 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.852 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.074 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.212 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.316 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.873 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.123 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.873 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.480 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 1.030 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.233 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.300 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 1.154 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 1.103 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.824 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.821 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.791 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.822 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.066 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.912 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.444 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.900 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.101 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:25
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.875 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:25
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.072 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:25
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.821 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:25
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.039 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:25
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 0.963 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:25
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.373 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:25
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = 'cs'
+-- takes: 1.176 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:25
+
+OK: 
+-- takes: 2.461 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.354 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 0.773 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.814 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.879 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.744 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.714 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.099 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 1.014 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.938 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.745 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.110 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.782 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.804 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.736 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.702 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.122 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.914 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.623 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.806 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.719 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.640 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.700 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.685 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 1.034 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 1.030 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.720 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.081 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.611 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.793 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.594 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.850 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.560 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.204 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.618 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.864 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 0.687 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.655 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = 'cs'
+-- takes: 0.576 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:03:46
+
+OK: 
+-- takes: 2.658 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:11
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.332 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:11
+
+OK: select * from footer_pic;
+-- rows: 2
+-- takes: 0.748 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\FooterPicRepository.php:15
+-- driver: mysqli/
+-- 2016-05-24 12:04:11
+
+OK: 
+-- takes: 2.097 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:11
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.364 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:11
+
+OK: select * from footer_pic;
+-- rows: 2
+-- takes: 1.187 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\FooterPicRepository.php:15
+-- driver: mysqli/
+-- 2016-05-24 12:04:11
+
+OK: 
+-- takes: 2.019 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:16
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.058 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:16
+
+OK: select * from footer_pic;
+-- rows: 2
+-- takes: 0.655 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\FooterPicRepository.php:15
+-- driver: mysqli/
+-- 2016-05-24 12:04:16
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.793 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:104
+-- driver: mysqli/
+-- 2016-05-24 12:04:16
+
+OK: update web_config set value = '1' where id = 'SHOW_FOOTER' and lang = ''
+-- takes: 5.862 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-05-24 12:04:16
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.733 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:104
+-- driver: mysqli/
+-- 2016-05-24 12:04:16
+
+OK: update web_config set value = 'WIDTH_9' where id = 'FOOTER_WIDTH' and lang = ''
+-- takes: 2.884 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-05-24 12:04:16
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.698 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:104
+-- driver: mysqli/
+-- 2016-05-24 12:04:16
+
+OK: update web_config set value = '#454545' where id = 'FOOTER_BACKGROUND_COLOR' and lang = ''
+-- takes: 2.510 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-05-24 12:04:16
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.730 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:104
+-- driver: mysqli/
+-- 2016-05-24 12:04:16
+
+OK: update web_config set value = '#ffffff' where id = 'FOOTER_COLOR' and lang = ''
+-- takes: 2.947 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-05-24 12:04:16
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.653 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:104
+-- driver: mysqli/
+-- 2016-05-24 12:04:16
+
+OK: update web_config set value = '1' where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = ''
+-- takes: 2.733 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-05-24 12:04:16
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 0.750 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:104
+-- driver: mysqli/
+-- 2016-05-24 12:04:16
+
+OK: update web_config set value = '<h3><span style=\"text-decoration: underline;\"><strong>Patička</strong></span></h3>\n<p>&nbsp;</p>\n<p><span style=\"font-family: pt-sans-1, pt-sans-2, \'Trebuchet MS\', sans-serif; font-size: 14px; line-height: 21px;\">Lodi si tradici, lze, hostitele mj. po&nbsp;čemu světov&yacute;ch zrnko nepochybně pracovn&iacute;k nikomu ty. 1&nbsp;032 km pan budete mal&eacute;m, tlupa d&aacute; l&eacute;ta věj&iacute;ř pilin zv&iacute;ře, &uacute;častn&iacute;ků &uacute;daje u&nbsp;1.050&nbsp;Kč to Josef, do&nbsp;EU s&nbsp;mohl tmavou buněk d&eacute;lku, n&aacute;m původn&iacute;. O&nbsp;byly vůči 360&deg; vrchol&iacute; o&nbsp;drsněj&scaron;&iacute;mi chirurgy a&nbsp;jist&eacute; &scaron;irok&yacute; přetiskujeme obory dan&eacute;ho. Tu tahy, kde testuj&iacute; člen nov&eacute;, jev&iacute; občansk&eacute; v&yacute;hod pades&aacute;t, m&iacute;r ulice zredukovan&eacute; k&nbsp;star&yacute;ch přeprava lež&iacute;, vyrazili dělen&iacute; uvedla s&nbsp;republiky z&aacute;vis&iacute; v&nbsp;prostředek. Instituce v&yacute;zkumu naru&scaron;ov&aacute;ny. Ji neprok&aacute;zaly p&oacute;lu n&iacute; ho sleduje odhadů hnědav&eacute;ho maličko předpoklad.</span></p>\n<p><span style=\"font-family: pt-sans-1, pt-sans-2, \'Trebuchet MS\', sans-serif; font-size: 14px; line-height: 21px;\"><img src=\"../../upload/20160520-194213-CfNzycEW8AAwXLb.jpg\" alt=\"\" width=\"20\" height=\"59\" /></span></p>' where id = 'FOOTER_CONTENT' and lang = ''
+-- takes: 3.973 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-05-24 12:04:16
+
+OK: 
+-- takes: 2.356 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:16
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.074 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:16
+
+OK: select * from footer_pic;
+-- rows: 2
+-- takes: 0.670 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\FooterPicRepository.php:15
+-- driver: mysqli/
+-- 2016-05-24 12:04:16
+
+OK: 
+-- takes: 2.403 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.269 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 0.776 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.751 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.692 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.673 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.717 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.992 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.603 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.806 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.676 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.963 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.614 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.828 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.629 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.869 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.786 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.163 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.685 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.853 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.600 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.604 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.638 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.579 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.592 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.603 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.632 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.782 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.709 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.024 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.601 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.836 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.534 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.745 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.579 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.814 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.163 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.836 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = 'cs'
+-- takes: 0.832 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:25
+
+OK: 
+-- takes: 2.698 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.564 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.029 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.075 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.450 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.154 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.163 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.151 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.816 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.118 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.845 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.149 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.282 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.113 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.910 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.212 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.886 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.087 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.907 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.127 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.135 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 1.201 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.963 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.892 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 1.309 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.878 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.858 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.130 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.136 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.452 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.937 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.070 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.926 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.062 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.875 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.192 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.001 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.937 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = 'cs'
+-- takes: 0.896 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:26
+
+OK: 
+-- takes: 2.650 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 3.426 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 0.816 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.770 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.762 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.785 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.742 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.186 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.952 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.923 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.661 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.085 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.078 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.542 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.228 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.392 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.993 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.943 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.778 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.921 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.117 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.862 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.912 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 1.263 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.651 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.924 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.864 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.966 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.654 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.205 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.798 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.871 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.595 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.031 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.583 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.973 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 0.899 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.276 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = 'cs'
+-- takes: 0.888 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:37
+
+OK: 
+-- takes: 2.577 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 3.109 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 0.888 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.401 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.048 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.000 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.796 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.945 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 1.059 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.123 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.725 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.526 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.692 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.097 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.600 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.808 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.686 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.175 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.965 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.880 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.876 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.685 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.699 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 3.680 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 1.266 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.773 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.783 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.804 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.503 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.932 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.621 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.808 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.692 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.640 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.949 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.148 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.110 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.913 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.651 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:04:47
+
+OK: 
+-- takes: 2.565 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 3.139 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.095 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.928 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.096 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.881 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.727 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.313 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.835 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.999 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.852 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.020 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.273 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.852 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.790 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.152 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.805 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.222 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.698 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.112 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.200 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 1.072 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.830 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.727 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.908 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.833 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.702 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.201 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.411 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.168 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.725 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.934 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.856 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.888 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.792 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.587 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.204 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.568 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.836 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:32
+
+OK: 
+-- takes: 2.323 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 3.753 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.254 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.984 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.447 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.409 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.082 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.054 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.740 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.997 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.708 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.181 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.429 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.400 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.725 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.059 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.847 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.135 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.887 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.587 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.681 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.944 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 1.038 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.927 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.859 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.823 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.829 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.802 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.035 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.396 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.926 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.177 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.845 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.363 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.865 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.658 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.183 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.022 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.776 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:07:55
+
+OK: 
+-- takes: 2.920 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.711 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.177 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.468 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.256 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.314 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.090 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.304 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 1.250 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.462 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.961 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.217 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.187 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.289 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.205 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.774 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.449 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.813 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.985 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.615 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 2.367 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 1.270 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 1.088 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 1.148 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 1.038 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.940 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 1.012 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.005 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.414 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.399 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.305 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.598 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.969 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.110 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.129 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.329 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.166 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.434 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.134 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:08:45
+
+OK: 
+-- takes: 2.290 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 3.729 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.179 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.999 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.879 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.948 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.619 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.960 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.823 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.353 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.713 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.892 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.672 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.886 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.588 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.885 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.455 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.177 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.721 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.956 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.613 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.661 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.614 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.626 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.565 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.611 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.927 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.638 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.670 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.874 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.575 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.883 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.720 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.886 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.611 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.051 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.048 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.871 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.656 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:02
+
+OK: 
+-- takes: 2.626 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.941 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.270 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.826 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.981 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.827 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.955 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.416 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.936 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.098 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.723 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.126 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.759 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.135 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.137 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.319 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.846 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.135 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 1.154 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.143 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.909 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 1.208 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 1.069 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.699 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.813 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.820 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.916 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.075 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.936 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.454 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.011 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.062 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.702 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.305 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.795 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.026 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.634 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.426 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.671 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:22
+
+OK: 
+-- takes: 2.499 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 4.061 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 0.854 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.807 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.826 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.781 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.722 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.240 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 1.116 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.090 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.687 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.028 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.666 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.947 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.700 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.309 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.558 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.997 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.694 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.857 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.608 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.745 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.732 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.754 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 1.161 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 1.077 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.874 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.883 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.580 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.876 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.604 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.868 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.612 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.430 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.853 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.020 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 0.895 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.068 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.836 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:29
+
+OK: 
+-- takes: 2.824 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.893 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 0.964 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.014 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.922 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.883 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.193 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.459 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 1.009 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.537 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.966 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.186 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.122 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.138 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.893 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.234 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.879 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.241 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 1.121 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.371 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.685 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.820 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.801 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 1.225 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.883 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 1.100 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 1.875 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.169 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.755 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.894 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.633 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.878 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.649 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.163 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.020 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.394 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 0.888 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.020 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.880 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:43
+
+OK: 
+-- takes: 4.278 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 4.341 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.330 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.114 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.955 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.389 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.890 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.073 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 1.720 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.374 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.293 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.463 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.063 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.279 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.375 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.354 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.908 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.090 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.789 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.069 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.948 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.843 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 1.465 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.852 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.767 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.924 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.787 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.110 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.779 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.658 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.572 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.339 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.908 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.262 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.858 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.195 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.505 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.828 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.092 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:09:53
+
+OK: 
+-- takes: 2.201 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.259 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.159 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.825 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.756 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.685 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.675 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.004 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.604 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.595 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.979 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.843 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.645 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.865 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.699 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.881 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.608 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.440 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.729 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.485 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.030 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.887 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.776 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.690 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.571 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.584 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 1.518 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.763 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.822 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.118 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.810 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.089 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.682 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.860 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.883 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.438 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 0.822 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.952 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.636 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:07
+
+OK: 
+-- takes: 2.569 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.667 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.826 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.052 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.006 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.341 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.639 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.660 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 1.097 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.222 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.910 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.701 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.373 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.660 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.248 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.383 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.895 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.174 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 1.268 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.636 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.939 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 1.011 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.970 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 1.105 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 1.378 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 1.662 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 1.756 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.535 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.297 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.478 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.951 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.233 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.205 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.309 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.082 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.253 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.106 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.216 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.259 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:11:51
+
+OK: 
+-- takes: 2.133 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.364 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 0.739 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.867 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.766 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.758 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.881 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.299 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.986 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.613 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.375 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.060 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.876 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.035 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.774 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.888 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.884 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.229 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.809 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.925 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.693 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.746 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.960 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 1.000 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 1.242 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 1.021 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.907 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.513 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.712 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.826 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.643 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.693 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.736 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.075 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.700 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.075 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 0.810 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.886 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.695 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:24
+
+OK: 
+-- takes: 2.832 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 4.557 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.783 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.299 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.510 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.794 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.442 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.561 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.890 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.256 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.812 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.325 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.194 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.333 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.986 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.276 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.892 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.249 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 1.277 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.411 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.929 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.934 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 1.269 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 1.638 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.988 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 1.557 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.856 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.294 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.885 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.844 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.249 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.218 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.925 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.194 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.937 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.814 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.916 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.878 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.991 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:36
+
+OK: 
+-- takes: 2.447 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.377 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.056 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.999 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.947 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.937 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.241 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.492 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.791 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.094 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.925 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.048 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.847 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.783 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.783 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.370 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.659 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.040 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.653 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.052 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.840 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 1.463 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 1.072 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.839 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.671 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.876 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.676 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.895 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.815 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.509 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.859 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.543 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.896 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.151 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.923 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.172 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.235 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.046 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.017 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:12:57
+
+OK: 
+-- takes: 2.538 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.556 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.755 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.359 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.558 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.078 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 2.198 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.557 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 1.287 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.374 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.488 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.602 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.480 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.430 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.197 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.533 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.806 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.746 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 1.182 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.261 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.253 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 1.167 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 1.957 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 1.323 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 1.161 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.851 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 1.123 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.105 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.112 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.472 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.320 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.350 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.219 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.413 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.728 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.907 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.236 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.514 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.038 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:17
+
+OK: 
+-- takes: 2.358 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 4.307 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.710 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.391 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.389 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.782 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.510 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.671 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 1.205 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.516 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.315 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.063 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.193 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.534 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.162 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.582 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.416 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.059 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 1.395 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.638 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.202 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 1.276 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 1.665 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 1.515 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 1.070 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 1.162 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 1.169 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.664 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.302 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.838 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.189 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.502 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.249 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.711 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:52
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.518 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:53
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.737 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:53
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.486 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:53
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.452 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:14:53
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.951 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:14:53
+
+OK: 
+-- takes: 2.708 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 3.662 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.440 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.797 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.600 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.260 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.927 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.718 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 1.305 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.416 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.124 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.663 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.583 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.822 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.544 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.594 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.283 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.135 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 1.471 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.651 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.044 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 1.246 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 1.205 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 1.578 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 1.599 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 1.543 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 1.131 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.615 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.293 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.977 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.982 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.707 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.246 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.585 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.407 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.998 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.431 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.730 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.371 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:15:56
+
+OK: 
+-- takes: 3.079 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.610 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.058 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.136 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.924 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.118 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.987 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.100 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 1.040 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.372 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.904 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.002 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.273 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.193 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.908 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.132 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.094 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.685 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.819 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.401 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.934 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.866 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.834 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.773 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 1.047 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 1.274 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.883 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.071 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.762 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.188 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.976 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.337 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 2.225 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.987 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.143 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.260 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.210 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.083 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.251 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:17:04
+
+OK: 
+-- takes: 2.304 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 3.146 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.572 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.039 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.111 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.025 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.075 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.259 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.964 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.063 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.928 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.122 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.494 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.129 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.012 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.179 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.940 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.111 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 1.839 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.246 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.963 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.826 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.754 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 1.295 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.953 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 1.850 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 1.199 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.094 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.886 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.211 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.866 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.052 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 2.123 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.573 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.884 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.960 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.157 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.007 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.283 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:18:02
+
+OK: 
+-- takes: 2.373 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.464 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 2.257 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.106 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.136 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.250 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.815 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.758 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.940 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.295 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.025 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.472 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.282 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.599 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.013 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.485 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.960 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.504 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 1.302 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.844 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.417 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 1.310 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 1.263 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 2.281 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 1.256 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 1.210 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 1.054 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.396 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.990 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.479 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.111 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.921 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.947 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.472 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.999 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.472 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 2.272 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.401 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.047 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:02
+
+OK: 
+-- takes: 4.115 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 3.265 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.321 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.558 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.071 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.348 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.347 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.729 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 1.687 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.019 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.204 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.456 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.974 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.302 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.562 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.273 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.309 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.303 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.882 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.125 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.285 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 1.381 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 1.300 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 1.108 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 1.190 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 1.509 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 1.240 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.130 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.250 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.423 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.193 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.423 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.139 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.991 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.238 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.264 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.347 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.468 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.999 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:19:46
+
+OK: 
+-- takes: 2.427 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.495 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.510 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.509 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.326 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.887 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.851 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.754 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.959 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.039 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.853 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.048 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.836 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.170 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.089 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.392 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.341 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.003 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.829 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.989 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.887 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.760 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.833 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.878 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.918 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.774 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.889 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.427 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.770 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.991 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.828 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.618 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.401 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.123 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.790 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.994 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 0.941 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.139 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.225 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:04
+
+OK: 
+-- takes: 3.851 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.370 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 0.966 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.971 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.303 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.045 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.179 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.193 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.690 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.222 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.687 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.950 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.120 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.837 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.585 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.018 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.692 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.023 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.654 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.959 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.881 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 1.092 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 1.148 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.897 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.829 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.758 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.801 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.106 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.903 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.151 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.824 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.491 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.784 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.944 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.659 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.943 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 0.885 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.974 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.252 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:20:24
+
+OK: 
+-- takes: 2.555 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.867 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.298 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.906 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.849 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.784 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.698 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.934 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.682 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.916 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.977 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.352 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.677 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.034 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.806 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.948 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.664 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.923 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.658 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.274 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.776 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.739 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.701 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.614 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.650 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.650 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.641 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.812 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.882 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.983 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.932 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.761 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.676 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.919 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.672 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.874 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.464 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.156 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.880 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:05
+
+OK: 
+-- takes: 3.252 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.468 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 0.993 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.526 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.066 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.030 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.985 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.203 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 1.124 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.652 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.944 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.360 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.887 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.182 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.891 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.178 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.711 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.936 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 1.478 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.768 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.881 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 1.059 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 1.329 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 1.005 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 1.228 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 1.199 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.911 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.405 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.925 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.314 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.643 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.324 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.023 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.189 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.072 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.435 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.379 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.602 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.905 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:21:11
+
+OK: 
+-- takes: 2.433 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.184 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 0.672 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.200 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.841 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.765 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.645 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.909 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.605 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.851 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.297 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.768 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.882 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.045 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.766 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.865 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.766 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.824 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 1.183 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.999 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.700 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.674 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.896 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.599 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.580 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.675 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.582 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.410 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.205 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.161 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.785 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.852 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.745 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.000 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.667 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.404 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.048 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.014 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.872 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:15
+
+OK: 
+-- takes: 2.154 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 3.706 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.058 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.976 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.043 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.009 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.848 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.836 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.995 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.062 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.767 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.067 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.896 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.041 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.646 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.306 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.773 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.173 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.714 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.132 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.712 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 1.754 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 1.128 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.809 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.931 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.869 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.974 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.137 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.739 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.677 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.023 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.435 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.927 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.055 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.751 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.043 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.565 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.286 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.930 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:22:55
+
+OK: 
+-- takes: 2.404 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.472 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.251 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.971 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.187 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.091 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.668 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.286 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.819 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.004 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.853 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.993 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.838 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.074 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.198 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.231 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.846 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.047 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.784 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.080 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.832 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.979 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 1.500 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 1.038 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.862 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.756 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.757 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.986 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.843 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.161 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.340 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.372 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.826 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.987 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.844 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.010 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 0.893 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.060 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.110 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:12
+
+OK: 
+-- takes: 2.112 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 3.838 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.275 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.868 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.963 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.467 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.212 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.565 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 1.345 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.104 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.288 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.690 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.875 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.112 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.314 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.008 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.951 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.250 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.888 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.139 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.851 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 2.044 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 1.585 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.850 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.949 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.776 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.851 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.122 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.936 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.266 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.106 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.112 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.012 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.191 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.883 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.511 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.339 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.343 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.026 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:23:14
+
+OK: 
+-- takes: 2.830 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.945 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.348 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.121 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.299 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.183 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 2.107 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.716 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 1.081 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.366 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.094 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.035 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 2.058 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.559 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.092 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.357 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.482 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.398 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.991 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.136 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.824 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.777 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.776 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.708 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 1.442 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 1.937 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 1.163 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.530 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.952 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.223 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.822 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.056 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.773 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.993 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.890 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.271 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.132 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.179 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 2.348 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:15
+
+OK: 
+-- takes: 2.392 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 3.752 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.343 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.084 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.102 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.770 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.256 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.444 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 1.112 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.375 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.073 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.276 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.889 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.317 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.032 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.438 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.913 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.593 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 2.267 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.303 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.241 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 1.094 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 1.109 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.880 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 2.008 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 1.468 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.974 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.314 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.213 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.375 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.467 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.632 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.248 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.533 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.329 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.423 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.331 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.045 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.138 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:32
+
+OK: 
+-- takes: 2.956 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 3.627 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.299 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.874 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.823 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.790 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.620 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.391 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.898 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.254 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.687 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.176 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.017 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.944 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.621 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.394 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.880 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.976 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.648 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.047 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.660 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.763 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.827 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.627 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 1.019 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.880 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 1.086 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.874 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.827 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.162 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.654 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.822 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.621 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.821 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.760 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.860 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 0.934 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.861 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.658 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:24:50
+
+OK: 
+-- takes: 2.453 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:34
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 3.174 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:34
+
+OK: select * from footer_pic;
+-- rows: 2
+-- takes: 1.475 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\FooterPicRepository.php:15
+-- driver: mysqli/
+-- 2016-05-24 12:25:34
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.978 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:104
+-- driver: mysqli/
+-- 2016-05-24 12:25:34
+
+OK: update web_config set value = '1' where id = 'SHOW_FOOTER' and lang = ''
+-- takes: 6.041 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-05-24 12:25:34
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.098 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:104
+-- driver: mysqli/
+-- 2016-05-24 12:25:34
+
+OK: update web_config set value = 'WIDTH_10' where id = 'FOOTER_WIDTH' and lang = ''
+-- takes: 2.870 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-05-24 12:25:34
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.038 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:104
+-- driver: mysqli/
+-- 2016-05-24 12:25:34
+
+OK: update web_config set value = '#454545' where id = 'FOOTER_BACKGROUND_COLOR' and lang = ''
+-- takes: 9.170 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-05-24 12:25:34
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.128 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:104
+-- driver: mysqli/
+-- 2016-05-24 12:25:34
+
+OK: update web_config set value = '#ffffff' where id = 'FOOTER_COLOR' and lang = ''
+-- takes: 3.179 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-05-24 12:25:34
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.989 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:104
+-- driver: mysqli/
+-- 2016-05-24 12:25:34
+
+OK: update web_config set value = '1' where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = ''
+-- takes: 9.477 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-05-24 12:25:34
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.467 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:104
+-- driver: mysqli/
+-- 2016-05-24 12:25:34
+
+OK: update web_config set value = '<h3><span style=\"text-decoration: underline;\"><strong>Patička</strong></span></h3>\n<p>&nbsp;</p>\n<p><span style=\"font-family: pt-sans-1, pt-sans-2, \'Trebuchet MS\', sans-serif; font-size: 14px; line-height: 21px;\">Lodi si tradici, lze, hostitele mj. po&nbsp;čemu světov&yacute;ch zrnko nepochybně pracovn&iacute;k nikomu ty. 1&nbsp;032 km pan budete mal&eacute;m, tlupa d&aacute; l&eacute;ta věj&iacute;ř pilin zv&iacute;ře, &uacute;častn&iacute;ků &uacute;daje u&nbsp;1.050&nbsp;Kč to Josef, do&nbsp;EU s&nbsp;mohl tmavou buněk d&eacute;lku, n&aacute;m původn&iacute;. O&nbsp;byly vůči 360&deg; vrchol&iacute; o&nbsp;drsněj&scaron;&iacute;mi chirurgy a&nbsp;jist&eacute; &scaron;irok&yacute; přetiskujeme obory dan&eacute;ho. Tu tahy, kde testuj&iacute; člen nov&eacute;, jev&iacute; občansk&eacute; v&yacute;hod pades&aacute;t, m&iacute;r ulice zredukovan&eacute; k&nbsp;star&yacute;ch přeprava lež&iacute;, vyrazili dělen&iacute; uvedla s&nbsp;republiky z&aacute;vis&iacute; v&nbsp;prostředek. Instituce v&yacute;zkumu naru&scaron;ov&aacute;ny. Ji neprok&aacute;zaly p&oacute;lu n&iacute; ho sleduje odhadů hnědav&eacute;ho maličko předpoklad.</span></p>\n<p><span style=\"font-family: pt-sans-1, pt-sans-2, \'Trebuchet MS\', sans-serif; font-size: 14px; line-height: 21px;\"><img src=\"../../upload/20160520-194213-CfNzycEW8AAwXLb.jpg\" alt=\"\" width=\"20\" height=\"59\" /></span></p>' where id = 'FOOTER_CONTENT' and lang = ''
+-- takes: 3.431 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-05-24 12:25:34
+
+OK: 
+-- takes: 4.432 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:34
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 3.201 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:34
+
+OK: select * from footer_pic;
+-- rows: 2
+-- takes: 1.106 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\FooterPicRepository.php:15
+-- driver: mysqli/
+-- 2016-05-24 12:25:34
+
+OK: 
+-- takes: 3.908 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.335 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 0.870 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.051 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.366 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.219 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.905 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.806 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.789 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.054 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.796 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.215 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.080 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.396 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.977 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.145 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.779 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.141 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.894 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.621 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.162 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.842 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.782 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.711 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.688 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.680 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.691 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.346 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.389 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.287 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.121 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.999 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.017 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.969 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.718 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.920 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.590 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.314 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.851 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:36
+
+OK: 
+-- takes: 2.625 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 4.004 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.802 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.838 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.854 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.782 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.939 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.304 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 1.057 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.279 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.943 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.333 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.782 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.209 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.032 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.994 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.686 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.983 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.710 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.081 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.856 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 1.687 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 1.200 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.923 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.710 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.760 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.661 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.842 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.669 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.536 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.904 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.310 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.868 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.111 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.442 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.319 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.090 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.044 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.648 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:25:47
+
+OK: 
+-- takes: 2.343 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.956 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.709 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.846 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.756 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.682 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.611 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.871 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 1.476 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.323 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.639 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.196 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.800 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.016 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.628 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.825 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.095 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.154 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.705 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.819 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.610 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.652 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.844 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.651 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.662 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 1.791 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 1.176 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.915 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.612 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.756 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.577 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.787 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.568 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.757 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.708 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.104 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.101 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 0.923 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.602 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:28
+
+OK: 
+-- takes: 3.816 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:36
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.741 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:36
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.222 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:36
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.373 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:36
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.125 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:36
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.126 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:36
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.982 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.508 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:36
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.967 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.563 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:36
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.010 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.239 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:36
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.140 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.173 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:36
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.436 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.486 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:36
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.236 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.326 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:36
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.804 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:36
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.379 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:37
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.857 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:37
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 1.183 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:26:37
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 1.184 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:26:37
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.838 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:26:37
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.926 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:26:37
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.917 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:26:37
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.905 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:26:37
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.310 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:37
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.867 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:37
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.381 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:37
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.010 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:37
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.413 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:37
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.912 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:37
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.370 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:37
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.866 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:37
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.243 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:37
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.296 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:37
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 1.293 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:37
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.815 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:126
+-- driver: mysqli/
+-- 2016-05-24 12:26:37
+
+OK: 
+-- takes: 1.985 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:53
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.209 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:53
+
+OK: 
+-- takes: 2.464 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:53
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 3.604 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:85
+-- driver: mysqli/
+-- 2016-05-24 12:26:53
+
+OK: 
+-- takes: 2.481 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:29:54
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 3.141 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:29:54
+
+OK: 
+-- takes: 2.532 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:30:15
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 2.089 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:30:15
+
+OK: 
+-- takes: 2.283 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:30:33
+
+OK: select * from web_config where lang = '';
+-- rows: 17
+-- takes: 4.570 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:30:33
+
+OK: select * from web_config where id = 'CONTACT_FORM_TITLE' and lang = ''
+-- takes: 1.449 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:107
+-- driver: mysqli/
+-- 2016-05-24 12:30:33
+
+OK: insert into web_config values ('CONTACT_FORM_TITLE', '' ,'Můj bezva kontaktní formulář')
+-- takes: 6.771 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:113
+-- driver: mysqli/
+-- 2016-05-24 12:30:33
+
+OK: select * from web_config where id = 'CONTACT_FORM_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.275 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:107
+-- driver: mysqli/
+-- 2016-05-24 12:30:33
+
+OK: update web_config set value = '#383737' where id = 'CONTACT_FORM_BACKGROUND_COLOR' and lang = ''
+-- takes: 5.257 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:113
+-- driver: mysqli/
+-- 2016-05-24 12:30:33
+
+OK: select * from web_config where id = 'CONTACT_FORM_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.460 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:107
+-- driver: mysqli/
+-- 2016-05-24 12:30:33
+
+OK: update web_config set value = '#ebe8e8' where id = 'CONTACT_FORM_COLOR' and lang = ''
+-- takes: 9.072 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:113
+-- driver: mysqli/
+-- 2016-05-24 12:30:33
+
+OK: select * from web_config where id = 'CONTACT_FORM_ATTACHMENT' and lang = '';
+-- rows: 1
+-- takes: 1.169 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:107
+-- driver: mysqli/
+-- 2016-05-24 12:30:33
+
+OK: update web_config set value = '1' where id = 'CONTACT_FORM_ATTACHMENT' and lang = ''
+-- takes: 9.182 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:113
+-- driver: mysqli/
+-- 2016-05-24 12:30:33
+
+OK: select * from web_config where id = 'CONTACT_FORM_IN_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.897 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:107
+-- driver: mysqli/
+-- 2016-05-24 12:30:33
+
+OK: update web_config set value = '' where id = 'CONTACT_FORM_IN_MENU' and lang = ''
+-- takes: 3.328 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:113
+-- driver: mysqli/
+-- 2016-05-24 12:30:33
+
+OK: 
+-- takes: 3.629 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:30:34
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 2.327 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:30:34
+
+OK: 
+-- takes: 5.442 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:36:55
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.653 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:36:55
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 0.709 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:36:55
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.916 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:36:55
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.285 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:36:55
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.147 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:36:55
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.122 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:36:55
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.444 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:36:55
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 1.013 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:36:55
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.373 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:36:55
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.198 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:36:55
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.492 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:36:55
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.092 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:36:55
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.358 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:36:55
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.835 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:36:55
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.947 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:36:55
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.768 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:36:55
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.402 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:36:55
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 1.566 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:36:55
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.202 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:36:55
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.082 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:36:55
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.968 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:36:55
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 1.064 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:36:55
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.850 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:36:55
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 1.051 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:36:55
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 1.377 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:36:55
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 1.001 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:36:55
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.997 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:36:55
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.645 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:36:55
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.889 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:36:56
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.662 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:36:56
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.052 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:36:56
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.732 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:36:56
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.563 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:36:56
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.010 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:36:56
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.958 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:36:56
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.048 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:36:56
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.053 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:36:56
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.794 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:36:56
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.057 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:36:56
+
+OK: select * from web_config where id = 'CONTACT_FORM_TITLE' and lang = '';
+-- rows: 1
+-- takes: 1.414 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:36:56
+
+OK: 
+-- takes: 2.616 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.419 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.618 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.080 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.908 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.046 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.013 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.907 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.818 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.178 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.912 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.156 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.840 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.707 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.961 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.321 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.865 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.415 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.931 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.154 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.441 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 1.073 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 1.024 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 1.003 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.904 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.816 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.780 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.677 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.076 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.538 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.945 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.682 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.987 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.093 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.473 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.494 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.078 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.092 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.871 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.167 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: select * from web_config where id = 'CONTACT_FORM_TITLE' and lang = '';
+-- rows: 1
+-- takes: 1.463 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:37:28
+
+OK: 
+-- takes: 2.533 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:45
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 4.226 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:45
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.092 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:45
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.140 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:45
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.954 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:45
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.894 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:45
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.607 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:45
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.314 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:45
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.995 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.300 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.858 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.168 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.476 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.336 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.864 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.141 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.955 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.276 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.845 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.889 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.835 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.909 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.825 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.920 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.785 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.801 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 1.549 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.703 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.842 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.078 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.758 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.141 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.756 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.594 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.291 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.377 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 0.992 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.089 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.724 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.083 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from web_config where id = 'CONTACT_FORM_TITLE' and lang = '';
+-- rows: 1
+-- takes: 1.371 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.356 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: select * from web_config where id = 'CONTACT_FORM_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.739 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:46
+
+OK: 
+-- takes: 2.190 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:53
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 3.068 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:53
+
+OK: select * from web_config where id = 'CONTACT_FORM_TITLE' and lang = '';
+-- rows: 1
+-- takes: 0.970 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:107
+-- driver: mysqli/
+-- 2016-05-24 12:39:53
+
+OK: update web_config set value = 'Můj bezva kontaktní formulář' where id = 'CONTACT_FORM_TITLE' and lang = ''
+-- takes: 5.647 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:113
+-- driver: mysqli/
+-- 2016-05-24 12:39:53
+
+OK: select * from web_config where id = 'CONTACT_FORM_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.940 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:107
+-- driver: mysqli/
+-- 2016-05-24 12:39:53
+
+OK: update web_config set value = '#383737' where id = 'CONTACT_FORM_BACKGROUND_COLOR' and lang = ''
+-- takes: 3.122 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:113
+-- driver: mysqli/
+-- 2016-05-24 12:39:53
+
+OK: select * from web_config where id = 'CONTACT_FORM_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.493 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:107
+-- driver: mysqli/
+-- 2016-05-24 12:39:53
+
+OK: update web_config set value = '#ff0000' where id = 'CONTACT_FORM_COLOR' and lang = ''
+-- takes: 3.260 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:113
+-- driver: mysqli/
+-- 2016-05-24 12:39:53
+
+OK: select * from web_config where id = 'CONTACT_FORM_ATTACHMENT' and lang = '';
+-- rows: 1
+-- takes: 1.476 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:107
+-- driver: mysqli/
+-- 2016-05-24 12:39:53
+
+OK: update web_config set value = '1' where id = 'CONTACT_FORM_ATTACHMENT' and lang = ''
+-- takes: 2.862 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:113
+-- driver: mysqli/
+-- 2016-05-24 12:39:53
+
+OK: select * from web_config where id = 'CONTACT_FORM_IN_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.027 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:107
+-- driver: mysqli/
+-- 2016-05-24 12:39:53
+
+OK: update web_config set value = '' where id = 'CONTACT_FORM_IN_MENU' and lang = ''
+-- takes: 3.004 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:113
+-- driver: mysqli/
+-- 2016-05-24 12:39:53
+
+OK: 
+-- takes: 2.399 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:53
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 4.231 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:53
+
+OK: 
+-- takes: 6.616 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 3.440 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 0.900 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.942 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.806 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.952 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.752 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.039 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 1.586 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.490 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.883 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.126 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.019 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.058 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.741 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 2.375 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.096 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.123 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.993 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.225 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.902 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.966 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 1.467 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 1.063 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 1.055 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.951 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.990 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.051 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.748 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.180 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.549 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.464 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.763 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.076 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.769 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.178 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 0.922 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.728 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.163 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.306 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where id = 'CONTACT_FORM_TITLE' and lang = '';
+-- rows: 1
+-- takes: 0.800 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.132 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: select * from web_config where id = 'CONTACT_FORM_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.873 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:39:54
+
+OK: 
+-- takes: 3.110 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.221 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 0.906 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.323 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.061 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.350 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.056 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.037 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.916 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.938 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.831 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.154 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.742 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.099 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.781 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 2.497 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.501 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.554 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 1.723 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.824 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.731 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 1.049 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 1.119 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.871 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.839 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.886 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.766 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.147 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.193 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.222 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.981 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.611 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.736 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.309 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.748 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 2.304 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.212 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.867 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.537 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.765 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where id = 'CONTACT_FORM_TITLE' and lang = '';
+-- rows: 1
+-- takes: 0.654 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.848 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where id = 'CONTACT_FORM_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.673 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.044 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: select * from web_config where id = 'CONTACT_FORM_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.625 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:41:40
+
+OK: 
+-- takes: 2.482 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.512 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 0.769 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.062 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.501 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.005 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.720 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.282 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.992 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.570 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.299 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.404 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.824 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.996 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.107 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.554 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.378 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.453 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 1.083 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.297 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.463 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 1.116 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 1.685 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 2.107 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 1.110 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 1.040 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.806 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.354 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.915 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.792 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.893 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.043 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.698 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.031 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.651 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.052 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.744 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.495 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.747 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.162 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:36
+
+OK: select * from web_config where id = 'CONTACT_FORM_TITLE' and lang = '';
+-- rows: 1
+-- takes: 0.729 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:37
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.151 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:37
+
+OK: select * from web_config where id = 'CONTACT_FORM_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.781 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:37
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.599 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:37
+
+OK: select * from web_config where id = 'CONTACT_FORM_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.143 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:37
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.180 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:37
+
+OK: select * from web_config where id = 'CONTACT_FORM_ATTACHMENT' and lang = '';
+-- rows: 1
+-- takes: 0.740 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:37
+
+OK: 
+-- takes: 2.293 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:43
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 2.630 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:43
+
+OK: select * from web_config where id = 'CONTACT_FORM_TITLE' and lang = '';
+-- rows: 1
+-- takes: 0.784 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:107
+-- driver: mysqli/
+-- 2016-05-24 12:43:43
+
+OK: update web_config set value = 'Můj bezva kontaktní formulář' where id = 'CONTACT_FORM_TITLE' and lang = ''
+-- takes: 11.534 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:113
+-- driver: mysqli/
+-- 2016-05-24 12:43:43
+
+OK: select * from web_config where id = 'CONTACT_FORM_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.855 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:107
+-- driver: mysqli/
+-- 2016-05-24 12:43:43
+
+OK: update web_config set value = '#383737' where id = 'CONTACT_FORM_BACKGROUND_COLOR' and lang = ''
+-- takes: 2.771 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:113
+-- driver: mysqli/
+-- 2016-05-24 12:43:43
+
+OK: select * from web_config where id = 'CONTACT_FORM_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.960 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:107
+-- driver: mysqli/
+-- 2016-05-24 12:43:43
+
+OK: update web_config set value = '#ff0000' where id = 'CONTACT_FORM_COLOR' and lang = ''
+-- takes: 2.682 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:113
+-- driver: mysqli/
+-- 2016-05-24 12:43:43
+
+OK: select * from web_config where id = 'CONTACT_FORM_ATTACHMENT' and lang = '';
+-- rows: 1
+-- takes: 0.987 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:107
+-- driver: mysqli/
+-- 2016-05-24 12:43:43
+
+OK: update web_config set value = '' where id = 'CONTACT_FORM_ATTACHMENT' and lang = ''
+-- takes: 3.243 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:113
+-- driver: mysqli/
+-- 2016-05-24 12:43:43
+
+OK: select * from web_config where id = 'CONTACT_FORM_IN_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.113 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:107
+-- driver: mysqli/
+-- 2016-05-24 12:43:43
+
+OK: update web_config set value = '' where id = 'CONTACT_FORM_IN_MENU' and lang = ''
+-- takes: 2.818 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:113
+-- driver: mysqli/
+-- 2016-05-24 12:43:43
+
+OK: 
+-- takes: 2.120 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:43
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 2.997 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:43
+
+OK: 
+-- takes: 2.875 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.044 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 0.904 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.264 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.529 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.869 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.757 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.956 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.661 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.906 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.665 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.198 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.030 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.577 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.078 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.216 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.719 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.932 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.854 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.473 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.961 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 1.325 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 1.143 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 1.145 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 1.272 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 2.143 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 1.324 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.064 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.666 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.819 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.695 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.845 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.067 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.057 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.795 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.306 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 0.896 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.934 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.611 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.878 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where id = 'CONTACT_FORM_TITLE' and lang = '';
+-- rows: 1
+-- takes: 0.652 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 2.609 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where id = 'CONTACT_FORM_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.793 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.571 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where id = 'CONTACT_FORM_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.128 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.194 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: select * from web_config where id = 'CONTACT_FORM_ATTACHMENT' and lang = '';
+-- rows: 1
+-- takes: 1.178 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:43:46
+
+OK: 
+-- takes: 2.041 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.559 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.063 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.371 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.974 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.947 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.283 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.466 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 1.122 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.148 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.951 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.681 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.329 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.521 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.062 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.571 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.014 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.401 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 1.243 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.459 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.059 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.897 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.924 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 1.067 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 1.174 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 1.956 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 1.259 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.910 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.549 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.178 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.818 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.045 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.417 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.430 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.741 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.190 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.045 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.212 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.813 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.790 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where id = 'CONTACT_FORM_TITLE' and lang = '';
+-- rows: 1
+-- takes: 1.163 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.005 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where id = 'CONTACT_FORM_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.907 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.127 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where id = 'CONTACT_FORM_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.914 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.283 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: select * from web_config where id = 'CONTACT_FORM_ATTACHMENT' and lang = '';
+-- rows: 1
+-- takes: 1.713 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:03
+
+OK: 
+-- takes: 2.414 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:16
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 3.016 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:16
+
+OK: select * from web_config where id = 'CONTACT_FORM_TITLE' and lang = '';
+-- rows: 1
+-- takes: 1.049 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:107
+-- driver: mysqli/
+-- 2016-05-24 12:44:17
+
+OK: update web_config set value = 'Můj bezva kontaktní formulář' where id = 'CONTACT_FORM_TITLE' and lang = ''
+-- takes: 6.102 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:113
+-- driver: mysqli/
+-- 2016-05-24 12:44:17
+
+OK: select * from web_config where id = 'CONTACT_FORM_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.621 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:107
+-- driver: mysqli/
+-- 2016-05-24 12:44:17
+
+OK: update web_config set value = '#383737' where id = 'CONTACT_FORM_BACKGROUND_COLOR' and lang = ''
+-- takes: 3.250 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:113
+-- driver: mysqli/
+-- 2016-05-24 12:44:17
+
+OK: select * from web_config where id = 'CONTACT_FORM_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.197 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:107
+-- driver: mysqli/
+-- 2016-05-24 12:44:17
+
+OK: update web_config set value = '#ff0000' where id = 'CONTACT_FORM_COLOR' and lang = ''
+-- takes: 2.799 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:113
+-- driver: mysqli/
+-- 2016-05-24 12:44:17
+
+OK: select * from web_config where id = 'CONTACT_FORM_ATTACHMENT' and lang = '';
+-- rows: 1
+-- takes: 0.966 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:107
+-- driver: mysqli/
+-- 2016-05-24 12:44:17
+
+OK: update web_config set value = '1' where id = 'CONTACT_FORM_ATTACHMENT' and lang = ''
+-- takes: 7.333 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:113
+-- driver: mysqli/
+-- 2016-05-24 12:44:17
+
+OK: select * from web_config where id = 'CONTACT_FORM_IN_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.081 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:107
+-- driver: mysqli/
+-- 2016-05-24 12:44:17
+
+OK: update web_config set value = '' where id = 'CONTACT_FORM_IN_MENU' and lang = ''
+-- takes: 2.821 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:113
+-- driver: mysqli/
+-- 2016-05-24 12:44:17
+
+OK: 
+-- takes: 4.061 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:17
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 2.264 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:17
+
+OK: 
+-- takes: 4.069 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.143 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 0.814 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.999 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.774 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.873 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.790 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.963 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 1.308 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.158 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.786 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.079 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.708 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.050 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.777 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.943 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.417 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.367 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.757 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.913 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.766 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.790 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.878 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.664 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.852 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.886 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 1.403 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.171 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.729 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.900 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.683 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.900 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.641 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 2.162 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.989 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.911 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 0.846 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.055 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.635 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.854 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where id = 'CONTACT_FORM_TITLE' and lang = '';
+-- rows: 1
+-- takes: 0.736 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.935 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where id = 'CONTACT_FORM_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.267 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.211 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where id = 'CONTACT_FORM_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.826 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.916 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: select * from web_config where id = 'CONTACT_FORM_ATTACHMENT' and lang = '';
+-- rows: 1
+-- takes: 0.682 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:44:19
+
+OK: 
+-- takes: 4.534 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 3.235 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.016 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.907 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.285 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.227 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.436 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 3.616 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.903 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.247 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.799 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.226 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.856 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.735 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.216 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.491 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.753 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.130 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.772 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.185 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.171 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 1.046 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.977 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.700 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.846 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.825 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.996 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.990 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.060 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.426 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.751 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.260 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.752 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.316 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.681 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 2.489 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.006 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.094 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.758 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.394 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where id = 'CONTACT_FORM_TITLE' and lang = '';
+-- rows: 1
+-- takes: 0.700 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.206 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where id = 'CONTACT_FORM_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.930 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.340 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where id = 'CONTACT_FORM_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.914 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.025 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: select * from web_config where id = 'CONTACT_FORM_ATTACHMENT' and lang = '';
+-- rows: 1
+-- takes: 0.837 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:50
+
+OK: 
+-- takes: 2.578 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:51
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.911 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:51
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.254 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:51
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.859 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:51
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.791 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:51
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.776 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:51
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.776 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:51
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.233 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:51
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 1.236 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:51
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.480 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:51
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.981 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:51
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.434 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:51
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.161 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:51
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.521 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.814 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 3.105 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.252 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.762 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 1.215 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.900 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.767 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 1.603 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 1.044 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.743 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.715 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.976 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.771 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.236 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.743 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.754 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.029 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.104 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.804 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.114 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.114 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 2.281 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.270 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.326 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.899 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.302 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from web_config where id = 'CONTACT_FORM_TITLE' and lang = '';
+-- rows: 1
+-- takes: 1.639 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.729 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from web_config where id = 'CONTACT_FORM_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.908 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.106 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from web_config where id = 'CONTACT_FORM_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.960 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.053 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: select * from web_config where id = 'CONTACT_FORM_ATTACHMENT' and lang = '';
+-- rows: 1
+-- takes: 0.911 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:50:52
+
+OK: 
+-- takes: 2.484 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.843 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.016 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.919 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.086 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.045 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.175 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.169 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.737 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.102 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.763 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.455 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.924 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.642 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.715 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.242 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 0.882 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.444 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.858 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.437 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.565 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.843 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.907 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.655 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.865 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.686 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.804 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.597 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.098 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.307 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.170 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.717 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.952 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 2.097 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.059 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.497 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.355 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 2.450 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.786 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.400 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'CONTACT_FORM_TITLE' and lang = '';
+-- rows: 1
+-- takes: 1.033 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.530 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'CONTACT_FORM_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.897 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.793 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'CONTACT_FORM_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.168 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.259 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'CONTACT_FORM_ATTACHMENT' and lang = '';
+-- rows: 1
+-- takes: 0.863 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: 
+-- takes: 5.270 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 4.192 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.621 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.757 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.630 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.817 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.621 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.955 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.616 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.952 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.487 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.782 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.945 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.408 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 0.726 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.957 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.311 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.687 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.671 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.986 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.653 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.638 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.808 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.696 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.792 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 1.064 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 0.868 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.169 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.586 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.845 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.856 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.964 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.635 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.934 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.033 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.285 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 0.789 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.852 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.549 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.932 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'CONTACT_FORM_TITLE' and lang = '';
+-- rows: 1
+-- takes: 0.559 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.893 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'CONTACT_FORM_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.968 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.121 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'CONTACT_FORM_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.730 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.813 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: select * from web_config where id = 'CONTACT_FORM_ATTACHMENT' and lang = '';
+-- rows: 1
+-- takes: 0.568 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:52:07
+
+OK: 
+-- takes: 2.057 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 5.743 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.335 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.834 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.661 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.211 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.967 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.439 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.970 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 2.368 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 1.140 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.274 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.112 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.389 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.178 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 2.442 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.128 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.363 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 0.932 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.302 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 2.412 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 1.516 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 1.119 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 1.090 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 1.274 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 1.170 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 1.875 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.351 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.061 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.485 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.241 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.361 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.628 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.622 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.994 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.486 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 1.466 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 2.072 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 2.385 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.391 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where id = 'CONTACT_FORM_TITLE' and lang = '';
+-- rows: 1
+-- takes: 1.263 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.723 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where id = 'CONTACT_FORM_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.818 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 2.056 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where id = 'CONTACT_FORM_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.061 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.102 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: select * from web_config where id = 'CONTACT_FORM_ATTACHMENT' and lang = '';
+-- rows: 1
+-- takes: 0.897 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:38
+
+OK: 
+-- takes: 2.538 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 3.269 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 0.873 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 0.787 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.208 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 1.581 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.235 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.237 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where id = 'WEB_FAVICON' and lang = '';
+-- rows: 1
+-- takes: 0.965 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.965 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where id = 'WEB_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.776 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 0.931 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where id = 'WEB_CONFIG_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.887 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.456 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where id = 'WEB_SHOW_MENU' and lang = '';
+-- rows: 1
+-- takes: 1.459 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.995 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where id = 'WEB_SHOW_HOME' and lang = '';
+-- rows: 1
+-- takes: 1.519 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.551 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where id = 'WEB_MENU_BG' and lang = '';
+-- rows: 1
+-- takes: 1.460 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.235 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where id = 'WEB_MENU_LINK_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.709 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from slider_setting where id = 'SLIDER_ON';
+-- rows: 1
+-- takes: 0.649 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from slider_pic;
+-- rows: 3
+-- takes: 0.657 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderPicRepository.php:16
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from slider_setting where id = 'SLIDER_WIDTH';
+-- rows: 1
+-- takes: 0.776 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from slider_setting where id = 'SLIDER_TIMING';
+-- rows: 1
+-- takes: 0.731 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from slider_setting where id = 'SLIDER_SLIDE_SHOW';
+-- rows: 1
+-- takes: 0.784 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from slider_setting where id = 'SLIDER_CONTROLS';
+-- rows: 1
+-- takes: 1.224 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\SliderSettingRepository.php:63
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.338 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where id = 'SHOW_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 0.817 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.484 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where id = 'FOOTER_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 1.283 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.691 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where id = 'FOOTER_COLOR' and lang = '';
+-- rows: 1
+-- takes: 2.497 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.860 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where id = 'FOOTER_WIDTH' and lang = '';
+-- rows: 1
+-- takes: 0.846 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.019 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where id = 'FOOTER_CONTENT' and lang = '';
+-- rows: 1
+-- takes: 0.862 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.486 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where id = 'SHOW_CONTACT_FORM_IN_FOOTER' and lang = '';
+-- rows: 1
+-- takes: 1.114 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.530 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where id = 'CONTACT_FORM_TITLE' and lang = '';
+-- rows: 1
+-- takes: 1.002 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.040 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where id = 'CONTACT_FORM_BACKGROUND_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.938 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.416 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where id = 'CONTACT_FORM_COLOR' and lang = '';
+-- rows: 1
+-- takes: 0.829 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where lang = '';
+-- rows: 18
+-- takes: 1.390 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:88
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
+OK: select * from web_config where id = 'CONTACT_FORM_ATTACHMENT' and lang = '';
+-- rows: 1
+-- takes: 1.388 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:129
+-- driver: mysqli/
+-- 2016-05-24 12:53:39
+
