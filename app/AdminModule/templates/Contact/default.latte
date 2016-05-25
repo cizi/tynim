@@ -27,6 +27,12 @@
 								<div class="col-sm-10 field_info"></div>
 
 								<div class="col-sm-10">
+									{label CONTACT_FORM_CONTENT/}
+									{input CONTACT_FORM_CONTENT}
+								</div>
+								<div class="col-sm-10 field_info"></div>
+
+								<div class="col-sm-10">
 									{label CONTACT_FORM_BACKGROUND_COLOR/}
 									{input CONTACT_FORM_BACKGROUND_COLOR}
 								</div>
@@ -71,6 +77,12 @@
 	<!-- /#wrapper -->
 
 	<script>
+		tinymce.init({
+			selector:'#mceContactContent',
+			toolbar: "image",
+			plugins: "image imagetools"
+		});
+
 		$("#contactFormBackgroundColor").minicolors({
 			control: $(this).attr('data-control') || 'hue',
 			defaultValue: $(this).attr('data-defaultValue') || '',

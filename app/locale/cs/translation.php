@@ -176,6 +176,7 @@ define("CONTACT_FORM_TEXT_REQ", 'Tělo zprávy nesmí být prázdné');
 define("CONTACT_FORM_BUTTON_CONFIRM", 'Odeslat');
 
 define("CONTACT_FORM_SETTING_BACKEND_TITLE", 'Nadpis kontaktního formuláře');
+define("CONTACT_FORM_SETTING_BACKEND_CONTENT", 'Nadpis kontaktního formuláře');
 define("CONTACT_FORM_SETTING_BACKGROUND_COLOR", 'Barva pozadí kontaktního formuláře');
 define("CONTACT_FORM_SETTING_COLOR", 'Barva textu kontaktního formuláře');
 define("CONTACT_FORM_SETTING_ATTACHMENT", 'Umožnit poslat přílohu');

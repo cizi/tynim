@@ -25,8 +25,11 @@ class WebconfigRepository extends BaseRepository{
 	/** @const for background color */
 	const KEY_BODY_BACKGROUND_COLOR = "WEB_CONFIG_BACKGROUND_COLOR";
 
-	/** @const for contact form background color */
+	/** @const for contact form title color */
 	const KEY_CONTACT_FORM_TITLE = "CONTACT_FORM_TITLE";
+
+	/** @const for contact form content color */
+	const KEY_CONTACT_FORM_CONTENT = "CONTACT_FORM_CONTENT";
 
 	/** @const for contact form background color */
 	const KEY_CONTACT_FORM_BACKGROUND_COLOR = "CONTACT_FORM_BACKGROUND_COLOR";

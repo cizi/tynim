@@ -185,11 +185,12 @@ class HomepagePresenter extends BasePresenter {
 		$this->template->isContactFormInFooter = ($contactFormInFooter == "1" ? true : false);
 		if ($contactFormInFooter) {
 			$this->template->contactFormHeader = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_CONTACT_FORM_TITLE, $langCommon);
+			$this->template->contactFormContent = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_CONTACT_FORM_CONTENT, $langCommon);
 			$this->template->contactFormBackground = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_CONTACT_FORM_BACKGROUND_COLOR, $langCommon);
 			$this->template->contactFormColor = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_CONTACT_FORM_COLOR, $langCommon);
 
-			$allowAttachmetn = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_CONTACT_FORM_ATTACHMENT, $langCommon);
-			$this->template->allowAttachmetn =  ($allowAttachmetn == "1" ? true : false);
+			$allowAttachment = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_CONTACT_FORM_ATTACHMENT, $langCommon);
+			$this->template->allowAttachment =  ($allowAttachment == "1" ? true : false);
 		}
 	}
 }
