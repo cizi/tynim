@@ -143,3 +143,15 @@ input.contactForm {
 div.formRow {
 	margin-right: 0;
 }
+input.menuItem {
+	margin: 5px;
+}
+#frm-menuForm table tbody tr th label {
+	padding-top: 10px;
+	padding-right: 4px;
+}
+
+#frm-menuForm table tbody tr td {
+	text-align: right;
+	padding-left: 10px;
+}

@@ -157,6 +157,7 @@ define("MENU_SETTINGS_ITEM_NAME", 'Název položky v menu');
 define("MENU_SETTINGS_ITEM_LINK", 'Odkaz v URL');
 define("MENU_SETTINGS_ITEM_LINK_ADDED", 'Položka byla úspěšně vložena');
 define("MENU_SETTINGS_ITEM_LINK_INFO", 'Název položky menu v URL. <b>DŮLEŽITÉ pro SEO</b>.');
+define("MENU_SETTINGS_SUBMENU", 'Bude mít další úroveň');
 
 // constact form
 define("CONTACT_FORM_SETTING_TITLE", 'Nastavení kontakního formuláře');

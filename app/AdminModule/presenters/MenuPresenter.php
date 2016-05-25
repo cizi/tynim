@@ -4,6 +4,7 @@ namespace App\AdminModule\Presenters;
 
 use App\Forms\MenuForm;
 use App\Model\Entity\MenuTopEntity;
+use App\Model\LangRepository;
 use App\Model\MenuRepository;
 use Nette\Application\UI\Form;
 use Nette\Utils\ArrayHash;
@@ -16,9 +17,13 @@ class MenuPresenter extends SignPresenter {
 	/** @var MenuRepository  */
 	private $menuRepository;
 
-	public function __construct(MenuForm $menuForm, MenuRepository $menuRepository) {
+	/** @var LangRepository */
+	private $langRepository;
+
+	public function __construct(MenuForm $menuForm, MenuRepository $menuRepository, LangRepository $langRepository) {
 		$this->menuForm = $menuForm;
 		$this->menuRepository = $menuRepository;
+		$this->langRepository = $langRepository;
 	}
 
 	public function actionDefault() {
@@ -26,7 +31,7 @@ class MenuPresenter extends SignPresenter {
 	}
 
 	public function createComponentMenuForm() {
-		$form = $this->menuForm->create();
+		$form = $this->menuForm->create($this->langRepository->findLanguages());
 		$form->onSuccess[] = $this->saveTopMenu;
 		return $form;
 	}

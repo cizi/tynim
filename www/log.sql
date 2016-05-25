@@ -73982,3 +73982,717 @@ OK: select * from web_config where id = 'CONTACT_FORM_ATTACHMENT' and lang = '';
 -- driver: mysqli/
 -- 2016-05-25 13:43:11
 
+OK: 
+-- takes: 8.277 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:25
+-- driver: mysqli/
+-- 2016-05-25 15:05:29
+
+OK: select * from user where email = 'cizi@email.cz'  and active = 1;
+-- rows: 1
+-- takes: 4.572 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:25
+-- driver: mysqli/
+-- 2016-05-25 15:05:29
+
+OK: update user set last_login = NOW() where id = 7
+-- takes: 13.988 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:131
+-- driver: mysqli/
+-- 2016-05-25 15:05:29
+
+OK: 
+-- takes: 2.642 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 15:05:33
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 8.650 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 15:05:33
+
+OK: 
+-- takes: 2.750 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 15:05:33
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.305 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 15:05:33
+
+OK: 
+-- takes: 2.812 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 15:14:53
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.365 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 15:14:53
+
+OK: 
+-- takes: 3.125 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 15:16:45
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 3.768 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 15:16:45
+
+OK: 
+-- takes: 3.559 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 15:16:54
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 4.341 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 15:16:54
+
+OK: 
+-- takes: 2.601 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 15:18:29
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 3.543 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 15:18:29
+
+OK: 
+-- takes: 12.052 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 15:18:35
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 4.082 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 15:18:35
+
+OK: 
+-- takes: 2.693 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 15:18:40
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 3.145 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 15:18:40
+
+OK: 
+-- takes: 2.563 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 15:19:18
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.342 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 15:19:18
+
+OK: 
+-- takes: 3.434 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 15:31:21
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 3.271 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 15:31:21
+
+OK: 
+-- takes: 2.583 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 15:31:40
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 3.400 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 15:31:40
+
+OK: 
+-- takes: 5.336 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:25
+-- driver: mysqli/
+-- 2016-05-25 16:46:17
+
+OK: select * from user where email = 'cizi@email.cz'  and active = 1;
+-- rows: 1
+-- takes: 5.982 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:25
+-- driver: mysqli/
+-- 2016-05-25 16:46:17
+
+OK: update user set last_login = NOW() where id = 7
+-- takes: 13.615 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:131
+-- driver: mysqli/
+-- 2016-05-25 16:46:17
+
+OK: 
+-- takes: 2.602 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:46:20
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.561 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:46:20
+
+OK: 
+-- takes: 2.485 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:46:20
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 5.122 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:46:21
+
+OK: 
+-- takes: 3.249 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:46:47
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 3.558 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:46:47
+
+OK: 
+-- takes: 2.544 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:48:03
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.442 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:48:03
+
+OK: 
+-- takes: 2.237 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:48:13
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.722 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:48:13
+
+OK: 
+-- takes: 3.530 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:48:41
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 3.418 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:48:41
+
+OK: 
+-- takes: 2.346 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:49:18
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.531 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:49:18
+
+OK: 
+-- takes: 3.223 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:49:28
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.750 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:49:28
+
+OK: 
+-- takes: 3.037 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:51:23
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 3.971 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:51:23
+
+OK: 
+-- takes: 2.427 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:51:29
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.420 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:51:29
+
+OK: 
+-- takes: 2.636 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:51:35
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.299 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:51:35
+
+OK: 
+-- takes: 2.681 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:51:49
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 3.001 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:51:49
+
+OK: 
+-- takes: 3.971 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:52:57
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 4.338 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:52:57
+
+OK: 
+-- takes: 2.365 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:53:21
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.986 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:53:21
+
+OK: 
+-- takes: 2.985 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:53:40
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.935 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:53:40
+
+OK: 
+-- takes: 1.893 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:53:50
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.221 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:53:50
+
+OK: 
+-- takes: 2.104 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:54:00
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.074 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:54:00
+
+OK: 
+-- takes: 3.348 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:54:24
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.231 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:54:24
+
+OK: 
+-- takes: 2.257 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:54:56
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.255 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:54:56
+
+OK: 
+-- takes: 2.302 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:55:51
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.358 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:55:51
+
+OK: 
+-- takes: 3.487 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:56:09
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 3.153 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:56:09
+
+OK: 
+-- takes: 2.409 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:56:23
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.772 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:56:23
+
+OK: 
+-- takes: 2.494 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:56:43
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 3.576 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:56:43
+
+OK: 
+-- takes: 3.010 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:57:23
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 1.982 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:57:23
+
+OK: 
+-- takes: 3.312 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:57:35
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.400 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:57:35
+
+OK: 
+-- takes: 2.729 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:57:42
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.385 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:57:42
+
+OK: 
+-- takes: 1.977 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:59:26
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.986 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:59:26
+
+OK: 
+-- takes: 2.403 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:59:49
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.548 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:59:49
+
+OK: 
+-- takes: 2.409 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:59:59
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.123 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 16:59:59
+
+OK: 
+-- takes: 4.092 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 17:00:14
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.732 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 17:00:14
+
+OK: 
+-- takes: 2.213 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 17:00:23
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 1.957 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 17:00:23
+
+OK: 
+-- takes: 2.382 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 17:00:31
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.530 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 17:00:31
+
+OK: 
+-- takes: 2.712 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 17:00:39
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.912 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 17:00:39
+
+OK: 
+-- takes: 2.629 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 17:04:07
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.630 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 17:04:07
+
+OK: 
+-- takes: 2.713 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 17:04:29
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.745 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 17:04:29
+
+OK: 
+-- takes: 2.320 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 17:06:22
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.372 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 17:06:22
+
+OK: 
+-- takes: 3.197 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 17:06:42
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.429 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 17:06:42
+
+OK: 
+-- takes: 2.254 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 17:07:49
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.176 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 17:07:49
+
+OK: 
+-- takes: 2.450 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 17:08:53
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.229 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 17:08:53
+
+OK: 
+-- takes: 2.396 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 17:09:07
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 2.281 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 17:09:07
+
+OK: 
+-- takes: 2.488 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 17:09:15
+
+OK: select * from menu_top order by `order`;
+-- rows: 4
+-- takes: 3.442 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-25 17:09:15
+
