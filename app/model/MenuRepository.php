@@ -39,19 +39,56 @@ class MenuRepository extends BaseRepository {
 	 * @param int $suborder
 	 */
 	public function saveItem($id, $level, array $langItems, $suborder = 0) {
-		if ($id == null) {
+		$this->connection->begin();
+		if ($id == null) {		// insert
 			$orderValue = $this->connection->query("select ifnull(MAX(`order`),0) + 1 from menu");
 			$query = ["insert into menu values (null, %i)", $orderValue];
 			$result = $this->connection->query($query);
 			$id = $this->connection->insertId();
-		}
 
-		foreach ($langItems as $menuItem) {
-			$query = ["
+			foreach ($langItems as $menuItem) {
+				if ($this->insertNewMenuItem($id, $menuItem, $level, $suborder) == false) {
+					$this->connection->rollback();
+					return false;
+				}
+			}
+		} else {	// update
+
+		}
+		$this->connection->commit();
+		return true;
+	}
+
+	/**
+	 * @param int $id
+	 * @param MenuEntity $menuItem
+	 * @param int $level
+	 * @param int $suborder
+	 *
+	 * @return bool
+	 */
+	private function insertNewMenuItem($id, MenuEntity $menuItem, $level, $suborder) {
+		try {
+			$query = ["select * from menu_item where lang = %s and link = %s", $menuItem->getLang(), $menuItem->getLink()];
+			$result = $this->connection->query($query)->fetchAll();
+			if ($result) {
+				throw new \Dibi\Exception("Duplicitní unikátní klíè");
+			}
+			$query = [
+				"
 				insert into menu_item values (%i, %s, %s, %s, %s, %i, %i)",
-				$id, $menuItem->getLang(), $menuItem->getLink(), $menuItem->getTitle(), $menuItem->getAlt(), $level, $suborder
+				$id,
+				$menuItem->getLang(),
+				$menuItem->getLink(),
+				$menuItem->getTitle(),
+				$menuItem->getAlt(),
+				$level,
+				$suborder
 			];
 			$this->connection->query($query);
+			return true;
+		} catch (\Dibi\Exception $e) {
+			return false;
 		}
 	}
 }

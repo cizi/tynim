@@ -154,9 +154,12 @@ define("MENU_SETTINGS_TITLE", 'Konfigurace menu');
 define("MENU_SETTINGS_INFO", 'V této sekci je možno nakonfigurovat menu a jeho položky. Z hlediska přehlednosti není možné vnořovat do více
 								než dvou úrovní.');
 define("MENU_SETTINGS_ITEM_NAME", 'Název položky v menu');
+define("MENU_SETTINGS_ITEM_NAME_REQ", 'Název položky v menu je povinné pole!');
 define("MENU_SETTINGS_ITEM_LINK", 'Odkaz v URL');
+define("MENU_SETTINGS_ITEM_LINK_REQ", 'Odkaz v URL je povinné pole!');
 define("MENU_SETTINGS_ITEM_SEO", 'SEO titulek');
 define("MENU_SETTINGS_ITEM_LINK_ADDED", 'Položka byla úspěšně vložena');
+define("MENU_SETTINGS_ITEM_LINK_FAILED", 'Při ukládání došlo k chybě. Zkuste opakovat později. Případně ověřte, že nevkládáte duplicitní hodnodu odkazu, ta musí být jedinečná');
 define("MENU_SETTINGS_ITEM_LINK_INFO", 'Název položky menu v URL. <b>DŮLEŽITÉ pro SEO</b>.');
 define("MENU_SETTINGS_SUBMENU", 'Bude mít další úroveň');
 define("MENU_SETTINGS_ADD", 'Přidat položku');
@@ -164,7 +167,7 @@ define("MENU_SETTINGS_TABLE_ORDER", 'Pořadí v menu');
 define("MENU_SETTINGS_LINK", 'Odkaz v URL');
 define("MENU_SETTINGS_IN_MENU_TITLE", 'Název položky v mennu');
 define("MENU_SETTINGS_ALT", 'SEO titulek');
-
+define("MENU_SETTINGS_MENU_TOP_DELETE", 'Smazání položka menu');
 // constact form
 define("CONTACT_FORM_SETTING_TITLE", 'Nastavení kontakního formuláře');
 define("CONTACT_FORM_SETTING_TITLE_INFO", 'Zde je možné nastavit některé vlastnosti kontakního fomuláře.');

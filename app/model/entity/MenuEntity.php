@@ -7,6 +7,9 @@ class MenuEntity {
 	/** @var int */
 	private $id;
 
+	/** @var int */
+	private $menuId;
+
 	/**@var int */
 	private $order;
 
@@ -158,10 +161,25 @@ class MenuEntity {
 	}
 
 	/**
+	 * @return int
+	 */
+	public function getMenuId() {
+		return $this->menuId;
+	}
+
+	/**
+	 * @param int $menuId
+	 */
+	public function setMenuId($menuId) {
+		$this->menuId = $menuId;
+	}
+
+	/**
 	 * @param array $data
 	 */
 	public function hydrate(array $data) {
 		$this->id = (isset($data['id']) ? $data['id'] : null);
+		$this->menuId = (isset($data['menu_id']) ? $data['menu_id'] : null);
 		$this->order = (isset($data['order']) ? $data['order'] : null);
 		$this->lang = (isset($data['lang']) ? $data['lang'] : null);
 		$this->link = (isset($data['link']) ? $data['link'] : null);
@@ -178,6 +196,7 @@ class MenuEntity {
 	public function extract() {
 		return [
 			'id' => $this->id,
+			'menu_id' => $this->menuId,
 			'order' => $this->order,
 			'lang' => $this->lang,
 			'link' => $this->link,

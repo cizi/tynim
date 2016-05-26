@@ -27,6 +27,7 @@ class MenuForm extends Nette\Object {
 	public function create(array $languages, $id = null, $level = 1) {
 		$counter = 1;
 		$form = $this->factory->create();
+		$form->getElementPrototype()->addAttributes(["onsubmit" => "return requiredFields();"]);
 
 		foreach($languages as $lang) {
 			$container = $form->addContainer($lang);
@@ -37,12 +38,20 @@ class MenuForm extends Nette\Object {
 				->setAttribute("readonly", "readonly")
 				->setValue($lang);
 
+			$rewriteKey = "rewrite_" . $lang;
 			$container->addText("title", MENU_SETTINGS_ITEM_NAME)
-				->setAttribute("class", "form-control menuItem")
+				->setAttribute("class", "form-control menuItem tinym_required_field")
+				->setAttribute("validation", MENU_SETTINGS_ITEM_NAME_REQ)
+				->setAttribute("onchange", 'generateURL(this)')
+				->setAttribute("onkeyup", 'generateURL(this)')
+				->setAttribute("validation-for", $rewriteKey)
 				->setAttribute("tabindex", $counter + 1);
 
 			$container->addText("link", MENU_SETTINGS_ITEM_LINK)
 				->setAttribute("class", "form-control menuItem")
+				->setAttribute("readonly", "readonly")
+				->setAttribute("id", $rewriteKey)
+				->setAttribute("onchange", "linkChanged()")
 				->setAttribute("tabindex", $counter + 2);
 
 			$container->addText("alt", MENU_SETTINGS_ITEM_SEO)

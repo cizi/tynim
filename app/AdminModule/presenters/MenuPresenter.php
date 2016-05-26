@@ -38,6 +38,10 @@ class MenuPresenter extends SignPresenter {
 		return $form;
 	}
 
+	public function actionDeleteTop($id) {
+		
+	}
+
 	/**
 	 * @param Form $form
 	 * @param ArrayHash $values
@@ -54,15 +58,23 @@ class MenuPresenter extends SignPresenter {
 				$langItems[] = $menuEntity;
 			}
 		}
-		$this->menuRepository->saveItem($editedId, $level, $langItems);
-		$this->flashMessage(MENU_SETTINGS_ITEM_LINK_ADDED, "alert-success");
-		$this->redirect("default");
+		if ($this->menuRepository->saveItem($editedId, $level, $langItems)) {
+			$this->flashMessage(MENU_SETTINGS_ITEM_LINK_ADDED, "alert-success");
+			$this->redirect("default");
+		} else {
+			$this->flashMessage(MENU_SETTINGS_ITEM_LINK_FAILED, "alert-danger");
+			$this->redirect("edit", null, $values);
+		}
+
 	}
 
 	/**
 	 * @param $id
 	 */
-	public function actionEdit($id) {
+	public function actionEdit($id, array $values = null) {
+		if (!empty($values)) {
+			$this['menuForm']->setDefaults($values);
+		}
 
 	}
 }
