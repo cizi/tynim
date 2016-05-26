@@ -3,7 +3,7 @@
 namespace App\AdminModule\Presenters;
 
 use App\Forms\MenuForm;
-use App\Model\Entity\MenuTopEntity;
+use App\Model\Entity\MenuEntity;
 use App\Model\LangRepository;
 use App\Model\MenuRepository;
 use Nette\Application\UI\Form;
@@ -27,12 +27,14 @@ class MenuPresenter extends SignPresenter {
 	}
 
 	public function actionDefault() {
-		$this->template->topMenuEntities = $this->menuRepository->findTopMenuItems();
+		$langSession = $this->session->getSection('webLang');
+		$lang = ((isset($langSession->langId) && $langSession->langId != null) ? $langSession->langId : 'cs');
+		$this->template->topMenuEntities = $this->menuRepository->findItems($lang);
 	}
 
 	public function createComponentMenuForm() {
 		$form = $this->menuForm->create($this->langRepository->findLanguages());
-		$form->onSuccess[] = $this->saveTopMenu;
+		$form->onSuccess[] = $this->saveMenuItem;
 		return $form;
 	}
 
@@ -40,14 +42,27 @@ class MenuPresenter extends SignPresenter {
 	 * @param Form $form
 	 * @param ArrayHash $values
 	 */
-	public function saveTopMenu($form, $values) {
-		$menuTopEntity = new MenuTopEntity();
-		$menuTopEntity->hydrate((array)$values);
-		if ($menuTopEntity->getMenuName() != "" && $menuTopEntity->getLinkName() != "") {	// save just filled things
-			$menuTopEntity->setOrder($this->menuRepository->getMaxCurrentOrderInTop() + 1);
-			$this->menuRepository->saveTopMenu($menuTopEntity);
+	public function saveMenuItem($form, $values) {
+		$level = (isset($values['level']) ? $values['level'] : 1);
+		$editedId = (isset($values['id']) ? $values['id'] : null);
+
+		$langItems = [];
+		foreach ($values as  $item) {
+			if ($item instanceof ArrayHash) {
+				$menuEntity = new MenuEntity();
+				$menuEntity->hydrate((array)$item);
+				$langItems[] = $menuEntity;
+			}
 		}
+		$this->menuRepository->saveItem($editedId, $level, $langItems);
 		$this->flashMessage(MENU_SETTINGS_ITEM_LINK_ADDED, "alert-success");
 		$this->redirect("default");
+	}
+
+	/**
+	 * @param $id
+	 */
+	public function actionEdit($id) {
+
 	}
 }

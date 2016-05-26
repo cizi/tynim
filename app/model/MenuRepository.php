@@ -2,61 +2,56 @@
 
 namespace App\Model;
 
-use App\Model\Entity\MenuTopEntity;
+use App\Model\Entity\MenuEntity;
 
 class MenuRepository extends BaseRepository {
 
-	/** @const for menu title in the menu */
-	const KEY_MENU_TITLE = "menu_name";
+	/**
+	 * @param string $lang
+	 * @param int $level
+	 * @return MenuEntity[]
+	 */
+	public function findItems($lang, $level = 1) {
+		$items = [];
+		$query = ["select * from menu as m left join menu_item as mi
+			on m.id = mi.menu_id
+			where mi.level = %i
+			and lang = %s
+			order by m.order",
+			$level,
+			$lang
+		];
 
-	/** @const for menu url */
-	const KEY_MENU_LINK = "link_name";
+		$result = $this->connection->query($query)->fetchAll();
+		foreach ($result as $item) {
+			$menuItem = new MenuEntity();
+			$menuItem->hydrate($item->toArray());
+			$items[] = $menuItem;
+		}
+
+		return $items;
+	}
 
 	/**
-	 * @param MenuTopEntity $menuTopEntity
-	 * @return \Dibi\Result|int
+	 * @param int $id
+	 * @param int $level
+	 * @param MenuEntity[] $langItems
+	 * @param int $suborder
 	 */
-	public function saveTopMenu(MenuTopEntity $menuTopEntity) {
-		if ($menuTopEntity->getId() == null) {	// insert
-			$query = ["insert into menu_top", $menuTopEntity->extract()];
-		} else {	// update
+	public function saveItem($id, $level, array $langItems, $suborder = 0) {
+		if ($id == null) {
+			$orderValue = $this->connection->query("select ifnull(MAX(`order`),0) + 1 from menu");
+			$query = ["insert into menu values (null, %i)", $orderValue];
+			$result = $this->connection->query($query);
+			$id = $this->connection->insertId();
+		}
+
+		foreach ($langItems as $menuItem) {
 			$query = ["
-				update menu_top set link_name = %s, menu_name = %s, order = %i",
-				$menuTopEntity->getLinkName(),
-				$menuTopEntity->getMenuName(),
-				$menuTopEntity->getOrder()
+				insert into menu_item values (%i, %s, %s, %s, %s, %i, %i)",
+				$id, $menuItem->getLang(), $menuItem->getLink(), $menuItem->getTitle(), $menuItem->getAlt(), $level, $suborder
 			];
+			$this->connection->query($query);
 		}
-
-		return $this->connection->query($query);
-	}
-
-	/**
-	 * @return int
-	 */
-	public function getMaxCurrentOrderInTop() {
-		$query = "select MAX(`order`) as current_max from menu_top";
-		$result = $this->connection->query($query)->fetch();
-		if ($result) {
-			return $result->current_max;
-		} else {
-			return 0;
-		}
-	}
-
-	/***
-	 * @return MenuTopEntity[]
-	 */
-	public function findTopMenuItems() {
-		$query = "select * from menu_top order by `order`";
-		$result = $this->connection->query($query);
-		$ret = [];
-		foreach($result->fetchAll() as $item) {
-			$menuTopEntity = new MenuTopEntity();
-			$menuTopEntity->hydrate($item->toArray());
-			$ret[] = $menuTopEntity;
-		}
-
-		return $ret;
 	}
 }

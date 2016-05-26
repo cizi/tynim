@@ -74696,3 +74696,432 @@ OK: select * from menu_top order by `order`;
 -- driver: mysqli/
 -- 2016-05-25 17:09:15
 
+OK: 
+-- takes: 3.367 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:25
+-- driver: mysqli/
+-- 2016-05-26 08:27:10
+
+OK: select * from user where email = 'cizi@email.cz'  and active = 1;
+-- rows: 1
+-- takes: 5.847 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:25
+-- driver: mysqli/
+-- 2016-05-26 08:27:10
+
+OK: update user set last_login = NOW() where id = 7
+-- takes: 5.502 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:131
+-- driver: mysqli/
+-- 2016-05-26 08:27:10
+
+OK: 
+-- takes: 2.543 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:23
+-- driver: mysqli/
+-- 2016-05-26 08:28:25
+
+OK: 
+-- takes: 2.383 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:25
+-- driver: mysqli/
+-- 2016-05-26 08:28:53
+
+ERROR: [1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where mi.level = 1
+			and lang = 0
+			order by m.order' at line 2
+-- SQL: select * from menu as m left join menu_item as mi
+			where mi.level = 1
+			and lang = 0
+			order by m.order
+-- driver: mysqli/;
+-- 2016-05-26 08:28:53
+
+OK: 
+-- takes: 2.859 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:25
+-- driver: mysqli/
+-- 2016-05-26 08:29:16
+
+ERROR: [1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where mi.level = 1
+			and lang = 'cs'
+			order by m.order' at line 2
+-- SQL: select * from menu as m left join menu_item as mi
+			where mi.level = 1
+			and lang = 'cs'
+			order by m.order
+-- driver: mysqli/;
+-- 2016-05-26 08:29:16
+
+OK: 
+-- takes: 3.189 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:26
+-- driver: mysqli/
+-- 2016-05-26 08:30:04
+
+ERROR: [1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where mi.level = 1
+			on m.id = mi.menu_id
+			and lang = 'cs'
+			order by m.orde' at line 2
+-- SQL: select * from menu as m left join menu_item as mi
+			where mi.level = 1
+			on m.id = mi.menu_id
+			and lang = 'cs'
+			order by m.order
+-- driver: mysqli/;
+-- 2016-05-26 08:30:04
+
+OK: 
+-- takes: 3.225 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:26
+-- driver: mysqli/
+-- 2016-05-26 08:30:17
+
+OK: select * from menu as m left join menu_item as mi
+			on m.id = mi.menu_id
+			where mi.level = 1
+			and lang = 'cs'
+			order by m.order
+-- takes: 3.879 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:27
+-- driver: mysqli/
+-- 2016-05-26 08:30:17
+
+OK: 
+-- takes: 2.392 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:26
+-- driver: mysqli/
+-- 2016-05-26 08:30:36
+
+OK: select * from menu as m left join menu_item as mi
+			on m.id = mi.menu_id
+			where mi.level = 1
+			and lang = 'cs'
+			order by m.order
+-- takes: 3.986 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:26
+-- driver: mysqli/
+-- 2016-05-26 08:30:36
+
+OK: 
+-- takes: 2.598 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:26
+-- driver: mysqli/
+-- 2016-05-26 08:30:36
+
+OK: select * from menu as m left join menu_item as mi
+			on m.id = mi.menu_id
+			where mi.level = 1
+			and lang = 'cs'
+			order by m.order
+-- takes: 3.829 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:26
+-- driver: mysqli/
+-- 2016-05-26 08:30:36
+
+OK: 
+-- takes: 3.001 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:25
+-- driver: mysqli/
+-- 2016-05-26 10:26:57
+
+OK: select * from user where email = 'cizi@email.cz'  and active = 1;
+-- rows: 1
+-- takes: 5.062 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:25
+-- driver: mysqli/
+-- 2016-05-26 10:26:57
+
+OK: update user set last_login = NOW() where id = 7
+-- takes: 4.058 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:131
+-- driver: mysqli/
+-- 2016-05-26 10:26:57
+
+OK: 
+-- takes: 2.460 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:25
+-- driver: mysqli/
+-- 2016-05-26 10:27:00
+
+OK: select * from menu as m left join menu_item as mi
+			on m.id = mi.menu_id
+			where mi.level = 1
+			and lang = 'cs'
+			order by m.order
+-- takes: 4.786 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:25
+-- driver: mysqli/
+-- 2016-05-26 10:27:00
+
+OK: 
+-- takes: 2.333 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:25
+-- driver: mysqli/
+-- 2016-05-26 10:27:01
+
+OK: select * from menu as m left join menu_item as mi
+			on m.id = mi.menu_id
+			where mi.level = 1
+			and lang = 'cs'
+			order by m.order
+-- takes: 2.657 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:25
+-- driver: mysqli/
+-- 2016-05-26 10:27:01
+
+OK: 
+-- takes: 2.475 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:25
+-- driver: mysqli/
+-- 2016-05-26 10:27:37
+
+OK: select * from menu as m left join menu_item as mi
+			on m.id = mi.menu_id
+			where mi.level = 1
+			and lang = 'cs'
+			order by m.order
+-- takes: 4.027 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:25
+-- driver: mysqli/
+-- 2016-05-26 10:27:37
+
+OK: 
+-- takes: 2.334 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:25
+-- driver: mysqli/
+-- 2016-05-26 10:27:54
+
+OK: select * from menu as m left join menu_item as mi
+			on m.id = mi.menu_id
+			where mi.level = 1
+			and lang = 'cs'
+			order by m.order
+-- takes: 4.773 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:25
+-- driver: mysqli/
+-- 2016-05-26 10:27:54
+
+OK: 
+-- takes: 2.655 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:25
+-- driver: mysqli/
+-- 2016-05-26 10:28:22
+
+OK: select * from menu as m left join menu_item as mi
+			on m.id = mi.menu_id
+			where mi.level = 1
+			and lang = 'cs'
+			order by m.order
+-- takes: 2.595 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:25
+-- driver: mysqli/
+-- 2016-05-26 10:28:22
+
+OK: 
+-- takes: 3.277 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:44
+-- driver: mysqli/
+-- 2016-05-26 10:29:08
+
+ERROR: [1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order) from menu) + 1)' at line 1
+-- SQL: insert into menu values (null,(select MAX(order) from menu) + 1)
+-- driver: mysqli/;
+-- 2016-05-26 10:29:08
+
+OK: 
+-- takes: 3.608 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:44
+-- driver: mysqli/
+-- 2016-05-26 10:29:31
+
+OK: 
+-- takes: 2.790 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:44
+-- driver: mysqli/
+-- 2016-05-26 10:32:13
+
+OK: 
+-- takes: 2.327 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:44
+-- driver: mysqli/
+-- 2016-05-26 10:35:17
+
+ERROR: [1093] You can't specify target table 'menu' for update in FROM clause
+-- SQL: insert into menu values (null,(select ifnull(MAX(`order`),1) from menu) + 1)
+-- driver: mysqli/;
+-- 2016-05-26 10:35:17
+
+OK: 
+-- takes: 2.665 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:44
+-- driver: mysqli/
+-- 2016-05-26 10:35:40
+
+ERROR: [1093] You can't specify target table 'menu' for update in FROM clause
+-- SQL: insert into menu values (null,(select ifnull(MAX(`order`),1) from menu) + 1)
+-- driver: mysqli/;
+-- 2016-05-26 10:35:40
+
+OK: 
+-- takes: 3.034 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:43
+-- driver: mysqli/
+-- 2016-05-26 10:41:29
+
+OK: select ifnull(MAX(`order`),0) + 1 from menu;
+-- rows: 1
+-- takes: 3.955 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:43
+-- driver: mysqli/
+-- 2016-05-26 10:41:29
+
+OK: insert into menu values (null, 1)
+-- takes: 10.862 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:46
+-- driver: mysqli/
+-- 2016-05-26 10:41:29
+
+OK: 
+-- takes: 3.307 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:43
+-- driver: mysqli/
+-- 2016-05-26 10:42:24
+
+OK: select ifnull(MAX(`order`),0) + 1 from menu;
+-- rows: 1
+-- takes: 2.225 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:43
+-- driver: mysqli/
+-- 2016-05-26 10:42:24
+
+OK: insert into menu values (null, 2)
+-- takes: 12.941 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:45
+-- driver: mysqli/
+-- 2016-05-26 10:42:24
+
+OK: 
+-- takes: 3.245 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:43
+-- driver: mysqli/
+-- 2016-05-26 10:42:32
+
+OK: select ifnull(MAX(`order`),0) + 1 from menu;
+-- rows: 1
+-- takes: 2.424 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:43
+-- driver: mysqli/
+-- 2016-05-26 10:42:32
+
+OK: insert into menu values (null, 3)
+-- takes: 11.887 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:45
+-- driver: mysqli/
+-- 2016-05-26 10:42:32
+
+OK: 
+-- takes: 2.480 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:43
+-- driver: mysqli/
+-- 2016-05-26 10:42:44
+
+OK: select ifnull(MAX(`order`),0) + 1 from menu;
+-- rows: 1
+-- takes: 3.564 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:43
+-- driver: mysqli/
+-- 2016-05-26 10:42:44
+
+OK: insert into menu values (null, 4)
+-- takes: 14.175 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:45
+-- driver: mysqli/
+-- 2016-05-26 10:42:44
+
+OK: 
+-- takes: 2.684 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:43
+-- driver: mysqli/
+-- 2016-05-26 10:44:30
+
+OK: select ifnull(MAX(`order`),0) + 1 from menu;
+-- rows: 1
+-- takes: 2.743 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:43
+-- driver: mysqli/
+-- 2016-05-26 10:44:30
+
+OK: insert into menu values (null, 5)
+-- takes: 10.856 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:45
+-- driver: mysqli/
+-- 2016-05-26 10:44:30
+
+OK: 
+-- takes: 3.317 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:43
+-- driver: mysqli/
+-- 2016-05-26 10:44:53
+
+OK: select ifnull(MAX(`order`),0) + 1 from menu;
+-- rows: 1
+-- takes: 2.653 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:43
+-- driver: mysqli/
+-- 2016-05-26 10:44:53
+
+OK: insert into menu values (null, 6)
+-- takes: 7.580 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:45
+-- driver: mysqli/
+-- 2016-05-26 10:44:53
+
+OK: 
+-- takes: 2.464 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:43
+-- driver: mysqli/
+-- 2016-05-26 10:45:48
+
+OK: select ifnull(MAX(`order`),0) + 1 from menu;
+-- rows: 1
+-- takes: 4.018 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:43
+-- driver: mysqli/
+-- 2016-05-26 10:45:48
+
+OK: insert into menu values (null, 7)
+-- takes: 9.838 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:45
+-- driver: mysqli/
+-- 2016-05-26 10:45:48
+
+OK: insert into menu_item values (7, 'cs', 'cs_url', 'cs_naz', 'cs_seo', 1, 0)
+-- takes: 10.328 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:54
+-- driver: mysqli/
+-- 2016-05-26 10:45:48
+
+OK: insert into menu_item values (7, 'en', 'en_url', 'en_naz', 'en_seo', 1, 0)
+-- takes: 4.147 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:54
+-- driver: mysqli/
+-- 2016-05-26 10:45:48
+
+OK: 
+-- takes: 3.278 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:25
+-- driver: mysqli/
+-- 2016-05-26 10:45:49
+
+OK: select * from menu as m left join menu_item as mi
+			on m.id = mi.menu_id
+			where mi.level = 1
+			and lang = 'cs'
+			order by m.order;
+-- rows: 1
+-- takes: 9.593 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:25
+-- driver: mysqli/
+-- 2016-05-26 10:45:49
+
