@@ -79,6 +79,9 @@ span.menuItem{
 .colorRed{
 	color: darkred;
 }
+.colorGreen {
+	color: #5cb85c;
+}
 a.menuToggle {
 	width: 20px;
 	height: 20px;

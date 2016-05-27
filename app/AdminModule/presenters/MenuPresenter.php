@@ -2,6 +2,7 @@
 
 namespace App\AdminModule\Presenters;
 
+use App\AdminModule\Controller\MenuController;
 use App\Forms\MenuForm;
 use App\Model\Entity\MenuEntity;
 use App\Model\LangRepository;
@@ -20,16 +21,27 @@ class MenuPresenter extends SignPresenter {
 	/** @var LangRepository */
 	private $langRepository;
 
-	public function __construct(MenuForm $menuForm, MenuRepository $menuRepository, LangRepository $langRepository) {
+	/** @var MenuController */
+	private $menuController;
+
+	public function __construct(
+		MenuForm $menuForm,
+		MenuRepository $menuRepository,
+		LangRepository $langRepository,
+		MenuController $menuController
+	) {
 		$this->menuForm = $menuForm;
 		$this->menuRepository = $menuRepository;
 		$this->langRepository = $langRepository;
+		$this->menuController = $menuController;
 	}
 
 	public function actionDefault() {
 		$langSession = $this->session->getSection('webLang');
 		$lang = ((isset($langSession->langId) && $langSession->langId != null) ? $langSession->langId : 'cs');
 		$this->template->topMenuEntities = $this->menuRepository->findItems($lang);
+		$this->template->menuController = $this->menuController;
+		$this->template->presenter = $this->presenter;
 	}
 
 	public function createComponentMenuForm() {
@@ -38,7 +50,7 @@ class MenuPresenter extends SignPresenter {
 		return $form;
 	}
 
-	public function actionDeleteTop($id) {
+	public function actionDelete($id) {
 		
 	}
 
@@ -49,12 +61,14 @@ class MenuPresenter extends SignPresenter {
 	public function saveMenuItem($form, $values) {
 		$level = (isset($values['level']) ? $values['level'] : 1);
 		$editedId = (isset($values['id']) ? $values['id'] : null);
+		$submenu = (isset($values['submenu']) ? $values['submenu'] : 0);
 
 		$langItems = [];
 		foreach ($values as  $item) {
 			if ($item instanceof ArrayHash) {
 				$menuEntity = new MenuEntity();
 				$menuEntity->hydrate((array)$item);
+				$menuEntity->setSubmenu($submenu);
 				$langItems[] = $menuEntity;
 			}
 		}
@@ -71,9 +85,14 @@ class MenuPresenter extends SignPresenter {
 	/**
 	 * @param $id
 	 */
-	public function actionEdit($id, array $values = null) {
-		if (!empty($values)) {
+	public function actionEdit($id, array $values = null, $level = null) {
+		if (!empty($values)) {	// edit mode
 			$this['menuForm']->setDefaults($values);
+		}
+
+		if ($level != null) {	// submenu mode
+			$this['menuForm']['level']->setValue($level);
+			$this['menuForm']['submenu']->setValue($id);
 		}
 
 	}

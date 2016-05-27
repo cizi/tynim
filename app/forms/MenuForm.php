@@ -20,11 +20,10 @@ class MenuForm extends Nette\Object {
 
 	/**
 	 * @param array $languages
-	 * @param int $id
 	 * @param int $level
 	 * @return Form
 	 */
-	public function create(array $languages, $id = null, $level = 1) {
+	public function create(array $languages, $level = 1) {
 		$counter = 1;
 		$form = $this->factory->create();
 		$form->getElementPrototype()->addAttributes(["onsubmit" => "return requiredFields();"]);
@@ -60,13 +59,12 @@ class MenuForm extends Nette\Object {
 
 			$counter += 3;
 		}
-		if (!empty($id)) {
-			$form->addHidden("id")
-				->setValue($id);
-		}
 
 		$form->addHidden("level")
 			->setValue($level);
+
+		$form->addHidden("submenu")
+			->setValue(0);	// there is ID od menu record which will be a top menu for this subitem 0 means top menu item
 
 		$form->addSubmit("confirm", USER_EDIT_SAVE_BTN_LABEL)
 			->setAttribute("class","btn btn-primary menuItem alignRight")

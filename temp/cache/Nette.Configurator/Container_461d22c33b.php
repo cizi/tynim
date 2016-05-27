@@ -19,21 +19,21 @@ class Container_461d22c33b extends Nette\DI\Container
 					'http.context',
 					'security.user',
 					'session.session',
-					'25_App_Forms_ContactForm',
-					'26_App_Forms_ContactSettingForm',
-					'27_App_Forms_FooterForm',
-					'28_App_Forms_FormFactory',
-					'29_App_Forms_MenuForm',
-					'30_App_Forms_SignForm',
-					'31_App_Forms_SliderForm',
-					'32_App_Forms_UserForm',
-					'33_App_Forms_WebconfigForm',
-					'34_App_Model_FooterPicRepository',
-					'36_App_Model_MenuRepository',
-					'37_App_Model_SliderPicRepository',
-					'38_App_Model_SliderSettingRepository',
-					'39_App_Model_UserRepository',
-					'40_App_Model_WebconfigRepository',
+					'26_App_Forms_ContactForm',
+					'27_App_Forms_ContactSettingForm',
+					'28_App_Forms_FooterForm',
+					'29_App_Forms_FormFactory',
+					'30_App_Forms_MenuForm',
+					'31_App_Forms_SignForm',
+					'32_App_Forms_SliderForm',
+					'33_App_Forms_UserForm',
+					'34_App_Forms_WebconfigForm',
+					'35_App_Model_FooterPicRepository',
+					'37_App_Model_MenuRepository',
+					'38_App_Model_SliderPicRepository',
+					'39_App_Model_SliderSettingRepository',
+					'40_App_Model_UserRepository',
+					'41_App_Model_WebconfigRepository',
 					'application.1',
 					'application.2',
 					'application.3',
@@ -92,52 +92,57 @@ class Container_461d22c33b extends Nette\DI\Container
 			'Tracy\ILogger' => array(1 => array('tracy.logger')),
 			'Tracy\BlueScreen' => array(1 => array('tracy.blueScreen')),
 			'Tracy\Bar' => array(1 => array('tracy.bar')),
-			'App\Forms\ContactForm' => array(1 => array('25_App_Forms_ContactForm')),
-			'App\Forms\ContactSettingForm' => array(
-				1 => array('26_App_Forms_ContactSettingForm'),
+			'App\AdminModule\Controller\MenuController' => array(
+				1 => array(
+					'25_App_AdminModule_Controller_MenuController',
+				),
 			),
-			'App\Forms\FooterForm' => array(1 => array('27_App_Forms_FooterForm')),
-			'App\Forms\FormFactory' => array(1 => array('28_App_Forms_FormFactory')),
-			'App\Forms\MenuForm' => array(1 => array('29_App_Forms_MenuForm')),
-			'App\Forms\SignForm' => array(1 => array('30_App_Forms_SignForm')),
-			'App\Forms\SliderForm' => array(1 => array('31_App_Forms_SliderForm')),
-			'App\Forms\UserForm' => array(1 => array('32_App_Forms_UserForm')),
+			'App\Forms\ContactForm' => array(1 => array('26_App_Forms_ContactForm')),
+			'App\Forms\ContactSettingForm' => array(
+				1 => array('27_App_Forms_ContactSettingForm'),
+			),
+			'App\Forms\FooterForm' => array(1 => array('28_App_Forms_FooterForm')),
+			'App\Forms\FormFactory' => array(1 => array('29_App_Forms_FormFactory')),
+			'App\Forms\MenuForm' => array(1 => array('30_App_Forms_MenuForm')),
+			'App\Forms\SignForm' => array(1 => array('31_App_Forms_SignForm')),
+			'App\Forms\SliderForm' => array(1 => array('32_App_Forms_SliderForm')),
+			'App\Forms\UserForm' => array(1 => array('33_App_Forms_UserForm')),
 			'App\Forms\WebconfigForm' => array(
-				1 => array('33_App_Forms_WebconfigForm'),
+				1 => array('34_App_Forms_WebconfigForm'),
 			),
 			'App\Model\BaseRepository' => array(
 				1 => array(
-					'34_App_Model_FooterPicRepository',
-					'36_App_Model_MenuRepository',
-					'37_App_Model_SliderPicRepository',
-					'38_App_Model_SliderSettingRepository',
-					'39_App_Model_UserRepository',
-					'40_App_Model_WebconfigRepository',
+					'35_App_Model_FooterPicRepository',
+					'37_App_Model_MenuRepository',
+					'38_App_Model_SliderPicRepository',
+					'39_App_Model_SliderSettingRepository',
+					'40_App_Model_UserRepository',
+					'41_App_Model_WebconfigRepository',
 				),
 			),
 			'App\Model\FooterPicRepository' => array(
-				1 => array('34_App_Model_FooterPicRepository'),
+				1 => array('35_App_Model_FooterPicRepository'),
 			),
 			'App\Model\LangRepository' => array(
-				1 => array('35_App_Model_LangRepository'),
+				1 => array('36_App_Model_LangRepository'),
 			),
 			'App\Model\MenuRepository' => array(
-				1 => array('36_App_Model_MenuRepository'),
+				1 => array('37_App_Model_MenuRepository'),
 			),
 			'App\Model\SliderPicRepository' => array(
-				1 => array('37_App_Model_SliderPicRepository'),
+				1 => array('38_App_Model_SliderPicRepository'),
 			),
 			'App\Model\SliderSettingRepository' => array(
-				1 => array('38_App_Model_SliderSettingRepository'),
+				1 => array('39_App_Model_SliderSettingRepository'),
 			),
 			'Nette\Security\IAuthenticator' => array(
-				1 => array('39_App_Model_UserRepository'),
+				1 => array('40_App_Model_UserRepository'),
 			),
 			'App\Model\UserRepository' => array(
-				1 => array('39_App_Model_UserRepository'),
+				1 => array('40_App_Model_UserRepository'),
 			),
 			'App\Model\WebconfigRepository' => array(
-				1 => array('40_App_Model_WebconfigRepository'),
+				1 => array('41_App_Model_WebconfigRepository'),
 			),
 			'Dibi\Connection' => array(1 => array('connection')),
 			'App\AdminModule\Presenters\SignPresenter' => array(
@@ -366,22 +371,23 @@ class Container_461d22c33b extends Nette\DI\Container
 			'Nette\DI\Container' => array(1 => array('container')),
 		),
 		'services' => array(
-			'25_App_Forms_ContactForm' => 'App\Forms\ContactForm',
-			'26_App_Forms_ContactSettingForm' => 'App\Forms\ContactSettingForm',
-			'27_App_Forms_FooterForm' => 'App\Forms\FooterForm',
-			'28_App_Forms_FormFactory' => 'App\Forms\FormFactory',
-			'29_App_Forms_MenuForm' => 'App\Forms\MenuForm',
-			'30_App_Forms_SignForm' => 'App\Forms\SignForm',
-			'31_App_Forms_SliderForm' => 'App\Forms\SliderForm',
-			'32_App_Forms_UserForm' => 'App\Forms\UserForm',
-			'33_App_Forms_WebconfigForm' => 'App\Forms\WebconfigForm',
-			'34_App_Model_FooterPicRepository' => 'App\Model\FooterPicRepository',
-			'35_App_Model_LangRepository' => 'App\Model\LangRepository',
-			'36_App_Model_MenuRepository' => 'App\Model\MenuRepository',
-			'37_App_Model_SliderPicRepository' => 'App\Model\SliderPicRepository',
-			'38_App_Model_SliderSettingRepository' => 'App\Model\SliderSettingRepository',
-			'39_App_Model_UserRepository' => 'App\Model\UserRepository',
-			'40_App_Model_WebconfigRepository' => 'App\Model\WebconfigRepository',
+			'25_App_AdminModule_Controller_MenuController' => 'App\AdminModule\Controller\MenuController',
+			'26_App_Forms_ContactForm' => 'App\Forms\ContactForm',
+			'27_App_Forms_ContactSettingForm' => 'App\Forms\ContactSettingForm',
+			'28_App_Forms_FooterForm' => 'App\Forms\FooterForm',
+			'29_App_Forms_FormFactory' => 'App\Forms\FormFactory',
+			'30_App_Forms_MenuForm' => 'App\Forms\MenuForm',
+			'31_App_Forms_SignForm' => 'App\Forms\SignForm',
+			'32_App_Forms_SliderForm' => 'App\Forms\SliderForm',
+			'33_App_Forms_UserForm' => 'App\Forms\UserForm',
+			'34_App_Forms_WebconfigForm' => 'App\Forms\WebconfigForm',
+			'35_App_Model_FooterPicRepository' => 'App\Model\FooterPicRepository',
+			'36_App_Model_LangRepository' => 'App\Model\LangRepository',
+			'37_App_Model_MenuRepository' => 'App\Model\MenuRepository',
+			'38_App_Model_SliderPicRepository' => 'App\Model\SliderPicRepository',
+			'39_App_Model_SliderSettingRepository' => 'App\Model\SliderSettingRepository',
+			'40_App_Model_UserRepository' => 'App\Model\UserRepository',
+			'41_App_Model_WebconfigRepository' => 'App\Model\WebconfigRepository',
 			'application.1' => 'App\AdminModule\Presenters\ContactPresenter',
 			'application.10' => 'App\FrontendModule\Presenters\Error4xxPresenter',
 			'application.11' => 'App\FrontendModule\Presenters\ErrorPresenter',
@@ -509,11 +515,21 @@ class Container_461d22c33b extends Nette\DI\Container
 
 
 	/**
+	 * @return App\AdminModule\Controller\MenuController
+	 */
+	public function createService__25_App_AdminModule_Controller_MenuController()
+	{
+		$service = new App\AdminModule\Controller\MenuController($this->getService('37_App_Model_MenuRepository'));
+		return $service;
+	}
+
+
+	/**
 	 * @return App\Forms\ContactForm
 	 */
-	public function createService__25_App_Forms_ContactForm()
+	public function createService__26_App_Forms_ContactForm()
 	{
-		$service = new App\Forms\ContactForm($this->getService('28_App_Forms_FormFactory'));
+		$service = new App\Forms\ContactForm($this->getService('29_App_Forms_FormFactory'));
 		return $service;
 	}
 
@@ -521,9 +537,9 @@ class Container_461d22c33b extends Nette\DI\Container
 	/**
 	 * @return App\Forms\ContactSettingForm
 	 */
-	public function createService__26_App_Forms_ContactSettingForm()
+	public function createService__27_App_Forms_ContactSettingForm()
 	{
-		$service = new App\Forms\ContactSettingForm($this->getService('28_App_Forms_FormFactory'));
+		$service = new App\Forms\ContactSettingForm($this->getService('29_App_Forms_FormFactory'));
 		return $service;
 	}
 
@@ -531,9 +547,9 @@ class Container_461d22c33b extends Nette\DI\Container
 	/**
 	 * @return App\Forms\FooterForm
 	 */
-	public function createService__27_App_Forms_FooterForm()
+	public function createService__28_App_Forms_FooterForm()
 	{
-		$service = new App\Forms\FooterForm($this->getService('28_App_Forms_FormFactory'));
+		$service = new App\Forms\FooterForm($this->getService('29_App_Forms_FormFactory'));
 		return $service;
 	}
 
@@ -541,7 +557,7 @@ class Container_461d22c33b extends Nette\DI\Container
 	/**
 	 * @return App\Forms\FormFactory
 	 */
-	public function createService__28_App_Forms_FormFactory()
+	public function createService__29_App_Forms_FormFactory()
 	{
 		$service = new App\Forms\FormFactory;
 		return $service;
@@ -551,9 +567,9 @@ class Container_461d22c33b extends Nette\DI\Container
 	/**
 	 * @return App\Forms\MenuForm
 	 */
-	public function createService__29_App_Forms_MenuForm()
+	public function createService__30_App_Forms_MenuForm()
 	{
-		$service = new App\Forms\MenuForm($this->getService('28_App_Forms_FormFactory'));
+		$service = new App\Forms\MenuForm($this->getService('29_App_Forms_FormFactory'));
 		return $service;
 	}
 
@@ -561,9 +577,9 @@ class Container_461d22c33b extends Nette\DI\Container
 	/**
 	 * @return App\Forms\SignForm
 	 */
-	public function createService__30_App_Forms_SignForm()
+	public function createService__31_App_Forms_SignForm()
 	{
-		$service = new App\Forms\SignForm($this->getService('28_App_Forms_FormFactory'));
+		$service = new App\Forms\SignForm($this->getService('29_App_Forms_FormFactory'));
 		return $service;
 	}
 
@@ -571,9 +587,9 @@ class Container_461d22c33b extends Nette\DI\Container
 	/**
 	 * @return App\Forms\SliderForm
 	 */
-	public function createService__31_App_Forms_SliderForm()
+	public function createService__32_App_Forms_SliderForm()
 	{
-		$service = new App\Forms\SliderForm($this->getService('28_App_Forms_FormFactory'));
+		$service = new App\Forms\SliderForm($this->getService('29_App_Forms_FormFactory'));
 		return $service;
 	}
 
@@ -581,9 +597,9 @@ class Container_461d22c33b extends Nette\DI\Container
 	/**
 	 * @return App\Forms\UserForm
 	 */
-	public function createService__32_App_Forms_UserForm()
+	public function createService__33_App_Forms_UserForm()
 	{
-		$service = new App\Forms\UserForm($this->getService('28_App_Forms_FormFactory'));
+		$service = new App\Forms\UserForm($this->getService('29_App_Forms_FormFactory'));
 		return $service;
 	}
 
@@ -591,9 +607,9 @@ class Container_461d22c33b extends Nette\DI\Container
 	/**
 	 * @return App\Forms\WebconfigForm
 	 */
-	public function createService__33_App_Forms_WebconfigForm()
+	public function createService__34_App_Forms_WebconfigForm()
 	{
-		$service = new App\Forms\WebconfigForm($this->getService('28_App_Forms_FormFactory'), $this->getService('35_App_Model_LangRepository'));
+		$service = new App\Forms\WebconfigForm($this->getService('29_App_Forms_FormFactory'), $this->getService('36_App_Model_LangRepository'));
 		return $service;
 	}
 
@@ -601,7 +617,7 @@ class Container_461d22c33b extends Nette\DI\Container
 	/**
 	 * @return App\Model\FooterPicRepository
 	 */
-	public function createService__34_App_Model_FooterPicRepository()
+	public function createService__35_App_Model_FooterPicRepository()
 	{
 		$service = new App\Model\FooterPicRepository($this->getService('connection'));
 		return $service;
@@ -611,7 +627,7 @@ class Container_461d22c33b extends Nette\DI\Container
 	/**
 	 * @return App\Model\LangRepository
 	 */
-	public function createService__35_App_Model_LangRepository()
+	public function createService__36_App_Model_LangRepository()
 	{
 		$service = new App\Model\LangRepository;
 		return $service;
@@ -621,7 +637,7 @@ class Container_461d22c33b extends Nette\DI\Container
 	/**
 	 * @return App\Model\MenuRepository
 	 */
-	public function createService__36_App_Model_MenuRepository()
+	public function createService__37_App_Model_MenuRepository()
 	{
 		$service = new App\Model\MenuRepository($this->getService('connection'));
 		return $service;
@@ -631,7 +647,7 @@ class Container_461d22c33b extends Nette\DI\Container
 	/**
 	 * @return App\Model\SliderPicRepository
 	 */
-	public function createService__37_App_Model_SliderPicRepository()
+	public function createService__38_App_Model_SliderPicRepository()
 	{
 		$service = new App\Model\SliderPicRepository($this->getService('connection'));
 		return $service;
@@ -641,7 +657,7 @@ class Container_461d22c33b extends Nette\DI\Container
 	/**
 	 * @return App\Model\SliderSettingRepository
 	 */
-	public function createService__38_App_Model_SliderSettingRepository()
+	public function createService__39_App_Model_SliderSettingRepository()
 	{
 		$service = new App\Model\SliderSettingRepository($this->getService('connection'));
 		return $service;
@@ -651,7 +667,7 @@ class Container_461d22c33b extends Nette\DI\Container
 	/**
 	 * @return App\Model\UserRepository
 	 */
-	public function createService__39_App_Model_UserRepository()
+	public function createService__40_App_Model_UserRepository()
 	{
 		$service = new App\Model\UserRepository($this->getService('connection'));
 		return $service;
@@ -661,7 +677,7 @@ class Container_461d22c33b extends Nette\DI\Container
 	/**
 	 * @return App\Model\WebconfigRepository
 	 */
-	public function createService__40_App_Model_WebconfigRepository()
+	public function createService__41_App_Model_WebconfigRepository()
 	{
 		$service = new App\Model\WebconfigRepository($this->getService('connection'));
 		return $service;
@@ -673,8 +689,8 @@ class Container_461d22c33b extends Nette\DI\Container
 	 */
 	public function createServiceApplication__1()
 	{
-		$service = new App\AdminModule\Presenters\ContactPresenter($this->getService('40_App_Model_WebconfigRepository'),
-			$this->getService('26_App_Forms_ContactSettingForm'));
+		$service = new App\AdminModule\Presenters\ContactPresenter($this->getService('41_App_Model_WebconfigRepository'),
+			$this->getService('27_App_Forms_ContactSettingForm'));
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
@@ -712,9 +728,9 @@ class Container_461d22c33b extends Nette\DI\Container
 	 */
 	public function createServiceApplication__12()
 	{
-		$service = new App\FrontendModule\Presenters\HomepagePresenter($this->getService('40_App_Model_WebconfigRepository'),
-			$this->getService('38_App_Model_SliderSettingRepository'), $this->getService('37_App_Model_SliderPicRepository'),
-			$this->getService('25_App_Forms_ContactForm'));
+		$service = new App\FrontendModule\Presenters\HomepagePresenter($this->getService('41_App_Model_WebconfigRepository'),
+			$this->getService('39_App_Model_SliderSettingRepository'), $this->getService('38_App_Model_SliderPicRepository'),
+			$this->getService('26_App_Forms_ContactForm'));
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
@@ -762,7 +778,7 @@ class Container_461d22c33b extends Nette\DI\Container
 	 */
 	public function createServiceApplication__3()
 	{
-		$service = new App\AdminModule\Presenters\DefaultPresenter($this->getService('30_App_Forms_SignForm'), $this->getService('39_App_Model_UserRepository'));
+		$service = new App\AdminModule\Presenters\DefaultPresenter($this->getService('31_App_Forms_SignForm'), $this->getService('40_App_Model_UserRepository'));
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
@@ -776,8 +792,8 @@ class Container_461d22c33b extends Nette\DI\Container
 	 */
 	public function createServiceApplication__4()
 	{
-		$service = new App\AdminModule\Presenters\FooterPresenter($this->getService('40_App_Model_WebconfigRepository'), $this->getService('27_App_Forms_FooterForm'),
-			$this->getService('34_App_Model_FooterPicRepository'));
+		$service = new App\AdminModule\Presenters\FooterPresenter($this->getService('41_App_Model_WebconfigRepository'), $this->getService('28_App_Forms_FooterForm'),
+			$this->getService('35_App_Model_FooterPicRepository'));
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
@@ -791,8 +807,8 @@ class Container_461d22c33b extends Nette\DI\Container
 	 */
 	public function createServiceApplication__5()
 	{
-		$service = new App\AdminModule\Presenters\MenuPresenter($this->getService('29_App_Forms_MenuForm'), $this->getService('36_App_Model_MenuRepository'),
-			$this->getService('35_App_Model_LangRepository'));
+		$service = new App\AdminModule\Presenters\MenuPresenter($this->getService('30_App_Forms_MenuForm'), $this->getService('37_App_Model_MenuRepository'),
+			$this->getService('36_App_Model_LangRepository'), $this->getService('25_App_AdminModule_Controller_MenuController'));
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
@@ -820,8 +836,8 @@ class Container_461d22c33b extends Nette\DI\Container
 	 */
 	public function createServiceApplication__7()
 	{
-		$service = new App\AdminModule\Presenters\SliderPresenter($this->getService('31_App_Forms_SliderForm'), $this->getService('37_App_Model_SliderPicRepository'),
-			$this->getService('38_App_Model_SliderSettingRepository'));
+		$service = new App\AdminModule\Presenters\SliderPresenter($this->getService('32_App_Forms_SliderForm'), $this->getService('38_App_Model_SliderPicRepository'),
+			$this->getService('39_App_Model_SliderSettingRepository'));
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
@@ -835,7 +851,7 @@ class Container_461d22c33b extends Nette\DI\Container
 	 */
 	public function createServiceApplication__8()
 	{
-		$service = new App\AdminModule\Presenters\UserPresenter($this->getService('39_App_Model_UserRepository'), $this->getService('32_App_Forms_UserForm'));
+		$service = new App\AdminModule\Presenters\UserPresenter($this->getService('40_App_Model_UserRepository'), $this->getService('33_App_Forms_UserForm'));
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
@@ -849,8 +865,8 @@ class Container_461d22c33b extends Nette\DI\Container
 	 */
 	public function createServiceApplication__9()
 	{
-		$service = new App\AdminModule\Presenters\WebconfigPresenter($this->getService('40_App_Model_WebconfigRepository'),
-			$this->getService('33_App_Forms_WebconfigForm'), $this->getService('35_App_Model_LangRepository'));
+		$service = new App\AdminModule\Presenters\WebconfigPresenter($this->getService('41_App_Model_WebconfigRepository'),
+			$this->getService('34_App_Forms_WebconfigForm'), $this->getService('36_App_Model_LangRepository'));
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
@@ -1105,7 +1121,7 @@ class Container_461d22c33b extends Nette\DI\Container
 	 */
 	public function createServiceSecurity__user()
 	{
-		$service = new Nette\Security\User($this->getService('security.userStorage'), $this->getService('39_App_Model_UserRepository'));
+		$service = new Nette\Security\User($this->getService('security.userStorage'), $this->getService('40_App_Model_UserRepository'));
 		$this->getService('tracy.bar')->addPanel(new Nette\Bridges\SecurityTracy\UserPanel($service));
 		return $service;
 	}

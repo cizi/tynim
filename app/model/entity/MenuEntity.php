@@ -2,16 +2,13 @@
 
 namespace App\Model\Entity;
 
+use Nette\Application\UI\Presenter;
+use Nette\Application\UI\Link;
+
 class MenuEntity {
 
 	/** @var int */
 	private $id;
-
-	/** @var int */
-	private $menuId;
-
-	/**@var int */
-	private $order;
 
 	/** @var string */
 	private $lang;
@@ -21,32 +18,20 @@ class MenuEntity {
 
 	/** @var string */
 	private $title;
-
 	/** @var string */
 	private $alt;
 
 	/** @var int */
 	private $level;
 
-	/** @var int suborder in the same level */
-	private $suborder;
+	/**@var int */
+	private $order;
+
+	/** @var int */
+	private $submenu;
 
 	/** @var bool */
 	private $hasSubItems;
-
-	/**
-	 * @return boolean
-	 */
-	public function hasSubItems() {
-		return $this->hasSubItems;
-	}
-
-	/**
-	 * @param boolean $hasSubItems
-	 */
-	public function setHasSubItems($hasSubItems) {
-		$this->hasSubItems = $hasSubItems;
-	}
 
 	/**
 	 * @return int
@@ -60,20 +45,6 @@ class MenuEntity {
 	 */
 	public function setId($id) {
 		$this->id = $id;
-	}
-
-	/**
-	 * @return int
-	 */
-	public function getOrder() {
-		return $this->order;
-	}
-
-	/**
-	 * @param int $order
-	 */
-	public function setOrder($order) {
-		$this->order = $order;
 	}
 
 	/**
@@ -149,29 +120,43 @@ class MenuEntity {
 	/**
 	 * @return int
 	 */
-	public function getSuborder() {
-		return $this->suborder;
+	public function getOrder() {
+		return $this->order;
 	}
 
 	/**
-	 * @param int $suborder
+	 * @param int $order
 	 */
-	public function setSuborder($suborder) {
-		$this->suborder = $suborder;
+	public function setOrder($order) {
+		$this->order = $order;
 	}
 
 	/**
 	 * @return int
 	 */
-	public function getMenuId() {
-		return $this->menuId;
+	public function getSubmenu() {
+		return $this->submenu;
 	}
 
 	/**
-	 * @param int $menuId
+	 * @param int $submenu
 	 */
-	public function setMenuId($menuId) {
-		$this->menuId = $menuId;
+	public function setSubmenu($submenu) {
+		$this->submenu = $submenu;
+	}
+
+	/**
+	 * @return boolean
+	 */
+	public function hasSubItems() {
+		return $this->hasSubItems;
+	}
+
+	/**
+	 * @param boolean $hasSubItems
+	 */
+	public function setHasSubItems($hasSubItems) {
+		$this->hasSubItems = $hasSubItems;
 	}
 
 	/**
@@ -179,14 +164,13 @@ class MenuEntity {
 	 */
 	public function hydrate(array $data) {
 		$this->id = (isset($data['id']) ? $data['id'] : null);
-		$this->menuId = (isset($data['menu_id']) ? $data['menu_id'] : null);
-		$this->order = (isset($data['order']) ? $data['order'] : null);
 		$this->lang = (isset($data['lang']) ? $data['lang'] : null);
 		$this->link = (isset($data['link']) ? $data['link'] : null);
 		$this->title = (isset($data['title']) ? $data['title'] : null);
 		$this->alt = (isset($data['alt']) ? $data['alt'] : null);
 		$this->level = (isset($data['level']) ? $data['level'] : null);
-		$this->suborder = (isset($data['suborder']) ? $data['suborder'] : null);
+		$this->order = (isset($data['order']) ? $data['order'] : null);
+		$this->submenu = (isset($data['submenu']) ? $data['submenu'] : null);
 		$this->hasSubItems = (isset($data['hasSubItems']) ? $data['hasSubItems'] : null);
 	}
 
@@ -196,14 +180,13 @@ class MenuEntity {
 	public function extract() {
 		return [
 			'id' => $this->id,
-			'menu_id' => $this->menuId,
-			'order' => $this->order,
 			'lang' => $this->lang,
 			'link' => $this->link,
 			'title' => $this->title,
 			'alt' => $this->alt,
 			'level' => $this->level,
-			'suborder' => $this->suborder,
+			'order' => $this->order,
+			'submenu' => $this->submenu,
 			'hasSubItems' => $this->hasSubItems
 		];
 	}

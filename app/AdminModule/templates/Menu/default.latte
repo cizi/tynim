@@ -34,18 +34,7 @@
 									</tr>
 									</thead>
 									<tbody>
-									{foreach $topMenuEntities as $menuEntity}
-										<tr>
-											<td>{$menuEntity->getOrder()}</td>
-											<td>{$menuEntity->getTitle()}</td>
-											<td>{$menuEntity->getLink()}</td>
-											<td>{$menuEntity->getAlt()}</td>
-											<td class="alignRight">
-												<a href={link Menu:Edit, $menuEntity->getMenuId()} title={=USER_EDIT}><span class="glyphicon glyphicon-pencil"></span></a> &nbsp;&nbsp;
-												<a href="#" data-href={link Menu:DeleteTop, $menuEntity->getMenuId()} class="colorRed" data-toggle="modal" data-target="#confirm-delete" title={=MENU_SETTINGS_MENU_TOP_DELETE}><span class="glyphicon glyphicon-remove"></span></a>
-											</td>
-										</tr>
-									{/foreach}
+										{!$menuController->renderMenuItemWithSubItems($presenter, $topMenuEntities)}
 									</tbody>
 								</table>
 							</div>
@@ -62,10 +51,10 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					{=SLIDER_SETTINGS_CONFIRM_MODAL_DELETE_TITLE}
+					{=MENU_SETTINGS_CONFIRM_MODAL_DELETE_TITLE}
 				</div>
 				<div class="modal-body">
-					{=SLIDER_SETTINGS_CONFIRM_MODAL_DELETE_MSG}
+					{=MENU_SETTINGS_CONFIRM_MODAL_DELETE_MSG}
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">{=SLIDER_SETTINGS_CONFIRM_MODAL_CANCEL}</button>

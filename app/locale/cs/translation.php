@@ -167,7 +167,12 @@ define("MENU_SETTINGS_TABLE_ORDER", 'Pořadí v menu');
 define("MENU_SETTINGS_LINK", 'Odkaz v URL');
 define("MENU_SETTINGS_IN_MENU_TITLE", 'Název položky v mennu');
 define("MENU_SETTINGS_ALT", 'SEO titulek');
-define("MENU_SETTINGS_MENU_TOP_DELETE", 'Smazání položka menu');
+define("MENU_SETTINGS_MENU_TOP_DELETE", 'Smazat položku menu');
+define("MENU_SETTINGS_EDIT_ITEM", 'Editovat položku menu');
+define("MENU_SETTINGS_ADD_SUBITEM", 'Přidat pod položku menu');
+define("MENU_SETTINGS_CONFIRM_MODAL_DELETE_TITLE", 'Smazaní položky menu');
+define("MENU_SETTINGS_CONFIRM_MODAL_DELETE_MSG", 'Opravdu chcete smazat položku menu?');
+
 // constact form
 define("CONTACT_FORM_SETTING_TITLE", 'Nastavení kontakního formuláře');
 define("CONTACT_FORM_SETTING_TITLE_INFO", 'Zde je možné nastavit některé vlastnosti kontakního fomuláře.');
