@@ -31,6 +31,8 @@ class MenuForm extends Nette\Object {
 		foreach($languages as $lang) {
 			$container = $form->addContainer($lang);
 
+			$container->addHidden("id");
+
 			$container->addText("lang")
 				->setAttribute("class", "form-control menuItem")
 				->setAttribute("tabindex", "-1")

@@ -65,19 +65,20 @@ class MenuPresenter extends SignPresenter {
 	 */
 	public function saveMenuItem($form, $values) {
 		$level = (isset($values['level']) ? $values['level'] : 1);
-		$editedId = (isset($values['id']) ? $values['id'] : null);
 		$submenu = (isset($values['submenu']) ? $values['submenu'] : 0);
 
 		$langItems = [];
-		foreach ($values as  $item) {
+		foreach ($values as $item) {
 			if ($item instanceof ArrayHash) {
 				$menuEntity = new MenuEntity();
 				$menuEntity->hydrate((array)$item);
 				$menuEntity->setSubmenu($submenu);
+				$menuEntity->setLevel($level);
 				$langItems[] = $menuEntity;
 			}
 		}
-		if ($this->menuRepository->saveItem($editedId, $level, $langItems)) {
+
+		if ($this->menuRepository->saveItem($langItems)) {
 			$this->flashMessage(MENU_SETTINGS_ITEM_LINK_ADDED, "alert-success");
 			$this->redirect("default");
 		} else {
@@ -91,11 +92,16 @@ class MenuPresenter extends SignPresenter {
 	 * @param $id
 	 */
 	public function actionEdit($id, array $values = null, $level = null) {
-		if (!empty($values)) {	// edit mode
+		if (!empty($values)) {	// edit mode when error during saving
 			$this['menuForm']->setDefaults($values);
 		}
 
-		if ($level != null) {	// submenu mode
+		if ($id != null && $level == null) {	// classic edit mode
+			$values = $this->menuController->prepareMenuItemsForEdit($id);
+			$this['menuForm']->setDefaults($values);
+		}
+
+		if ($level != null) {
 			$this['menuForm']['level']->setValue($level);
 			$this['menuForm']['submenu']->setValue($id);
 		}

@@ -54,34 +54,87 @@ class MenuRepository extends BaseRepository {
 
 	/**
 	 * @param int $id
-	 * @return \Dibi\Result|int
+	 *
+	 * @return bool
 	 */
 	public function delete($id) {
-		$query = ["delete from menu_item where id = %i or submenu = %s", $id, $id];
-		return $this->connection->query($query);
+		$this->connection->begin();
+		try {
+			$idToDelete = [];
+			// delete both top menu items
+			$query = ["select `order` from menu_item where id = %i", $id];
+			$result = $this->connection->query($query)->fetch();
+			$topOrder = $result->toArray()['order'];
+
+			$query = ["select id from menu_item where `order` = %i", $topOrder];
+			foreach($this->connection->query($query)->fetchAll() as $item) {
+				$idToDelete[] = $item->toArray()['id'];
+			}
+
+			// checking another id to delete
+			$query = ["select id from menu_item where submenu in %in", $idToDelete];
+			do {
+				$nextId = [];
+				foreach ($this->connection->query($query)->fetchAll() as $item) {
+					$idToDelete[] = $item->toArray()['id'];
+					$nextId[] = $item->toArray()['id'];
+				}
+				$query = ["select id from menu_item where submenu in %in", $nextId];
+			} while (count($this->connection->query($query)->fetchAll()));
+
+			$query = ["delete from menu_item where id in %in or submenu in %in", $idToDelete, $idToDelete];
+			$this->connection->query($query);
+		} catch (\Exception $e) {
+			$this->connection->rollback();
+			return false;
+		}
+
+		$this->connection->commit();
+		return true;
+	}
+
+	/**
+	 * @param MenuEntity[] $langItems
+	 */
+	public function saveItem(array $langItems) {
+		$this->connection->begin();
+
+		$orderValue = $this->connection->query("select ifnull(MAX(`order`),0) + 1 from menu_item");
+		foreach ($langItems as $menuItem) {
+			if (empty($menuItem->getId())) {// insert
+				if ($this->insertNewMenuItem($menuItem, $orderValue) == false) {
+					$this->connection->rollback();
+					return false;
+				}
+			} else {	// update
+				$this->updateMenuItem($menuItem);
+			}
+		}
+
+		$this->connection->commit();
+		return true;
 	}
 
 	/**
 	 * @param int $id
-	 * @param int $level
-	 * @param MenuEntity[] $langItems
+	 * @return MenuEntity[]
 	 */
-	public function saveItem($id, $level, array $langItems) {
-		$this->connection->begin();
-		if ($id == null) {		// insert
-			$orderValue = $this->connection->query("select ifnull(MAX(`order`),0) + 1 from menu_item");
+	public function findForEditById($id) {
+		$query = ["select `order` from menu_item where id = %i", $id];
+		$result = $this->connection->query($query)->fetch();
+		$menuEntity = new MenuEntity();
+		$menuEntity->hydrate($result->toArray());
 
-			foreach ($langItems as $menuItem) {
-				if ($this->insertNewMenuItem($menuItem, $level, $orderValue) == false) {
-					$this->connection->rollback();
-					return false;
-				}
-			}
-		} else {	// update
-
+		$query = ["select * from menu_item where `order` = %i", $menuEntity->getOrder()];
+		$result = $this->connection->query($query)->fetchAll();
+		$menuEntities = [];
+		foreach ($result as $item) {
+			$menuEnt = new MenuEntity();
+			$menuEnt->hydrate($item->toArray());
+			$menuEntities[] = $menuEnt;
 		}
-		$this->connection->commit();
-		return true;
+
+		return $menuEntities;
 	}
 
 	/**
@@ -92,7 +145,7 @@ class MenuRepository extends BaseRepository {
 	 *
 	 * @return bool
 	 */
-	private function insertNewMenuItem(MenuEntity $menuItem, $level, $order) {
+	private function insertNewMenuItem(MenuEntity $menuItem, $order) {
 		try {
 			$query = ["select * from menu_item where lang = %s and link = %s", $menuItem->getLang(), $menuItem->getLink()];
 			$result = $this->connection->query($query)->fetchAll();
@@ -106,7 +159,7 @@ class MenuRepository extends BaseRepository {
 				$menuItem->getLink(),
 				$menuItem->getTitle(),
 				$menuItem->getAlt(),
-				$level,
+				$menuItem->getLevel(),
 				$order,
 				$menuItem->getSubmenu()
 			];
@@ -115,5 +168,23 @@ class MenuRepository extends BaseRepository {
 		} catch (\Dibi\Exception $e) {
 			return false;
 		}
+	}
+
+	/**
+	 * @param MenuEntity $menuItemEntity
+	 */
+	private function updateMenuItem(MenuEntity $menuItemEntity) {
+		$query = ["update menu_item set
+				link = %s,
+				title = %s,
+				alt = %s
+		 	where id = %i",
+			$menuItemEntity->getLink(),
+			$menuItemEntity->getTitle(),
+			$menuItemEntity->getAlt(),
+			$menuItemEntity->getId()
+		];
+
+		$this->connection->query($query);
 	}
 }

@@ -151,8 +151,9 @@ define("SLIDER_SETTINGS_SAVE_OK", "Změny byly úspěšně uloženy.");
 
 // menu
 define("MENU_SETTINGS_TITLE", 'Konfigurace menu');
-define("MENU_SETTINGS_INFO", 'V této sekci je možno nakonfigurovat menu a jeho položky. Z hlediska přehlednosti není možné vnořovat do více
-								než dvou úrovní.');
+define("MENU_SETTINGS_INFO", 'V této sekci je možno nakonfigurovat menu a jeho položky. Položky menu je možné neomezeně vnořovat, alr z hlediska
+							přehlednosti se nedoporučuje vnořovat více jak do dvou úrovní. Pokud je vnořeno do více úrovní problém nastává během
+							zobrazení na mobilním zařízení kdy položky menu zabírají příliš mnoho místa.');
 define("MENU_SETTINGS_ITEM_NAME", 'Název položky v menu');
 define("MENU_SETTINGS_ITEM_NAME_REQ", 'Název položky v menu je povinné pole!');
 define("MENU_SETTINGS_ITEM_LINK", 'Odkaz v URL');
@@ -171,6 +172,8 @@ define("MENU_SETTINGS_ALT", 'SEO titulek');
 define("MENU_SETTINGS_MENU_TOP_DELETE", 'Smazat položku menu');
 define("MENU_SETTINGS_EDIT_ITEM", 'Editovat položku menu');
 define("MENU_SETTINGS_ADD_SUBITEM", 'Přidat pod položku menu');
+define("MENU_SETTINGS_MOVE_ITEM_UP", 'Posunout výš');
+define("MENU_SETTINGS_MOVE_ITEM_DOWN", 'Posunout níž');
 define("MENU_SETTINGS_CONFIRM_MODAL_DELETE_TITLE", 'Smazaní položky menu');
 define("MENU_SETTINGS_CONFIRM_MODAL_DELETE_MSG", 'Opravdu chcete smazat položku menu?');
 
