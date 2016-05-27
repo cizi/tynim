@@ -54,6 +54,15 @@ class MenuRepository extends BaseRepository {
 
 	/**
 	 * @param int $id
+	 * @return \Dibi\Result|int
+	 */
+	public function delete($id) {
+		$query = ["delete from menu_item where id = %i or submenu = %s", $id, $id];
+		return $this->connection->query($query);
+	}
+
+	/**
+	 * @param int $id
 	 * @param int $level
 	 * @param MenuEntity[] $langItems
 	 */

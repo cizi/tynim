@@ -50,8 +50,13 @@ class MenuPresenter extends SignPresenter {
 		return $form;
 	}
 
+	/**
+	 * @param int $id
+	 */
 	public function actionDelete($id) {
-		
+		$this->menuRepository->delete($id);
+		$this->flashMessage(MENU_SETTINGS_ITEM_DELETED, "alert-success");
+		$this->redirect("default");
 	}
 
 	/**
