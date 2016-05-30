@@ -176,6 +176,9 @@ define("MENU_SETTINGS_MOVE_ITEM_UP", 'Posunout výš');
 define("MENU_SETTINGS_MOVE_ITEM_DOWN", 'Posunout níž');
 define("MENU_SETTINGS_CONFIRM_MODAL_DELETE_TITLE", 'Smazaní položky menu');
 define("MENU_SETTINGS_CONFIRM_MODAL_DELETE_MSG", 'Opravdu chcete smazat položku menu?');
+define("MENU_SETTINGS_ITEM_MOVE_UP", 'Položka menu byla v pořádku posunuta výše.');
+define("MENU_SETTINGS_ITEM_MOVE_DOWN", 'Položka menu byla v pořádku posunuta níže.');
+define("MENU_SETTINGS_ITEM_MOVE_FAILED", 'Při úpravě položky menu došlo k chybě.');
 
 // constact form
 define("CONTACT_FORM_SETTING_TITLE", 'Nastavení kontakního formuláře');

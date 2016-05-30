@@ -6,6 +6,9 @@ use App\Model\Entity\MenuEntity;
 
 class MenuRepository extends BaseRepository {
 
+	/** @const for temporary value during order changes in menu */
+	const TEMP_INTEGER_VALUE = 2147483647;
+
 	/**
 	 * @param string $lang
 	 * @param int $level
@@ -135,6 +138,90 @@ class MenuRepository extends BaseRepository {
 		}
 
 		return $menuEntities;
+	}
+
+	public function orderEntryUp($id) {
+		$menuEntity = $this->getMenuEntityById($id);
+		$query = ["select * from menu_item where level = %i order by `order`", $menuEntity->getLevel()];
+		$result = $this->connection->query($query)->fetchAll();
+
+		// next record in order
+		$query = ["select * from menu_item where `order` = %i", $menuEntity->getOrder()-1];
+		$previousItemResult = $this->connection->query($query)->fetch();
+		$lastItem = new MenuEntity();
+		$lastItem->hydrate($previousItemResult->toArray());
+
+		$this->connection->begin();
+		try {
+			foreach ($result as $item) {
+				$menuEntityItem = new MenuEntity();
+				$menuEntityItem->hydrate($item->toArray());
+				if ($menuEntity->getId() == $menuEntityItem->getId()) {
+					$query = ["update menu_item set `order` = %i where `order` = %i", self::TEMP_INTEGER_VALUE, $menuEntity->getOrder()];
+					$this->connection->query($query);
+
+					$query = ["update menu_item set `order` = %i where `order` = %i", $menuEntity->getOrder() ,$lastItem->getOrder()];
+					$this->connection->query($query);
+
+					$query = ["update menu_item set `order` = %i where `order` = %i", $lastItem->getOrder(), self::TEMP_INTEGER_VALUE];
+					$this->connection->query($query);
+				}
+			}
+		} catch (\Exception $e) {
+			$this->connection->rollback();
+			return false;
+		}
+		$this->connection->commit();
+		return true;
+	}
+
+	public function orderEntryDown($id) {
+		$menuEntity = $this->getMenuEntityById($id);
+		$query = ["select * from menu_item where level = %i order by `order`", $menuEntity->getLevel()];
+		$result = $this->connection->query($query)->fetchAll();
+
+		// next record in order
+		$query = ["select * from menu_item where `order` = %i", $menuEntity->getOrder()+1];
+		$nextItemResult = $this->connection->query($query)->fetch();
+		$nextItem = new MenuEntity();
+		$nextItem->hydrate($nextItemResult->toArray());
+
+		$this->connection->begin();
+		try {
+			foreach($result as $item) {
+				$menuEntityItem = new MenuEntity();
+				$menuEntityItem->hydrate($item->toArray());
+
+				if ($menuEntity->getId() == $menuEntityItem->getId()) {
+					$query = ["update menu_item set `order` = %i where `order` = %i", self::TEMP_INTEGER_VALUE, $nextItem->getOrder()];
+					$this->connection->query($query);
+
+					$query = ["update menu_item set `order` = %i where `order` = %i", $nextItem->getOrder() ,$menuEntity->getOrder()];
+					$this->connection->query($query);
+
+					$query = ["update menu_item set `order` = %i where `order` = %i", $menuEntity->getOrder(), self::TEMP_INTEGER_VALUE];
+					$this->connection->query($query);
+				}
+			}
+		} catch (\Exception $e) {
+			$this->connection->rollback();
+			return false;
+		}
+		$this->connection->commit();
+		return true;
+	}
+
+	/**
+	 * @param int $id
+	 * @return MenuEntity
+	 */
+	private function getMenuEntityById($id) {
+		$query = ["select * from menu_item where id = %i", $id];
+		$result = $this->connection->query($query)->fetch();
+		$menuEntity = new MenuEntity();
+		$menuEntity->hydrate($result->toArray());
+
+		return $menuEntity;
 	}
 
 	/**
