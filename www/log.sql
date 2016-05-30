@@ -87076,3 +87076,829 @@ OK: select * from menu_item as mi
 -- driver: mysqli/
 -- 2016-05-27 15:27:33
 
+OK: 
+-- takes: 9.995 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:25
+-- driver: mysqli/
+-- 2016-05-30 09:28:45
+
+OK: select * from user where email = 'cizi@email.cz'  and active = 1;
+-- rows: 1
+-- takes: 5.402 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:25
+-- driver: mysqli/
+-- 2016-05-30 09:28:46
+
+OK: update user set last_login = NOW() where id = 7
+-- takes: 3.856 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:131
+-- driver: mysqli/
+-- 2016-05-30 09:28:46
+
+OK: 
+-- takes: 8.380 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:28:49
+
+OK: select * from menu_item as mi
+			where level = 1
+			and lang = 'cs'
+			order by `order`
+-- takes: 8.849 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:28:49
+
+OK: 
+-- takes: 4.521 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:28:50
+
+OK: select * from menu_item as mi
+			where level = 1
+			and lang = 'cs'
+			order by `order`
+-- takes: 3.988 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:28:50
+
+OK: 
+-- takes: 2.505 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:100
+-- driver: mysqli/
+-- 2016-05-30 09:29:04
+
+OK: 
+-- takes: 1.182 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:100
+-- driver: mysqli/
+-- 2016-05-30 09:29:04
+
+OK: select ifnull(MAX(`order`),0) + 1 from menu_item;
+-- rows: 1
+-- takes: 3.396 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:102
+-- driver: mysqli/
+-- 2016-05-30 09:29:04
+
+OK: select * from menu_item where lang = 'cs' and link = 'prvni-polozka'
+-- takes: 2.691 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:151
+-- driver: mysqli/
+-- 2016-05-30 09:29:04
+
+OK: insert into menu_item values (null,'cs', 'prvni-polozka', 'První položka', 'První položka SEO', 1, 1, 0)
+-- takes: 1.567 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:166
+-- driver: mysqli/
+-- 2016-05-30 09:29:04
+
+OK: select * from menu_item where lang = 'en' and link = 'first-item'
+-- takes: 1.651 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:151
+-- driver: mysqli/
+-- 2016-05-30 09:29:04
+
+OK: insert into menu_item values (null,'en', 'first-item', 'First item', 'First Item seo', 1, 1, 0)
+-- takes: 1.296 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:166
+-- driver: mysqli/
+-- 2016-05-30 09:29:04
+
+OK: 
+-- takes: 10.076 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:114
+-- driver: mysqli/
+-- 2016-05-30 09:29:04
+
+OK: 
+-- takes: 2.642 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:29:05
+
+OK: select * from menu_item as mi
+			where level = 1
+			and lang = 'cs'
+			order by `order`;
+-- rows: 1
+-- takes: 3.838 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:29:05
+
+OK: select * from menu_item as mi
+			where submenu = 1
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 1.256 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:29:05
+
+OK: 
+-- takes: 2.600 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:33:09
+
+OK: select * from menu_item as mi
+			where level = 1
+			and lang = 'cs'
+			order by `order`;
+-- rows: 1
+-- takes: 2.939 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:33:09
+
+OK: select * from menu_item as mi
+			where submenu = 1
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 1.267 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:33:09
+
+OK: 
+-- takes: 2.666 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:100
+-- driver: mysqli/
+-- 2016-05-30 09:33:21
+
+OK: 
+-- takes: 1.281 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:100
+-- driver: mysqli/
+-- 2016-05-30 09:33:21
+
+OK: select ifnull(MAX(`order`),0) + 1 from menu_item;
+-- rows: 1
+-- takes: 3.917 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:102
+-- driver: mysqli/
+-- 2016-05-30 09:33:21
+
+OK: select * from menu_item where lang = 'cs' and link = 'druha-polozka'
+-- takes: 1.880 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:151
+-- driver: mysqli/
+-- 2016-05-30 09:33:21
+
+OK: insert into menu_item values (null,'cs', 'druha-polozka', 'Druhá položka', 'Druhá položka SEO', 1, 2, 0)
+-- takes: 1.280 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:166
+-- driver: mysqli/
+-- 2016-05-30 09:33:21
+
+OK: select * from menu_item where lang = 'en' and link = 'second-item'
+-- takes: 1.899 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:151
+-- driver: mysqli/
+-- 2016-05-30 09:33:21
+
+OK: insert into menu_item values (null,'en', 'second-item', 'Second item', 'second seo', 1, 2, 0)
+-- takes: 1.921 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:166
+-- driver: mysqli/
+-- 2016-05-30 09:33:21
+
+OK: 
+-- takes: 11.818 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:114
+-- driver: mysqli/
+-- 2016-05-30 09:33:21
+
+OK: 
+-- takes: 2.331 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:33:21
+
+OK: select * from menu_item as mi
+			where level = 1
+			and lang = 'cs'
+			order by `order`;
+-- rows: 2
+-- takes: 2.806 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:33:21
+
+OK: select * from menu_item as mi
+			where submenu = 1
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 2.015 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:33:21
+
+OK: select * from menu_item as mi
+			where submenu = 3
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 2.441 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:33:21
+
+OK: 
+-- takes: 2.161 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:33:35
+
+OK: select * from menu_item as mi
+			where level = 1
+			and lang = 'cs'
+			order by `order`;
+-- rows: 2
+-- takes: 2.907 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:33:35
+
+OK: select * from menu_item as mi
+			where submenu = 1
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 1.165 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:33:35
+
+OK: select * from menu_item as mi
+			where submenu = 3
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 0.997 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:33:35
+
+OK: 
+-- takes: 3.346 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:100
+-- driver: mysqli/
+-- 2016-05-30 09:34:06
+
+OK: 
+-- takes: 1.479 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:100
+-- driver: mysqli/
+-- 2016-05-30 09:34:06
+
+OK: select ifnull(MAX(`order`),0) + 1 from menu_item;
+-- rows: 1
+-- takes: 3.099 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:102
+-- driver: mysqli/
+-- 2016-05-30 09:34:06
+
+OK: select * from menu_item where lang = 'cs' and link = 'treti-polozka'
+-- takes: 2.069 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:151
+-- driver: mysqli/
+-- 2016-05-30 09:34:06
+
+OK: insert into menu_item values (null,'cs', 'treti-polozka', 'Třetí položka', 'Třetí položka seo', 1, 3, 0)
+-- takes: 1.401 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:166
+-- driver: mysqli/
+-- 2016-05-30 09:34:06
+
+OK: select * from menu_item where lang = 'en' and link = 'third-item'
+-- takes: 1.731 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:151
+-- driver: mysqli/
+-- 2016-05-30 09:34:06
+
+OK: insert into menu_item values (null,'en', 'third-item', 'Third item', 'Third item seo', 1, 3, 0)
+-- takes: 1.571 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:166
+-- driver: mysqli/
+-- 2016-05-30 09:34:06
+
+OK: 
+-- takes: 6.589 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:114
+-- driver: mysqli/
+-- 2016-05-30 09:34:06
+
+OK: 
+-- takes: 2.816 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:34:06
+
+OK: select * from menu_item as mi
+			where level = 1
+			and lang = 'cs'
+			order by `order`;
+-- rows: 3
+-- takes: 3.020 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:34:06
+
+OK: select * from menu_item as mi
+			where submenu = 1
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 1.509 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:34:06
+
+OK: select * from menu_item as mi
+			where submenu = 3
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 1.338 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:34:06
+
+OK: select * from menu_item as mi
+			where submenu = 5
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 2.377 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:34:06
+
+OK: 
+-- takes: 2.654 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:34:34
+
+OK: select * from menu_item as mi
+			where level = 1
+			and lang = 'cs'
+			order by `order`;
+-- rows: 3
+-- takes: 2.575 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:34:34
+
+OK: select * from menu_item as mi
+			where submenu = 1
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 1.010 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:34:34
+
+OK: select * from menu_item as mi
+			where submenu = 3
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 0.995 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:34:34
+
+OK: select * from menu_item as mi
+			where submenu = 5
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 1.020 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:34:34
+
+OK: 
+-- takes: 2.045 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:34:39
+
+OK: select * from menu_item as mi
+			where level = 1
+			and lang = 'cs'
+			order by `order`;
+-- rows: 3
+-- takes: 3.398 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:34:39
+
+OK: select * from menu_item as mi
+			where submenu = 1
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 1.154 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:34:39
+
+OK: select * from menu_item as mi
+			where submenu = 3
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 0.977 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:34:39
+
+OK: select * from menu_item as mi
+			where submenu = 5
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 1.329 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:34:39
+
+OK: 
+-- takes: 2.095 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:34:52
+
+OK: select * from menu_item as mi
+			where level = 1
+			and lang = 'cs'
+			order by `order`;
+-- rows: 3
+-- takes: 4.471 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:34:52
+
+OK: select * from menu_item as mi
+			where submenu = 1
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 0.802 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:34:52
+
+OK: select * from menu_item as mi
+			where submenu = 3
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 0.784 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:34:52
+
+OK: select * from menu_item as mi
+			where submenu = 5
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 0.718 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:34:52
+
+OK: 
+-- takes: 2.961 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:35:01
+
+OK: select * from menu_item as mi
+			where level = 1
+			and lang = 'cs'
+			order by `order`;
+-- rows: 3
+-- takes: 2.231 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:35:01
+
+OK: select * from menu_item as mi
+			where submenu = 1
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 1.102 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:35:01
+
+OK: select * from menu_item as mi
+			where submenu = 3
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 1.177 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:35:01
+
+OK: select * from menu_item as mi
+			where submenu = 5
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 1.422 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:35:01
+
+OK: 
+-- takes: 3.306 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:35:08
+
+OK: select * from menu_item as mi
+			where level = 1
+			and lang = 'cs'
+			order by `order`;
+-- rows: 3
+-- takes: 2.932 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:35:08
+
+OK: select * from menu_item as mi
+			where submenu = 1
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 1.173 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:35:08
+
+OK: select * from menu_item as mi
+			where submenu = 3
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 1.330 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:35:08
+
+OK: select * from menu_item as mi
+			where submenu = 5
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 1.436 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:35:08
+
+OK: 
+-- takes: 3.342 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:35:53
+
+OK: select * from menu_item as mi
+			where level = 1
+			and lang = 'cs'
+			order by `order`;
+-- rows: 3
+-- takes: 2.284 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:35:53
+
+OK: select * from menu_item as mi
+			where submenu = 1
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 1.020 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:35:53
+
+OK: select * from menu_item as mi
+			where submenu = 3
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 0.893 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:35:53
+
+OK: select * from menu_item as mi
+			where submenu = 5
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 1.043 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:35:53
+
+OK: 
+-- takes: 2.700 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:36:59
+
+OK: select * from menu_item as mi
+			where level = 1
+			and lang = 'cs'
+			order by `order`;
+-- rows: 3
+-- takes: 2.610 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:36:59
+
+OK: select * from menu_item as mi
+			where submenu = 1
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 1.082 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:36:59
+
+OK: select * from menu_item as mi
+			where submenu = 3
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 1.250 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:36:59
+
+OK: select * from menu_item as mi
+			where submenu = 5
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 1.305 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:36:59
+
+OK: 
+-- takes: 2.881 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:37:11
+
+OK: select * from menu_item as mi
+			where level = 1
+			and lang = 'cs'
+			order by `order`;
+-- rows: 3
+-- takes: 3.667 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:37:11
+
+OK: select * from menu_item as mi
+			where submenu = 1
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 1.346 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:37:11
+
+OK: select * from menu_item as mi
+			where submenu = 3
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 1.334 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:37:11
+
+OK: select * from menu_item as mi
+			where submenu = 5
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 1.553 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:37:11
+
+OK: 
+-- takes: 2.381 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:37:22
+
+OK: select * from menu_item as mi
+			where level = 1
+			and lang = 'cs'
+			order by `order`;
+-- rows: 3
+-- takes: 4.634 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:37:22
+
+OK: select * from menu_item as mi
+			where submenu = 1
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 1.442 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:37:22
+
+OK: select * from menu_item as mi
+			where submenu = 3
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 1.427 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:37:22
+
+OK: select * from menu_item as mi
+			where submenu = 5
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 1.345 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:37:22
+
+OK: 
+-- takes: 2.328 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:37:28
+
+OK: select * from menu_item as mi
+			where level = 1
+			and lang = 'cs'
+			order by `order`;
+-- rows: 3
+-- takes: 4.806 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:24
+-- driver: mysqli/
+-- 2016-05-30 09:37:28
+
+OK: select * from menu_item as mi
+			where submenu = 1
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 1.333 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:37:28
+
+OK: select * from menu_item as mi
+			where submenu = 3
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 1.686 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:37:28
+
+OK: select * from menu_item as mi
+			where submenu = 5
+			and `level` = 2
+			and lang = 'cs'
+			order by `order`
+-- takes: 2.228 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\MenuRepository.php:52
+-- driver: mysqli/
+-- 2016-05-30 09:37:28
+

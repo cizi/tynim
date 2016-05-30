@@ -161,3 +161,8 @@ input.menuItem {
 	text-align: right;
 	padding-left: 10px;
 }
+
+div.menuMoverPlaceholder {
+	width: 25px;
+	display: inline-block;
+}

@@ -89,6 +89,20 @@ class MenuPresenter extends SignPresenter {
 	}
 
 	/**
+	 * @param int $id
+	 */
+	public function actionMoveUp($id) {
+		$this->redirect("default");
+	}
+
+	/**
+	 * @param int $id
+	 */
+	public function actionMoveDown($id) {
+		$this->redirect("default");
+	}
+
+	/**
 	 * @param $id
 	 */
 	public function actionEdit($id, array $values = null, $level = null) {
