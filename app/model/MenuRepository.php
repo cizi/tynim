@@ -140,6 +140,10 @@ class MenuRepository extends BaseRepository {
 		return $menuEntities;
 	}
 
+	/**
+	 * @param int $id
+	 * @return bool
+	 */
 	public function orderEntryUp($id) {
 		$menuEntity = $this->getMenuEntityById($id);
 		$query = ["select * from menu_item where level = %i order by `order`", $menuEntity->getLevel()];
@@ -175,6 +179,10 @@ class MenuRepository extends BaseRepository {
 		return true;
 	}
 
+	/**
+	 * @param int $id
+	 * @return bool
+	 */
 	public function orderEntryDown($id) {
 		$menuEntity = $this->getMenuEntityById($id);
 		$query = ["select * from menu_item where level = %i order by `order`", $menuEntity->getLevel()];
