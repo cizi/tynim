@@ -24,7 +24,9 @@
 			</a>
 		</li>
 		<li>
-			<a href="#"><span class="glyphicon glyphicon-th-large menuItem"></span>{=MENU_BLOCK}</a>
+			<a href={link Block:Default} {if $item == "block"} style="color: white"{/if}>
+				<span class="glyphicon glyphicon-th-large menuItem"></span>{=MENU_BLOCK}
+			</a>
 		</li>
 		<li>
 			<a href="#"><span class="glyphicon glyphicon-link menuItem"></span>{=MENU_MENU_BLOCK}</a>

@@ -130507,3 +130507,63 @@ OK: select * from menu_item as mi
 -- driver: mysqli/
 -- 2016-06-01 14:11:53
 
+OK: 
+-- takes: 10.274 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:91
+-- driver: mysqli/
+-- 2016-06-01 14:29:18
+
+OK: select * from web_config where lang = '';
+-- rows: 19
+-- takes: 5.093 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:91
+-- driver: mysqli/
+-- 2016-06-01 14:29:18
+
+OK: select * from footer_pic;
+-- rows: 2
+-- takes: 6.333 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\FooterPicRepository.php:15
+-- driver: mysqli/
+-- 2016-06-01 14:29:18
+
+OK: 
+-- takes: 2.708 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:91
+-- driver: mysqli/
+-- 2016-06-01 14:29:18
+
+OK: select * from web_config where lang = '';
+-- rows: 19
+-- takes: 2.426 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:91
+-- driver: mysqli/
+-- 2016-06-01 14:29:18
+
+OK: select * from footer_pic;
+-- rows: 2
+-- takes: 1.374 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\FooterPicRepository.php:15
+-- driver: mysqli/
+-- 2016-06-01 14:29:18
+
+OK: 
+-- takes: 3.414 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:91
+-- driver: mysqli/
+-- 2016-06-01 14:31:04
+
+OK: select * from web_config where lang = '';
+-- rows: 19
+-- takes: 3.962 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:91
+-- driver: mysqli/
+-- 2016-06-01 14:31:04
+
+OK: select * from footer_pic;
+-- rows: 2
+-- takes: 0.974 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\FooterPicRepository.php:15
+-- driver: mysqli/
+-- 2016-06-01 14:31:04
+
