@@ -1,6 +1,6 @@
 <?php
 
-namespace App\AdminModule\Controller;
+namespace App\Controller;
 
 use App\Model\Entity\MenuEntity;
 use App\Model\MenuRepository;
@@ -98,4 +98,73 @@ class MenuController {
 		return $result;
 	}
 
+	public function renderMenuInFrontend($lang, $level = 1, $id = null) {
+		$menu = "";
+
+		if ($id == null) {	// top menu entries
+			$itemsInLevel = $this->menuRepository->findItems($lang, $level);
+		} else {	// inner entries
+			$itemsInLevel = $this->menuRepository->findSubItems($id, $lang, $level);
+		}
+
+		foreach ($itemsInLevel as $item) {
+			if ($item->hasSubItems()) {
+				$menu .= (($level == 1) ? '<li class="dropdown">' : '<li class="dropdown-submenu">');
+
+				$menu .= '<a href="#" class="dropdown-toggle menuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'. $item->getTitle();
+				if ($level == 1) {
+					$menu .= '<span class="caret"></span>';
+				}
+				$menu .= '</a>';
+
+				$menu .= '<ul class="dropdown-menu">';
+				$menu .= $this->renderMenuInFrontend($lang, $level + 1, $item->getId());
+				$menu .= '</ul>';
+				$menu .= '</li>';
+			} else {
+				$menu .= '<li><a href="' . $item->getLink() . '" class="menuLink">' . $item->getTitle() . '</a></li>';
+			}
+		}
+
+		/* working part of menu for example
+		$menu2 = '<li><a href="#" class="menuLink">O společnoti</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle menuLink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reference <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<!-- <li role="separator" class="divider"></li> -->
+							<li><a href="#">Separated link</a></li>
+							<li><a href="#">One more separated link</a></li>
+
+							<li class="dropdown-submenu">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Action</a></li>
+									<li class="dropdown-submenu">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+										<ul class="dropdown-menu">
+											<li class="dropdown-submenu">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+												<ul class="dropdown-menu">
+													<li><a href="#">Action</a></li>
+													<li><a href="#">Another action</a></li>
+													<li><a href="#">Something else here</a></li>
+													<li><a href="#">Separated link</a></li>
+													<li><a href="#">One more separated link</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				<li><a href="#" class="menuLink">Kontakt</a></li>';
+		*/
+
+		return $menu;
+	}
+	
 }

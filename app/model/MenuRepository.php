@@ -41,6 +41,35 @@ class MenuRepository extends BaseRepository {
 	 * @param int $level
 	 * @return bool
 	 */
+	public function findSubItems($menuId, $lang, $level) {
+		$items = [];
+		$query = ["select * from menu_item as mi
+			where submenu = %i
+			and `level` = %i
+			and lang = %s
+			order by `order`",
+			$menuId,
+			$level,
+			$lang
+		];
+
+		$result = $this->connection->query($query)->fetchAll();
+		foreach ($result as $item) {
+			$menuItem = new MenuEntity();
+			$menuItem->hydrate($item->toArray());
+			$menuItem->setHasSubItems($this->hasSubItems($menuItem->getId(), $lang, $level));
+			$items[] = $menuItem;
+		}
+
+		return $items;
+	}
+
+	/**
+	 * @param int $menuId
+	 * @param string $lang
+	 * @param int $level
+	 * @return bool
+	 */
 	public function hasSubItems($menuId, $lang, $level) {
 		$query = ["select * from menu_item as mi
 			where submenu = %i

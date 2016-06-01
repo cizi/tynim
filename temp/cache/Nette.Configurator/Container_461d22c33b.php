@@ -92,10 +92,8 @@ class Container_461d22c33b extends Nette\DI\Container
 			'Tracy\ILogger' => array(1 => array('tracy.logger')),
 			'Tracy\BlueScreen' => array(1 => array('tracy.blueScreen')),
 			'Tracy\Bar' => array(1 => array('tracy.bar')),
-			'App\AdminModule\Controller\MenuController' => array(
-				1 => array(
-					'25_App_AdminModule_Controller_MenuController',
-				),
+			'App\Controller\MenuController' => array(
+				1 => array('25_App_Controller_MenuController'),
 			),
 			'App\Forms\ContactForm' => array(1 => array('26_App_Forms_ContactForm')),
 			'App\Forms\ContactSettingForm' => array(
@@ -371,7 +369,7 @@ class Container_461d22c33b extends Nette\DI\Container
 			'Nette\DI\Container' => array(1 => array('container')),
 		),
 		'services' => array(
-			'25_App_AdminModule_Controller_MenuController' => 'App\AdminModule\Controller\MenuController',
+			'25_App_Controller_MenuController' => 'App\Controller\MenuController',
 			'26_App_Forms_ContactForm' => 'App\Forms\ContactForm',
 			'27_App_Forms_ContactSettingForm' => 'App\Forms\ContactSettingForm',
 			'28_App_Forms_FooterForm' => 'App\Forms\FooterForm',
@@ -515,11 +513,11 @@ class Container_461d22c33b extends Nette\DI\Container
 
 
 	/**
-	 * @return App\AdminModule\Controller\MenuController
+	 * @return App\Controller\MenuController
 	 */
-	public function createService__25_App_AdminModule_Controller_MenuController()
+	public function createService__25_App_Controller_MenuController()
 	{
-		$service = new App\AdminModule\Controller\MenuController($this->getService('37_App_Model_MenuRepository'));
+		$service = new App\Controller\MenuController($this->getService('37_App_Model_MenuRepository'));
 		return $service;
 	}
 
@@ -730,7 +728,7 @@ class Container_461d22c33b extends Nette\DI\Container
 	{
 		$service = new App\FrontendModule\Presenters\HomepagePresenter($this->getService('41_App_Model_WebconfigRepository'),
 			$this->getService('39_App_Model_SliderSettingRepository'), $this->getService('38_App_Model_SliderPicRepository'),
-			$this->getService('26_App_Forms_ContactForm'));
+			$this->getService('26_App_Forms_ContactForm'), $this->getService('25_App_Controller_MenuController'));
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
@@ -808,7 +806,7 @@ class Container_461d22c33b extends Nette\DI\Container
 	public function createServiceApplication__5()
 	{
 		$service = new App\AdminModule\Presenters\MenuPresenter($this->getService('30_App_Forms_MenuForm'), $this->getService('37_App_Model_MenuRepository'),
-			$this->getService('36_App_Model_LangRepository'), $this->getService('25_App_AdminModule_Controller_MenuController'));
+			$this->getService('36_App_Model_LangRepository'), $this->getService('25_App_Controller_MenuController'));
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));

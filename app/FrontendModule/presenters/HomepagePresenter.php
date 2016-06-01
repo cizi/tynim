@@ -2,6 +2,7 @@
 
 namespace App\FrontendModule\Presenters;
 
+use App\Controller\MenuController;
 use App\Forms\ContactForm;
 use Nette;
 use App\Enum\WebWidthEnum;
@@ -25,16 +26,21 @@ class HomepagePresenter extends BasePresenter {
 	/** @var ContactForm */
 	private $contactForm;
 
+	/** @var MenuController */
+	private $menuController;
+
 	public function __construct(
 		WebconfigRepository $webconfigRepository,
 		SliderSettingRepository $sliderSettingRepository,
 		SliderPicRepository $sliderPicRepository,
-		ContactForm $contactForm
+		ContactForm $contactForm,
+		MenuController $menuController
 	) {
 		$this->webconfigRepository = $webconfigRepository;
 		$this->sliderSettingRepository = $sliderSettingRepository;
 		$this->sliderPicRepository = $sliderPicRepository;
 		$this->contactForm = $contactForm;
+		$this->menuController = $menuController;
 	}
 
 	/**
@@ -42,15 +48,20 @@ class HomepagePresenter extends BasePresenter {
 	 */
 	public function startup() {
 		parent::startup();
-		$this->loadWebConfig();
+
+		$langSession = $this->session->getSection('webLang');
+		$lang = ((isset($langSession->langId) && $langSession->langId != null) ? $langSession->langId : 'cs');
+
+		$this->loadWebConfig($lang);
 		$this->loadSliderConfig();
 		$this->loadFooterConfig();
+
+		$this->template->menuHtml = $this->menuController->renderMenuInFrontend($lang);
 	}
 
 	public function renderDefault() {
 
 	}
-
 
 	/**
 	 * Proceed contact form
@@ -120,10 +131,7 @@ class HomepagePresenter extends BasePresenter {
 	/**
 	 * It loads config from admin to page
 	 */
-	private function loadWebConfig() {
-		$langSession = $this->session->getSection('webLang');
-		$lang = ((isset($langSession->langId) && $langSession->langId != null) ? $langSession->langId : 'cs');
-
+	private function loadWebConfig($lang) {
 		// depending on language
 		$this->template->title = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_WEB_TITLE, $lang);
 		$this->template->googleAnalytics = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_WEB_GOOGLE_ANALYTICS, $lang);

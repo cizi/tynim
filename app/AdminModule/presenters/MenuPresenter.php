@@ -2,7 +2,7 @@
 
 namespace App\AdminModule\Presenters;
 
-use App\AdminModule\Controller\MenuController;
+use App\Controller\MenuController;
 use App\Forms\MenuForm;
 use App\Model\Entity\MenuEntity;
 use App\Model\LangRepository;
