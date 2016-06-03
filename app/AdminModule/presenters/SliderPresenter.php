@@ -85,7 +85,7 @@ class SliderPresenter extends SignPresenter {
 		}
 
 		if ($fileError) {
-			$flashMessage = sprintf(UNSUPPORTED_UPLOAD_FORMAT, explode(",", $supportedFileFormats));
+			$flashMessage = sprintf(UNSUPPORTED_UPLOAD_FORMAT, implode(",", $supportedFileFormats));
 			$this->flashMessage($flashMessage, "alert-danger");
 		} else {
 			$this->flashMessage(SLIDER_SETTINGS_SAVE_OK, "alert-success");

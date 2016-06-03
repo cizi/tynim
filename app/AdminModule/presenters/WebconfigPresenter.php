@@ -103,7 +103,7 @@ class WebconfigPresenter extends SignPresenter {
 			}
 		}
 		if ($fileError) {
-			$flashMessage = sprintf(UNSUPPORTED_UPLOAD_FORMAT, explode(",", $supportedFileFormats));
+			$flashMessage = sprintf(UNSUPPORTED_UPLOAD_FORMAT, implode(",", $supportedFileFormats));
 			$this->flashMessage($flashMessage, "alert-danger");
 		} else {
 			$this->flashMessage(WEBCONFIG_WEB_SAVE_SUCCESS, "alert-success");

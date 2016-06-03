@@ -105,7 +105,7 @@ class BlockPresenter extends SignPresenter {
 		}
 
 		if ($fileError) {
-			$flashMessage = sprintf(UNSUPPORTED_UPLOAD_FORMAT, explode(",", $supportedFileFormats));
+			$flashMessage = sprintf(UNSUPPORTED_UPLOAD_FORMAT, implode(",", $supportedFileFormats));
 			$this->flashMessage($flashMessage, "alert-danger");
 			$this->redirect("edit", $values);
 		}

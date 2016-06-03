@@ -132075,3 +132075,181 @@ OK: select * from block as b left join block_content as bc on b.id = bc.block_id
 -- driver: mysqli/
 -- 2016-06-03 13:45:33
 
+OK: 
+-- takes: 4.389 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:91
+-- driver: mysqli/
+-- 2016-06-03 14:01:44
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 3.821 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:91
+-- driver: mysqli/
+-- 2016-06-03 14:01:44
+
+OK: select * from web_config where lang = '';
+-- rows: 19
+-- takes: 1.087 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:91
+-- driver: mysqli/
+-- 2016-06-03 14:01:44
+
+OK: 
+-- takes: 2.820 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:91
+-- driver: mysqli/
+-- 2016-06-03 14:01:44
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 3.515 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:91
+-- driver: mysqli/
+-- 2016-06-03 14:01:44
+
+OK: select * from web_config where lang = '';
+-- rows: 19
+-- takes: 1.424 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:91
+-- driver: mysqli/
+-- 2016-06-03 14:01:44
+
+OK: 
+-- takes: 2.247 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:91
+-- driver: mysqli/
+-- 2016-06-03 14:02:01
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.829 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:91
+-- driver: mysqli/
+-- 2016-06-03 14:02:01
+
+OK: select * from web_config where lang = '';
+-- rows: 19
+-- takes: 1.560 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:91
+-- driver: mysqli/
+-- 2016-06-03 14:02:01
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 1.064 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-06-03 14:02:01
+
+OK: update web_config set value = 'Můj název webu ap' where id = 'WEB_TITLE' and lang = 'cs'
+-- takes: 7.080 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:116
+-- driver: mysqli/
+-- 2016-06-03 14:02:01
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.639 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-06-03 14:02:01
+
+OK: update web_config set value = 'moje klíčová slova' where id = 'WEB_KEYWORDS' and lang = 'cs'
+-- takes: 3.203 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:116
+-- driver: mysqli/
+-- 2016-06-03 14:02:01
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 1.103 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-06-03 14:02:01
+
+OK: update web_config set value = '<script>\n</script>' where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs'
+-- takes: 3.012 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:116
+-- driver: mysqli/
+-- 2016-06-03 14:02:01
+
+OK: 
+-- takes: 3.440 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:91
+-- driver: mysqli/
+-- 2016-06-03 14:03:10
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.155 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:91
+-- driver: mysqli/
+-- 2016-06-03 14:03:10
+
+OK: select * from web_config where lang = '';
+-- rows: 19
+-- takes: 1.162 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:91
+-- driver: mysqli/
+-- 2016-06-03 14:03:10
+
+OK: select * from web_config where id = 'WEB_TITLE' and lang = 'cs';
+-- rows: 1
+-- takes: 0.963 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-06-03 14:03:10
+
+OK: update web_config set value = 'Můj název webu ap' where id = 'WEB_TITLE' and lang = 'cs'
+-- takes: 12.880 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:116
+-- driver: mysqli/
+-- 2016-06-03 14:03:10
+
+OK: select * from web_config where id = 'WEB_KEYWORDS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.889 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-06-03 14:03:10
+
+OK: update web_config set value = 'moje klíčová slova' where id = 'WEB_KEYWORDS' and lang = 'cs'
+-- takes: 9.215 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:116
+-- driver: mysqli/
+-- 2016-06-03 14:03:11
+
+OK: select * from web_config where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs';
+-- rows: 1
+-- takes: 0.683 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:110
+-- driver: mysqli/
+-- 2016-06-03 14:03:11
+
+OK: update web_config set value = '<script>\n</script>' where id = 'WEG_GOOGLE_ANALYTICS' and lang = 'cs'
+-- takes: 3.984 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:116
+-- driver: mysqli/
+-- 2016-06-03 14:03:11
+
+OK: 
+-- takes: 2.019 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:91
+-- driver: mysqli/
+-- 2016-06-03 14:03:11
+
+OK: select * from web_config where lang = 'cs';
+-- rows: 3
+-- takes: 2.104 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:91
+-- driver: mysqli/
+-- 2016-06-03 14:03:11
+
+OK: select * from web_config where lang = '';
+-- rows: 19
+-- takes: 1.065 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\WebconfigRepository.php:91
+-- driver: mysqli/
+-- 2016-06-03 14:03:11
+

@@ -88,7 +88,7 @@ class FooterPresenter extends SignPresenter {
 		}
 
 		if ($fileError) {
-			$flashMessage = sprintf(UNSUPPORTED_UPLOAD_FORMAT, explode(",", $supportedFilesFormat));
+			$flashMessage = sprintf(UNSUPPORTED_UPLOAD_FORMAT, implode(",", $supportedFilesFormat));
 			$this->flashMessage($flashMessage, "alert-danger");
 		} else {
 			unset($valuesToSave[WebconfigRepository::KEY_FOOTER_FILES]);
