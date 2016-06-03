@@ -261,5 +261,14 @@ define("BLOCK_SETTING_PIC_DELETE_TITLE", 'Smazání obrázku');
 define("BLOCK_SETTING_PIC_DELETE", 'Opravdu smazat obrázek?');
 define("BLOCK_SETTING_PIC_DELETE_CANCEL", 'Zpět');
 define("BLOCK_SETTING_PIC_DELETE_OK", 'Smazat');
+define("BLOCK_SETTINGS_CONFIRM_MODAL_DELETE_TITLE", 'Smazaní bloku');
+define("BLOCK_SETTINGS_CONFIRM_MODAL_DELETE_MSG", 'Opravdu chcete smazat obsahový blok?');
+define("BLOCK_SETTINGS_CONFIRM_MODAL_OK", 'Smazat');
+define("BLOCK_SETTINGS_CONFIRM_MODAL_CANCEL", 'Zpět');
+define("BLOCK_SETTINGS_ITEM_DELETED", 'Položka byla úspěšně smazána.');
+define("BLOCK_SETTINGS_ITEM_DELETED_FAILED", 'Při mazání položky došlo k chybě!');
+define("BLOCK_SETTINGS_ITEM_SAVED_FAILED", 'Při uložení položky došlo k chybě!');
 
+// common
 define("UNSUPPORTED_UPLOAD_FORMAT", "Pokoušíte se nahrát nepodporovaný formát. Podporované formáty jsou %s.");
+

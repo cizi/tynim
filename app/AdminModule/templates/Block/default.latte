@@ -36,22 +36,22 @@
 										{foreach $blocks as $blockEntity}
 											<tr>
 												<td>
-													{$blockEntity->setBlockContent()->getContent()}
+													{$blockEntity->getBlockContent()->getContentText()}
 												</td>
 												<td>
 													{if $blockEntity->getBackgroundColor() !=""}
-														<span class="colorExample" style="background-color: {!$blockEntity->getBackgroundColor()}"></span>
+														<div class="colorExample" style="background-color: {!$blockEntity->getBackgroundColor()}"></div>
 													{/if}
 												</td>
 												<td>
-													{if $blockEntity->getColor() !=""}
-														<span class="colorExample" style="background-color: {!$blockEntity->getColor()}"></span>
-														{$blockEntity->getColor()}
+													{if $blockEntity->getColor() != ""}
+														<div class="colorExample" style="background-color: {!$blockEntity->getColor()}"></div>
 													{/if}
 												</td>
-												<td>
-													<a href='{link edit}' title={=BLOCK_SETTING_EDIT_ITEM}><span class='glyphicon glyphicon-pencil'></span></a> &nbsp;&nbsp;
-													<a href='#' data-href='{$linkDelete}' class='colorRed' data-toggle='modal' data-target='#confirm-delete' title={=BLOCK_SETTING_DELETE_ITEM}><span class='glyphicon glyphicon-remove'></span></a>
+												<td class="alignRight">
+													<a href='{link edit, $blockEntity->getId()}' title={=BLOCK_SETTING_EDIT_ITEM}><span class='glyphicon glyphicon-pencil'></span></a> &nbsp;&nbsp;
+													<a href='#' data-href='{link delete, $blockEntity->getId()}' class='colorRed' data-toggle='modal' data-target='#confirm-delete' title={=BLOCK_SETTING_DELETE_ITEM}><span class='glyphicon glyphicon-remove'></span></a>
+												</td>
 											</tr>
 										{/foreach}
 									</tbody>
@@ -70,14 +70,14 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					{=MENU_SETTINGS_CONFIRM_MODAL_DELETE_TITLE}
+					{=BLOCK_SETTINGS_CONFIRM_MODAL_DELETE_TITLE}
 				</div>
 				<div class="modal-body">
-					{=MENU_SETTINGS_CONFIRM_MODAL_DELETE_MSG}
+					{=BLOCK_SETTINGS_CONFIRM_MODAL_DELETE_MSG}
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">{=SLIDER_SETTINGS_CONFIRM_MODAL_CANCEL}</button>
-					<a class="btn btn-danger btn-ok">{=SLIDER_SETTINGS_CONFIRM_MODAL_OK}</a>
+					<button type="button" class="btn btn-default" data-dismiss="modal">{=BLOCK_SETTINGS_CONFIRM_MODAL_CANCEL}</button>
+					<a class="btn btn-danger btn-ok">{=BLOCK_SETTINGS_CONFIRM_MODAL_OK}</a>
 				</div>
 			</div>
 		</div>

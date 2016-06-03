@@ -73,6 +73,13 @@ class BlockContentEntity {
 	}
 
 	/**
+	 * @return string
+	 */
+	public function getContentText() {
+		return strip_tags($this->getContent());
+	}
+
+	/**
 	 * @param array $data
 	 */
 	public function hydrate(array $data) {

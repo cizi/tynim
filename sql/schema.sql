@@ -3,25 +3,51 @@
 SET NAMES utf8;
 SET time_zone = '+00:00';
 
-CREATE TABLE `menu_inner` (
-  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'ID',
-  `menu_top_id` int(11) NOT NULL COMMENT 'Cizí klíč k menu top',
-  `link_name` varchar(255) COLLATE utf8_czech_ci NOT NULL COMMENT 'Název odkazu',
-  `menu_name` varchar(255) COLLATE utf8_czech_ci NOT NULL COMMENT 'Název v menu',
-  `order` int(2) NOT NULL COMMENT 'pořadí',
-  PRIMARY KEY (`id`),
-  KEY `menu_top_id` (`menu_top_id`),
-  CONSTRAINT `menu_inner_ibfk_1` FOREIGN KEY (`menu_top_id`) REFERENCES `menu_top` (`id`)
+CREATE TABLE `block` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Block ID',
+  `background_color` varchar(50) COLLATE utf8_czech_ci NOT NULL COMMENT 'Content background color',
+  `color` varchar(50) COLLATE utf8_czech_ci NOT NULL COMMENT 'Font color',
+  `width` varchar(50) COLLATE utf8_czech_ci NOT NULL COMMENT 'Width of block',
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
 
 
-CREATE TABLE `menu_top` (
-  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'ID',
-  `link_name` varchar(255) COLLATE utf8_czech_ci DEFAULT NULL COMMENT 'Název odkazu v URL',
-  `menu_name` varchar(255) COLLATE utf8_czech_ci DEFAULT NULL COMMENT 'Název položky v menu',
-  `order` int(2) NOT NULL COMMENT 'Pořadí v menu',
+CREATE TABLE `block_content` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'ID of record',
+  `block_id` int(11) NOT NULL COMMENT 'ID of block',
+  `lang` varchar(5) COLLATE utf8_czech_ci NOT NULL COMMENT 'Lang of content',
+  `content` longtext COLLATE utf8_czech_ci NOT NULL COMMENT 'Text content',
   PRIMARY KEY (`id`),
-  UNIQUE KEY `order` (`order`)
+  UNIQUE KEY `block_id_lang` (`block_id`,`lang`),
+  CONSTRAINT `block_content_ibfk_1` FOREIGN KEY (`block_id`) REFERENCES `block` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
+
+CREATE TABLE `block_pic` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'ID',
+  `path` varchar(255) COLLATE utf8_czech_ci NOT NULL COMMENT 'Path to picture',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
+
+CREATE TABLE `footer_pic` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Id',
+  `path` varchar(255) COLLATE utf8_czech_ci NOT NULL COMMENT 'Cesta k souboru',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
+
+CREATE TABLE `menu_item` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'ID of record (needed in subitems)',
+  `lang` varchar(5) COLLATE utf8_czech_ci NOT NULL COMMENT 'Language shortcut',
+  `link` varchar(255) COLLATE utf8_czech_ci NOT NULL COMMENT 'Link to web',
+  `title` varchar(255) COLLATE utf8_czech_ci NOT NULL COMMENT 'Frontend title',
+  `alt` varchar(255) COLLATE utf8_czech_ci NOT NULL COMMENT 'Alt on hover',
+  `level` int(11) NOT NULL COMMENT 'Level nesting',
+  `order` int(11) NOT NULL COMMENT 'Order in menu',
+  `submenu` int(11) NOT NULL COMMENT 'ID of this menu item',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `lang_link` (`lang`,`link`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
 
 
@@ -60,4 +86,4 @@ CREATE TABLE `web_config` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
 
 
--- 2016-05-18 15:02:14
+-- 2016-06-03 13:32:22

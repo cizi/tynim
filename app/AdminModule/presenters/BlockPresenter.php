@@ -51,19 +51,14 @@ class BlockPresenter extends SignPresenter {
 
 	/**
 	 * @param $id
-	 * @param $values
+	 * @param array $values
 	 */
-	public function actionEdit($id, $values = null) {
+	public function actionEdit($id, array $values = null) {
 		if ($values != null) {
 			$this['blockForm']->setDefaults($values);
 		}
 
-		if ($id == null) {
-			$this->template->blockPics = [];
-		} else {
-			$this->template->blockPics = $this->blockRepository->findBlockPictures();
-		}
-
+		$this->template->blockPics = $this->blockRepository->findBlockPictures();
 	}
 
 	/**
@@ -74,7 +69,7 @@ class BlockPresenter extends SignPresenter {
 		$blockEntity = new BlockEntity();
 		$blockEntity->hydrate((array)$values);
 
-		$fileError = false;
+		$error = false;
 		$supportedFileFormats =  ["jpg", "png", "doc"];
 		$mutation = [];
 		$pics = [];
@@ -92,7 +87,7 @@ class BlockPresenter extends SignPresenter {
 					if ($file->name != "") {
 						$fileController = new FileController();
 						if ($fileController->upload($file, $supportedFileFormats) == false) {
-							$fileError = true;
+							$error = true;
 							break;
 						}
 
@@ -104,12 +99,16 @@ class BlockPresenter extends SignPresenter {
 			}
 		}
 
-		if ($fileError) {
+		if ($error) {
 			$flashMessage = sprintf(UNSUPPORTED_UPLOAD_FORMAT, implode(",", $supportedFileFormats));
 			$this->flashMessage($flashMessage, "alert-danger");
-			$this->redirect("edit", $values);
+			$this->redirect("edit", null, $values);
+		} else {
+			if ($this->blockRepository->saveCompleteBlockItem($blockEntity, $mutation, $pics) == false) {
+				$this->flashMessage(BLOCK_SETTINGS_ITEM_SAVED_FAILED, "alert-danger");
+				$this->redirect("edit", null, $values);
+			}
 		}
-
 		$this->redirect("default");
 	}
 
@@ -118,6 +117,12 @@ class BlockPresenter extends SignPresenter {
 	 * @param int $id
 	 */
 	public function actionDelete($id) {
+		if ($this->blockRepository->deleteBlockItem($id) == true) {
+			$this->flashMessage(BLOCK_SETTINGS_ITEM_DELETED, "alert-success");
+		} else {
+			$this->flashMessage(BLOCK_SETTINGS_ITEM_DELETED_FAILED, "alert-danger");
+		}
+
 		$this->redirect("default");
 	}
 	

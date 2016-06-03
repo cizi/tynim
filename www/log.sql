@@ -132253,3 +132253,1399 @@ OK: select * from web_config where lang = '';
 -- driver: mysqli/
 -- 2016-06-03 14:03:11
 
+OK: 
+-- takes: 3.407 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 14:03:47
+
+OK: select * from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs'
+-- takes: 3.089 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 14:03:47
+
+OK: 
+-- takes: 2.553 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 14:03:47
+
+OK: select * from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs'
+-- takes: 2.348 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 14:03:47
+
+OK: 
+-- takes: 3.023 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:25
+-- driver: mysqli/
+-- 2016-06-03 14:25:53
+
+OK: select * from user where email = 'cizi@email.cz'  and active = 1;
+-- rows: 1
+-- takes: 3.930 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:25
+-- driver: mysqli/
+-- 2016-06-03 14:25:53
+
+OK: update user set last_login = NOW() where id = 7
+-- takes: 13.403 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:131
+-- driver: mysqli/
+-- 2016-06-03 14:25:53
+
+OK: 
+-- takes: 3.428 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 14:25:55
+
+OK: select * from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs'
+-- takes: 3.409 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 14:25:55
+
+OK: 
+-- takes: 2.208 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 14:25:55
+
+OK: select * from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs'
+-- takes: 2.711 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 14:25:55
+
+OK: 
+-- takes: 2.938 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:67
+-- driver: mysqli/
+-- 2016-06-03 14:26:34
+
+OK: 
+-- takes: 1.041 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:67
+-- driver: mysqli/
+-- 2016-06-03 14:26:34
+
+OK: insert into block (`id`, `background_color`, `color`, `width`) VALUES (NULL, '', '', 'WIDTH_10')
+-- takes: 2.532 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:86
+-- driver: mysqli/
+-- 2016-06-03 14:26:34
+
+OK: 
+-- takes: 2.827 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:67
+-- driver: mysqli/
+-- 2016-06-03 14:33:07
+
+OK: 
+-- takes: 0.789 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:67
+-- driver: mysqli/
+-- 2016-06-03 14:33:07
+
+OK: insert into block (`id`, `background_color`, `color`, `width`) VALUES (NULL, '', '', 'WIDTH_10')
+-- takes: 1.088 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:115
+-- driver: mysqli/
+-- 2016-06-03 14:33:07
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 2, 'cs', '<p>asdas</p>')
+-- takes: 8.729 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:105
+-- driver: mysqli/
+-- 2016-06-03 14:33:07
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 2, 'en', '<p>asdas</p>')
+-- takes: 0.935 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:105
+-- driver: mysqli/
+-- 2016-06-03 14:33:07
+
+OK: 
+-- takes: 4.337 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:80
+-- driver: mysqli/
+-- 2016-06-03 14:33:07
+
+OK: 
+-- takes: 2.572 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 14:33:07
+
+OK: select * from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 1
+-- takes: 2.985 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 14:33:07
+
+OK: 
+-- takes: 3.722 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 14:46:15
+
+OK: select * from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 1
+-- takes: 3.720 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 14:46:15
+
+OK: 
+-- takes: 3.673 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 14:47:14
+
+OK: select * from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 1
+-- takes: 3.882 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 14:47:14
+
+OK: 
+-- takes: 4.016 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 14:47:56
+
+OK: select * from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 1
+-- takes: 3.169 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 14:47:57
+
+OK: 
+-- takes: 3.578 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 14:48:24
+
+OK: select * from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 1
+-- takes: 3.592 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 14:48:24
+
+OK: 
+-- takes: 2.742 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 14:48:35
+
+OK: select * from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 1
+-- takes: 2.838 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 14:48:35
+
+OK: 
+-- takes: 2.665 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 14:51:05
+
+OK: select * from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 1
+-- takes: 3.397 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 14:51:05
+
+OK: 
+-- takes: 2.782 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:66
+-- driver: mysqli/
+-- 2016-06-03 14:51:29
+
+OK: 
+-- takes: 0.860 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:66
+-- driver: mysqli/
+-- 2016-06-03 14:51:29
+
+OK: insert into block (`id`, `background_color`, `color`, `width`) VALUES (NULL, '#756a6a', '#d92e2e', 'WIDTH_10')
+-- takes: 1.258 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:114
+-- driver: mysqli/
+-- 2016-06-03 14:51:29
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 3, 'cs', '<p>hallooo</p>')
+-- takes: 1.251 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:104
+-- driver: mysqli/
+-- 2016-06-03 14:51:29
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 3, 'en', '<p>fafasfa&nbsp;</p>')
+-- takes: 1.222 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:104
+-- driver: mysqli/
+-- 2016-06-03 14:51:29
+
+OK: 
+-- takes: 6.428 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:79
+-- driver: mysqli/
+-- 2016-06-03 14:51:29
+
+OK: 
+-- takes: 2.173 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 14:51:29
+
+OK: select * from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 2
+-- takes: 4.205 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 14:51:29
+
+OK: 
+-- takes: 2.454 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 14:53:08
+
+OK: select * from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 2
+-- takes: 3.369 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 14:53:08
+
+OK: 
+-- takes: 2.509 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 14:53:41
+
+OK: select * from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 2
+-- takes: 2.711 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 14:53:41
+
+OK: 
+-- takes: 2.487 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 14:54:22
+
+OK: select * from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 2
+-- takes: 2.271 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 14:54:22
+
+OK: 
+-- takes: 3.554 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 14:54:50
+
+OK: select * from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 2
+-- takes: 2.903 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 14:54:50
+
+OK: 
+-- takes: 2.614 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 14:55:16
+
+OK: select * from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 2
+-- takes: 2.165 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 14:55:16
+
+OK: 
+-- takes: 3.755 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 14:57:46
+
+OK: select * from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 2
+-- takes: 2.852 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 14:57:46
+
+OK: 
+-- takes: 3.633 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 14:58:33
+
+OK: select * from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 2
+-- takes: 2.444 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 14:58:33
+
+OK: 
+-- takes: 3.012 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:60
+-- driver: mysqli/
+-- 2016-06-03 15:04:28
+
+OK: 
+-- takes: 0.552 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:60
+-- driver: mysqli/
+-- 2016-06-03 15:04:28
+
+OK: delete from block_content where block_id = 1
+-- takes: 5.014 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:63
+-- driver: mysqli/
+-- 2016-06-03 15:04:28
+
+OK: delete from block where id = 1
+-- takes: 0.791 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:65
+-- driver: mysqli/
+-- 2016-06-03 15:04:28
+
+OK: 
+-- takes: 0.615 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:71
+-- driver: mysqli/
+-- 2016-06-03 15:04:28
+
+OK: 
+-- takes: 1.988 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 15:04:28
+
+OK: select * from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 2
+-- takes: 3.096 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 15:04:28
+
+OK: 
+-- takes: 3.819 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:60
+-- driver: mysqli/
+-- 2016-06-03 15:04:37
+
+OK: 
+-- takes: 0.540 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:60
+-- driver: mysqli/
+-- 2016-06-03 15:04:37
+
+OK: delete from block_content where block_id = 1
+-- takes: 0.806 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:63
+-- driver: mysqli/
+-- 2016-06-03 15:04:37
+
+OK: delete from block where id = 1
+-- takes: 0.666 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:65
+-- driver: mysqli/
+-- 2016-06-03 15:04:37
+
+OK: 
+-- takes: 0.517 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:71
+-- driver: mysqli/
+-- 2016-06-03 15:04:37
+
+OK: 
+-- takes: 2.268 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 15:04:37
+
+OK: select * from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 2
+-- takes: 3.753 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 15:04:37
+
+OK: 
+-- takes: 2.815 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:60
+-- driver: mysqli/
+-- 2016-06-03 15:05:20
+
+OK: 
+-- takes: 0.516 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:60
+-- driver: mysqli/
+-- 2016-06-03 15:05:20
+
+OK: delete from block_content where block_id = 1
+-- takes: 0.629 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:64
+-- driver: mysqli/
+-- 2016-06-03 15:05:20
+
+OK: delete from block where id = 1
+-- takes: 0.710 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:67
+-- driver: mysqli/
+-- 2016-06-03 15:05:20
+
+OK: 
+-- takes: 0.521 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:73
+-- driver: mysqli/
+-- 2016-06-03 15:05:20
+
+OK: 
+-- takes: 2.070 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:60
+-- driver: mysqli/
+-- 2016-06-03 15:06:50
+
+OK: 
+-- takes: 0.594 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:60
+-- driver: mysqli/
+-- 2016-06-03 15:06:50
+
+OK: delete from block_content where block_id = 1
+-- takes: 0.557 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:64
+-- driver: mysqli/
+-- 2016-06-03 15:06:50
+
+OK: delete from block where id = 1
+-- takes: 0.583 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:67
+-- driver: mysqli/
+-- 2016-06-03 15:06:50
+
+OK: 
+-- takes: 0.744 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:73
+-- driver: mysqli/
+-- 2016-06-03 15:06:50
+
+OK: 
+-- takes: 2.172 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 15:06:50
+
+OK: select * from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 2
+-- takes: 2.207 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 15:06:50
+
+OK: 
+-- takes: 2.687 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 15:07:54
+
+OK: select * from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 2
+-- takes: 4.070 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 15:07:54
+
+OK: 
+-- takes: 2.775 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 15:08:25
+
+OK: select * from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 2
+-- takes: 2.862 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 15:08:25
+
+OK: 
+-- takes: 13.052 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 15:09:00
+
+OK: select * from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 2
+-- takes: 2.779 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 15:09:00
+
+OK: 
+-- takes: 3.298 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 15:09:50
+
+OK: select * from block as b right join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 2
+-- takes: 3.869 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 15:09:50
+
+OK: 
+-- takes: 4.527 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 15:10:10
+
+OK: select * from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 2
+-- takes: 2.887 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 15:10:10
+
+OK: 
+-- takes: 3.630 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 15:10:27
+
+OK: select * from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs'
+-- takes: 2.604 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 15:10:27
+
+OK: 
+-- takes: 3.017 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 15:10:27
+
+OK: select * from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs'
+-- takes: 2.488 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 15:10:27
+
+OK: 
+-- takes: 2.129 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:86
+-- driver: mysqli/
+-- 2016-06-03 15:10:46
+
+OK: 
+-- takes: 0.554 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:86
+-- driver: mysqli/
+-- 2016-06-03 15:10:46
+
+OK: insert into block (`id`, `background_color`, `color`, `width`) VALUES (NULL, '#ffffff', '#c2b8b8', 'WIDTH_10')
+-- takes: 0.831 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:134
+-- driver: mysqli/
+-- 2016-06-03 15:10:46
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 4, 'cs', '<p>Text woe</p>')
+-- takes: 0.794 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:124
+-- driver: mysqli/
+-- 2016-06-03 15:10:46
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 4, 'en', '<p>Text woe</p>')
+-- takes: 1.140 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:124
+-- driver: mysqli/
+-- 2016-06-03 15:10:46
+
+OK: 
+-- takes: 3.411 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:99
+-- driver: mysqli/
+-- 2016-06-03 15:10:46
+
+OK: 
+-- takes: 2.163 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 15:10:46
+
+OK: select * from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 1
+-- takes: 3.758 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:21
+-- driver: mysqli/
+-- 2016-06-03 15:10:46
+
+OK: 
+-- takes: 2.698 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 15:12:52
+
+OK: select b.id as id, b.background_color, b.color, b.width, bc.lang, bc.content
+			from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 1
+-- takes: 5.532 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 15:12:52
+
+OK: 
+-- takes: 2.345 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:87
+-- driver: mysqli/
+-- 2016-06-03 15:13:26
+
+OK: 
+-- takes: 0.621 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:87
+-- driver: mysqli/
+-- 2016-06-03 15:13:26
+
+OK: insert into block (`id`, `background_color`, `color`, `width`) VALUES (NULL, '#f09090', '#a31a1a', 'WIDTH_10')
+-- takes: 4.343 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:135
+-- driver: mysqli/
+-- 2016-06-03 15:13:26
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 5, 'cs', '<p>test</p>')
+-- takes: 14.639 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-03 15:13:26
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 5, 'en', '<p>test</p>')
+-- takes: 0.821 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-03 15:13:26
+
+OK: 
+-- takes: 3.863 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:100
+-- driver: mysqli/
+-- 2016-06-03 15:13:26
+
+OK: 
+-- takes: 2.089 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 15:13:26
+
+OK: select b.id as id, b.background_color, b.color, b.width, bc.lang, bc.content
+			from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 2
+-- takes: 2.536 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 15:13:26
+
+OK: 
+-- takes: 2.457 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 15:14:19
+
+OK: select b.id as id, b.background_color, b.color, b.width, bc.lang, bc.content
+			from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 2
+-- takes: 2.499 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 15:14:19
+
+OK: 
+-- takes: 2.470 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 15:14:40
+
+OK: select b.id as id, b.background_color, b.color, b.width, bc.lang, bc.content
+			from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 2
+-- takes: 2.437 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 15:14:40
+
+OK: 
+-- takes: 2.431 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 15:15:46
+
+OK: select b.id as id, b.background_color, b.color, b.width, bc.lang, bc.content
+			from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 2
+-- takes: 3.288 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 15:15:46
+
+OK: 
+-- takes: 3.567 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 15:16:02
+
+OK: select b.id as id, b.background_color, b.color, b.width, bc.lang, bc.content
+			from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 2
+-- takes: 3.020 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 15:16:02
+
+OK: 
+-- takes: 2.608 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 15:16:40
+
+OK: select b.id as id, b.background_color, b.color, b.width, bc.lang, bc.content
+			from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 2
+-- takes: 4.420 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 15:16:40
+
+OK: 
+-- takes: 3.470 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:61
+-- driver: mysqli/
+-- 2016-06-03 15:17:46
+
+OK: 
+-- takes: 0.529 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:61
+-- driver: mysqli/
+-- 2016-06-03 15:17:46
+
+OK: delete from block_content where block_id = 5
+-- takes: 1.004 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:64
+-- driver: mysqli/
+-- 2016-06-03 15:17:46
+
+OK: delete from block where id = 5
+-- takes: 18.271 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:66
+-- driver: mysqli/
+-- 2016-06-03 15:17:46
+
+OK: 
+-- takes: 9.296 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:72
+-- driver: mysqli/
+-- 2016-06-03 15:17:46
+
+OK: 
+-- takes: 2.350 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 15:17:46
+
+OK: select b.id as id, b.background_color, b.color, b.width, bc.lang, bc.content
+			from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 1
+-- takes: 2.547 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 15:17:46
+
+OK: 
+-- takes: 2.400 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:87
+-- driver: mysqli/
+-- 2016-06-03 15:18:40
+
+OK: 
+-- takes: 1.079 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:87
+-- driver: mysqli/
+-- 2016-06-03 15:18:40
+
+OK: insert into block (`id`, `background_color`, `color`, `width`) VALUES (NULL, '#92e600', '#db0000', 'WIDTH_10')
+-- takes: 0.928 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:135
+-- driver: mysqli/
+-- 2016-06-03 15:18:40
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 6, 'cs', '<p>test</p>')
+-- takes: 11.156 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-03 15:18:40
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 6, 'en', '<p>test</p>')
+-- takes: 0.718 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-03 15:18:40
+
+OK: 
+-- takes: 2.641 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:87
+-- driver: mysqli/
+-- 2016-06-03 15:19:08
+
+OK: 
+-- takes: 0.743 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:87
+-- driver: mysqli/
+-- 2016-06-03 15:19:08
+
+OK: insert into block (`id`, `background_color`, `color`, `width`) VALUES (NULL, '#92e600', '#db0000', 'WIDTH_10')
+-- takes: 1.858 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:135
+-- driver: mysqli/
+-- 2016-06-03 15:19:08
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 7, 'cs', '<p>test</p>')
+-- takes: 1.119 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-03 15:19:08
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 7, 'en', '<p>test</p>')
+-- takes: 0.908 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-03 15:19:08
+
+ERROR: [1146] Table 'tynim.block_pic' doesn't exist
+-- SQL: insert into block_pic (`id`, `path`) VALUES (NULL, '/upload/20160603-151908-Screenshot_2014-06-25-17-57-55.png')
+-- driver: mysqli/;
+-- 2016-06-03 15:19:08
+
+OK: 
+-- takes: 6.140 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:96
+-- driver: mysqli/
+-- 2016-06-03 15:19:08
+
+OK: 
+-- takes: 2.527 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 15:20:15
+
+OK: select b.id as id, b.background_color, b.color, b.width, bc.lang, bc.content
+			from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 1
+-- takes: 3.013 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 15:20:15
+
+OK: 
+-- takes: 2.413 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 15:20:16
+
+OK: select b.id as id, b.background_color, b.color, b.width, bc.lang, bc.content
+			from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 1
+-- takes: 2.331 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 15:20:16
+
+OK: 
+-- takes: 3.067 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:87
+-- driver: mysqli/
+-- 2016-06-03 15:20:39
+
+OK: 
+-- takes: 0.864 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:87
+-- driver: mysqli/
+-- 2016-06-03 15:20:39
+
+OK: insert into block (`id`, `background_color`, `color`, `width`) VALUES (NULL, '#98d61c', '#d4b0b0', 'WIDTH_10')
+-- takes: 1.450 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:135
+-- driver: mysqli/
+-- 2016-06-03 15:20:39
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 8, 'cs', '<p>teewt</p>')
+-- takes: 4.029 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-03 15:20:39
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 8, 'en', '<p>sdrfsd</p>')
+-- takes: 0.994 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-03 15:20:39
+
+ERROR: [1146] Table 'tynim.block_pic' doesn't exist
+-- SQL: insert into block_pic (`id`, `path`) VALUES (NULL, '/upload/20160603-152039-Screenshot_2014-06-25-17-57-55.png')
+-- driver: mysqli/;
+-- 2016-06-03 15:20:39
+
+OK: 
+-- takes: 3.434 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:96
+-- driver: mysqli/
+-- 2016-06-03 15:20:39
+
+OK: 
+-- takes: 2.308 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:87
+-- driver: mysqli/
+-- 2016-06-03 15:22:49
+
+OK: 
+-- takes: 0.677 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:87
+-- driver: mysqli/
+-- 2016-06-03 15:22:49
+
+OK: insert into block (`id`, `background_color`, `color`, `width`) VALUES (NULL, '#00eb27', '#ad6161', 'WIDTH_10')
+-- takes: 1.302 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:135
+-- driver: mysqli/
+-- 2016-06-03 15:22:49
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 9, 'cs', '<p>das</p>')
+-- takes: 0.779 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-03 15:22:49
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 9, 'en', '<p>asdas</p>')
+-- takes: 1.034 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-03 15:22:49
+
+ERROR: [1146] Table 'tynim.block_pic' doesn't exist
+-- SQL: insert into block_pic (`id`, `path`) VALUES (NULL, '/upload/20160603-152249-Screenshot_2014-06-25-17-57-55.png')
+-- driver: mysqli/;
+-- 2016-06-03 15:22:49
+
+OK: 
+-- takes: 6.567 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:96
+-- driver: mysqli/
+-- 2016-06-03 15:22:49
+
+OK: 
+-- takes: 2.713 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:87
+-- driver: mysqli/
+-- 2016-06-03 15:24:04
+
+OK: 
+-- takes: 0.846 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:87
+-- driver: mysqli/
+-- 2016-06-03 15:24:04
+
+OK: insert into block (`id`, `background_color`, `color`, `width`) VALUES (NULL, '#168503', '#c2c2c2', 'WIDTH_10')
+-- takes: 1.060 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:135
+-- driver: mysqli/
+-- 2016-06-03 15:24:04
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 10, 'cs', '<p>yc</p>')
+-- takes: 10.610 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-03 15:24:04
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 10, 'en', '<p>sdf</p>')
+-- takes: 1.129 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-03 15:24:04
+
+ERROR: [1146] Table 'tynim.block_pic' doesn't exist
+-- SQL: insert into block_pic (`id`, `path`) VALUES (NULL, '/upload/20160603-152404-Screenshot_2014-06-25-17-57-55.png')
+-- driver: mysqli/;
+-- 2016-06-03 15:24:04
+
+OK: 
+-- takes: 9.888 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:96
+-- driver: mysqli/
+-- 2016-06-03 15:24:04
+
+OK: 
+-- takes: 2.641 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:87
+-- driver: mysqli/
+-- 2016-06-03 15:25:14
+
+OK: 
+-- takes: 0.763 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:87
+-- driver: mysqli/
+-- 2016-06-03 15:25:14
+
+OK: insert into block (`id`, `background_color`, `color`, `width`) VALUES (NULL, '#329902', '#8a6a6a', 'WIDTH_10')
+-- takes: 1.493 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:135
+-- driver: mysqli/
+-- 2016-06-03 15:25:14
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 11, 'cs', '<p>asd</p>')
+-- takes: 0.833 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-03 15:25:14
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 11, 'en', '<p>asdas</p>')
+-- takes: 0.812 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-03 15:25:14
+
+OK: 
+-- takes: 5.281 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:100
+-- driver: mysqli/
+-- 2016-06-03 15:25:14
+
+OK: 
+-- takes: 3.372 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 15:25:14
+
+OK: select b.id as id, b.background_color, b.color, b.width, bc.lang, bc.content
+			from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 2
+-- takes: 2.502 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 15:25:14
+
+OK: 
+-- takes: 3.060 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:87
+-- driver: mysqli/
+-- 2016-06-03 15:25:30
+
+OK: 
+-- takes: 1.490 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:87
+-- driver: mysqli/
+-- 2016-06-03 15:25:30
+
+OK: insert into block (`id`, `background_color`, `color`, `width`) VALUES (NULL, '#07d600', '#bab3b3', 'WIDTH_10')
+-- takes: 1.381 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:135
+-- driver: mysqli/
+-- 2016-06-03 15:25:30
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 12, 'cs', '<p>asdas</p>')
+-- takes: 19.527 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-03 15:25:30
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 12, 'en', '<p>asdas</p>')
+-- takes: 1.976 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-03 15:25:30
+
+ERROR: [1146] Table 'tynim.block_pic' doesn't exist
+-- SQL: insert into block_pic (`id`, `path`) VALUES (NULL, '/upload/20160603-152530-Screenshot_2014-06-25-17-57-55.png')
+-- driver: mysqli/;
+-- 2016-06-03 15:25:30
+
+OK: 
+-- takes: 24.739 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:96
+-- driver: mysqli/
+-- 2016-06-03 15:25:30
+
+OK: 
+-- takes: 3.413 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:87
+-- driver: mysqli/
+-- 2016-06-03 15:25:55
+
+OK: 
+-- takes: 0.895 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:87
+-- driver: mysqli/
+-- 2016-06-03 15:25:55
+
+OK: insert into block (`id`, `background_color`, `color`, `width`) VALUES (NULL, '#07d600', '#bab3b3', 'WIDTH_10')
+-- takes: 1.000 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:135
+-- driver: mysqli/
+-- 2016-06-03 15:25:55
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 13, 'cs', '<p>asdas</p>')
+-- takes: 0.945 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-03 15:25:55
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 13, 'en', '<p>asdas</p>')
+-- takes: 1.347 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-03 15:25:55
+
+ERROR: [1146] Table 'tynim.block_pic' doesn't exist
+-- SQL: insert into block_pic (`id`, `path`) VALUES (NULL, '/upload/20160603-152555-Screenshot_2014-06-25-17-57-55.png')
+-- driver: mysqli/;
+-- 2016-06-03 15:25:55
+
+OK: 
+-- takes: 3.992 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:96
+-- driver: mysqli/
+-- 2016-06-03 15:25:55
+
+OK: 
+-- takes: 2.377 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:87
+-- driver: mysqli/
+-- 2016-06-03 15:28:04
+
+OK: 
+-- takes: 0.940 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:87
+-- driver: mysqli/
+-- 2016-06-03 15:28:04
+
+OK: insert into block (`id`, `background_color`, `color`, `width`) VALUES (NULL, '#07d600', '#bab3b3', 'WIDTH_10')
+-- takes: 0.981 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:135
+-- driver: mysqli/
+-- 2016-06-03 15:28:04
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 14, 'cs', '<p>asdas</p>')
+-- takes: 3.800 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-03 15:28:04
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 14, 'en', '<p>asdas</p>')
+-- takes: 1.083 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-03 15:28:04
+
+ERROR: [1146] Table 'tynim.block_pic' doesn't exist
+-- SQL: insert into block_pic (`id`, `path`) VALUES (NULL, '/upload/20160603-152804-Screenshot_2014-06-25-17-57-55.png')
+-- driver: mysqli/;
+-- 2016-06-03 15:28:04
+
+OK: 
+-- takes: 3.506 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:96
+-- driver: mysqli/
+-- 2016-06-03 15:28:04
+
+OK: 
+-- takes: 2.602 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:87
+-- driver: mysqli/
+-- 2016-06-03 15:28:46
+
+OK: 
+-- takes: 0.829 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:87
+-- driver: mysqli/
+-- 2016-06-03 15:28:46
+
+OK: insert into block (`id`, `background_color`, `color`, `width`) VALUES (NULL, '#07d600', '#bab3b3', 'WIDTH_10')
+-- takes: 1.149 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:136
+-- driver: mysqli/
+-- 2016-06-03 15:28:46
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 15, 'cs', '<p>asdas</p>')
+-- takes: 1.147 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:126
+-- driver: mysqli/
+-- 2016-06-03 15:28:46
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 15, 'en', '<p>asdas</p>')
+-- takes: 0.923 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:126
+-- driver: mysqli/
+-- 2016-06-03 15:28:46
+
+ERROR: [1146] Table 'tynim.block_pic' doesn't exist
+-- SQL: insert into block_pic (`id`, `path`) VALUES (NULL, '/upload/20160603-152846-Screenshot_2014-06-25-17-57-55.png')
+-- driver: mysqli/;
+-- 2016-06-03 15:28:46
+
+OK: 
+-- takes: 2.373 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:87
+-- driver: mysqli/
+-- 2016-06-03 15:29:17
+
+OK: 
+-- takes: 0.919 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:87
+-- driver: mysqli/
+-- 2016-06-03 15:29:17
+
+OK: insert into block (`id`, `background_color`, `color`, `width`) VALUES (NULL, '#07d600', '#bab3b3', 'WIDTH_10')
+-- takes: 1.797 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:136
+-- driver: mysqli/
+-- 2016-06-03 15:29:17
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 16, 'cs', '<p>asdas</p>')
+-- takes: 6.671 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:126
+-- driver: mysqli/
+-- 2016-06-03 15:29:17
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 16, 'en', '<p>asdas</p>')
+-- takes: 0.946 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:126
+-- driver: mysqli/
+-- 2016-06-03 15:29:17
+
+ERROR: [1048] Column 'id' cannot be null
+-- SQL: insert into block_pic (`id`, `path`) VALUES (NULL, '/upload/20160603-152917-Screenshot_2014-06-25-17-57-55.png')
+-- driver: mysqli/;
+-- 2016-06-03 15:29:17
+
+OK: 
+-- takes: 3.991 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:87
+-- driver: mysqli/
+-- 2016-06-03 15:29:28
+
+OK: 
+-- takes: 0.964 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:87
+-- driver: mysqli/
+-- 2016-06-03 15:29:28
+
+OK: insert into block (`id`, `background_color`, `color`, `width`) VALUES (NULL, '#07d600', '#bab3b3', 'WIDTH_10')
+-- takes: 1.217 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:136
+-- driver: mysqli/
+-- 2016-06-03 15:29:28
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 17, 'cs', '<p>asdas</p>')
+-- takes: 1.159 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:126
+-- driver: mysqli/
+-- 2016-06-03 15:29:28
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 17, 'en', '<p>asdas</p>')
+-- takes: 1.462 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:126
+-- driver: mysqli/
+-- 2016-06-03 15:29:28
+
+ERROR: [1048] Column 'id' cannot be null
+-- SQL: insert into block_pic (`id`, `path`) VALUES (NULL, '/upload/20160603-152927-Screenshot_2014-06-25-17-57-55.png')
+-- driver: mysqli/;
+-- 2016-06-03 15:29:28
+
+OK: 
+-- takes: 2.843 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:87
+-- driver: mysqli/
+-- 2016-06-03 15:30:24
+
+OK: 
+-- takes: 1.063 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:87
+-- driver: mysqli/
+-- 2016-06-03 15:30:24
+
+OK: insert into block (`id`, `background_color`, `color`, `width`) VALUES (NULL, '#07d600', '#bab3b3', 'WIDTH_10')
+-- takes: 1.382 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:135
+-- driver: mysqli/
+-- 2016-06-03 15:30:24
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 18, 'cs', '<p>asdas</p>')
+-- takes: 5.519 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-03 15:30:24
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 18, 'en', '<p>asdas</p>')
+-- takes: 1.096 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-03 15:30:24
+
+OK: insert into block_pic (`id`, `path`) VALUES (NULL, '/upload/20160603-153024-Screenshot_2014-06-25-17-57-55.png')
+-- takes: 0.946 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:111
+-- driver: mysqli/
+-- 2016-06-03 15:30:24
+
+OK: 
+-- takes: 3.875 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:100
+-- driver: mysqli/
+-- 2016-06-03 15:30:24
+
+OK: 
+-- takes: 2.628 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 15:30:25
+
+OK: select b.id as id, b.background_color, b.color, b.width, bc.lang, bc.content
+			from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 3
+-- takes: 3.611 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-03 15:30:25
+
+OK: 
+-- takes: 3.110 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:44
+-- driver: mysqli/
+-- 2016-06-03 15:32:01
+
+OK: select * from block_pic;
+-- rows: 1
+-- takes: 2.184 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:44
+-- driver: mysqli/
+-- 2016-06-03 15:32:01
+

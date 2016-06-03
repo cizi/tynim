@@ -44,7 +44,6 @@ class BlockPicsEntity {
 	public function extract() {
 		return [
 			"id" => $this->getId(),
-			"block_id" => $this->getBlockId(),
 			"path" => $this->getPath()
 		];
 	}
@@ -54,7 +53,6 @@ class BlockPicsEntity {
 	 */
 	public function hydrate(array $data) {
 		$this->setId(isset($data['id']) ? $data['id'] : null);
-		$this->setBlockId(isset($data['block_id']) ? $data['block_id'] : null);
 		$this->setPath(isset($data['path']) ? $data['path'] : null);
 	}
 }
