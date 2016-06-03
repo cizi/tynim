@@ -2,6 +2,7 @@
 
 namespace App\AdminModule\Presenters;
 
+use App\Controller\FileController;
 use App\Forms\WebconfigForm;
 use App\Model\LangRepository;
 use App\Model\WebconfigRepository;
@@ -85,25 +86,28 @@ class WebconfigPresenter extends SignPresenter {
 		}
 
 		$lang = WebconfigRepository::KEY_LANG_FOR_COMMON;	// its going on common parameters, no language need
+		$supportedFileFormats = ["ico"];
+		$fileError = false;
 		foreach ($values as $key => $value) {
 			if ($key == WebconfigRepository::KEY_FAVICON) {
 				/** @var FileUpload $file */
 				$file = $value;
-				if (empty($file->name)) {
-					continue;
+				if ($file->name != "") {
+					$fileController = new FileController();
+					if ($fileController->upload($file, $supportedFileFormats) == false) {
+						$fileError = true;
+						break;
+					}
+					$this->webconfigRepository->save($key, $fileController->getPathDb(), $lang);
 				}
-				if (substr($file->name, -3) != "ico" || substr($file->name, -3) != "ico") {
-					$this->flashMessage(WEBCONFIG_WEB_FAVICON_FORMAT, "alert-danger");
-					continue;
-				}
-				$pathDb = '/upload/' . date("Ymd-His") . "-" . $file->name;
-				$path = UPLOAD_PATH . '/' . date("Ymd-His") . "-" . $file->name;
-				$file->move($path);
-				$value = $pathDb;
 			}
-			$this->webconfigRepository->save($key, $value, $lang);
 		}
-		$this->flashMessage(WEBCONFIG_WEB_SAVE_SUCCESS, "alert-success");
+		if ($fileError) {
+			$flashMessage = sprintf(UNSUPPORTED_UPLOAD_FORMAT, explode(",", $supportedFileFormats));
+			$this->flashMessage($flashMessage, "alert-danger");
+		} else {
+			$this->flashMessage(WEBCONFIG_WEB_SAVE_SUCCESS, "alert-success");
+		}
 		$this->redirect("default");
 	}
 

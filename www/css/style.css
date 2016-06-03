@@ -162,7 +162,30 @@ input.menuItem {
 	padding-left: 10px;
 }
 
+#frm-blockForm table {
+	width: 100%;
+}
+
+#frm-blockForm table tbody tr th label {
+	padding-top: 10px;
+	padding-right: 4px;
+}
+
+#frm-blockForm table tbody tr td {
+	padding-top: 5px;
+	text-align: right;
+	padding-left: 10px;
+}
+
+input.langDivider{
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
 div.menuMoverPlaceholder {
 	width: 25px;
 	display: inline-block;
+}
+.blockHeader{
+	margin-left: 150px;
 }

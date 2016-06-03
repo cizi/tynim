@@ -179,6 +179,9 @@ define("MENU_SETTINGS_CONFIRM_MODAL_DELETE_MSG", 'Opravdu chcete smazat položku
 define("MENU_SETTINGS_ITEM_MOVE_UP", 'Položka menu byla v pořádku posunuta výše.');
 define("MENU_SETTINGS_ITEM_MOVE_DOWN", 'Položka menu byla v pořádku posunuta níže.');
 define("MENU_SETTINGS_ITEM_MOVE_FAILED", 'Při úpravě položky menu došlo k chybě.');
+define("MENU_SETTINGS_ITEM_TITLE", 'Konfigurace položky menu');
+define("MENU_SETTINGS_ITEM_INFO", 'Zde uveďte požadované parametry položky menu. SEO titulek zvolte takový, který nejlépe vystihuje obsah stránky,
+								který bude asociován s obsahem. ');
 
 // constact form
 define("CONTACT_FORM_SETTING_TITLE", 'Nastavení kontakního formuláře');
@@ -232,3 +235,31 @@ define("FOOTER_SHOW_FOOTER", 'Zapnout patičku');
 define("FOOTER_WIDTH", 'Šířka patičky');
 define("FOOTER_WIDTH_INFO", 'Nastaví šíři patičky vůči celé možné šíři stránek (nepočítává se do šíře obsahu stránek)');
 define("FOOTER_PIC_CONTENT", 'Obrázky, které je možné vložit do patičky');
+
+
+// block
+define("BLOCK_SETTING_TITLE", 'Obsahové bloky');
+define("BLOCK_SETTING_INFO", 'Obsahové bloky jsou části stráńek, které budou zobrazeny na webu. Jednu stránku může tvořit pouze jeden block,
+							nebo klidně více bloků. V této sekci nastavte jednotlivé bloky, prolinkování bloků s menu se nastavuje v
+							samostatné sekci.');
+define("BLOCK_SETTING_CONTENT", 'Obsah');
+define("BLOCK_SETTING_BG_COLOR", 'Barva pozadí');
+define("BLOCK_SETTING_COLOR", 'Barva textu');
+define("BLOCK_SETTING_EDIT_ITEM", 'Barva textu');
+define("BLOCK_SETTING_DELETE_ITEM", 'Barva textu');
+define("BLOCK_SETTING_PICS", 'Dostupné obrázky');
+define("BLOCK_SETTING_ITEM_EDIT", 'Nastavení bloku');
+define("BLOCK_SETTING_ITEM_EDIT_INFO", 'Zde je veškeré nastavení jednoho bloku včetně jazykový mutací. ');
+define("BLOCK_SETTING_ITEM_CONTENT_LABEL", 'Obsah bloku');
+define("BLOCK_SETTING_ITEM_CONTENT_CONFIRM", 'Uložit blok');
+define("BLOCK_SETTING_ITEM_CONTENT_COLOR", 'Barva text v bloku');
+define("BLOCK_SETTING_ITEM_CONTENT_BG_COLOR", 'Barva pozadí bloku');
+define("BLOCK_SETTING_ITEM_WIDTH_INFO", 'Nastaví šíři bloku vůči šíři stránek. ');
+define("BLOCK_SETTING_PIC_WILL_DELETE", 'Odstranění obrázku');
+define("BLOCK_SETTING_PIC_DELETED", 'Obrázek byl úspěšně odstraněn');
+define("BLOCK_SETTING_PIC_DELETE_TITLE", 'Smazání obrázku');
+define("BLOCK_SETTING_PIC_DELETE", 'Opravdu smazat obrázek?');
+define("BLOCK_SETTING_PIC_DELETE_CANCEL", 'Zpět');
+define("BLOCK_SETTING_PIC_DELETE_OK", 'Smazat');
+
+define("UNSUPPORTED_UPLOAD_FORMAT", "Pokoušíte se nahrát nepodporovaný formát. Podporované formáty jsou %s.");

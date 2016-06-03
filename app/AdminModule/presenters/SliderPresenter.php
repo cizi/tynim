@@ -2,6 +2,7 @@
 
 namespace App\AdminModule\Presenters;
 
+use App\Controller\FileController;
 use App\Forms\SliderForm;
 use App\Model\Entity\SliderPicEntity;
 use App\Model\SliderSettingRepository;
@@ -60,35 +61,35 @@ class SliderPresenter extends SignPresenter {
 	 * @param array $values
 	 */
 	public function proceedForm($form, $values) {
+		$supportedFileFormats = ["png", "jpg", "bmp"];
+		$fileError = false;
 		foreach($values as $key => $inputValue) {
 			if ($key == SliderPicRepository::KEY_SLIDER_FILES_UPLOAD) {		// pics
 				foreach ($values[SliderPicRepository::KEY_SLIDER_FILES_UPLOAD] as $value) {
 					/** @var FileUpload $file */
 					$file = $value;
-					if (empty($file->name)) {
-						continue;
+					if ($file->name != "") {
+						$fileController = new FileController();
+						if ($fileController->upload($file, $supportedFileFormats) == false) {
+							$fileError = true;
+							break;
+						}
+						$sliderPicEntity = new SliderPicEntity();
+						$sliderPicEntity->setPath($fileController->getPathDb());
+						$this->sliderPicRepository->save($sliderPicEntity);
 					}
-					if (
-						substr($file->name, -3) != "png" && substr($file->name, -3) != "PNG"
-						&& substr($file->name, -3) != "jpg" && substr($file->name, -3) != "JPG"
-						&& substr($file->name, -3) != "bmp" && substr($file->name, -3) != "BMP"
-					) {
-						$this->flashMessage(SLIDER_SETTINGS_PIC_FORMAT, "alert-danger");
-						continue;
-					}
-					$pathDb = '/upload/' . date("Ymd-His") . "-" . $file->name;
-					$path = UPLOAD_PATH . '/' . date("Ymd-His") . "-" . $file->name;
-					$file->move($path);
-
-					$sliderPicEntity = new SliderPicEntity();
-					$sliderPicEntity->setPath($pathDb);
-					$this->sliderPicRepository->save($sliderPicEntity);
 				}
 			} else {		// input data
 				$this->sliderSettingRepository->save($key, $inputValue);
 			}
 		}
-		$this->flashMessage(SLIDER_SETTINGS_SAVE_OK, "alert-success");
+
+		if ($fileError) {
+			$flashMessage = sprintf(UNSUPPORTED_UPLOAD_FORMAT, explode(",", $supportedFileFormats));
+			$this->flashMessage($flashMessage, "alert-danger");
+		} else {
+			$this->flashMessage(SLIDER_SETTINGS_SAVE_OK, "alert-success");
+		}
 		$this->redirect("default");
 	}
 }

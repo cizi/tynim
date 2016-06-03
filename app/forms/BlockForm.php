@@ -3,7 +3,7 @@
 namespace App\Forms;
 
 use App\Enum\WebWidthEnum;
-use App\Model\WebconfigRepository;
+use App\Model\LangRepository;
 use Nette;
 use Nette\Application\UI\Form;
 
@@ -12,11 +12,16 @@ class BlockForm extends Nette\Object {
 	/** @var FormFactory */
 	private $factory;
 
+	/** @var LangRepository */
+	private $langRepository;
+
 	/**
 	 * @param FormFactory $factory
+	 * @param LangRepository $langRepository
 	 */
-	public function __construct(FormFactory $factory) {
+	public function __construct(FormFactory $factory, LangRepository $langRepository) {
 		$this->factory = $factory;
+		$this->langRepository = $langRepository;
 	}
 
 	/**
@@ -24,52 +29,51 @@ class BlockForm extends Nette\Object {
 	 */
 	public function create() {
 		$form = $this->factory->create();
-
-		$form->addCheckbox(WebconfigRepository::KEY_SHOW_FOOTER)
-			->setAttribute("data-toggle", "toggle")
-			->setAttribute("data-height", "25")
-			->setAttribute("data-width", "50")
-			->setDefaultValue("checked")
-			->setAttribute("tabindex", "1");
+		$form->getElementPrototype()->addAttributes(["onsubmit" => "return requiredFields();"]);
 
 		$widthSelect = new WebWidthEnum();
 		$defaultValue = $widthSelect->arrayKeyValue();
 		end($defaultValue);
-		$form->addSelect(WebconfigRepository::KEY_FOOTER_WIDTH, FOOTER_WIDTH, $widthSelect->arrayKeyValue())
-			->setAttribute("class", "form-control")
-			->setAttribute("tabindex", "2")
+		$form->addSelect("width", FOOTER_WIDTH, $widthSelect->arrayKeyValue())
+			->setAttribute("class", "form-control menuItem")
+			->setAttribute("tabindex", "1")
 			->setDefaultValue(key($defaultValue));
 
-		$form->addText(WebconfigRepository::KEY_FOOTER_BACKGROUND_COLOR, CONTACT_FORM_SETTING_COLOR)
+		$form->addText("color", BLOCK_SETTING_ITEM_CONTENT_COLOR)
 			->setAttribute("id", "footerBackgroundColor")
+			->setAttribute("class", "form-control minicolors-input")
+			->setAttribute("tabindex", "2");
+
+		$form->addText("background_color", BLOCK_SETTING_ITEM_CONTENT_BG_COLOR)
+			->setAttribute("id", "footerColor")
 			->setAttribute("class", "form-control minicolors-input")
 			->setAttribute("tabindex", "3");
 
-		$form->addText(WebconfigRepository::KEY_FOOTER_COLOR, CONTACT_FORM_SETTING_COLOR)
-			->setAttribute("id", "footerColor")
-			->setAttribute("class", "form-control minicolors-input")
-			->setAttribute("tabindex", "4");
+		$languages = $this->langRepository->findLanguages();
+		$i = 4;
+		foreach ($languages as $lang) {
+			$container = $form->addContainer($lang);
 
-		$form->addCheckbox(WebconfigRepository::KEY_SHOW_CONTACT_FORM_IN_FOOTER)
-			->setAttribute("data-toggle", "toggle")
-			->setAttribute("data-height", "25")
-			->setAttribute("data-width", "50")
-			->setDefaultValue("checked")
-			->setAttribute("tabindex", "5");
+			$container->addText("lang")
+				->setAttribute("class", "form-control menuItem langDivider")
+				->setAttribute("tabindex", "-1")
+				->setAttribute("readonly", "readonly")
+				->setValue($lang);
 
-		$form->addTextArea(WebconfigRepository::KEY_FOOTER_CONTENT, FOOTER_CONTENT)
-			->setAttribute("class", "form-control")
-			->setAttribute("placeholder", FOOTER_CONTENT)
-			->setAttribute("id", "mceFooterContent")
-			->setAttribute("tabindex", "6");
+			$container->addTextArea("content", BLOCK_SETTING_ITEM_CONTENT_LABEL)
+				->setAttribute("class", "form-control menuItem mceBlockContent")
+				->setAttribute("placeholder", BLOCK_SETTING_ITEM_CONTENT_LABEL)
+				->setAttribute("tabindex", $i);
+			$i++;
+		}
 
-		$form->addMultiUpload(WebconfigRepository::KEY_FOOTER_FILES)
-			->setAttribute("class", "form-control")
-			->setAttribute("tabindex", "7");
+		$form->addMultiUpload("pics")
+			->setAttribute("class", "form-control menuItem")
+			->setAttribute("tabindex", $i+1);
 
-		$form->addSubmit("confirm", FOOTER_BUTTON_SAVE)
-			->setAttribute("class","btn btn-primary")
-			->setAttribute("tabindex", "8");
+		$form->addSubmit("confirm", BLOCK_SETTING_ITEM_CONTENT_CONFIRM)
+			->setAttribute("class","btn btn-primary menuItem alignRight")
+			->setAttribute("tabindex", $i+2);
 
 		return $form;
 	}

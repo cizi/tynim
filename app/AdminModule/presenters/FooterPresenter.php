@@ -2,6 +2,7 @@
 
 namespace App\AdminModule\Presenters;
 
+use App\Controller\FileController;
 use App\Forms\FooterForm;
 use App\Model\Entity\FooterPicEntity;
 use App\Model\FooterPicRepository;
@@ -68,36 +69,36 @@ class FooterPresenter extends SignPresenter {
 	 */
 	public function saveForm($form, $values) {
 		$valuesToSave = (array)$values;
+		$supportedFilesFormat = ["png", "jpg", "bmp"];
+		$fileError = false;
 		if (!empty($valuesToSave[WebconfigRepository::KEY_FOOTER_FILES])) {
 			/** @var FileUpload $file */
 			foreach ($valuesToSave[WebconfigRepository::KEY_FOOTER_FILES] as $file) {
-				if (empty($file->name)) {
-					continue;
+				if ($file->name != "") {
+					$fileController = new FileController();
+					if ($fileController->upload($file, $supportedFilesFormat) == false) {
+						$fileError = true;
+						break;
+					}
+					$footerPic = new FooterPicEntity();
+					$footerPic->setPath($fileController->getPathDb());
+					$this->footerPicRepository->save($footerPic);
 				}
-				if (
-					substr($file->name, -3) != "png" && substr($file->name, -3) != "PNG"
-					&& substr($file->name, -3) != "jpg" && substr($file->name, -3) != "JPG"
-					&& substr($file->name, -3) != "bmp" && substr($file->name, -3) != "BMP"
-				) {
-					$this->flashMessage(SLIDER_SETTINGS_PIC_FORMAT, "alert-danger");
-					continue;
-				}
-				$pathDb = '/upload/' . date("Ymd-His") . "-" . $file->name;
-				$path = UPLOAD_PATH . '/' . date("Ymd-His") . "-" . $file->name;
-				$file->move($path);
-
-				$footerPic = new FooterPicEntity();
-				$footerPic->setPath($pathDb);
-				$this->footerPicRepository->save($footerPic);
 			}
 		}
-		unset($valuesToSave[WebconfigRepository::KEY_FOOTER_FILES]);
-		$land = WebconfigRepository::KEY_LANG_FOR_COMMON;
-		foreach($valuesToSave as $key => $value) {
-			$this->webconfigRepository->save($key, $value, $land);
 
+		if ($fileError) {
+			$flashMessage = sprintf(UNSUPPORTED_UPLOAD_FORMAT, explode(",", $supportedFilesFormat));
+			$this->flashMessage($flashMessage, "alert-danger");
+		} else {
+			unset($valuesToSave[WebconfigRepository::KEY_FOOTER_FILES]);
+			$land = WebconfigRepository::KEY_LANG_FOR_COMMON;
+			foreach ($valuesToSave as $key => $value) {
+				$this->webconfigRepository->save($key, $value, $land);
+
+			}
+			$this->flashMessage(FOOTER_SETTING_SAVED, "alert-success");
 		}
-		$this->flashMessage(FOOTER_SETTING_SAVED, "alert-success");
 		$this->redirect("default");
 	}
 }

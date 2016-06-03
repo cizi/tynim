@@ -2,6 +2,8 @@
 
 namespace App\Model;
 
+use Nette\Http\Session;
+
 class LangRepository {
 
 	public function findLanguages() {
@@ -14,5 +16,17 @@ class LangRepository {
 		}
 
 		return $result;
+	}
+
+	/**
+	 * @param Session $sessionSection
+	 * @return string
+	 */
+	public function getCurrentLang(Session $sessionSection) {
+		//$langSession = $this->session->getSection('webLang');
+		$langSession = $sessionSection->getSection('webLang');
+		$lang = ((isset($langSession->langId) && $langSession->langId != null) ? $langSession->langId : 'cs');
+
+		return $lang;
 	}
 }

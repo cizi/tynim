@@ -3,92 +3,59 @@
 		{include '../@menu.latte', item => 'block'}
 		<a href="#menu-toggle" class="menuToggle" id="menu-toggle"><span class="glyphicon glyphicon-chevron-left">&nbsp;&nbsp;</span></a>
 
-		{form blockForm}
 		<!-- Page Content -->
 		<div id="page-content-wrapper">
 			<div n:foreach="$flashes as $flash" n:class="alert, $flash->type">{$flash->message}</div>
 			<div class="container-fluid">
 
 				<div class="row">
-					<div class="col-lg-3 col-md-2 col-sm-1">
+					<div class="col-lg-1 col-md-1 col-sm-0">
 					</div>
 
 					<div class="row">
-						<div class="col-lg-6 col-md-8 col-sm-12">
-							<h1>{=FOOTER_TITLE}</h1>
-							<span>{!=FOOTER_INFO}</span>
+						<div class="col-lg-10 col-md-10 col-sm-12">
+							<h1>{=BLOCK_SETTING_TITLE}</h1>
+							<span>{!=BLOCK_SETTING_INFO}</span>
 							<br /><br />
 
-							<div class="form-group row">
-
-								<div class="col-sm-10">
-									<label>{=FOOTER_SHOW_FOOTER}</label><br />
-									{input SHOW_FOOTER}
-								</div>
-								<div class="col-sm-10 field_info"></div>
-
-								<div class="col-sm-10">
-									{label FOOTER_WIDTH/}
-									{input FOOTER_WIDTH}
-								</div>
-								<div class="col-sm-10 field_info">
-									{!=FOOTER_WIDTH_INFO}
-								</div>
-
-								<div class="col-sm-10">
-									<label>{=FOOTER_BACKGROUND_COLOR}</label>
-									{input FOOTER_BACKGROUND_COLOR}
-								</div>
-								<div class="col-sm-10 field_info"></div>
-
-								<div class="col-sm-10">
-									<label>{=FOOTER_SETTING_COLOR}</label>
-									{input FOOTER_COLOR}
-								</div>
-								<div class="col-sm-10 field_info"></div>
-
-								<div class="col-sm-10">
-									<label>{=FOOTER_CONTACT}</label><br />
-									{input SHOW_CONTACT_FORM_IN_FOOTER}
-								</div>
-								<div class="col-sm-10 field_info"></div>
-
-								<div class="col-sm-10">
-									{label FOOTER_CONTENT/}
-									{input FOOTER_CONTENT}
-								</div>
-								<div class="col-sm-10 field_info">
-									{!=FOOTER_CONTENT_TEXT}
-								</div>
-
-								<div class="col-sm-10">
-									{label FOOTER_FILES/}
-									{input FOOTER_FILES}
-								</div>
-								<div class="col-sm-10 field_info">
-									{!=FOOTER_CONTENT_PICS}
-								</div>
-
-								<div class="col-sm-10">
-									<h3>{=FOOTER_PIC_CONTENT}</h3>
-									<table class="footerPic">
-									{foreach $blockPics as $pic}
+							<div class="container userTable">
+								<table class="table table-striped">
+									<thead>
+									<tr>
+										<th style="width: 55%">{=BLOCK_SETTING_CONTENT}</th>
+										<th>{=BLOCK_SETTING_BG_COLOR}</th>
+										<th>{=BLOCK_SETTING_COLOR}</th>
+										<th class="alignRight">
+											<button type="button" class="btn btn-success" onclick="window.location.assign({link Block:Edit});">
+												<span class="glyphicon glyphicon-plus"></span>	{=MENU_SETTINGS_ADD}
+											</button>
+										</th>
+									</tr>
+									</thead>
+									<tbody>
+										{foreach $blocks as $blockEntity}
 											<tr>
-												<td style="width: 100px"><img src="{!$basePath}{!$pic->getPath()}" class="footerList"/><td>
 												<td>
-													<a href="#" data-href={link Footer:DeletePic, $pic->getId()} class="colorRed" data-toggle="modal" data-target="#confirm-delete" title={=FOOTER_PIC_DELETE}><span class="glyphicon glyphicon-remove"></span></a>
-													<pre style="width: 100%">{$basePath}{$pic->getPath()}</pre>
+													{$blockEntity->setBlockContent()->getContent()}
 												</td>
+												<td>
+													{if $blockEntity->getBackgroundColor() !=""}
+														<span class="colorExample" style="background-color: {!$blockEntity->getBackgroundColor()}"></span>
+													{/if}
+												</td>
+												<td>
+													{if $blockEntity->getColor() !=""}
+														<span class="colorExample" style="background-color: {!$blockEntity->getColor()}"></span>
+														{$blockEntity->getColor()}
+													{/if}
+												</td>
+												<td>
+													<a href='{link edit}' title={=BLOCK_SETTING_EDIT_ITEM}><span class='glyphicon glyphicon-pencil'></span></a> &nbsp;&nbsp;
+													<a href='#' data-href='{$linkDelete}' class='colorRed' data-toggle='modal' data-target='#confirm-delete' title={=BLOCK_SETTING_DELETE_ITEM}><span class='glyphicon glyphicon-remove'></span></a>
 											</tr>
-									{/foreach}
-									</table>
-								</div>
-
-								<div class="form-group row alignRight">
-									<div class="col-sm-offset-2 col-sm-8 col-md-8 col-lg-8">
-										{input confirm}
-									</div>
-								</div>
+										{/foreach}
+									</tbody>
+								</table>
 							</div>
 						</div>
 					</div>
@@ -96,7 +63,6 @@
 			</div>
 		</div>
 		<!-- /#page-content-wrapper -->
-		{/form}
 	</div>
 	<!-- /#wrapper -->
 
@@ -104,14 +70,14 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					{=FOOTER_CONFIRM_DELETE_TITLE}
+					{=MENU_SETTINGS_CONFIRM_MODAL_DELETE_TITLE}
 				</div>
 				<div class="modal-body">
-					{=FOOTER_CONFIRM_DELETE}
+					{=MENU_SETTINGS_CONFIRM_MODAL_DELETE_MSG}
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">{=FOOTER_CONFIRM_DELETE_CANCEL}</button>
-					<a class="btn btn-danger btn-ok">{=FOOTER_CONFIRM_DELETE_OK}</a>
+					<button type="button" class="btn btn-default" data-dismiss="modal">{=SLIDER_SETTINGS_CONFIRM_MODAL_CANCEL}</button>
+					<a class="btn btn-danger btn-ok">{=SLIDER_SETTINGS_CONFIRM_MODAL_OK}</a>
 				</div>
 			</div>
 		</div>
@@ -122,38 +88,26 @@
 			$(this).find('.btn-ok').attr('href', $(e.relatedTarget).data('href'));
 		});
 
-		tinymce.init({
-			selector:'#mceFooterContent',
-			toolbar: "image",
-			plugins: "image imagetools"
-		});
+		// modal for errors
+		function requiredFields() {
+			submitForm = true;
+			$($(".tinym_required_field").get().reverse()).each(function() {
+				console.log($(this).val());
+				if ($(this).val() == "") {
+					$(this).addClass("form-control-danger");
+					$("#tinym_info_modal_message").text($(this).attr("validation"));
+					$("#tinym_info_modal").modal();
+					$(this).focus();
+					submitForm = false;
+				} else {
+					$(this).removeClass("form-control-danger");
+					$(this).addClass("form-control-success");
+				}
+			});
 
-		$("#footerBackgroundColor").minicolors({
-			control: $(this).attr('data-control') || 'hue',
-			defaultValue: $(this).attr('data-defaultValue') || '',
-			format: $(this).attr('data-format') || 'hex',
-			keywords: $(this).attr('data-keywords') || '',
-			inline: $(this).attr('data-inline') === 'true',
-			letterCase: $(this).attr('data-letterCase') || 'lowercase',
-			opacity: $(this).attr('data-opacity'),
-			position: $(this).attr('data-position') || 'bottom left',
-			swatches: $(this).attr('data-swatches') ? $(this).attr('data-swatches').split('|') : [],
-			theme: 'bootstrap'
-		});
-
-		$("#footerColor").minicolors({
-			control: $(this).attr('data-control') || 'hue',
-			defaultValue: $(this).attr('data-defaultValue') || '',
-			format: $(this).attr('data-format') || 'hex',
-			keywords: $(this).attr('data-keywords') || '',
-			inline: $(this).attr('data-inline') === 'true',
-			letterCase: $(this).attr('data-letterCase') || 'lowercase',
-			opacity: $(this).attr('data-opacity'),
-			position: $(this).attr('data-position') || 'bottom left',
-			swatches: $(this).attr('data-swatches') ? $(this).attr('data-swatches').split('|') : [],
-			theme: 'bootstrap'
-		});
-
+			return submitForm;
+		}
 	</script>
+
 {/block}
 
