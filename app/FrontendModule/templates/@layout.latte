@@ -84,6 +84,11 @@
 					<ul class="nav navbar-nav">
 						{!$menuHtml}
 					</ul>
+					{if $isContactFormInMenu}
+						<ul class="nav navbar-nav">
+							<li><a href="#" class="menuLink">{=MENU_CONTACT_FORM}</a></li>
+						</ul>
+					{/if}
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
 		</nav>

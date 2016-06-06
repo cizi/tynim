@@ -189,6 +189,8 @@ class HomepagePresenter extends BasePresenter {
 
 		$contactFormInFooter = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_SHOW_CONTACT_FORM_IN_FOOTER, $langCommon);
 		$this->template->isContactFormInFooter = ($contactFormInFooter == "1" ? true : false);
+		$contactFormInMenu = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_CONTACT_FORM_IN_MENU, $langCommon);
+		$this->template->isContactFormInMenu = ($contactFormInMenu == "1" ? true : false);
 		if ($contactFormInFooter) {
 			$this->template->contactFormHeader = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_CONTACT_FORM_TITLE, $langCommon);
 			$this->template->contactFormContent = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_CONTACT_FORM_CONTENT, $langCommon);
