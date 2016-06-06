@@ -3,6 +3,7 @@
 namespace App\Forms;
 
 use App\Enum\WebWidthEnum;
+use App\Model\BlockRepository;
 use App\Model\LangRepository;
 use Nette;
 use Nette\Application\UI\Form;
@@ -34,17 +35,17 @@ class BlockForm extends Nette\Object {
 		$widthSelect = new WebWidthEnum();
 		$defaultValue = $widthSelect->arrayKeyValue();
 		end($defaultValue);
-		$form->addSelect("width", FOOTER_WIDTH, $widthSelect->arrayKeyValue())
+		$form->addSelect(BlockRepository::KEY_WIDTH, FOOTER_WIDTH, $widthSelect->arrayKeyValue())
 			->setAttribute("class", "form-control menuItem")
 			->setAttribute("tabindex", "1")
 			->setDefaultValue(key($defaultValue));
 
-		$form->addText("color", BLOCK_SETTING_ITEM_CONTENT_COLOR)
+		$form->addText(BlockRepository::KEY_COLOR, BLOCK_SETTING_ITEM_CONTENT_COLOR)
 			->setAttribute("id", "footerBackgroundColor")
 			->setAttribute("class", "form-control minicolors-input")
 			->setAttribute("tabindex", "2");
 
-		$form->addText("background_color", BLOCK_SETTING_ITEM_CONTENT_BG_COLOR)
+		$form->addText(BlockRepository::KEY_BACKGROUND_COLOR, BLOCK_SETTING_ITEM_CONTENT_BG_COLOR)
 			->setAttribute("id", "footerColor")
 			->setAttribute("class", "form-control minicolors-input")
 			->setAttribute("tabindex", "3");
@@ -54,13 +55,13 @@ class BlockForm extends Nette\Object {
 		foreach ($languages as $lang) {
 			$container = $form->addContainer($lang);
 
-			$container->addText("lang")
+			$container->addText(BlockRepository::KEY_CONTENT_LANG)
 				->setAttribute("class", "form-control menuItem langDivider")
 				->setAttribute("tabindex", "-1")
 				->setAttribute("readonly", "readonly")
 				->setValue($lang);
 
-			$container->addTextArea("content", BLOCK_SETTING_ITEM_CONTENT_LABEL)
+			$container->addTextArea(BlockRepository::KEY_CONTENT, BLOCK_SETTING_ITEM_CONTENT_LABEL)
 				->setAttribute("class", "form-control menuItem mceBlockContent")
 				->setAttribute("placeholder", BLOCK_SETTING_ITEM_CONTENT_LABEL)
 				->setAttribute("tabindex", $i);
@@ -70,6 +71,8 @@ class BlockForm extends Nette\Object {
 		$form->addMultiUpload("pics")
 			->setAttribute("class", "form-control menuItem")
 			->setAttribute("tabindex", $i+1);
+
+		$form->addHidden("id");
 
 		$form->addSubmit("confirm", BLOCK_SETTING_ITEM_CONTENT_CONFIRM)
 			->setAttribute("class","btn btn-primary menuItem alignRight")

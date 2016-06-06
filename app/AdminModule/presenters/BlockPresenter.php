@@ -57,6 +57,11 @@ class BlockPresenter extends SignPresenter {
 		if ($values != null) {
 			$this['blockForm']->setDefaults($values);
 		}
+		if (!empty($id)) {
+			$defaults = $this->blockRepository->getEditArray($id);
+			$this['blockForm']['id']->setValue($id);
+			$this['blockForm']->setDefaults($defaults);
+		}
 
 		$this->template->blockPics = $this->blockRepository->findBlockPictures();
 	}
@@ -70,7 +75,7 @@ class BlockPresenter extends SignPresenter {
 		$blockEntity->hydrate((array)$values);
 
 		$error = false;
-		$supportedFileFormats =  ["jpg", "png", "doc"];
+		$supportedFileFormats = ["jpg", "png", "doc"];
 		$mutation = [];
 		$pics = [];
 		foreach($values as $key => $value) {

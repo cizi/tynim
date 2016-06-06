@@ -8,6 +8,21 @@ use App\Model\Entity\BlockPicsEntity;
 
 class BlockRepository extends BaseRepository {
 
+	/** @const for width (name of column in DB as well) */
+	const KEY_WIDTH = "width";
+
+	/** @const for font color (name of column in DB as well) */
+	const KEY_COLOR = "color";
+
+	/** @const for background color (name of column in DB as well) */
+	const KEY_BACKGROUND_COLOR = "background_color";
+
+	/** @const for content lang (name of column in DB as well) */
+	const KEY_CONTENT_LANG = "lang";
+
+	/** @const for contetn (name of column in DB as well) */
+	const KEY_CONTENT = "content";
+
 	/**
 	 * @param string $lang
 	 * @return BlockEntity[]
@@ -102,6 +117,25 @@ class BlockRepository extends BaseRepository {
 	}
 
 	/**
+	 * @param int $id
+	 * @return array
+	 */
+	public function getEditArray($id) {
+		$query = ["select * from block where id = %i", $id];
+		$return = $this->connection->query($query)->fetch()->toArray();
+
+		$query = ["select * from block_content where block_id = %i", $id];
+		$result = $this->connection->query($query)->fetchAll();
+		foreach($result as $langItem) {
+			$blockContentEntity = new BlockContentEntity();
+			$blockContentEntity->hydrate($langItem->toArray());
+			$return[$blockContentEntity->getLang()] = $blockContentEntity->extract();
+		}
+
+		return $return;
+	}
+
+	/**
 	 * @param BlockPicsEntity[] $pics
 	 */
 	private function savePics(array $pics) {
@@ -118,10 +152,22 @@ class BlockRepository extends BaseRepository {
 	 * @param int $blockId
 	 */
 	private function saveBlockContents(array $blockContentMutation, $blockId) {
+		$query = ["select * from block_content where block_id = %i", $blockId];
+		$result = $this->connection->query($query)->fetchAll();
 		/** @var BlockContentEntity $blockContentEntity */
 		foreach ($blockContentMutation as $blockContentEntity) {
 			$blockContentEntity->setBlockId($blockId);
-			$query = ["insert into block_content", $blockContentEntity->extract()];
+			if ($result) {
+				$query = ["update block_content set " . self::KEY_CONTENT . " = %s
+						  where ".self::KEY_CONTENT_LANG." = %s
+						  	and block_id = %i",
+						$blockContentEntity->getContent(),
+						$blockContentEntity->getLang(),
+						$blockId
+				];
+			} else {
+				$query = ["insert into block_content", $blockContentEntity->extract()];
+			}
 			$this->connection->query($query);
 		}
 	}
@@ -131,10 +177,22 @@ class BlockRepository extends BaseRepository {
 	 * @return int
 	 */
 	private function saveBlockEntity(BlockEntity $blockEntity) {
-		$query = ["insert into block", $blockEntity->extract()];
-		$result = $this->connection->query($query);
+		if (empty($blockEntity->getId())) {
+			$query = ["insert into block", $blockEntity->extract()];
+		} else {
+			$query = ["
+				update block set ". self::KEY_BACKGROUND_COLOR ." = %s,
+				  ". self::KEY_COLOR . " = %s,
+				  " . self::KEY_WIDTH . " = %s
+				where id = %i",
+				$blockEntity->getBackgroundColor(),
+				$blockEntity->getColor(),
+				$blockEntity->getWidth(),
+				$blockEntity->getId()
+			];
+		}
+		$this->connection->query($query);
 
-		return $this->connection->getInsertId();
-
+		return (empty($blockEntity->getId()) ? $this->connection->getInsertId() : $blockEntity->getId());
 	}
 }

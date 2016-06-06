@@ -2,6 +2,7 @@
 
 namespace App\FrontendModule\Presenters;
 
+use App\Controller\FileController;
 use App\Controller\MenuController;
 use App\Forms\ContactForm;
 use Nette;
@@ -29,18 +30,23 @@ class HomepagePresenter extends BasePresenter {
 	/** @var MenuController */
 	private $menuController;
 
+	/** @var FileController */
+	private $fileController;
+
 	public function __construct(
 		WebconfigRepository $webconfigRepository,
 		SliderSettingRepository $sliderSettingRepository,
 		SliderPicRepository $sliderPicRepository,
 		ContactForm $contactForm,
-		MenuController $menuController
+		MenuController $menuController,
+		FileController $fileController
 	) {
 		$this->webconfigRepository = $webconfigRepository;
 		$this->sliderSettingRepository = $sliderSettingRepository;
 		$this->sliderPicRepository = $sliderPicRepository;
 		$this->contactForm = $contactForm;
 		$this->menuController = $menuController;
+		$this->fileController = $fileController;
 	}
 
 	/**
@@ -78,32 +84,24 @@ class HomepagePresenter extends BasePresenter {
 			&& isset($values['subject']) && $values['subject'] != ""
 			&& isset($values['text']) && $values['text'] != ""
 		) {
+			$supportedFilesFormat = ["png", "jpg", "bmp", "pdf", "doc", "xls", "docx", "xlsx"];
+			$fileError = false;
 			$path = "";
-			$send = true;
 			if (!empty($values['attachment'])) {
 				/** @var FileUpload $file */
 				$file = $values['attachment'];
 				if (!empty($file->name)) {
-					if (
-						substr($file->name, -3) != "png" && substr($file->name, -3) != "PNG"
-						&& substr($file->name, -3) != "jpg" && substr($file->name, -3) != "JPG"
-						&& substr($file->name, -3) != "bmp" && substr($file->name, -3) != "BMP"
-						&& substr($file->name, -3) != "pdf" && substr($file->name, -3) != "PDF"
-						&& substr($file->name, -3) != "doc" && substr($file->name, -3) != "DOC"
-						&& substr($file->name, -3) != "xls" && substr($file->name, -3) != "XLS"
-						&& substr($file->name, -4) != "docx" && substr($file->name, -4) != "DOCX"
-						&& substr($file->name, -3) != "xlsx" && substr($file->name, -3) != "XLSX"
-					) {
+					$fileController = new FileController();
+					if ($fileController->upload($file, $supportedFilesFormat) == false) {
+						$fileError = true;
 						$this->flashMessage(CONTACT_FORM_UNSUPPORTED_FILE_FORMAT, "alert-danger");
-						$send = false;
 					} else {
-						$path = UPLOAD_PATH . '/' . date("Ymd-His") . "-" . $file->name;
-						$file->move($path);
+						$path = $fileController->getPath();
 					}
 				}
 			}
 
-			if ($send) {
+			if ($fileError == false) {
 				$email = new \PHPMailer();
 				$email->From = $values['contactEmail'];
 				$email->FromName = $values['name'];

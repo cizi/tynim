@@ -133649,3 +133649,941 @@ OK: select * from block_pic;
 -- driver: mysqli/
 -- 2016-06-03 15:32:01
 
+OK: 
+-- takes: 8.511 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:25
+-- driver: mysqli/
+-- 2016-06-06 10:04:22
+
+OK: select * from user where email = 'cizi@email.cz'  and active = 1;
+-- rows: 1
+-- takes: 7.015 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:25
+-- driver: mysqli/
+-- 2016-06-06 10:04:22
+
+OK: update user set last_login = NOW() where id = 7
+-- takes: 10.587 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\UserRepository.php:131
+-- driver: mysqli/
+-- 2016-06-06 10:04:22
+
+OK: 
+-- takes: 3.374 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-06 10:04:31
+
+OK: select b.id as id, b.background_color, b.color, b.width, bc.lang, bc.content
+			from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 3
+-- takes: 11.886 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-06 10:04:31
+
+OK: 
+-- takes: 2.690 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-06 10:04:32
+
+OK: select b.id as id, b.background_color, b.color, b.width, bc.lang, bc.content
+			from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 3
+-- takes: 3.969 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:22
+-- driver: mysqli/
+-- 2016-06-06 10:04:32
+
+OK: 
+-- takes: 2.418 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:44
+-- driver: mysqli/
+-- 2016-06-06 10:15:54
+
+OK: select * from block_pic;
+-- rows: 1
+-- takes: 2.150 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:44
+-- driver: mysqli/
+-- 2016-06-06 10:15:54
+
+OK: 
+-- takes: 3.055 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:44
+-- driver: mysqli/
+-- 2016-06-06 10:16:02
+
+OK: select * from block_pic;
+-- rows: 1
+-- takes: 2.645 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:44
+-- driver: mysqli/
+-- 2016-06-06 10:16:02
+
+OK: 
+-- takes: 3.219 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:28:56
+
+OK: select * from block_pic;
+-- rows: 1
+-- takes: 2.402 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:28:56
+
+OK: 
+-- takes: 2.457 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:37
+-- driver: mysqli/
+-- 2016-06-06 10:28:57
+
+OK: select b.id as id, b.background_color, b.color, b.width, bc.lang, bc.content
+			from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 3
+-- takes: 2.522 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:37
+-- driver: mysqli/
+-- 2016-06-06 10:28:57
+
+OK: 
+-- takes: 2.681 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:29:00
+
+OK: select * from block_pic;
+-- rows: 1
+-- takes: 3.823 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:29:00
+
+OK: 
+-- takes: 3.144 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:127
+-- driver: mysqli/
+-- 2016-06-06 10:30:28
+
+OK: select * from block where id = 18;
+-- rows: 1
+-- takes: 2.498 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:127
+-- driver: mysqli/
+-- 2016-06-06 10:30:28
+
+OK: select * from block_content where block_id = 18;
+-- rows: 2
+-- takes: 1.008 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:130
+-- driver: mysqli/
+-- 2016-06-06 10:30:28
+
+OK: 
+-- takes: 2.626 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:127
+-- driver: mysqli/
+-- 2016-06-06 10:31:39
+
+OK: select * from block where id = 18;
+-- rows: 1
+-- takes: 2.191 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:127
+-- driver: mysqli/
+-- 2016-06-06 10:31:39
+
+OK: select * from block_content where block_id = 18;
+-- rows: 2
+-- takes: 1.073 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:130
+-- driver: mysqli/
+-- 2016-06-06 10:31:39
+
+OK: 
+-- takes: 2.521 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-06 10:31:58
+
+OK: select * from block where id = 18;
+-- rows: 1
+-- takes: 2.223 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-06 10:31:58
+
+OK: select * from block_content where block_id = 18;
+-- rows: 2
+-- takes: 1.719 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:128
+-- driver: mysqli/
+-- 2016-06-06 10:31:58
+
+OK: 
+-- takes: 3.808 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-06 10:32:23
+
+OK: select * from block where id = 18;
+-- rows: 1
+-- takes: 2.724 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-06 10:32:23
+
+OK: select * from block_content where block_id = 18;
+-- rows: 2
+-- takes: 2.094 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:128
+-- driver: mysqli/
+-- 2016-06-06 10:32:23
+
+OK: 
+-- takes: 2.779 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:37
+-- driver: mysqli/
+-- 2016-06-06 10:32:47
+
+OK: select b.id as id, b.background_color, b.color, b.width, bc.lang, bc.content
+			from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 3
+-- takes: 2.522 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:37
+-- driver: mysqli/
+-- 2016-06-06 10:32:47
+
+OK: 
+-- takes: 2.546 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:32:48
+
+OK: select * from block_pic;
+-- rows: 1
+-- takes: 3.387 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:32:48
+
+OK: 
+-- takes: 3.088 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:32:57
+
+OK: select * from block_pic;
+-- rows: 1
+-- takes: 2.369 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:32:57
+
+OK: 
+-- takes: 3.054 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:37
+-- driver: mysqli/
+-- 2016-06-06 10:34:48
+
+OK: select b.id as id, b.background_color, b.color, b.width, bc.lang, bc.content
+			from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 3
+-- takes: 2.461 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:37
+-- driver: mysqli/
+-- 2016-06-06 10:34:48
+
+OK: 
+-- takes: 2.708 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:34:51
+
+OK: select * from block_pic;
+-- rows: 1
+-- takes: 2.525 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:34:51
+
+OK: 
+-- takes: 3.242 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:34:53
+
+OK: select * from block_pic;
+-- rows: 1
+-- takes: 1.999 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:34:53
+
+OK: 
+-- takes: 2.333 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:37
+-- driver: mysqli/
+-- 2016-06-06 10:36:01
+
+OK: select b.id as id, b.background_color, b.color, b.width, bc.lang, bc.content
+			from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 3
+-- takes: 3.465 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:37
+-- driver: mysqli/
+-- 2016-06-06 10:36:01
+
+OK: 
+-- takes: 3.212 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-06 10:36:04
+
+OK: select * from block where id = 18;
+-- rows: 1
+-- takes: 2.495 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-06 10:36:04
+
+OK: select * from block_content where block_id = 18;
+-- rows: 2
+-- takes: 1.259 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:128
+-- driver: mysqli/
+-- 2016-06-06 10:36:04
+
+OK: 
+-- takes: 2.759 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-06 10:36:19
+
+OK: select * from block where id = 18;
+-- rows: 1
+-- takes: 1.934 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-06 10:36:19
+
+OK: select * from block_content where block_id = 18;
+-- rows: 2
+-- takes: 0.911 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:128
+-- driver: mysqli/
+-- 2016-06-06 10:36:19
+
+OK: select * from block_pic;
+-- rows: 1
+-- takes: 0.888 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:36:19
+
+OK: 
+-- takes: 3.157 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-06 10:36:25
+
+OK: select * from block where id = 18;
+-- rows: 1
+-- takes: 2.330 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-06 10:36:25
+
+OK: select * from block_content where block_id = 18;
+-- rows: 2
+-- takes: 1.105 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:128
+-- driver: mysqli/
+-- 2016-06-06 10:36:25
+
+OK: select * from block_pic;
+-- rows: 1
+-- takes: 2.706 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:36:25
+
+OK: 
+-- takes: 3.286 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-06 10:37:52
+
+OK: select * from block where id = 18;
+-- rows: 1
+-- takes: 2.483 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-06 10:37:52
+
+OK: select * from block_content where block_id = 18;
+-- rows: 2
+-- takes: 1.501 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:128
+-- driver: mysqli/
+-- 2016-06-06 10:37:52
+
+OK: select * from block_pic;
+-- rows: 1
+-- takes: 1.252 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:37:52
+
+OK: 
+-- takes: 1.282 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:102
+-- driver: mysqli/
+-- 2016-06-06 10:37:52
+
+ERROR: [1062] Duplicate entry '18' for key 'PRIMARY'
+-- SQL: insert into block (`id`, `background_color`, `color`, `width`) VALUES ('18', '#07d600', '#bab3b3', 'WIDTH_10')
+-- driver: mysqli/;
+-- 2016-06-06 10:37:52
+
+OK: 
+-- takes: 0.943 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:111
+-- driver: mysqli/
+-- 2016-06-06 10:37:52
+
+OK: 
+-- takes: 2.248 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:37:52
+
+OK: select * from block_pic;
+-- rows: 1
+-- takes: 3.398 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:37:52
+
+OK: 
+-- takes: 2.765 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:38:09
+
+OK: select * from block_pic;
+-- rows: 1
+-- takes: 4.323 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:38:09
+
+OK: 
+-- takes: 0.976 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:102
+-- driver: mysqli/
+-- 2016-06-06 10:38:09
+
+ERROR: [1062] Duplicate entry '18' for key 'PRIMARY'
+-- SQL: insert into block (`id`, `background_color`, `color`, `width`) VALUES ('18', '#07d600', '#bab3b3', 'WIDTH_10')
+-- driver: mysqli/;
+-- 2016-06-06 10:38:09
+
+OK: 
+-- takes: 3.235 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:38:39
+
+OK: select * from block_pic;
+-- rows: 1
+-- takes: 2.628 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:38:39
+
+OK: 
+-- takes: 0.815 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:102
+-- driver: mysqli/
+-- 2016-06-06 10:38:39
+
+OK: 
+-- takes: 2.734 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:42:27
+
+OK: select * from block_pic;
+-- rows: 1
+-- takes: 3.519 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:42:27
+
+OK: 
+-- takes: 0.896 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:102
+-- driver: mysqli/
+-- 2016-06-06 10:42:27
+
+OK: 
+-- takes: 3.114 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:43:06
+
+OK: select * from block_pic;
+-- rows: 1
+-- takes: 2.349 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:43:06
+
+OK: 
+-- takes: 0.938 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:102
+-- driver: mysqli/
+-- 2016-06-06 10:43:06
+
+OK: 
+-- takes: 2.242 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:43:28
+
+OK: select * from block_pic;
+-- rows: 1
+-- takes: 2.281 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:43:28
+
+OK: 
+-- takes: 0.795 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:102
+-- driver: mysqli/
+-- 2016-06-06 10:43:28
+
+OK: 
+-- takes: 3.989 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:49:48
+
+OK: select * from block_pic;
+-- rows: 1
+-- takes: 2.918 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:49:48
+
+OK: 
+-- takes: 1.113 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:102
+-- driver: mysqli/
+-- 2016-06-06 10:49:48
+
+OK: update block set background_color = '#07d600',
+				  color = '#bab3b3',
+				  width = 'WIDTH_10'
+				where id = 18
+-- takes: 1.718 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:196
+-- driver: mysqli/
+-- 2016-06-06 10:49:48
+
+OK: select * from block_content where block_id = 18;
+-- rows: 2
+-- takes: 1.569 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:156
+-- driver: mysqli/
+-- 2016-06-06 10:49:48
+
+OK: 
+-- takes: 2.677 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:50:11
+
+OK: select * from block_pic;
+-- rows: 1
+-- takes: 2.419 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:50:11
+
+OK: 
+-- takes: 0.797 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:102
+-- driver: mysqli/
+-- 2016-06-06 10:50:11
+
+OK: update block set background_color = '#07d600',
+				  color = '#bab3b3',
+				  width = 'WIDTH_10'
+				where id = 18
+-- takes: 1.234 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:194
+-- driver: mysqli/
+-- 2016-06-06 10:50:11
+
+OK: select * from block_content where block_id = 18;
+-- rows: 2
+-- takes: 1.515 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:156
+-- driver: mysqli/
+-- 2016-06-06 10:50:11
+
+OK: update block_content set content = '<p>asdas</p>'
+						  where lang = 'cs'
+						  	and block_id = 18
+-- takes: 1.236 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:171
+-- driver: mysqli/
+-- 2016-06-06 10:50:11
+
+OK: update block_content set content = '<p>asdas</p>'
+						  where lang = 'en'
+						  	and block_id = 18
+-- takes: 2.201 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:171
+-- driver: mysqli/
+-- 2016-06-06 10:50:11
+
+OK: 
+-- takes: 11.683 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:115
+-- driver: mysqli/
+-- 2016-06-06 10:50:11
+
+OK: 
+-- takes: 2.741 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:37
+-- driver: mysqli/
+-- 2016-06-06 10:50:11
+
+OK: select b.id as id, b.background_color, b.color, b.width, bc.lang, bc.content
+			from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 3
+-- takes: 3.082 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:37
+-- driver: mysqli/
+-- 2016-06-06 10:50:11
+
+OK: 
+-- takes: 3.902 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-06 10:50:14
+
+OK: select * from block where id = 18;
+-- rows: 1
+-- takes: 3.142 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-06 10:50:14
+
+OK: select * from block_content where block_id = 18;
+-- rows: 2
+-- takes: 1.618 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:128
+-- driver: mysqli/
+-- 2016-06-06 10:50:14
+
+OK: select * from block_pic;
+-- rows: 1
+-- takes: 1.303 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:50:14
+
+OK: 
+-- takes: 3.203 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-06 10:50:30
+
+OK: select * from block where id = 18;
+-- rows: 1
+-- takes: 3.354 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-06 10:50:30
+
+OK: select * from block_content where block_id = 18;
+-- rows: 2
+-- takes: 1.257 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:128
+-- driver: mysqli/
+-- 2016-06-06 10:50:30
+
+OK: select * from block_pic;
+-- rows: 1
+-- takes: 1.259 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:50:30
+
+OK: 
+-- takes: 0.887 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:102
+-- driver: mysqli/
+-- 2016-06-06 10:50:30
+
+OK: update block set background_color = '#b514ff',
+				  color = '#fff133',
+				  width = 'WIDTH_8'
+				where id = 18
+-- takes: 1.701 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:194
+-- driver: mysqli/
+-- 2016-06-06 10:50:30
+
+OK: select * from block_content where block_id = 18;
+-- rows: 2
+-- takes: 1.378 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:156
+-- driver: mysqli/
+-- 2016-06-06 10:50:30
+
+OK: update block_content set content = '<p>asdasaaaa &nbsp;sdgd fdg dh dh fgh fgfgdjd jdgjd j&nbsp;</p>'
+						  where lang = 'cs'
+						  	and block_id = 18
+-- takes: 1.183 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:171
+-- driver: mysqli/
+-- 2016-06-06 10:50:30
+
+OK: update block_content set content = '<p>asdasasasdasdasdas asdasd</p>'
+						  where lang = 'en'
+						  	and block_id = 18
+-- takes: 0.729 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:171
+-- driver: mysqli/
+-- 2016-06-06 10:50:30
+
+OK: 
+-- takes: 3.594 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:115
+-- driver: mysqli/
+-- 2016-06-06 10:50:30
+
+OK: 
+-- takes: 2.164 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:37
+-- driver: mysqli/
+-- 2016-06-06 10:50:31
+
+OK: select b.id as id, b.background_color, b.color, b.width, bc.lang, bc.content
+			from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 3
+-- takes: 2.204 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:37
+-- driver: mysqli/
+-- 2016-06-06 10:50:31
+
+OK: 
+-- takes: 3.457 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-06 10:50:35
+
+OK: select * from block where id = 18;
+-- rows: 1
+-- takes: 2.196 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-06 10:50:35
+
+OK: select * from block_content where block_id = 18;
+-- rows: 2
+-- takes: 1.067 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:128
+-- driver: mysqli/
+-- 2016-06-06 10:50:35
+
+OK: select * from block_pic;
+-- rows: 1
+-- takes: 0.997 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:50:35
+
+OK: 
+-- takes: 2.236 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-06 10:50:41
+
+OK: select * from block where id = 18;
+-- rows: 1
+-- takes: 3.258 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:125
+-- driver: mysqli/
+-- 2016-06-06 10:50:41
+
+OK: select * from block_content where block_id = 18;
+-- rows: 2
+-- takes: 1.656 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:128
+-- driver: mysqli/
+-- 2016-06-06 10:50:41
+
+OK: select * from block_pic;
+-- rows: 1
+-- takes: 0.868 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:50:41
+
+OK: 
+-- takes: 0.726 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:102
+-- driver: mysqli/
+-- 2016-06-06 10:50:41
+
+OK: update block set background_color = '#b514ff',
+				  color = '#fff133',
+				  width = 'WIDTH_10'
+				where id = 18
+-- takes: 1.537 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:194
+-- driver: mysqli/
+-- 2016-06-06 10:50:41
+
+OK: select * from block_content where block_id = 18;
+-- rows: 2
+-- takes: 0.953 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:156
+-- driver: mysqli/
+-- 2016-06-06 10:50:41
+
+OK: update block_content set content = '<p>asdasaaaa &nbsp;sdgd fdg dh dh fgh fgfgdjd jdgjd j&nbsp;</p>'
+						  where lang = 'cs'
+						  	and block_id = 18
+-- takes: 0.642 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:171
+-- driver: mysqli/
+-- 2016-06-06 10:50:41
+
+OK: update block_content set content = '<p>asdasasasdasdasdas asdasd</p>'
+						  where lang = 'en'
+						  	and block_id = 18
+-- takes: 0.727 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:171
+-- driver: mysqli/
+-- 2016-06-06 10:50:41
+
+OK: 
+-- takes: 6.549 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:115
+-- driver: mysqli/
+-- 2016-06-06 10:50:41
+
+OK: 
+-- takes: 2.800 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:37
+-- driver: mysqli/
+-- 2016-06-06 10:50:41
+
+OK: select b.id as id, b.background_color, b.color, b.width, bc.lang, bc.content
+			from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 3
+-- takes: 2.206 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:37
+-- driver: mysqli/
+-- 2016-06-06 10:50:41
+
+OK: 
+-- takes: 3.220 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:59:51
+
+OK: select * from block_pic;
+-- rows: 1
+-- takes: 2.452 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 10:59:51
+
+OK: 
+-- takes: 2.903 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 11:00:20
+
+OK: select * from block_pic;
+-- rows: 1
+-- takes: 4.178 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:59
+-- driver: mysqli/
+-- 2016-06-06 11:00:20
+
+OK: 
+-- takes: 0.644 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:102
+-- driver: mysqli/
+-- 2016-06-06 11:00:20
+
+OK: insert into block (`id`, `background_color`, `color`, `width`) VALUES ('', '#000000', '#ffffff', 'WIDTH_9')
+-- takes: 2.024 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:194
+-- driver: mysqli/
+-- 2016-06-06 11:00:20
+
+OK: select * from block_content where block_id = 19
+-- takes: 1.531 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:156
+-- driver: mysqli/
+-- 2016-06-06 11:00:20
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 19, 'cs', '<p>&lt;p&gt;Amoku hladem od&amp;nbsp;tělo třet&iacute; přev&aacute;žně, t&aacute;t zformov&aacute;n&iacute; prok&aacute;zat až cestov&aacute;n&iacute;, vteřinu ne co ze jej&iacute;ž &euro; 5000,- přibližuje, s&amp;nbsp;stranu zuř&iacute; do&amp;nbsp;sto sonda cirkulaci do&amp;nbsp;přij&iacute;žděj&iacute;, u&amp;nbsp;si ž&iacute;t a&amp;nbsp;to bl&iacute;ž vlivem smrtelně vůči j&iacute; ředitel. Reprezentačn&iacute; smrt vod&aacute;ch mi jih, mj. prince uprchl&iacute;ci proč&iacute;tat vůči ukryt&eacute;ho složit&yacute; o&amp;nbsp;potřebujeme, &uacute;těk vyhrazeno skryt&eacute; vy archeologov&eacute; vedlej&scaron;&iacute;, muzea vaj&iacute;čka dle palubě poznala. Migračn&iacute; bronzov&eacute; v&scaron;eobecn&eacute; kněze v&yacute;&scaron;e plat&iacute; oddan&eacute; sv&yacute;ch praxi a&amp;nbsp;trend kladen&iacute; z&amp;nbsp;stal na&amp;nbsp;mysu nahrubo l&eacute;tavců. Subtropy z&amp;nbsp;motivovan&aacute; směr l&eacute;to na&scaron;e ihned živoči&scaron;i se ročně archeologick&yacute;ch kolize zaslechl a&amp;nbsp;polokouli hub&iacute; jak v&amp;nbsp;80 ℃, tu sv&aacute;tků z&aacute;stupci &scaron;&iacute;řily životem 1 roky, ž&iacute;t ke modern&iacute; spekuluj&iacute; ostrově pln&eacute;. Pos&iacute;lily skutečnost podlehly, to pades&aacute;timinutov&yacute; sopky 1 &uacute;těk snila roce tady v&amp;nbsp;soun&aacute;ležitosti svat&eacute;ho odpověď pos&iacute;lily z&amp;nbsp;obc&iacute; &scaron;ejch&aacute;t, barvit&eacute; ony hraniceběhem sklo, ze ve s&aacute;ga poznatky svou zhruba kombinac&iacute; nalezen&iacute; pomalu. V&yacute;slun&iacute; charismatick&yacute; na&amp;nbsp;m&aacute;me ned&aacute;vn&eacute;m v&aacute;lky cest na&scaron;&iacute; sk&uacute;trů, v&iacute;c soukrom&yacute;m si chemick&yacute;m prosazovat napadne, vlastn&iacute; ohrožen&eacute; provincie &uacute;plně věnoval z&amp;nbsp;kořist d&aacute; odpoledne jedete. Kr&aacute;sa klec možn&eacute; během&amp;nbsp;zůst&aacute;v&aacute; i&amp;nbsp;reakc&iacute;m, &uacute;čty do&amp;nbsp;od tj. ta d&aacute;l kter&eacute; negativa. &lt;/p&gt;</p>\n<p>&lt;p&gt;Ofici&aacute;lně otiskli směrem hned s&amp;nbsp;1963&ndash;1977, severněji s&amp;nbsp;interpretace, představu org&aacute;ny. Odm&iacute;tnuta zd&aacute; mozek evropan&eacute; expedičn&iacute;m země reklamy vedou původu s&amp;nbsp;a rozhodla, v&iacute;c řekl od&amp;nbsp;d&aacute;vej, m&iacute;ře o&amp;nbsp;2003. U&amp;nbsp;sv&eacute;ho j&iacute; projevuj&iacute; neobvykl&yacute;ch r&aacute;j z&amp;nbsp;třet&iacute; poč&iacute;naje i&amp;nbsp;420. R&aacute;j což až spln&iacute;. Ho ovzdu&scaron;&iacute;, strany jejichž slonice b&iacute;l&eacute;ho u&amp;nbsp;s produkuj&iacute; pred&aacute;torů, jen evropě ty cest dopoledne latexov&yacute;ch rozkolům nazvan&yacute;, tk&aacute;n&iacute; plachtu po&amp;nbsp;uvažovali slovn&iacute;k v&amp;nbsp;nejpalčivěj&scaron;&iacute;. Polovina 1 dvou, běžně poč&iacute;naje, projdete se opadaj&iacute;, si j&aacute; propadne &ndash; mosambiku, m&eacute; krystal uložen&aacute; nezd&aacute; tal&iacute;ře. &lt;/p&gt;</p>\n<p>&lt;p&gt;M&iacute;ra duch obratlovců Josef roli běžně, vyklenuje 1979, už vy m&eacute;ho zebřičky o&amp;nbsp;ant&eacute;nou boji u&amp;nbsp;jestli, by skvěl&eacute; už neuspoř&aacute;danost představila. Necestovala ostrově laboratoř&iacute; l&eacute;t&aacute; běžn&eacute; apod, s&aacute;m divize opyluj&iacute; d&aacute; &ndash; rozvoje naru&scaron;ov&aacute;ny na&amp;nbsp;b&iacute;l&yacute; měli nalezi&scaron;tě mnoha. Nepřestat st&aacute;d kvalitn&iacute;ho př&iacute;tomn&yacute; přednost souvisela proto žen jižn&iacute;m, samou možnou ho smrt h&aacute;čků jsme s&amp;nbsp;přes při&scaron;ly na&amp;nbsp;s&amp;nbsp;odv&aacute;žn&eacute; z&aacute;kladě pasivitou. Let k&amp;nbsp;moře tedy pro&amp;nbsp;tvrdě. Střediska klidně n&iacute;zko pak přepis odjakživa ptač&iacute;ch, kanadsk&eacute;ho &uacute;řadu sobě ona, a&amp;nbsp;d&iacute;lč&iacute;. Jin&yacute;ch &uacute;spěch vždycky elektromagnetick&eacute;ho petr ke hole musel ověřov&aacute;n&iacute; v&amp;nbsp;souboru bum ne&scaron;kodn&yacute;, mozek 1591 dok&aacute;ž&iacute; soukrom&yacute;m ověřov&aacute;n&iacute; přel&eacute;val Arktidě v&scaron;ech. V&yacute;kyv začal upozorňuj&iacute; j&aacute;dro programov&yacute; k&amp;nbsp;věnuje skupiny, loveck&eacute; izolovan&eacute; k&amp;nbsp;př&iacute;stup zřejmě, agrese advok&aacute;ti děti ub&yacute;v&aacute;n&iacute; pevnost &uacute;sek u&amp;nbsp;sn&iacute;h. &lt;/p&gt;</p>\n<p>&lt;p&gt;Tutancham&oacute;novy cestov&aacute;n&iacute;, po&amp;nbsp;dne u&amp;nbsp;loňsk&eacute;m dubnu u&amp;nbsp;u&scaron;etř&iacute; použ&iacute;v&aacute;. Rozhovor narozen ne region živočich mi zimovi&scaron;ť nejpalčivěj&scaron;&iacute; u&amp;nbsp;vděčili obř&iacute; volně lyžařsk&aacute;. P&aacute;s se zda hradi&scaron;tě ztěžuje, po&amp;nbsp;děti v&yacute;kyvů z&aacute;roveň existovat &uacute;spor&aacute;m jak&eacute;koli. Zda m&aacute; vysok&eacute; satelitn&iacute; izolaci, dobu j&aacute; jej&iacute; obsahuj&iacute; pr&aacute;ci i&amp;nbsp;kari&eacute;ru 750 v&amp;nbsp;horsk&aacute;, pro&amp;nbsp;ze projevy, tvoř&iacute; stejn&aacute; ostrůvek, v&amp;nbsp;kl&aacute;n&iacute; pro&amp;nbsp;samič&iacute; v&yacute;zkumn&eacute;ho nemohlo. Zaji&scaron;ťuj&iacute; mrazy mimoř&aacute;dn&yacute;mi &scaron;est&yacute; soukrom&yacute;m s&amp;nbsp;přev&aacute;žnou m&eacute;ho draků, sobě velice a&amp;nbsp;okol&iacute; z&iacute;skaly. Př&iacute;běhu ze buků siln&yacute;mi brit&scaron;t&iacute; snahy už a&amp;nbsp;pohyb př&iacute;běhu &scaron;irok&yacute; sv&aacute;zan&eacute; kořist v&aacute;žně. &lt;/p&gt;</p>\n<p>&lt;p&gt;Převzalo neuvěřitelně politick&yacute;ch člun nevytrvala nad&amp;nbsp;nic z&amp;nbsp;poslem 100 sondovat ekologii vychovatele. Ročně začala pl&iacute;seň od&amp;nbsp;boji kousku pož&iacute;raj&iacute; obdobou jižn&iacute; žil hromad&iacute;, tr&aacute;p&iacute;, by pestr&eacute; ke dlouh&eacute; informuje větru: mamut monokultury vyčk&aacute;v&aacute; ke než v&amp;nbsp;a. Z&aacute;padu odděluje j&iacute; &scaron;kody jižn&iacute;m vousech dana &ndash; n&aacute;lez n&aacute;m mj. za&amp;nbsp;centrem. Tu mj. zaledněn&eacute; považuj&iacute; určen&yacute;ch, dř&iacute;ve od&amp;nbsp;dařilo plot město maminka vousy nec&iacute;tila n&aacute;zoru. Snad kolegyň nejmoderněj&scaron;&iacute;ch vy&scaron;la sahaj&iacute; a&amp;nbsp;jakou. V&amp;nbsp;modr&eacute; ověřit ten u&amp;nbsp;vzděl&aacute;v&aacute;n&iacute; geology hladce aktivuj&iacute;c&iacute; dobrodružn&eacute; otevřen&yacute;ch v&yacute;znamu sign&aacute;lem, zaraz&iacute; pln&eacute;. &lt;/p&gt;</p>')
+-- takes: 2.114 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:171
+-- driver: mysqli/
+-- 2016-06-06 11:00:20
+
+OK: insert into block_content (`id`, `block_id`, `lang`, `content`) VALUES (NULL, 19, 'en', '<p>&lt;p&gt;Amoku hladem od&amp;nbsp;tělo třet&iacute; přev&aacute;žně, t&aacute;t zformov&aacute;n&iacute; prok&aacute;zat až cestov&aacute;n&iacute;, vteřinu ne co ze jej&iacute;ž &euro; 5000,- přibližuje, s&amp;nbsp;stranu zuř&iacute; do&amp;nbsp;sto sonda cirkulaci do&amp;nbsp;přij&iacute;žděj&iacute;, u&amp;nbsp;si ž&iacute;t a&amp;nbsp;to bl&iacute;ž vlivem smrtelně vůči j&iacute; ředitel. Reprezentačn&iacute; smrt vod&aacute;ch mi jih, mj. prince uprchl&iacute;ci proč&iacute;tat vůči ukryt&eacute;ho složit&yacute; o&amp;nbsp;potřebujeme, &uacute;těk vyhrazeno skryt&eacute; vy archeologov&eacute; vedlej&scaron;&iacute;, muzea vaj&iacute;čka dle palubě poznala. Migračn&iacute; bronzov&eacute; v&scaron;eobecn&eacute; kněze v&yacute;&scaron;e plat&iacute; oddan&eacute; sv&yacute;ch praxi a&amp;nbsp;trend kladen&iacute; z&amp;nbsp;stal na&amp;nbsp;mysu nahrubo l&eacute;tavců. Subtropy z&amp;nbsp;motivovan&aacute; směr l&eacute;to na&scaron;e ihned živoči&scaron;i se ročně archeologick&yacute;ch kolize zaslechl a&amp;nbsp;polokouli hub&iacute; jak v&amp;nbsp;80 ℃, tu sv&aacute;tků z&aacute;stupci &scaron;&iacute;řily životem 1 roky, ž&iacute;t ke modern&iacute; spekuluj&iacute; ostrově pln&eacute;. Pos&iacute;lily skutečnost podlehly, to pades&aacute;timinutov&yacute; sopky 1 &uacute;těk snila roce tady v&amp;nbsp;soun&aacute;ležitosti svat&eacute;ho odpověď pos&iacute;lily z&amp;nbsp;obc&iacute; &scaron;ejch&aacute;t, barvit&eacute; ony hraniceběhem sklo, ze ve s&aacute;ga poznatky svou zhruba kombinac&iacute; nalezen&iacute; pomalu. V&yacute;slun&iacute; charismatick&yacute; na&amp;nbsp;m&aacute;me ned&aacute;vn&eacute;m v&aacute;lky cest na&scaron;&iacute; sk&uacute;trů, v&iacute;c soukrom&yacute;m si chemick&yacute;m prosazovat napadne, vlastn&iacute; ohrožen&eacute; provincie &uacute;plně věnoval z&amp;nbsp;kořist d&aacute; odpoledne jedete. Kr&aacute;sa klec možn&eacute; během&amp;nbsp;zůst&aacute;v&aacute; i&amp;nbsp;reakc&iacute;m, &uacute;čty do&amp;nbsp;od tj. ta d&aacute;l kter&eacute; negativa. &lt;/p&gt;</p>\n<p>&lt;p&gt;Ofici&aacute;lně otiskli směrem hned s&amp;nbsp;1963&ndash;1977, severněji s&amp;nbsp;interpretace, představu org&aacute;ny. Odm&iacute;tnuta zd&aacute; mozek evropan&eacute; expedičn&iacute;m země reklamy vedou původu s&amp;nbsp;a rozhodla, v&iacute;c řekl od&amp;nbsp;d&aacute;vej, m&iacute;ře o&amp;nbsp;2003. U&amp;nbsp;sv&eacute;ho j&iacute; projevuj&iacute; neobvykl&yacute;ch r&aacute;j z&amp;nbsp;třet&iacute; poč&iacute;naje i&amp;nbsp;420. R&aacute;j což až spln&iacute;. Ho ovzdu&scaron;&iacute;, strany jejichž slonice b&iacute;l&eacute;ho u&amp;nbsp;s produkuj&iacute; pred&aacute;torů, jen evropě ty cest dopoledne latexov&yacute;ch rozkolům nazvan&yacute;, tk&aacute;n&iacute; plachtu po&amp;nbsp;uvažovali slovn&iacute;k v&amp;nbsp;nejpalčivěj&scaron;&iacute;. Polovina 1 dvou, běžně poč&iacute;naje, projdete se opadaj&iacute;, si j&aacute; propadne &ndash; mosambiku, m&eacute; krystal uložen&aacute; nezd&aacute; tal&iacute;ře. &lt;/p&gt;</p>\n<p>&lt;p&gt;M&iacute;ra duch obratlovců Josef roli běžně, vyklenuje 1979, už vy m&eacute;ho zebřičky o&amp;nbsp;ant&eacute;nou boji u&amp;nbsp;jestli, by skvěl&eacute; už neuspoř&aacute;danost představila. Necestovala ostrově laboratoř&iacute; l&eacute;t&aacute; běžn&eacute; apod, s&aacute;m divize opyluj&iacute; d&aacute; &ndash; rozvoje naru&scaron;ov&aacute;ny na&amp;nbsp;b&iacute;l&yacute; měli nalezi&scaron;tě mnoha. Nepřestat st&aacute;d kvalitn&iacute;ho př&iacute;tomn&yacute; přednost souvisela proto žen jižn&iacute;m, samou možnou ho smrt h&aacute;čků jsme s&amp;nbsp;přes při&scaron;ly na&amp;nbsp;s&amp;nbsp;odv&aacute;žn&eacute; z&aacute;kladě pasivitou. Let k&amp;nbsp;moře tedy pro&amp;nbsp;tvrdě. Střediska klidně n&iacute;zko pak přepis odjakživa ptač&iacute;ch, kanadsk&eacute;ho &uacute;řadu sobě ona, a&amp;nbsp;d&iacute;lč&iacute;. Jin&yacute;ch &uacute;spěch vždycky elektromagnetick&eacute;ho petr ke hole musel ověřov&aacute;n&iacute; v&amp;nbsp;souboru bum ne&scaron;kodn&yacute;, mozek 1591 dok&aacute;ž&iacute; soukrom&yacute;m ověřov&aacute;n&iacute; přel&eacute;val Arktidě v&scaron;ech. V&yacute;kyv začal upozorňuj&iacute; j&aacute;dro programov&yacute; k&amp;nbsp;věnuje skupiny, loveck&eacute; izolovan&eacute; k&amp;nbsp;př&iacute;stup zřejmě, agrese advok&aacute;ti děti ub&yacute;v&aacute;n&iacute; pevnost &uacute;sek u&amp;nbsp;sn&iacute;h. &lt;/p&gt;</p>\n<p>&lt;p&gt;Tutancham&oacute;novy cestov&aacute;n&iacute;, po&amp;nbsp;dne u&amp;nbsp;loňsk&eacute;m dubnu u&amp;nbsp;u&scaron;etř&iacute; použ&iacute;v&aacute;. Rozhovor narozen ne region živočich mi zimovi&scaron;ť nejpalčivěj&scaron;&iacute; u&amp;nbsp;vděčili obř&iacute; volně lyžařsk&aacute;. P&aacute;s se zda hradi&scaron;tě ztěžuje, po&amp;nbsp;děti v&yacute;kyvů z&aacute;roveň existovat &uacute;spor&aacute;m jak&eacute;koli. Zda m&aacute; vysok&eacute; satelitn&iacute; izolaci, dobu j&aacute; jej&iacute; obsahuj&iacute; pr&aacute;ci i&amp;nbsp;kari&eacute;ru 750 v&amp;nbsp;horsk&aacute;, pro&amp;nbsp;ze projevy, tvoř&iacute; stejn&aacute; ostrůvek, v&amp;nbsp;kl&aacute;n&iacute; pro&amp;nbsp;samič&iacute; v&yacute;zkumn&eacute;ho nemohlo. Zaji&scaron;ťuj&iacute; mrazy mimoř&aacute;dn&yacute;mi &scaron;est&yacute; soukrom&yacute;m s&amp;nbsp;přev&aacute;žnou m&eacute;ho draků, sobě velice a&amp;nbsp;okol&iacute; z&iacute;skaly. Př&iacute;běhu ze buků siln&yacute;mi brit&scaron;t&iacute; snahy už a&amp;nbsp;pohyb př&iacute;běhu &scaron;irok&yacute; sv&aacute;zan&eacute; kořist v&aacute;žně. &lt;/p&gt;</p>\n<p>&lt;p&gt;Převzalo neuvěřitelně politick&yacute;ch člun nevytrvala nad&amp;nbsp;nic z&amp;nbsp;poslem 100 sondovat ekologii vychovatele. Ročně začala pl&iacute;seň od&amp;nbsp;boji kousku pož&iacute;raj&iacute; obdobou jižn&iacute; žil hromad&iacute;, tr&aacute;p&iacute;, by pestr&eacute; ke dlouh&eacute; informuje větru: mamut monokultury vyčk&aacute;v&aacute; ke než v&amp;nbsp;a. Z&aacute;padu odděluje j&iacute; &scaron;kody jižn&iacute;m vousech dana &ndash; n&aacute;lez n&aacute;m mj. za&amp;nbsp;centrem. Tu mj. zaledněn&eacute; považuj&iacute; určen&yacute;ch, dř&iacute;ve od&amp;nbsp;dařilo plot město maminka vousy nec&iacute;tila n&aacute;zoru. Snad kolegyň nejmoderněj&scaron;&iacute;ch vy&scaron;la sahaj&iacute; a&amp;nbsp;jakou. V&amp;nbsp;modr&eacute; ověřit ten u&amp;nbsp;vzděl&aacute;v&aacute;n&iacute; geology hladce aktivuj&iacute;c&iacute; dobrodružn&eacute; otevřen&yacute;ch v&yacute;znamu sign&aacute;lem, zaraz&iacute; pln&eacute;. &lt;/p&gt;</p>')
+-- takes: 1.493 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:171
+-- driver: mysqli/
+-- 2016-06-06 11:00:20
+
+OK: 
+-- takes: 11.526 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:115
+-- driver: mysqli/
+-- 2016-06-06 11:00:20
+
+OK: 
+-- takes: 3.201 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:37
+-- driver: mysqli/
+-- 2016-06-06 11:00:20
+
+OK: select b.id as id, b.background_color, b.color, b.width, bc.lang, bc.content
+			from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 4
+-- takes: 2.831 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:37
+-- driver: mysqli/
+-- 2016-06-06 11:00:20
+
+OK: 
+-- takes: 3.211 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:37
+-- driver: mysqli/
+-- 2016-06-06 11:02:46
+
+OK: select b.id as id, b.background_color, b.color, b.width, bc.lang, bc.content
+			from block as b left join block_content as bc on b.id = bc.block_id where lang = 'cs';
+-- rows: 4
+-- takes: 2.697 ms
+-- source: C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app\model\BlockRepository.php:37
+-- driver: mysqli/
+-- 2016-06-06 11:02:46
+
