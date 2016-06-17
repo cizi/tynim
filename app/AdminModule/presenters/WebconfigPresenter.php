@@ -100,6 +100,8 @@ class WebconfigPresenter extends SignPresenter {
 					}
 					$this->webconfigRepository->save($key, $fileController->getPathDb(), $lang);
 				}
+			} else {
+				$this->webconfigRepository->save($key, $value, $lang);
 			}
 		}
 		if ($fileError) {
