@@ -37,8 +37,7 @@ class MenuPresenter extends SignPresenter {
 	}
 
 	public function actionDefault() {
-		$langSession = $this->session->getSection('webLang');
-		$lang = ((isset($langSession->langId) && $langSession->langId != null) ? $langSession->langId : 'cs');
+		$lang = $this->langRepository->getCurrentLang($this->session);
 		$this->template->topMenuEntities = $this->menuRepository->findItems($lang);
 		$this->template->menuController = $this->menuController;
 		$this->template->presenter = $this->presenter;
@@ -129,6 +128,5 @@ class MenuPresenter extends SignPresenter {
 			$this['menuForm']['level']->setValue($level);
 			$this['menuForm']['submenu']->setValue($id);
 		}
-
 	}
 }

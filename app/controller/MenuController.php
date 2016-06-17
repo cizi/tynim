@@ -17,6 +17,47 @@ class MenuController {
 	}
 
 	/**
+	 * Recursively menu rendering in block content section
+	 *
+	 * @param Presenter $presenter
+	 * @param MenuEntity[] $menuEntities
+	 * @return string
+	 */
+	public function renderMenuItemWithSubItemsInBlockContent(Presenter $presenter, $menuEntities) {
+		$tableData = "";
+		/** @var MenuEntity $menuEntity */
+		$counter = 0;
+		foreach ($menuEntities as $menuEntity) {
+			$blockForMenuItem = new Link($presenter, "BlockContent:ItemDetail", [$menuEntity->getOrder()]);
+
+			$prefix = "";
+			for ($i = 1; $i < $menuEntity->getLevel(); $i++) {
+				$prefix .= " - ";
+			}
+
+			$tableData .= "
+				<tr>
+					<td>{$prefix}{$menuEntity->getOrder()}</td>
+					<td>{$menuEntity->getTitle()}</td>
+					<td>{$menuEntity->getLink()}</td>
+					<td>{$menuEntity->getAlt()}</td>
+					<td class='alignRight'>";
+
+			$tableData .= "<a href='{$blockForMenuItem}' title='" . BLOCK_CONTENT_SETTINGS_BLOCKS_IN_MENU . "'>
+					<span class='glyphicon glyphicon-circle-arrow-right colorGreen'></span></a></td></tr>";
+
+			if ($menuEntity->hasSubItems()) {
+				$anotherEntities = $this->menuRepository->findItems($menuEntity->getLang(),
+					$menuEntity->getLevel() + 1);
+				$tableData .= $this->renderMenuItemWithSubItemsInBlockContent($presenter, $anotherEntities);
+			}
+			$counter++;
+		}
+
+		return $tableData;
+	}
+
+	/**
 	 * Recursively menu rendering
 	 *
 	 * @param Presenter $presenter

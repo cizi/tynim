@@ -29,7 +29,9 @@
 			</a>
 		</li>
 		<li>
-			<a href="#"><span class="glyphicon glyphicon-link menuItem"></span>{=MENU_MENU_BLOCK}</a>
+			<a href={link BlockContent:Default} {if $item == "blockContent"} style="color: white"{/if}>
+				<span class="glyphicon glyphicon-link menuItem"></span>{=MENU_MENU_BLOCK}
+			</a>
 		</li>
 		<li>
 			<a href={link Contact:Default} {if $item == "contact"} style="color: white"{/if}>

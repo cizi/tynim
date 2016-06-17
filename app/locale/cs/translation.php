@@ -248,6 +248,11 @@ define("BLOCK_SETTING_COLOR", 'Barva textu');
 define("BLOCK_SETTING_EDIT_ITEM", 'Barva textu');
 define("BLOCK_SETTING_DELETE_ITEM", 'Barva textu');
 define("BLOCK_SETTING_PICS", 'Dostupné obrázky');
+define("BLOCK_SETTING_PICS_INFO", 'Dostuoné obrázky, které je možné vložit do obsahu bloku. Stačí zkopírovat adresu uloženou vedle obrázku a v editoru
+ 								textu tuto adresu opět zadat i s rozměry obrázku. Obrázek se následně zobrazí v editoru kde bude možné donastavit obtékání
+ 								textu a jiná nastavení. <br />
+ 								<b>TIP: </b> Pro vložení obrázku, který nebyl zatím nahrán je nutné
+								 obrázek nejdříve nahrát (tedy uložit blok) a poté se vrátit zpět do editace bloku.');
 define("BLOCK_SETTING_ITEM_EDIT", 'Nastavení bloku');
 define("BLOCK_SETTING_ITEM_EDIT_INFO", 'Zde je veškeré nastavení jednoho bloku včetně jazykový mutací. ');
 define("BLOCK_SETTING_ITEM_CONTENT_LABEL", 'Obsah bloku');
@@ -268,6 +273,13 @@ define("BLOCK_SETTINGS_CONFIRM_MODAL_CANCEL", 'Zpět');
 define("BLOCK_SETTINGS_ITEM_DELETED", 'Položka byla úspěšně smazána.');
 define("BLOCK_SETTINGS_ITEM_DELETED_FAILED", 'Při mazání položky došlo k chybě!');
 define("BLOCK_SETTINGS_ITEM_SAVED_FAILED", 'Při uložení položky došlo k chybě!');
+
+// block and content
+define("BLOCK_CONTENT_SETTINGS", 'Obsah webu');
+define("BLOCK_CONTENT_SETTINGS_INFO", 'V této sekci se sestavuje obsah celého webu. Odkazy z menu se dávají dávají dohromady s bloky. Každá položka
+										(podpoložka) z menu by měla mít alespoň jeden obsahový blok (může samozřejmě mít bloků více). Jako název stránky
+										je použit titulek, který byl zadán do položky menu.');
+define("BLOCK_CONTENT_SETTINGS_BLOCKS_IN_MENU", 'Obsah odkazu webu');
 
 // common
 define("UNSUPPORTED_UPLOAD_FORMAT", "Pokoušíte se nahrát nepodporovaný formát. Podporované formáty jsou %s.");
