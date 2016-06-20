@@ -40,6 +40,45 @@
 										</tr>
 									</tbody>
 								</table>
+
+								<h3>{=BLOCK_CONTENT_SETTINGS_BLOCKS_IN_CONTENT}</h3>
+								<span>{=BLOCK_CONTENT_SETTINGS_BLOCKS_IN_CONTENT_INFO}</span>
+
+								<h3>{=BLOCK_CONTENT_SETTINGS_AVAILABLE_BLOCKS}</h3>
+								<span>{=BLOCK_CONTENT_SETTINGS_AVAILABLE_BLOCKS_INFO}</span>
+
+								<table class="table table-striped">
+									<thead>
+									<tr>
+										<th style="width: 55%">{=BLOCK_SETTING_CONTENT}</th>
+										<th>{=BLOCK_SETTING_BG_COLOR}</th>
+										<th>{=BLOCK_SETTING_COLOR}</th>
+										<th class="alignRight"></th>
+									</tr>
+									</thead>
+									<tbody>
+									{foreach $availableBlocks as $blockEntity}
+										<tr>
+											<td>
+												{$blockEntity->getBlockContent()->getContentText()}
+											</td>
+											<td>
+												{if $blockEntity->getBackgroundColor() !=""}
+													<div class="colorExample" style="background-color: {!$blockEntity->getBackgroundColor()}"></div>
+												{/if}
+											</td>
+											<td>
+												{if $blockEntity->getColor() != ""}
+													<div class="colorExample" style="background-color: {!$blockEntity->getColor()}"></div>
+												{/if}
+											</td>
+											<td class="alignRight">
+												<a href='{link addBlockToLink, $blockEntity->getId()}' title={=BLOCK_CONTENT_SETTINGS_ADD_TITLE}><span class='glyphicon glyphicon-plus'></span></a>
+											</td>
+										</tr>
+									{/foreach}
+									</tbody>
+								</table>
 							</div>
 						</div>
 					</div>

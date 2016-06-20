@@ -770,7 +770,7 @@ class Container_461d22c33b extends Nette\DI\Container
 	{
 		$service = new App\AdminModule\Presenters\BlockContentPresenter($this->getService('40_App_Model_MenuRepository'),
 			$this->getService('26_App_Controller_MenuController'), $this->getService('37_App_Model_BlockRepository'),
-			$this->getService('39_App_Model_LangRepository'));
+			$this->getService('39_App_Model_LangRepository'), $this->getService('44_App_Model_WebconfigRepository'));
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));

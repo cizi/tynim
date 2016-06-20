@@ -245,8 +245,8 @@ define("BLOCK_SETTING_INFO", 'Obsahové bloky jsou části stráńek, které bud
 define("BLOCK_SETTING_CONTENT", 'Obsah');
 define("BLOCK_SETTING_BG_COLOR", 'Barva pozadí');
 define("BLOCK_SETTING_COLOR", 'Barva textu');
-define("BLOCK_SETTING_EDIT_ITEM", 'Barva textu');
-define("BLOCK_SETTING_DELETE_ITEM", 'Barva textu');
+define("BLOCK_SETTING_EDIT_ITEM", 'Editovat blok');
+define("BLOCK_SETTING_DELETE_ITEM", 'Odstranit blok');
 define("BLOCK_SETTING_PICS", 'Dostupné obrázky');
 define("BLOCK_SETTING_PICS_INFO", 'Dostuoné obrázky, které je možné vložit do obsahu bloku. Stačí zkopírovat adresu uloženou vedle obrázku a v editoru
  								textu tuto adresu opět zadat i s rozměry obrázku. Obrázek se následně zobrazí v editoru kde bude možné donastavit obtékání
@@ -280,6 +280,13 @@ define("BLOCK_CONTENT_SETTINGS_INFO", 'V této sekci se sestavuje obsah celého 
 										(podpoložka) z menu by měla mít alespoň jeden obsahový blok (může samozřejmě mít bloků více). Jako název stránky
 										je použit titulek, který byl zadán do položky menu.');
 define("BLOCK_CONTENT_SETTINGS_BLOCKS_IN_MENU", 'Obsah odkazu webu');
+define("BLOCK_CONTENT_SETTINGS_BLOCKS_IN_CONTENT", 'Bloky zařazené v odkazu');
+define("BLOCK_CONTENT_SETTINGS_BLOCKS_IN_CONTENT_INFO", 'Bloky v odkazu tvoří obsah stránky. Bloků je možné vložit do stránky několik, jejich pořadí pak
+														určuje jak budou na stránce vykresleny. Každý odkaz by měl obsahovat alespoň jeden blok.');
+define("BLOCK_CONTENT_SETTINGS_AVAILABLE_BLOCKS", 'Dostupné bloky');
+define("BLOCK_CONTENT_SETTINGS_AVAILABLE_BLOCKS_INFO", 'Bloky, které je možné do stránky zažadit.');
+define("BLOCK_CONTENT_SETTINGS_CONTACT_FORM_AS_BLOCK", 'Kontaktní formulář');
+define("BLOCK_CONTENT_SETTINGS_ADD_TITLE", 'Přidat blok do odkazu');
 
 // common
 define("UNSUPPORTED_UPLOAD_FORMAT", "Pokoušíte se nahrát nepodporovaný formát. Podporované formáty jsou %s.");
