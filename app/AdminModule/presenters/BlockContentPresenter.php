@@ -68,10 +68,12 @@ class BlockContentPresenter extends SignPresenter {
 	/**
 	 * Add block to current link
 	 *
-	 * @param int $id
+	 * @param int $idMenu
+	 * @param int $idBlock
 	 */
-	public function actionAddBlockToLink($id) {
-
+	public function actionAddBlockToLink($idMenu, $idBlock) {
+		$this->blockRepository->savePageContent($idMenu, $idBlock);
+		$this->redirect("itemDetail", $idMenu);
 	}
 
 	/**

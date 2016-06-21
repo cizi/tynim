@@ -5,6 +5,7 @@ namespace App\Model;
 use App\Model\Entity\BlockContentEntity;
 use App\Model\Entity\BlockEntity;
 use App\Model\Entity\BlockPicsEntity;
+use App\Model\Entity\PageContentEntity;
 
 class BlockRepository extends BaseRepository {
 
@@ -133,6 +134,26 @@ class BlockRepository extends BaseRepository {
 		}
 
 		return $return;
+	}
+
+	/**
+	 * @param int $idMenu
+	 * @param int $idBlock
+	 *
+	 * @return \Dibi\Result|int
+	 */
+	public function savePageContent($idMenu, $idBlock) {
+		$query = ["select max(`order`) from page_content where menu_item_id = %i", $idMenu];
+		$result = $this->connection->query($query)->fetchSingle();
+
+		$newOrder =(int)$result + 1;
+		$pageContent = new PageContentEntity();
+		$pageContent->setMenuItemId($idMenu);
+		$pageContent->setBlockId($idBlock);
+		$pageContent->setOrder($newOrder);
+		$query = ["insert into page_content", $pageContent->extract()];
+
+		return $this->connection->query($query);
 	}
 
 	/**
