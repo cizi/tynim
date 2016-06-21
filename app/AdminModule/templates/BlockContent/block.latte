@@ -1,0 +1,36 @@
+<table class="table table-striped">
+	<thead>
+	<tr>
+		<th style="width: 55%">{=BLOCK_SETTING_CONTENT}</th>
+		<th>{=BLOCK_SETTING_BG_COLOR}</th>
+		<th>{=BLOCK_SETTING_COLOR}</th>
+		<th class="alignRight"></th>
+	</tr>
+	</thead>
+	<tbody>
+	{foreach $blocks as $blockEntity}
+		<tr>
+			<td>
+				{$blockEntity->getBlockContent()->getContentText()}
+			</td>
+			<td>
+				{if $blockEntity->getBackgroundColor() !=""}
+					<div class="colorExample" style="background-color: {!$blockEntity->getBackgroundColor()}"></div>
+				{/if}
+			</td>
+			<td>
+				{if $blockEntity->getColor() != ""}
+					<div class="colorExample" style="background-color: {!$blockEntity->getColor()}"></div>
+				{/if}
+			</td>
+			<td class="alignRight">
+				{if $included}
+					<a href='{link removeBlockFromLink, $menuItem->getId(), $blockEntity->getId()}' title={=BLOCK_CONTENT_SETTINGS_REMOVE_TITLE}><span class='glyphicon glyphicon-minus'></span></a>
+				{else}
+					<a href='{link addBlockToLink, $menuItem->getId(), $blockEntity->getId()}' title={=BLOCK_CONTENT_SETTINGS_ADD_TITLE}><span class='glyphicon glyphicon-plus'></span></a>
+				{/if}
+			</td>
+		</tr>
+	{/foreach}
+	</tbody>
+</table>

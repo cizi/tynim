@@ -157,6 +157,51 @@ class BlockRepository extends BaseRepository {
 	}
 
 	/**
+	 * returns all already included block in link
+	 *
+	 * @param int $idMenu
+	 * @return BlockEntity[]
+	 */
+	public function findAddedBlockContents($lang, $idMenu) {
+		$blocks = [];
+		$query = ["select * from page_content where menu_item_id = %s order by `order`", $idMenu];
+
+		$result = $this->connection->query($query)->fetchAll();
+		foreach($result as $item) {
+			$blocks[] = $this->getBlockById($lang, $item['block_id']);
+
+		}
+
+		return $blocks;
+	}
+
+	/**
+	 * @param string $lang
+	 * @param int $blockId
+	 * @return BlockEntity
+	 */
+	private function getBlockById($lang, $blockId) {
+		$query = ["
+			select b.id as id, b.background_color, b.color, b.width, bc.lang, bc.content
+			from block as b left join block_content as bc on b.id = bc.block_id
+				where lang = %s and
+				b.id = %i",
+			$lang,
+			$blockId
+		];
+
+		$result = $this->connection->query($query)->fetch();
+		$blockContentEntity = new BlockContentEntity();
+		$blockContentEntity->hydrate($result->toArray());
+
+		$blockEntity = new BlockEntity();
+		$blockEntity->hydrate($result->toArray());
+		$blockEntity->setBlockContent($blockContentEntity);
+
+		return $blockEntity;
+	}
+
+	/**
 	 * @param BlockPicsEntity[] $pics
 	 */
 	private function savePics(array $pics) {

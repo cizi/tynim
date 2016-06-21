@@ -60,8 +60,12 @@ class BlockContentPresenter extends SignPresenter {
 		$lang = $this->langRepository->getCurrentLang($this->session);
 		$this->template->menuItem = $this->menuRepository->getMenuEntityByOrder($id, $lang);
 
+		$includedBlocks = $this->blockRepository->findAddedBlockContents($lang, $id);
+		$this->template->includedBlocks = $includedBlocks;
+
 		$availableBlock = $this->blockRepository->findBlockList($lang);
 		$availableBlock[] = $this->getContactFormBlock();
+
 		$this->template->availableBlocks = $availableBlock;
 	}
 
@@ -73,6 +77,14 @@ class BlockContentPresenter extends SignPresenter {
 	 */
 	public function actionAddBlockToLink($idMenu, $idBlock) {
 		$this->blockRepository->savePageContent($idMenu, $idBlock);
+		$this->redirect("itemDetail", $idMenu);
+	}
+
+	/**
+	 * @param int $idMenu
+	 * @param int $idBlock
+	 */
+	public function actionRemoveBlockFromLink($idMenu,  $idBlock) {
 		$this->redirect("itemDetail", $idMenu);
 	}
 
@@ -95,5 +107,31 @@ class BlockContentPresenter extends SignPresenter {
 		$contactBlock->setBlockContent($contentEntity);
 
 		return $contactBlock;
+	}
+
+
+	/**
+	 * @param BlockEntity[] $included
+	 * @param BlockEntity[] $available
+	 * @return BlockEntity[]
+	 */
+	private function filterAddedBlocks(array $included, array $available) {
+		$filteredAvailable = [];
+		if (count($included) == 0) {
+			$filteredAvailable = $available;
+		} else {
+			foreach($included as $inc) {
+				$found = false;
+				foreach($available as $avail) {
+
+
+				}
+				if ($found == false) {
+					//$filteredAvailable[] = $in
+				}
+			}
+		}
+
+		return $filteredAvailable;
 	}
 }
