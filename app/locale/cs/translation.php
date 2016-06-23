@@ -288,6 +288,9 @@ define("BLOCK_CONTENT_SETTINGS_AVAILABLE_BLOCKS_INFO", 'Bloky, které je možné
 define("BLOCK_CONTENT_SETTINGS_CONTACT_FORM_AS_BLOCK", 'Kontaktní formulář');
 define("BLOCK_CONTENT_SETTINGS_ADD_TITLE", 'Přidat blok do odkazu');
 define("BLOCK_CONTENT_SETTINGS_REMOVE_TITLE", 'Odstranit blok z odkazu');
+define("BLOCK_CONTENT_SETTINGS_MOVE_BLOCK_UP", 'Posunout blok nahoru');
+define("BLOCK_CONTENT_SETTINGS_MOVE_BLOCK_DOWN", 'Posunout blok dolu');
+define("BLOCK_CONTENT_SETTINGS_NO_BLOCKS", '-- žádné --');
 
 // common
 define("UNSUPPORTED_UPLOAD_FORMAT", "Pokoušíte se nahrát nepodporovaný formát. Podporované formáty jsou %s.");

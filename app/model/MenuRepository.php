@@ -36,6 +36,29 @@ class MenuRepository extends BaseRepository {
 	}
 
 	/**
+	 * @param string $lang
+	 * @param int $order
+	 * @return MenuEntity[]
+	 */
+	public function findItemsByOrder($order) {
+		$items = [];
+		$query = ["select * from menu_item as mi
+			where `order` = %i
+			order by `order`",
+			$order
+		];
+
+		$result = $this->connection->query($query)->fetchAll();
+		foreach ($result as $item) {
+			$menuItem = new MenuEntity();
+			$menuItem->hydrate($item->toArray());
+			$items[] = $menuItem;
+		}
+
+		return $items;
+	}
+
+	/**
 	 * @param int $menuId
 	 * @param string $lang
 	 * @param int $level
@@ -252,7 +275,7 @@ class MenuRepository extends BaseRepository {
 	 * @param int $id
 	 * @return MenuEntity
 	 */
-	private function getMenuEntityById($id) {
+	public function getMenuEntityById($id) {
 		$query = ["select * from menu_item where id = %i", $id];
 		$result = $this->connection->query($query)->fetch();
 		$menuEntity = new MenuEntity();

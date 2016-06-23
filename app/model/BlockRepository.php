@@ -24,6 +24,17 @@ class BlockRepository extends BaseRepository {
 	/** @const for contetn (name of column in DB as well) */
 	const KEY_CONTENT = "content";
 
+	/** @var MenuRepository */
+	private $menuRepository;
+
+	/**
+	 * @param MenuRepository $menuRepository
+	 */
+	public function	__construct(\Dibi\Connection $connection, MenuRepository $menuRepository) {
+		parent::__construct($connection);
+		$this->menuRepository = $menuRepository;
+	}
+
 	/**
 	 * @param string $lang
 	 * @return BlockEntity[]
@@ -140,20 +151,84 @@ class BlockRepository extends BaseRepository {
 	 * @param int $idMenu
 	 * @param int $idBlock
 	 *
-	 * @return \Dibi\Result|int
 	 */
 	public function savePageContent($idMenu, $idBlock) {
 		$query = ["select max(`order`) from page_content where menu_item_id = %i", $idMenu];
 		$result = $this->connection->query($query)->fetchSingle();
 
-		$newOrder =(int)$result + 1;
-		$pageContent = new PageContentEntity();
-		$pageContent->setMenuItemId($idMenu);
-		$pageContent->setBlockId($idBlock);
-		$pageContent->setOrder($newOrder);
-		$query = ["insert into page_content", $pageContent->extract()];
+		$menuItemEntity = $this->menuRepository->getMenuEntityById($idMenu);
+		$allLangsMenuItems = $this->menuRepository->findItemsByOrder($menuItemEntity->getOrder());
 
-		return $this->connection->query($query);
+		$newOrder =(int)$result + 1;
+		foreach($allLangsMenuItems as $menuItem) {
+			$pageContent = new PageContentEntity();
+			$pageContent->setMenuItemId($menuItem->getId());
+			$pageContent->setBlockId($idBlock);
+			$pageContent->setOrder($newOrder);
+
+			$query = ["insert into page_content", $pageContent->extract()];
+			$this->connection->query($query);
+		}
+	}
+
+	/**
+	 * @param int $idMenu
+	 * @param int $idBlock
+	 */
+	public function deletePageContent($idMenu, $idBlock) {
+		$menuItemEntity = $this->menuRepository->getMenuEntityById($idMenu);
+		$allLangsMenuItems = $this->menuRepository->findItemsByOrder($menuItemEntity->getOrder());
+
+		foreach($allLangsMenuItems as $menuItem) {
+			$query = ["
+				delete from page_content where menu_item_id = %i and block_id = %i",
+				$menuItem->getId(),
+				$idBlock
+			];
+			$this->connection->query($query);
+		}
+	}
+
+	/**
+	 * @param int $idMenu
+	 * @param int $idBlock
+	 * @param bool $moveUp indicates direction of moving
+	 */
+	public function movePageContent($idMenu, $idBlock, $moveUp = true) {
+		$menuItemEntity = $this->menuRepository->getMenuEntityById($idMenu);
+		$allLangsMenuItems = $this->menuRepository->findItemsByOrder($menuItemEntity->getOrder());
+
+		$pageContentEntity = $this->getPageContentEntity($idMenu, $idBlock);
+		$originalItemOrder = $pageContentEntity->getOrder();
+		if ($originalItemOrder) {
+			$this->connection->begin();
+			try {
+				foreach ($allLangsMenuItems as $menuItem) {
+					$newItemOrder = ($moveUp ? $originalItemOrder - 1 : $originalItemOrder + 1);
+					$query = [	// first need to change order with lower order to higher
+						"update page_content set `order` = %i
+							where menu_item_id = %i and `order` = %i",
+						$originalItemOrder,
+						$menuItem->getId(),
+						$newItemOrder		// it is order of lower items
+					];
+					$this->connection->query($query);
+
+					$query = [	// then need to upgrade current (clicked) item
+						"update page_content set `order` = %i
+							where menu_item_id = %i and block_id = %i",
+						$newItemOrder,
+						$menuItem->getId(),
+						$idBlock
+					];
+					$this->connection->query($query);
+				}
+			} catch (\Exception $e) {
+				//dump($e->getMessage());
+				$this->connection->rollback();
+			}
+			$this->connection->commit();
+		}
 	}
 
 	/**
@@ -162,7 +237,7 @@ class BlockRepository extends BaseRepository {
 	 * @param int $idMenu
 	 * @return BlockEntity[]
 	 */
-	public function findAddedBlockContents($lang, $idMenu) {
+	public function findAddedBlock($idMenu, $lang) {
 		$blocks = [];
 		$query = ["select * from page_content where menu_item_id = %s order by `order`", $idMenu];
 
@@ -173,6 +248,25 @@ class BlockRepository extends BaseRepository {
 		}
 
 		return $blocks;
+	}
+
+	/**
+	 * @param int $idMenu
+	 * @param int $idBlock
+	 * @return PageContentEntity
+	 */
+	private function getPageContentEntity($idMenu, $idBlock) {
+		$query = [
+			"select * from page_content where menu_item_id = %i and block_id = %i",
+			$idMenu,
+			$idBlock
+		];
+
+		$result = $this->connection->query($query)->fetch();
+		$pageContentEntity = new PageContentEntity();
+		$pageContentEntity->hydrate($result->toArray());
+
+		return $pageContentEntity;
 	}
 
 	/**

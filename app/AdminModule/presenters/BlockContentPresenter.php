@@ -57,16 +57,18 @@ class BlockContentPresenter extends SignPresenter {
 	 * @param int $id is order of item (is unique)
 	 */
 	public function actionItemDetail($id) {
+		$order = $id;
 		$lang = $this->langRepository->getCurrentLang($this->session);
-		$this->template->menuItem = $this->menuRepository->getMenuEntityByOrder($id, $lang);
+		$menuItemEntity = $this->menuRepository->getMenuEntityByOrder($order, $lang);
+		$this->template->menuItem = $menuItemEntity;
 
-		$includedBlocks = $this->blockRepository->findAddedBlockContents($lang, $id);
+		$includedBlocks = $this->blockRepository->findAddedBlock($menuItemEntity->getId(), $lang);
 		$this->template->includedBlocks = $includedBlocks;
 
 		$availableBlock = $this->blockRepository->findBlockList($lang);
 		$availableBlock[] = $this->getContactFormBlock();
 
-		$this->template->availableBlocks = $availableBlock;
+		$this->template->availableBlocks = $this->filterBlocksFromAdded($includedBlocks, $availableBlock);
 	}
 
 	/**
@@ -77,7 +79,7 @@ class BlockContentPresenter extends SignPresenter {
 	 */
 	public function actionAddBlockToLink($idMenu, $idBlock) {
 		$this->blockRepository->savePageContent($idMenu, $idBlock);
-		$this->redirect("itemDetail", $idMenu);
+		$this->redirectToItemDetail($idMenu);
 	}
 
 	/**
@@ -85,8 +87,32 @@ class BlockContentPresenter extends SignPresenter {
 	 * @param int $idBlock
 	 */
 	public function actionRemoveBlockFromLink($idMenu,  $idBlock) {
-		$this->redirect("itemDetail", $idMenu);
+		$this->blockRepository->deletePageContent($idMenu, $idBlock);
+		$this->redirectToItemDetail($idMenu);
 	}
+
+	/**
+	 * @param int $idMenu
+	 * @param int $idBlock
+	 */
+	public function actionMovePageUp($idMenu,  $idBlock) {
+		$this->blockRepository->movePageContent($idMenu, $idBlock, true);
+		$this->redirectToItemDetail($idMenu);
+	}
+
+	public function actionMovePageDown($idMenu,  $idBlock) {
+		$this->blockRepository->movePageContent($idMenu, $idBlock, false);
+		$this->redirectToItemDetail($idMenu);
+	}
+
+	/** redirects to itemDetail
+	 * @param $idMenu
+	 */
+	private function redirectToItemDetail($idMenu) {
+		$menuEntity = $this->menuRepository->getMenuEntityById($idMenu);
+		$this->redirect("itemDetail", $menuEntity->getOrder());
+	}
+
 
 	/**
 	 * Return contact form as a block into content
@@ -115,23 +141,21 @@ class BlockContentPresenter extends SignPresenter {
 	 * @param BlockEntity[] $available
 	 * @return BlockEntity[]
 	 */
-	private function filterAddedBlocks(array $included, array $available) {
-		$filteredAvailable = [];
-		if (count($included) == 0) {
-			$filteredAvailable = $available;
-		} else {
-			foreach($included as $inc) {
-				$found = false;
-				foreach($available as $avail) {
-
-
-				}
-				if ($found == false) {
-					//$filteredAvailable[] = $in
+	private function filterBlocksFromAdded(array $included, array $available) {
+		if (count($included) != 0) {
+			for($i = 0; $i < count($included); $i++) {
+				$inc = $included[$i];
+				for ($y = 0; $y < count($available); $y++) {
+					if (isset($available[$y])) {
+						$avail = $available[$y];
+						if (($inc->getId() == $avail->getId())) {
+							unset($available[$y]);
+						}
+					}
 				}
 			}
 		}
 
-		return $filteredAvailable;
+		return $available;
 	}
 }

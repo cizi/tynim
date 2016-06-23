@@ -688,7 +688,7 @@ class Container_461d22c33b extends Nette\DI\Container
 	 */
 	public function createService__37_App_Model_BlockRepository()
 	{
-		$service = new App\Model\BlockRepository($this->getService('connection'));
+		$service = new App\Model\BlockRepository($this->getService('connection'), $this->getService('40_App_Model_MenuRepository'));
 		return $service;
 	}
 
