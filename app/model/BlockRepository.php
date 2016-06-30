@@ -2,6 +2,7 @@
 
 namespace App\Model;
 
+use App\AdminModule\Presenters\BlockContentPresenter;
 use App\Model\Entity\BlockContentEntity;
 use App\Model\Entity\BlockEntity;
 use App\Model\Entity\BlockPicsEntity;
@@ -27,12 +28,22 @@ class BlockRepository extends BaseRepository {
 	/** @var MenuRepository */
 	private $menuRepository;
 
+	/** @var WebconfigRepository */
+	private $webconfigRepository;
+
 	/**
+	 * @param \Dibi\Connection $connection
 	 * @param MenuRepository $menuRepository
+	 * @param WebconfigRepository $webconfigRepository
 	 */
-	public function	__construct(\Dibi\Connection $connection, MenuRepository $menuRepository) {
+	public function	__construct(
+		\Dibi\Connection $connection,
+		MenuRepository $menuRepository,
+		WebconfigRepository $webconfigRepository
+	) {
 		parent::__construct($connection);
 		$this->menuRepository = $menuRepository;
+		$this->webconfigRepository = $webconfigRepository;
 	}
 
 	/**
@@ -58,6 +69,7 @@ class BlockRepository extends BaseRepository {
 
 			$blocks[] = $blockEntity;
 		}
+		$blocks[] = $this->getContactFormBlock();		// not forget form block which is excluded from DB
 
 		return $blocks;
 	}
@@ -251,6 +263,27 @@ class BlockRepository extends BaseRepository {
 	}
 
 	/**
+	 * Return contact form as a block into content
+	 *
+	 * @return BlockEntity
+	 */
+	public function getContactFormBlock() {
+		$langCommon = WebconfigRepository::KEY_LANG_FOR_COMMON;
+
+		$contactBlock = new BlockEntity();
+		$contactBlock->setBackgroundColor($this->webconfigRepository->getByKey(WebconfigRepository::KEY_CONTACT_FORM_BACKGROUND_COLOR, $langCommon));
+		$contactBlock->setColor($this->webconfigRepository->getByKey(WebconfigRepository::KEY_CONTACT_FORM_COLOR, $langCommon));
+		$contactBlock->setId(BlockContentPresenter::CONTACT_FORM_ID_AS_BLOCK);
+
+		$contentEntity = new BlockContentEntity();
+		$contentEntity->setContent(BLOCK_CONTENT_SETTINGS_CONTACT_FORM_AS_BLOCK);
+		$contentEntity->setLang($langCommon);
+		$contactBlock->setBlockContent($contentEntity);
+
+		return $contactBlock;
+	}
+
+	/**
 	 * @param int $idMenu
 	 * @param int $idBlock
 	 * @return PageContentEntity
@@ -275,22 +308,27 @@ class BlockRepository extends BaseRepository {
 	 * @return BlockEntity
 	 */
 	private function getBlockById($lang, $blockId) {
-		$query = ["
+		if ($blockId == BlockContentPresenter::CONTACT_FORM_ID_AS_BLOCK) {
+			$blockEntity = $this->getContactFormBlock();
+		} else {
+			$query = [
+				"
 			select b.id as id, b.background_color, b.color, b.width, bc.lang, bc.content
 			from block as b left join block_content as bc on b.id = bc.block_id
 				where lang = %s and
 				b.id = %i",
-			$lang,
-			$blockId
-		];
+				$lang,
+				$blockId
+			];
 
-		$result = $this->connection->query($query)->fetch();
-		$blockContentEntity = new BlockContentEntity();
-		$blockContentEntity->hydrate($result->toArray());
+			$result = $this->connection->query($query)->fetch();
+			$blockContentEntity = new BlockContentEntity();
+			$blockContentEntity->hydrate($result->toArray());
 
-		$blockEntity = new BlockEntity();
-		$blockEntity->hydrate($result->toArray());
-		$blockEntity->setBlockContent($blockContentEntity);
+			$blockEntity = new BlockEntity();
+			$blockEntity->hydrate($result->toArray());
+			$blockEntity->setBlockContent($blockContentEntity);
+		}
 
 		return $blockEntity;
 	}

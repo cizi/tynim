@@ -28,10 +28,12 @@
 							<div class="colorExample" style="background-color: {!$blockEntity->getColor()}"></div>
 						{/if}
 					</td>
-					<td class="alignRight">
+					<td class="alignRight" nowrap="nowrap">
 						{if $included}
 							{if !$iterator->first}
 								<a href='{link movePageUp, $menuItem->getId(), $blockEntity->getId()}' title={=BLOCK_CONTENT_SETTINGS_MOVE_BLOCK_UP}><span class='glyphicon glyphicon-chevron-up colorGrey'></span></a> &nbsp;&nbsp;
+							{else}
+								<div class='menuMoverPlaceholder'></div>
 							{/if}
 
 							{if !$iterator->last}

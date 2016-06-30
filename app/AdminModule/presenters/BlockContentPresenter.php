@@ -66,7 +66,6 @@ class BlockContentPresenter extends SignPresenter {
 		$this->template->includedBlocks = $includedBlocks;
 
 		$availableBlock = $this->blockRepository->findBlockList($lang);
-		$availableBlock[] = $this->getContactFormBlock();
 
 		$this->template->availableBlocks = $this->filterBlocksFromAdded($includedBlocks, $availableBlock);
 	}
@@ -113,29 +112,6 @@ class BlockContentPresenter extends SignPresenter {
 		$this->redirect("itemDetail", $menuEntity->getOrder());
 	}
 
-
-	/**
-	 * Return contact form as a block into content
-	 *
-	 * @return BlockEntity
-	 */
-	private function getContactFormBlock() {
-		$langCommon = WebconfigRepository::KEY_LANG_FOR_COMMON;
-
-		$contactBlock = new BlockEntity();
-		$contactBlock->setBackgroundColor($this->webconfigRepository->getByKey(WebconfigRepository::KEY_CONTACT_FORM_BACKGROUND_COLOR, $langCommon));
-		$contactBlock->setColor($this->webconfigRepository->getByKey(WebconfigRepository::KEY_CONTACT_FORM_COLOR, $langCommon));
-		$contactBlock->setId(self::CONTACT_FORM_ID_AS_BLOCK);
-
-		$contentEntity = new BlockContentEntity();
-		$contentEntity->setContent(BLOCK_CONTENT_SETTINGS_CONTACT_FORM_AS_BLOCK);
-		$contentEntity->setLang($langCommon);
-		$contactBlock->setBlockContent($contentEntity);
-
-		return $contactBlock;
-	}
-
-
 	/**
 	 * @param BlockEntity[] $included
 	 * @param BlockEntity[] $available
@@ -143,17 +119,20 @@ class BlockContentPresenter extends SignPresenter {
 	 */
 	private function filterBlocksFromAdded(array $included, array $available) {
 		if (count($included) != 0) {
-			for($i = 0; $i < count($included); $i++) {
-				$inc = $included[$i];
-				for ($y = 0; $y < count($available); $y++) {
-					if (isset($available[$y])) {
-						$avail = $available[$y];
-						if (($inc->getId() == $avail->getId())) {
-							unset($available[$y]);
-						}
+			$availableFilter = [];
+			foreach($available as $avail) {
+				$found = false;
+				foreach($included as $inc) {
+					if ($avail->getId() == $inc->getId()) {
+						$found = true;
+						break;
 					}
 				}
+				if ($found == false) {
+					$availableFilter[] = $avail;
+				}
 			}
+			$available = $availableFilter;
 		}
 
 		return $available;

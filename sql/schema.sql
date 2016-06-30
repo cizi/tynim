@@ -51,6 +51,18 @@ CREATE TABLE `menu_item` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
 
 
+CREATE TABLE `page_content` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'ID',
+  `menu_item_id` int(11) NOT NULL COMMENT 'ID of men item',
+  `block_id` int(11) NOT NULL COMMENT 'ID of block',
+  `order` int(11) NOT NULL COMMENT 'Order of item in',
+  PRIMARY KEY (`id`),
+  KEY `menu_item_id` (`menu_item_id`),
+  KEY `block_id` (`block_id`),
+  CONSTRAINT `page_content_ibfk_1` FOREIGN KEY (`menu_item_id`) REFERENCES `menu_item` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
+
 CREATE TABLE `slider_pic` (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'ID',
   `path` varchar(255) COLLATE utf8_czech_ci NOT NULL COMMENT 'Cesta k souboru',
@@ -86,4 +98,4 @@ CREATE TABLE `web_config` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
 
 
--- 2016-06-03 13:32:22
+-- 2016-06-30 13:20:58
