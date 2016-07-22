@@ -36,6 +36,29 @@ class MenuRepository extends BaseRepository {
 	}
 
 	/**
+	 * @param string $link
+	 * @param string $lang
+	 * @return MenuEntity
+	 */
+	public function getMenuItemByLink($link, $lang) {
+		$query = ["select * from menu_item as mi
+			where link = %s
+			and lang = %s
+			order by `order`",
+			$link,
+			$lang
+		];
+
+		$menuItem = new MenuEntity();
+		$result = $this->connection->query($query)->fetch();
+		if ($result) {
+			$menuItem->hydrate($result->toArray());
+		}
+
+		return $menuItem;
+	}
+
+	/**
 	 * @param string $lang
 	 * @param int $order
 	 * @return MenuEntity[]

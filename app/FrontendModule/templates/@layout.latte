@@ -96,10 +96,6 @@
 
 		<div n:foreach="$flashes as $flash" n:class="alert, $flash->type">{$flash->message}</div>
 
-		<div class="container">
-			{include content}
-		</div>
-
 		{block scripts}
 			<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 			<script src="https://nette.github.io/resources/js/netteForms.min.js"></script>
@@ -114,6 +110,10 @@
 		{if $googleAnalytics != ""}
 			{!$googleAnalytics}
 		{/if}
+	</div>
+
+	<div class="container content">
+		{include content}
 	</div>
 
 	{if $showFooter}

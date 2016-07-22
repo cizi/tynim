@@ -6,6 +6,7 @@ use App\AdminModule\Presenters\BlockContentPresenter;
 use App\Model\Entity\BlockContentEntity;
 use App\Model\Entity\BlockEntity;
 use App\Model\Entity\BlockPicsEntity;
+use App\Model\Entity\MenuEntity;
 use App\Model\Entity\PageContentEntity;
 
 class BlockRepository extends BaseRepository {
@@ -281,6 +282,41 @@ class BlockRepository extends BaseRepository {
 		$contactBlock->setBlockContent($contentEntity);
 
 		return $contactBlock;
+	}
+
+	/**
+	 * Finds all block by link in URL and language
+	 *
+	 * @param string $link
+	 * @param string $lang
+	 * @return BlockEntity[]
+	 */
+	public function findAddedBlockFronted($link, $lang) {
+		$menuItem = $this->menuRepository->getMenuItemByLink($link, $lang);
+		 return $this->findBlocksByPageContentEntity($menuItem, $lang);
+	}
+
+	/**
+	 * Returns array with BlockContentEntities by menu entity and lang
+	 *
+	 * @param MenuEntity $pageContentEntity
+	 * @param string $lang
+	 * @return BlockEntity[]
+	 */
+	private function findBlocksByPageContentEntity(MenuEntity $pageContentEntity, $lang) {
+		$query = [
+			"select * from page_content where menu_item_id = %i order by `order`",
+			$pageContentEntity->getId()
+		];
+
+		$result = $this->connection->query($query)->fetchAll();
+		$blocks = [];
+		foreach($result as $item) {
+			$blocks[] = $this->getBlockById($lang, $item->block_id);
+
+		}
+
+		return $blocks;
 	}
 
 	/**

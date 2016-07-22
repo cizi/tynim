@@ -78,9 +78,14 @@ class BlockContentEntity {
 	/**
 	 * @return string
 	 */
-	public function getContentText() {
-		return substr(strip_tags($this->getContent()), 0, self::SIZE_OF_TEXT_PREVIEW);
+	public function getContentText($forFrontend = false) {
+		if ($forFrontend) {
+			return $this->getContent();
+		} else {
+			return substr(strip_tags($this->getContent()), 0, self::SIZE_OF_TEXT_PREVIEW);
+		}
 	}
+
 
 	/**
 	 * @param array $data

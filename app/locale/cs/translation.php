@@ -248,6 +248,7 @@ define("BLOCK_SETTING_COLOR", 'Barva textu');
 define("BLOCK_SETTING_EDIT_ITEM", 'Editovat blok');
 define("BLOCK_SETTING_DELETE_ITEM", 'Odstranit blok');
 define("BLOCK_SETTING_PICS", 'Dostupné obrázky');
+define("BLOCK_SETTING_WIDTH", 'Šířka bloku');
 define("BLOCK_SETTING_PICS_INFO", 'Dostuoné obrázky, které je možné vložit do obsahu bloku. Stačí zkopírovat adresu uloženou vedle obrázku a v editoru
  								textu tuto adresu opět zadat i s rozměry obrázku. Obrázek se následně zobrazí v editoru kde bude možné donastavit obtékání
  								textu a jiná nastavení. <br />

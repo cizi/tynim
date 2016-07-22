@@ -5,6 +5,8 @@ namespace App\FrontendModule\Presenters;
 use App\Controller\FileController;
 use App\Controller\MenuController;
 use App\Forms\ContactForm;
+use App\Model\BlockRepository;
+use App\Model\LangRepository;
 use Nette;
 use App\Enum\WebWidthEnum;
 use App\Model\SliderSettingRepository;
@@ -33,13 +35,21 @@ class HomepagePresenter extends BasePresenter {
 	/** @var FileController */
 	private $fileController;
 
+	/** @var BlockRepository */
+	private $blockRepository;
+
+	/** @var LangRepository */
+	private $langRepository;
+
 	public function __construct(
 		WebconfigRepository $webconfigRepository,
 		SliderSettingRepository $sliderSettingRepository,
 		SliderPicRepository $sliderPicRepository,
 		ContactForm $contactForm,
 		MenuController $menuController,
-		FileController $fileController
+		FileController $fileController,
+		BlockRepository $blockRepository,
+		LangRepository $langRepository
 	) {
 		$this->webconfigRepository = $webconfigRepository;
 		$this->sliderSettingRepository = $sliderSettingRepository;
@@ -47,6 +57,8 @@ class HomepagePresenter extends BasePresenter {
 		$this->contactForm = $contactForm;
 		$this->menuController = $menuController;
 		$this->fileController = $fileController;
+		$this->blockRepository = $blockRepository;
+		$this->langRepository = $langRepository;
 	}
 
 	/**
@@ -55,9 +67,7 @@ class HomepagePresenter extends BasePresenter {
 	public function startup() {
 		parent::startup();
 
-		$langSession = $this->session->getSection('webLang');
-		$lang = ((isset($langSession->langId) && $langSession->langId != null) ? $langSession->langId : 'cs');
-
+		$lang = $this->langRepository->getCurrentLang($this->session);
 		$this->loadWebConfig($lang);
 		$this->loadSliderConfig();
 		$this->loadFooterConfig();
@@ -65,8 +75,17 @@ class HomepagePresenter extends BasePresenter {
 		$this->template->menuHtml = $this->menuController->renderMenuInFrontend($lang);
 	}
 
-	public function renderDefault() {
-
+	/**
+	 * @param string $id
+	 */
+	public function renderDefault($id) {
+		if (!empty($id)) {
+			$userBlocks = $this->blockRepository->findAddedBlockFronted($id, $this->langRepository->getCurrentLang($this->session));
+		} else {
+			$userBlocks = [];
+		}
+		$this->template->userBlocks = $userBlocks;
+		$this->template->widthEnum = new WebWidthEnum();
 	}
 
 	/**

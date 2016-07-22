@@ -35,7 +35,7 @@ class BlockForm extends Nette\Object {
 		$widthSelect = new WebWidthEnum();
 		$defaultValue = $widthSelect->arrayKeyValue();
 		end($defaultValue);
-		$form->addSelect(BlockRepository::KEY_WIDTH, FOOTER_WIDTH, $widthSelect->arrayKeyValue())
+		$form->addSelect(BlockRepository::KEY_WIDTH, BLOCK_SETTING_WIDTH, $widthSelect->arrayKeyValue())
 			->setAttribute("class", "form-control menuItem")
 			->setAttribute("tabindex", "1")
 			->setDefaultValue(key($defaultValue));
