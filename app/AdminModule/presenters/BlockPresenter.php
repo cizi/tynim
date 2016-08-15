@@ -37,6 +37,7 @@ class BlockPresenter extends SignPresenter {
 	public function actionDefault() {
 		$lang = $this->langRepository->getCurrentLang($this->session);
 		$this->template->blocks = $this->blockRepository->findBlockList($lang);
+		$this->template->contactFormId = BlockContentPresenter::CONTACT_FORM_ID_AS_BLOCK;
 	}
 
 	/**

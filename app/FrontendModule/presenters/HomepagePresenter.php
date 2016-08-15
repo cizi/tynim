@@ -2,6 +2,7 @@
 
 namespace App\FrontendModule\Presenters;
 
+use App\AdminModule\Presenters\BlockContentPresenter;
 use App\Controller\FileController;
 use App\Controller\MenuController;
 use App\Forms\ContactForm;
@@ -73,6 +74,7 @@ class HomepagePresenter extends BasePresenter {
 		$this->loadFooterConfig();
 
 		$this->template->menuHtml = $this->menuController->renderMenuInFrontend($lang);
+		$this->template->contactFormId = BlockContentPresenter::CONTACT_FORM_ID_AS_BLOCK;
 	}
 
 	/**

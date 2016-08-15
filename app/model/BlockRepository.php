@@ -312,8 +312,11 @@ class BlockRepository extends BaseRepository {
 		$result = $this->connection->query($query)->fetchAll();
 		$blocks = [];
 		foreach($result as $item) {
-			$blocks[] = $this->getBlockById($lang, $item->block_id);
-
+			if ($item->block_id == BlockContentPresenter::CONTACT_FORM_ID_AS_BLOCK) {
+				$blocks[]= $this->getContactFormBlock();
+			} else {
+				$blocks[] = $this->getBlockById($lang, $item->block_id);
+			}
 		}
 
 		return $blocks;

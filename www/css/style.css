@@ -208,7 +208,7 @@ div.colorExample {
 }
 .content {
 	margin-top: -20px;
-	position: inherit;
+	margin-bottom: 16px;
 }
 .contentRow{
 	padding: 15px;
