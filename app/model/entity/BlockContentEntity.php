@@ -5,7 +5,7 @@ namespace App\Model\Entity;
 class BlockContentEntity {
 
 	/** @const int size of text only (without HTML) in table preview */
-	const SIZE_OF_TEXT_PREVIEW = 256;
+	const SIZE_OF_TEXT_PREVIEW = 512;
 
 	/** @var int */
 	private $id;

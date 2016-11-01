@@ -53,7 +53,7 @@
 		{if sliderEnabled}
 			<ul class="bxslider" style="opacity: 0">
 				{foreach $sliderPics as $pic}
-					<li><img src="{!$basePath}/{$pic->getPath()}" /></li>
+					<li><img src="{!$baseUrl}{$pic->getPath()}" /></li>
 				{/foreach}
 			</ul>
 		{/if}
@@ -75,7 +75,7 @@
 					</button>
 
 					{if $showHomeButtonInMenu}
-						<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+						<a class="navbar-brand" href="{$baseUrl}"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
 					{/if}
 				</div>
 

@@ -2,6 +2,7 @@
 
 namespace App\AdminModule\Presenters;
 
+use App\Model\LangRepository;
 use App\Model\UserRepository;
 use App\Forms\SignForm;
 use App\FrontendModule\Presenters\BasePresenter;
@@ -16,15 +17,21 @@ class DefaultPresenter extends BasePresenter {
 	/** @var UserRepository */
 	public $userRepository;
 
-	public function __construct(SignForm $signForm, UserRepository $userRepository) {
+	/** @var LangRepository $langRepository */
+	private $langRepository;
+
+	public function __construct(SignForm $signForm, UserRepository $userRepository, LangRepository $langRepository) {
 		$this->singInForm = $signForm;
 		$this->userRepository = $userRepository;
+		$this->langRepository = $langRepository;
 	}
 
 	/**
 	 * Pokud usem již přihlášen, přesměruji na Dashboard
 	 */
 	public function actionDefault() {
+		$this->langRepository->switchToLanguage($this->session, "cs");
+
 		if ($this->user->isLoggedIn()) {
 			$this->redirect('Dashboard:Default');
 		}

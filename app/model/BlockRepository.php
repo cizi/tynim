@@ -11,6 +11,9 @@ use App\Model\Entity\PageContentEntity;
 
 class BlockRepository extends BaseRepository {
 
+	/** @const length of text in select for block  */
+	const BLOCK_SELECT_LENGTH = 50;
+
 	/** @const for width (name of column in DB as well) */
 	const KEY_WIDTH = "width";
 
@@ -71,6 +74,34 @@ class BlockRepository extends BaseRepository {
 			$blocks[] = $blockEntity;
 		}
 		$blocks[] = $this->getContactFormBlock();		// not forget form block which is excluded from DB
+
+		return $blocks;
+	}
+
+	/**
+	 * @param string $lang
+	 * @return BlockEntity[]
+	 */
+	public function findBlockListAsKeyValue($lang) {
+		$query = ["
+			select b.id as id, b.background_color, b.color, b.width, bc.lang, bc.content
+			from block as b left join block_content as bc on b.id = bc.block_id where lang = %s",
+			$lang
+		];
+
+		$result = $this->connection->query($query)->fetchAll();
+		$blocks = [];
+		foreach ($result as $item) {
+			$blockContentEntity = new BlockContentEntity();
+			$blockContentEntity->hydrate($item->toArray());
+
+			$blockEntity = new BlockEntity();
+			$blockEntity->hydrate($item->toArray());
+			$blockEntity->setBlockContent($blockContentEntity);
+
+			$blocks[$blockEntity->getId()] = substr($blockEntity->getBlockContent()->getContentText(), 0, self::BLOCK_SELECT_LENGTH);
+		}
+		$blocks[BlockContentPresenter::CONTACT_FORM_ID_AS_BLOCK] = substr($this->getContactFormBlock()->getBlockContent()->getContentText(), 0, self::BLOCK_SELECT_LENGTH);		// not forget form block which is excluded from DB
 
 		return $blocks;
 	}
@@ -346,7 +377,7 @@ class BlockRepository extends BaseRepository {
 	 * @param int $blockId
 	 * @return BlockEntity
 	 */
-	private function getBlockById($lang, $blockId) {
+	public function getBlockById($lang, $blockId) {
 		if ($blockId == BlockContentPresenter::CONTACT_FORM_ID_AS_BLOCK) {
 			$blockEntity = $this->getContactFormBlock();
 		} else {
@@ -414,7 +445,7 @@ class BlockRepository extends BaseRepository {
 	 * @return int
 	 */
 	private function saveBlockEntity(BlockEntity $blockEntity) {
-		if (empty($blockEntity->getId())) {
+		if ($blockEntity->getId() == null) {
 			$query = ["insert into block", $blockEntity->extract()];
 		} else {
 			$query = ["
@@ -430,6 +461,6 @@ class BlockRepository extends BaseRepository {
 		}
 		$this->connection->query($query);
 
-		return (empty($blockEntity->getId()) ? $this->connection->getInsertId() : $blockEntity->getId());
+		return ($blockEntity->getId() == null ? $this->connection->getInsertId() : $blockEntity->getId());
 	}
 }

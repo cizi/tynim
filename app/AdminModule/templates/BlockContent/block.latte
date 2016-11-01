@@ -16,7 +16,7 @@
 			{foreach $blocks as $blockEntity}
 				<tr>
 					<td>
-						{$blockEntity->getBlockContent()->getContentText()}
+						{!$blockEntity->getBlockContent()->getContentText()}
 					</td>
 					<td>
 						{if $blockEntity->getBackgroundColor() !=""}

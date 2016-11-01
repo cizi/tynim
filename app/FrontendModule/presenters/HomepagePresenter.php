@@ -81,11 +81,18 @@ class HomepagePresenter extends BasePresenter {
 	 * @param string $id
 	 */
 	public function renderDefault($id) {
-		if (!empty($id)) {
-			$userBlocks = $this->blockRepository->findAddedBlockFronted($id, $this->langRepository->getCurrentLang($this->session));
+		$this->langRepository->switchToLanguage($this->session, "cs");
+
+		$userBlocks = [];
+		if (empty($id) || ($id == "")) {	// try to find default
+			$id = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_WEB_HOME_BLOCK, WebconfigRepository::KEY_LANG_FOR_COMMON);
+			if (!empty($id)) {
+				$userBlocks[] = $this->blockRepository->getBlockById($this->langRepository->getCurrentLang($this->session), $id);
+			}
 		} else {
-			$userBlocks = [];
+			$userBlocks = $this->blockRepository->findAddedBlockFronted($id, $this->langRepository->getCurrentLang($this->session));
 		}
+
 		$this->template->userBlocks = $userBlocks;
 		$this->template->widthEnum = new WebWidthEnum();
 	}

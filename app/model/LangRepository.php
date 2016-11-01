@@ -29,4 +29,15 @@ class LangRepository {
 
 		return $lang;
 	}
+
+	/**
+	 * Will switch to the language
+	 *
+	 * @param Session $sessionSection
+	 * @param string $lang
+	 */
+	public function switchToLanguage(Session $sessionSection, $lang) {
+		$langSession = $sessionSection->getSection('webLang');
+		$langSession->langId = $lang;
+	}
 }

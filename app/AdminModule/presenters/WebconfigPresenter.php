@@ -23,6 +23,9 @@ class WebconfigPresenter extends SignPresenter {
 	/** @var WebconfigForm */
 	private $configForm;
 
+	/** @var string */
+	private $webCurrentLang;
+
 	/**
 	 * @param WebconfigRepository $webconfigRepository
 	 * @param WebconfigForm $webconfigForm
@@ -40,7 +43,7 @@ class WebconfigPresenter extends SignPresenter {
 
 	public function actionDefault() {
 		$langSession = $this->session->getSection('webLang');
-		$lang = ((isset($langSession->langId) && $langSession->langId != null) ? $langSession->langId : 'cs');
+		$this->webCurrentLang = $lang = ((isset($langSession->langId) && $langSession->langId != null) ? $langSession->langId : 'cs');
 
 		$defaults = $this->webconfigRepository->load($lang);
 		$defaults[WebconfigRepository::KEY_WEB_MUTATION] = $lang;
@@ -56,7 +59,7 @@ class WebconfigPresenter extends SignPresenter {
 	 * @return Form
 	 */
 	public function createComponentConfigForm() {
-		$form = $this->configForm->create($this->presenter);
+		$form = $this->configForm->create($this->presenter, $this->webCurrentLang);
 		$form->onSuccess[] = $this->saveValue;
 
 		return $form;

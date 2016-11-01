@@ -3,6 +3,7 @@
 namespace App\Forms;
 
 use App\Enum\WebWidthEnum;
+use App\Model\BlockRepository;
 use App\Model\LangRepository;
 use App\Model\WebconfigRepository;
 use Nette;
@@ -15,16 +16,26 @@ class WebconfigForm extends Nette\Object {
 	/** @var LangRepository */
 	private $langRepository;
 
+	/** @var BlockRepository */
+	private $blockRepository;
+
 	/**
 	 * @param FormFactory $factory
 	 * @param LangRepository $langRepository
+	 * @param BlockRepository $blockRepository
 	 */
-	public function __construct(FormFactory $factory, LangRepository $langRepository) {
+	public function __construct(FormFactory $factory, LangRepository $langRepository, BlockRepository $blockRepository) {
 		$this->factory = $factory;
 		$this->langRepository = $langRepository;
+		$this->blockRepository = $blockRepository;
 	}
 
-	public function create(Nette\Application\UI\Presenter $presenter) {
+	/**
+	 * @param Nette\Application\UI\Presenter $presenter
+	 * @param string $webCurrentLanguage
+	 * @return Nette\Application\UI\Form
+	 */
+	public function create(Nette\Application\UI\Presenter $presenter, $webCurrentLanguage) {
 		$form = $this->factory->create();
 
 		$link = new Nette\Application\UI\Link($presenter, "Webconfig:LangChange", []);
@@ -79,19 +90,23 @@ class WebconfigForm extends Nette\Object {
 			->setDefaultValue("checked")
 			->setAttribute("tabindex", "9");
 
+		$form->addSelect(WebconfigRepository::KEY_WEB_HOME_BLOCK, WEBCONFIG_SETTINGS_SHOW_BLOCK, $this->blockRepository->findBlockListAsKeyValue($webCurrentLanguage))
+			->setAttribute("class", "form-control")
+			->setAttribute("tabindex", "10");
+
 		$form->addText(WebconfigRepository::KEY_WEB_MENU_BG, WEBCONFIG_WEB_MENU_BACKGROUND_COLOR)
 			->setAttribute("id", "minicolorsPickerMenuBg")
 			->setAttribute("class", "form-control minicolors-input")
-			->setAttribute("tabindex", "10");
+			->setAttribute("tabindex", "11");
 
 		$form->addText(WebconfigRepository::KEY_WEB_MENU_LINK_COLOR, WEBCONFIG_WEB_MENU_LINK_COLOR)
 			->setAttribute("id", "minicolorsPickerMenuLink")
 			->setAttribute("class", "form-control minicolors-input")
-			->setAttribute("tabindex", "11");
+			->setAttribute("tabindex", "12");
 
 		$form->addSubmit("confirm", USER_EDIT_SAVE_BTN_LABEL)
 			->setAttribute("class","btn btn-primary")
-			->setAttribute("tabindex", "12");
+			->setAttribute("tabindex", "13");
 
 		return $form;
 	}

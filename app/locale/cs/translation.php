@@ -25,6 +25,7 @@ define("MENU_CONTACT_FORM", 'Kontaktní formulář');
 define("MENU_FOOTER", 'Patička');
 define("MENU_USERS", 'Uživatelé');
 define("MENU_SETTINGS", 'Nastavení');
+define("MENU_LOGOUT", 'Odhlásit');
 
 // admin - users list
 define("USER_TITLE", 'Uživatelé');
@@ -109,6 +110,8 @@ define("WEBCONFIG_WEB_MENU_LINK_COLOR_INFO", "Zde můžete vybrat barvu pro odka
 
 define("WEBCONFIG_SETTINGS_SHOW_HOME", 'Zobrazovat odkaz domů');
 define("WEBCONFIG_SETTINGS_SHOW_HOME_INFO", 'Na první pozici v menu zobrazí domeček, který bude odkazovat na úvodní stránku.');
+define("WEBCONFIG_SETTINGS_SHOW_BLOCK", 'Block domovské stránky');
+define("WEBCONFIG_SETTINGS_SHOW_BLOCK_INFO", 'Vyberte block který se má zobrazovat na domovské obrazovce, tedy hlavní stránka webu.');
 define("WEBCONFIG_SETTINGS_LANG_DEPENDS", 'Nastavení závislé na jazyku');
 define("WEBCONFIG_SETTINGS_LANG_COMMON", 'Obecné nástavení');
 

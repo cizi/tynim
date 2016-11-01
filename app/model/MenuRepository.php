@@ -127,7 +127,8 @@ class MenuRepository extends BaseRepository {
 			$lang
 		];
 
-		return (!empty($this->connection->query($query)->fetchAll()));
+		//return (!empty($this->connection->query($query)->fetchAll()));
+		return (count($this->connection->query($query)->fetchAll()) != 0);
 	}
 
 	/**

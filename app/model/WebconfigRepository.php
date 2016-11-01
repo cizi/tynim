@@ -7,6 +7,9 @@ class WebconfigRepository extends BaseRepository{
 	/** @const for showing menu input */
 	const KEY_WEB_SHOW_HOME = "WEB_SHOW_HOME";
 
+	/** @const for showing menu input */
+	const KEY_WEB_HOME_BLOCK = "WEB_HOME_BLOCK";
+
 	/** @const for show menu */
 	const KEY_WEB_SHOW_MENU = "WEB_SHOW_MENU";
 
