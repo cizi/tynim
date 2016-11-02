@@ -80,7 +80,7 @@ class BlockContentEntity {
 	 */
 	public function getContentText($forFrontend = false) {
 		if ($forFrontend) {
-			return $this->getContent();
+			return html_entity_decode($this->getContent());
 		} else {
 			return substr(strip_tags($this->getContent()), 0, self::SIZE_OF_TEXT_PREVIEW);
 		}

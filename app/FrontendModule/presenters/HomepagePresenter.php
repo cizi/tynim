@@ -70,6 +70,7 @@ class HomepagePresenter extends BasePresenter {
 
 		$lang = $this->langRepository->getCurrentLang($this->session);
 		$this->loadWebConfig($lang);
+		$this->loadLanguageStrap();
 		$this->loadSliderConfig();
 		$this->loadFooterConfig();
 
@@ -95,6 +96,14 @@ class HomepagePresenter extends BasePresenter {
 
 		$this->template->userBlocks = $userBlocks;
 		$this->template->widthEnum = new WebWidthEnum();
+	}
+
+	/**
+	 * @param string $id of language
+	 */
+	public function actionSwitchToLanguage($id) {
+		$this->langRepository->switchToLanguage($this->session, $id);
+		$this->redirect("default");
 	}
 
 	/**
@@ -173,6 +182,27 @@ class HomepagePresenter extends BasePresenter {
 		$this->template->showHomeButtonInMenu = ($this->webconfigRepository->getByKey(WebconfigRepository::KEY_WEB_SHOW_HOME, $langCommon) == 1 ? true : false);
 		$this->template->menuColor = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_WEB_MENU_BG, $langCommon);
 		$this->template->menuLinkColor = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_WEB_MENU_LINK_COLOR, $langCommon);
+	}
+
+	/**
+	 * Loads language strap configuration
+	 */
+	private function loadLanguageStrap() {
+		if (count($this->langRepository->findLanguages()) > 1) {
+			// language free
+			$widthEnum = new WebWidthEnum();
+			$langCommon = WebconfigRepository::KEY_LANG_FOR_COMMON;
+
+			$this->template->languageStrapShow = true;
+			$this->template->languageStrapWidth = $widthEnum->getValueByKey($this->webconfigRepository->getByKey(LangRepository::KEY_LANG_WIDTH, $langCommon));
+			$this->template->languageStrapBgColor = $this->webconfigRepository->getByKey(LangRepository::KEY_LANG_BG_COLOR, $langCommon);
+			$this->template->languageStrapFontColor = $this->webconfigRepository->getByKey(LangRepository::KEY_LANG_FONT_COLOR, $langCommon);
+			$this->template->langFlagKey = LangRepository::KEY_LANG_ITEM_FLAG;
+			$this->template->languageStrapLanguages = $this->langRepository->findLanguagesWithFlags();
+		} else {
+			$this->template->languageStrapShow = false;
+
+		}
 	}
 
 	/**

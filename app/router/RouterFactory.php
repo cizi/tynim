@@ -24,7 +24,7 @@ class RouterFactory {
 		));
 
 		// frontend routing
-		$router[] = new Route('<id>', array(
+		$router[] = new Route('<presenter>/<action>[/<id>]', array(
 			'module' => 'Frontend',
 			'presenter' => 'Homepage',
 			'action' => 'default',

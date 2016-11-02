@@ -37,23 +37,23 @@ class LangForm extends Nette\Object {
 		$widthSelect = new WebWidthEnum();
 		$defaultValue = $widthSelect->arrayKeyValue();
 		end($defaultValue);
-		$form->addSelect(LangRepository::KEY_LANG_WIDTH, BLOCK_LANG_WIDTH, $widthSelect->arrayKeyValue())
+		$form->addSelect(LangRepository::KEY_LANG_WIDTH, LANG_WIDTH, $widthSelect->arrayKeyValue())
 			->setAttribute("class", "form-control menuItem")
 			->setAttribute("tabindex", $i++)
 			->setDefaultValue(key($defaultValue));
 
-		$form->addText(LangRepository::KEY_LANG_BG_COLOR, BLOCK_LANG_BG_COLOR)
+		$form->addText(LangRepository::KEY_LANG_BG_COLOR, LANG_BG_COLOR)
 			->setAttribute("id", "langBackgroundColor")
 			->setAttribute("class", "form-control minicolors-input")
 			->setAttribute("tabindex", $i++);
 
-		$form->addText(LangRepository::KEY_LANG_FONT_COLOR, BLOCK_LANG_FONT_COLOR)
+		$form->addText(LangRepository::KEY_LANG_FONT_COLOR, LANG_FONT_COLOR)
 			->setAttribute("id", "langFontColor")
 			->setAttribute("class", "form-control minicolors-input")
 			->setAttribute("tabindex", $i++);
 
 		// -- written langs
-		$form->addSubmit("confirm", BLOCK_LANG_CONFIRM)
+		$form->addSubmit("confirm", LANG_CONFIRM)
 			->setAttribute("class","btn btn-primary menuItem alignRight")
 			->setAttribute("tabindex", $i+2);
 

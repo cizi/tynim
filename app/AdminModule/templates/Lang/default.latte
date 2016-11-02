@@ -15,20 +15,20 @@
 
 				<div class="row">
 					<div class="col-lg-6 col-md-8 col-sm-12">
-						<h1>{=BLOCK_LANG_SETTINGS}</h1>
-						<span>{=BLOCK_LANG_TITLE_INFO}</span>
+						<h1>{=LANG_SETTINGS}</h1>
+						<span>{=LANG_TITLE_INFO}</span>
 						<br /><br />
 
 						<form>
 							<fieldset class="form-group">
-								<legend>{=BLOCK_LANG_SETTINGS_GLOBAL}</legend>
+								<legend>{=LANG_SETTINGS_GLOBAL}</legend>
 								<div class="form-group row">
 									<div class="col-sm-10">
 										{label LANG_WIDTH/}
 										{input LANG_WIDTH}
 									</div>
 									<div class="col-sm-10 field_info">
-										{!=BLOCK_LANG_WIDTH_INFO}
+										{!=LANG_WIDTH_INFO}
 									</div>
 
 									<div class="col-sm-10">
@@ -36,7 +36,7 @@
 										{input LANG_BG_COLOR}
 									</div>
 									<div class="col-sm-10 field_info">
-										{!=BLOCK_LANG_BG_COLOR_INFO}
+										{!=LANG_BG_COLOR_INFO}
 									</div>
 
 									<div class="col-sm-10">
@@ -44,7 +44,7 @@
 										{input LANG_FONT_COLOR}
 									</div>
 									<div class="col-sm-10 field_info">
-										{!=BLOCK_LANG_FONT_COLOR_INFO}
+										{!=LANG_FONT_COLOR_INFO}
 									</div>
 
 									<div class="form-group row alignRight">
@@ -71,7 +71,27 @@
 							{* stávající jazyky *}
 							<div class="form-group row">
 								<fieldset>
-									<legend>{=BLOCK_LANG_ALREADY_SAVED_LANGS}</legend>
+									<legend>{=LANG_ALREADY_SAVED_LANGS}</legend>
+									<table class="table table-striped">
+										<thead>
+											<tr>
+												<th class="alignLeft" ">{=LANG_TABLE_SHORTCUT}</th>
+												<th class="alignLeft">{=LANG_TABLE_FLAG}</th>
+												<th class="alignRight"">{=LANG_TABLE_DELETE}</th>
+											</tr>
+										</thead>
+										<tbody>
+											{foreach $langMutations as $langShort => $langDetail}
+												<tr>
+													<td class="alignLeft">{$langShort}</td>
+													<td><img src="{$baseUrl}{$langDetail[$langFlagKey]}" class="flagTable" /></td>
+													<td class="alignRight valignMiddle">
+														<a href='#' data-href='{link delete, $langShort}' class='colorRed' data-toggle='modal' data-target='#confirm-delete' title={=LANG_TABLE_DELETE}><span class='glyphicon glyphicon-remove'></span></a>
+													</td>
+												</tr>
+											{/foreach}
+										</tbody>
+									</table>
 								</fieldset>
 							</div>
 						</div>
@@ -79,7 +99,7 @@
 				</div>
 			</div>
 
-			{* new lang item *}
+			{* new lang item
 			{form langItemForm}
 			<div class="container-fluid">
 
@@ -90,10 +110,9 @@
 					<div class="row">
 						<div class="col-lg-6 col-md-8 col-sm-12">
 							<form>
-								{* nový jazyk *}
 								<div class="form-group row">
 									<fieldset>
-										<legend>{=BLOCK_LANG_ALREADY_NEW_LANG}</legend>
+										<legend>{=LANG_ALREADY_NEW_LANG}</legend>
 									</fieldset>
 								</div>
 							</form>
@@ -101,12 +120,35 @@
 					</div>
 				</div>
 				{/form}
+				*}
 			</div>
 		</div>
 		<!-- /#page-content-wrapper -->
 	</div>
 	<!-- /#wrapper -->
+
+	<div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					{=BLOCK_SETTINGS_CONFIRM_MODAL_DELETE_TITLE}
+				</div>
+				<div class="modal-body">
+					{=BLOCK_SETTINGS_CONFIRM_MODAL_DELETE_MSG}
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">{=BLOCK_SETTINGS_CONFIRM_MODAL_CANCEL}</button>
+					<a class="btn btn-danger btn-ok">{=BLOCK_SETTINGS_CONFIRM_MODAL_OK}</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<script>
+		$('#confirm-delete').on('show.bs.modal', function(e) {
+			$(this).find('.btn-ok').attr('href', $(e.relatedTarget).data('href'));
+		});
+
 		$(function() {
 			$("#langBackgroundColor").minicolors({
 				control: $(this).attr('data-control') || 'hue',

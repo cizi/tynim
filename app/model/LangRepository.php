@@ -24,6 +24,9 @@ class LangRepository {
 	/** @const string lang shortcut */
 	const KEY_LANG_ITEM_SHORT = "LANG_ITEM_SHORT";
 
+	/** @const file name for language flag*/
+	const FLAG_FILENAME = "flag.png";
+
 	/**
 	 * Returns all languages mutations by lang config files
 	 * @return array
@@ -32,8 +35,30 @@ class LangRepository {
 		$result = [];
 		$languages = scandir(LANG_PATH);
 		foreach ($languages as $index => $value ) {
-			if ($value != "." && $value != "..")  {
+			if ($value != "." && $value != ".." && $value != self::FLAG_FILENAME)  {
 				$result[$value] = $value;
+			}
+		}
+
+		return $result;
+	}
+
+	/**
+	 * Finds languages with all the settings
+	 * @return array
+	 */
+	public function findLanguagesWithFlags() {
+		$result = [];
+		$languages = scandir(LANG_PATH);
+		foreach ($languages as $index => $value ) {
+			if ($value != "." && $value != ".." && $value != self::FLAG_FILENAME)  {
+				$path = DIRECTORY_SEPARATOR . $value . DIRECTORY_SEPARATOR . self::FLAG_FILENAME;
+				if (file_exists(LANG_PATH . $path)) {
+					$linkPath = DIRECTORY_SEPARATOR . "locale" . $path;
+				} else {
+					$linkPath = DIRECTORY_SEPARATOR . "locale" . DIRECTORY_SEPARATOR . self::FLAG_FILENAME;
+				}
+				$result[$value] = [ self::KEY_LANG_ITEM_FLAG => $linkPath];
 			}
 		}
 

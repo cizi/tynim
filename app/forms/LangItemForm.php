@@ -34,19 +34,19 @@ class LangItemForm extends Nette\Object {
 		$i = 1;
 
 		// -- new lang setting
-		$form->addUpload(LangRepository::KEY_LANG_ITEM_FLAG, BLOCK_LANG_ITEM_FLAG)
+		$form->addUpload(LangRepository::KEY_LANG_ITEM_FLAG, LANG_ITEM_FLAG)
 			->setAttribute("class", "form-control menuItem")
 			->setAttribute("tabindex", $i++);
 
-		$form->addText(LangRepository::KEY_LANG_ITEM_DESC, BLOCK_LANG_ITEM_DESC)
+		$form->addText(LangRepository::KEY_LANG_ITEM_DESC, LANG_ITEM_DESC)
 			->setAttribute("class", "form-control")
 			->setAttribute("tabindex", $i++);
 
-		$form->addText(LangRepository::KEY_LANG_ITEM_SHORT, BLOCK_LANG_ITEM_SHORT)
+		$form->addText(LangRepository::KEY_LANG_ITEM_SHORT, LANG_ITEM_SHORT)
 			->setAttribute("class", "form-control")
 			->setAttribute("tabindex", $i++);
 
-		$form->addSubmit("confirm", BLOCK_LANG_CONFIRM)
+		$form->addSubmit("confirm", LANG_CONFIRM)
 			->setAttribute("class","btn btn-primary menuItem alignRight")
 			->setAttribute("tabindex", $i+2);
 
