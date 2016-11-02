@@ -25,6 +25,7 @@ define("MENU_CONTACT_FORM", 'Kontaktní formulář');
 define("MENU_FOOTER", 'Patička');
 define("MENU_USERS", 'Uživatelé');
 define("MENU_SETTINGS", 'Nastavení');
+define("MENU_LANG", 'Jazyková nastavení');
 define("MENU_LOGOUT", 'Odhlásit');
 
 // admin - users list
@@ -295,6 +296,25 @@ define("BLOCK_CONTENT_SETTINGS_REMOVE_TITLE", 'Odstranit blok z odkazu');
 define("BLOCK_CONTENT_SETTINGS_MOVE_BLOCK_UP", 'Posunout blok nahoru');
 define("BLOCK_CONTENT_SETTINGS_MOVE_BLOCK_DOWN", 'Posunout blok dolu');
 define("BLOCK_CONTENT_SETTINGS_NO_BLOCKS", '-- žádné --');
+
+// language
+define("BLOCK_LANG_SETTINGS", 'Jazykové mutace');
+define("BLOCK_LANG_SETTINGS_GLOBAL", 'Nastavení jazykového proužku');
+define("BLOCK_LANG_BG_COLOR", 'Barva pozadí jazykového proužku');
+define("BLOCK_LANG_BG_COLOR_INFO", 'Zde vyberta požadovanou barvu pozadí.');
+define("BLOCK_LANG_FONT_COLOR", 'Barva textu v proužku');
+define("BLOCK_LANG_FONT_COLOR_INFO", 'Zde vyberte barvu textů (odkazů) v jazykovém proužku');
+define("BLOCK_LANG_ITEM_FLAG", 'Vlajka jazyka');
+define("BLOCK_LANG_ITEM_DESC", 'Popis jazyka');
+define("BLOCK_LANG_ITEM_SHORT", 'Zkratka pro jazyk');
+define("BLOCK_LANG_TITLE_INFO", "Zde je možné konfigurovat jazykové mutace, jejich zobrazení apod.");
+
+define("BLOCK_LANG_WIDTH", 'Šířka jakykového proužku');
+define("BLOCK_LANG_WIDTH_INFO", 'Udává se procentuální šířka webu vůčí šíři okna prohlížeče');
+define("BLOCK_LANG_ALREADY_SAVED_LANGS", 'Uložené jazykové mutace');
+define("BLOCK_LANG_ALREADY_NEW_LANG", 'Uložení nového jazyka');
+define("BLOCK_LANG_CONFIRM", 'Uložit jazykové nastavení');
+
 
 // common
 define("UNSUPPORTED_UPLOAD_FORMAT", "Pokoušíte se nahrát nepodporovaný formát. Podporované formáty jsou %s.");

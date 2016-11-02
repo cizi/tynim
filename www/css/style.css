@@ -214,3 +214,11 @@ div.colorExample {
 	padding: 15px;
 	margin: auto;
 }
+.menuDelimiter {
+	padding: 0 10px;
+	width: 90%;
+	height: 1px;
+	background-color: #c9c9c9;
+	opacity: 0.8;
+	margin: auto
+}

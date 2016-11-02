@@ -1,0 +1,140 @@
+{block content}
+<div id="wrapper">
+	{include '../@menu.latte', item => 'lang'}
+	<a href="#menu-toggle" class="menuToggle" id="menu-toggle"><span class="glyphicon glyphicon-chevron-left">&nbsp;&nbsp;</span></a>
+
+	<!-- Page Content -->
+	<div id="page-content-wrapper">
+		{form langForm}
+		<div n:foreach="$flashes as $flash" n:class="alert, $flash->type">{$flash->message}</div>
+		<div class="container-fluid">
+
+			<div class="row">
+				<div class="col-lg-3 col-md-2 col-sm-1">
+				</div>
+
+				<div class="row">
+					<div class="col-lg-6 col-md-8 col-sm-12">
+						<h1>{=BLOCK_LANG_SETTINGS}</h1>
+						<span>{=BLOCK_LANG_TITLE_INFO}</span>
+						<br /><br />
+
+						<form>
+							<fieldset class="form-group">
+								<legend>{=BLOCK_LANG_SETTINGS_GLOBAL}</legend>
+								<div class="form-group row">
+									<div class="col-sm-10">
+										{label LANG_WIDTH/}
+										{input LANG_WIDTH}
+									</div>
+									<div class="col-sm-10 field_info">
+										{!=BLOCK_LANG_WIDTH_INFO}
+									</div>
+
+									<div class="col-sm-10">
+										{label LANG_BG_COLOR/}
+										{input LANG_BG_COLOR}
+									</div>
+									<div class="col-sm-10 field_info">
+										{!=BLOCK_LANG_BG_COLOR_INFO}
+									</div>
+
+									<div class="col-sm-10">
+										{label LANG_FONT_COLOR/}
+										{input LANG_FONT_COLOR}
+									</div>
+									<div class="col-sm-10 field_info">
+										{!=BLOCK_LANG_FONT_COLOR_INFO}
+									</div>
+
+									<div class="form-group row alignRight">
+										<div class="col-sm-offset-2 col-sm-8 col-md-8 col-lg-8">
+											{input confirm}
+										</div>
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+			{/form}
+
+			{* saved langs *}
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-3 col-md-2 col-sm-1">
+					</div>
+
+					<div class="row">
+						<div class="col-lg-6 col-md-8 col-sm-12">
+							{* stávající jazyky *}
+							<div class="form-group row">
+								<fieldset>
+									<legend>{=BLOCK_LANG_ALREADY_SAVED_LANGS}</legend>
+								</fieldset>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			{* new lang item *}
+			{form langItemForm}
+			<div class="container-fluid">
+
+				<div class="row">
+					<div class="col-lg-3 col-md-2 col-sm-1">
+					</div>
+
+					<div class="row">
+						<div class="col-lg-6 col-md-8 col-sm-12">
+							<form>
+								{* nový jazyk *}
+								<div class="form-group row">
+									<fieldset>
+										<legend>{=BLOCK_LANG_ALREADY_NEW_LANG}</legend>
+									</fieldset>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				{/form}
+			</div>
+		</div>
+		<!-- /#page-content-wrapper -->
+	</div>
+	<!-- /#wrapper -->
+	<script>
+		$(function() {
+			$("#langBackgroundColor").minicolors({
+				control: $(this).attr('data-control') || 'hue',
+				defaultValue: $(this).attr('data-defaultValue') || '',
+				format: $(this).attr('data-format') || 'hex',
+				keywords: $(this).attr('data-keywords') || '',
+				inline: $(this).attr('data-inline') === 'true',
+				letterCase: $(this).attr('data-letterCase') || 'lowercase',
+				opacity: $(this).attr('data-opacity'),
+				position: $(this).attr('data-position') || 'bottom left',
+				swatches: $(this).attr('data-swatches') ? $(this).attr('data-swatches').split('|') : [],
+				theme: 'bootstrap'
+			});
+
+			$("#langFontColor").minicolors({
+				control: $(this).attr('data-control') || 'hue',
+				defaultValue: $(this).attr('data-defaultValue') || '',
+				format: $(this).attr('data-format') || 'hex',
+				keywords: $(this).attr('data-keywords') || '',
+				inline: $(this).attr('data-inline') === 'true',
+				letterCase: $(this).attr('data-letterCase') || 'lowercase',
+				opacity: $(this).attr('data-opacity'),
+				position: $(this).attr('data-position') || 'bottom left',
+				swatches: $(this).attr('data-swatches') ? $(this).attr('data-swatches').split('|') : [],
+				theme: 'bootstrap'
+			});
+		})
+	</script>
+
+	{/block}
+
