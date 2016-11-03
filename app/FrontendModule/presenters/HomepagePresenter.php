@@ -67,8 +67,9 @@ class HomepagePresenter extends BasePresenter {
 	 */
 	public function startup() {
 		parent::startup();
-
 		$lang = $this->langRepository->getCurrentLang($this->session);
+
+		// load another page settings
 		$this->loadWebConfig($lang);
 		$this->loadLanguageStrap();
 		$this->loadSliderConfig();
@@ -82,8 +83,6 @@ class HomepagePresenter extends BasePresenter {
 	 * @param string $id
 	 */
 	public function renderDefault($id) {
-		$this->langRepository->switchToLanguage($this->session, "cs");
-
 		$userBlocks = [];
 		if (empty($id) || ($id == "")) {	// try to find default
 			$id = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_WEB_HOME_BLOCK, WebconfigRepository::KEY_LANG_FOR_COMMON);

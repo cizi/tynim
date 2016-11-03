@@ -42,11 +42,10 @@ class WebconfigPresenter extends SignPresenter {
 	}
 
 	public function actionDefault() {
-		$langSession = $this->session->getSection('webLang');
-		$this->webCurrentLang = $lang = ((isset($langSession->langId) && $langSession->langId != null) ? $langSession->langId : 'cs');
+		$this->webCurrentLang =  $this->langRepository->getCurrentLang($this->session);
 
-		$defaults = $this->webconfigRepository->load($lang);
-		$defaults[WebconfigRepository::KEY_WEB_MUTATION] = $lang;
+		$defaults = $this->webconfigRepository->load($this->webCurrentLang);
+		$defaults[WebconfigRepository::KEY_WEB_MUTATION] = $this->webCurrentLang;
 
 		$defaultsCommon = $this->webconfigRepository->load(WebconfigRepository::KEY_LANG_FOR_COMMON);
 		foreach ($defaultsCommon as $key => $value) {
@@ -66,11 +65,10 @@ class WebconfigPresenter extends SignPresenter {
 	}
 
 	/**
-	 * @param string $id
+	 * @param string $id language code (shortcut)
 	 */
 	public function actionLangChange($id) {
-		$langSession = $this->session->getSection('webLang');
-		$langSession->langId = $id;
+		$this->langRepository->switchToLanguage($this->session, $id);
 		$this->redirect("default");
 	}
 

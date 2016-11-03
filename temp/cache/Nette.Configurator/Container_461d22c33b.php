@@ -571,6 +571,7 @@ class Container_461d22c33b extends Nette\DI\Container
 			'consoleMode' => FALSE,
 			'container' => array('class' => NULL, 'parent' => NULL),
 			'tempDir' => 'C:\Users\Jan Cimler\OneDrive\Projekty\tynim\app/../temp',
+			'language' => array('default' => 'cs'),
 			'database' => array(
 				'host' => 'localhost',
 				'username' => 'root',
@@ -821,6 +822,7 @@ class Container_461d22c33b extends Nette\DI\Container
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
+		$service->injectBaseSettings($this->getService('41_App_Model_LangRepository'));
 		$service->invalidLinkMode = 5;
 		return $service;
 	}
@@ -836,6 +838,7 @@ class Container_461d22c33b extends Nette\DI\Container
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
+		$service->injectBaseSettings($this->getService('41_App_Model_LangRepository'));
 		$service->invalidLinkMode = 5;
 		return $service;
 	}
@@ -850,6 +853,7 @@ class Container_461d22c33b extends Nette\DI\Container
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
+		$service->injectBaseSettings($this->getService('41_App_Model_LangRepository'));
 		$service->invalidLinkMode = 5;
 		return $service;
 	}
@@ -865,6 +869,7 @@ class Container_461d22c33b extends Nette\DI\Container
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
+		$service->injectBaseSettings($this->getService('41_App_Model_LangRepository'));
 		$service->invalidLinkMode = 5;
 		return $service;
 	}
@@ -879,6 +884,7 @@ class Container_461d22c33b extends Nette\DI\Container
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
+		$service->injectBaseSettings($this->getService('41_App_Model_LangRepository'));
 		$service->invalidLinkMode = 5;
 		return $service;
 	}
@@ -907,6 +913,7 @@ class Container_461d22c33b extends Nette\DI\Container
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
+		$service->injectBaseSettings($this->getService('41_App_Model_LangRepository'));
 		$service->invalidLinkMode = 5;
 		return $service;
 	}
@@ -942,6 +949,7 @@ class Container_461d22c33b extends Nette\DI\Container
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
+		$service->injectBaseSettings($this->getService('41_App_Model_LangRepository'));
 		$service->invalidLinkMode = 5;
 		return $service;
 	}
@@ -957,6 +965,7 @@ class Container_461d22c33b extends Nette\DI\Container
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
+		$service->injectBaseSettings($this->getService('41_App_Model_LangRepository'));
 		$service->invalidLinkMode = 5;
 		return $service;
 	}
@@ -971,6 +980,7 @@ class Container_461d22c33b extends Nette\DI\Container
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
+		$service->injectBaseSettings($this->getService('41_App_Model_LangRepository'));
 		$service->invalidLinkMode = 5;
 		return $service;
 	}
@@ -986,6 +996,7 @@ class Container_461d22c33b extends Nette\DI\Container
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
+		$service->injectBaseSettings($this->getService('41_App_Model_LangRepository'));
 		$service->invalidLinkMode = 5;
 		return $service;
 	}
@@ -1001,6 +1012,7 @@ class Container_461d22c33b extends Nette\DI\Container
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
+		$service->injectBaseSettings($this->getService('41_App_Model_LangRepository'));
 		$service->invalidLinkMode = 5;
 		return $service;
 	}
@@ -1016,6 +1028,7 @@ class Container_461d22c33b extends Nette\DI\Container
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
+		$service->injectBaseSettings($this->getService('41_App_Model_LangRepository'));
 		$service->invalidLinkMode = 5;
 		return $service;
 	}
@@ -1031,6 +1044,7 @@ class Container_461d22c33b extends Nette\DI\Container
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
+		$service->injectBaseSettings($this->getService('41_App_Model_LangRepository'));
 		$service->invalidLinkMode = 5;
 		return $service;
 	}
@@ -1045,6 +1059,7 @@ class Container_461d22c33b extends Nette\DI\Container
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
+		$service->injectBaseSettings($this->getService('41_App_Model_LangRepository'));
 		$service->invalidLinkMode = 5;
 		return $service;
 	}

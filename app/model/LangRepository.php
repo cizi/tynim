@@ -2,9 +2,14 @@
 
 namespace App\Model;
 
+use Dibi\Exception;
+use Nette\Application\AbortException;
 use Nette\Http\Session;
 
 class LangRepository {
+
+	/** @const string for session key code storage */
+	const KEY_SESSION_LANG = "webLang";
 
 	/** @const string width key */
 	const KEY_LANG_WIDTH = "LANG_WIDTH";
@@ -70,11 +75,8 @@ class LangRepository {
 	 * @return string
 	 */
 	public function getCurrentLang(Session $sessionSection) {
-		//$langSession = $this->session->getSection('webLang');
-		$langSession = $sessionSection->getSection('webLang');
-		$lang = ((isset($langSession->langId) && $langSession->langId != null) ? $langSession->langId : 'cs');
-
-		return $lang;
+		$langSession = $sessionSection->getSection(self::KEY_SESSION_LANG);
+		return $langSession->langId;
 	}
 
 	/**
@@ -84,7 +86,34 @@ class LangRepository {
 	 * @param string $lang
 	 */
 	public function switchToLanguage(Session $sessionSection, $lang) {
-		$langSession = $sessionSection->getSection('webLang');
-		$langSession->langId = $lang;
+		if ($this->languagesExists($lang)) {
+			$langSession = $sessionSection->getSection(self::KEY_SESSION_LANG);
+			$langSession->langId = $lang;
+		}
+	}
+
+	/**
+	 * Loads language file
+	 *
+	 * @param string $langCode
+	 */
+	public function loadLanguageMutation($langCode) {
+		$translation = LANG_PATH . $langCode . DIRECTORY_SEPARATOR . 'translation.php';
+		if (file_exists($translation)) {
+			require_once $translation;
+		} else {
+			throw new Exception("Missing language translate file!");
+		}
+	}
+
+	/**
+	 * Finds out if the language code exists in file system by its code (language folder name)
+	 *
+	 * @param string $lang
+	 * @return bool (true = exists; false = does not exist)
+	 */
+	private function languagesExists($lang) {
+		$availableLangs = $this->findLanguages();
+		return (isset($availableLangs[$lang]));
 	}
 }

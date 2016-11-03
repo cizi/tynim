@@ -20,6 +20,11 @@ class DefaultPresenter extends BasePresenter {
 	/** @var LangRepository $langRepository */
 	private $langRepository;
 
+	/**
+	 * @param SignForm $signForm
+	 * @param UserRepository $userRepository
+	 * @param LangRepository $langRepository
+	 */
 	public function __construct(SignForm $signForm, UserRepository $userRepository, LangRepository $langRepository) {
 		$this->singInForm = $signForm;
 		$this->userRepository = $userRepository;
@@ -27,11 +32,9 @@ class DefaultPresenter extends BasePresenter {
 	}
 
 	/**
-	 * Pokud usem již přihlášen, přesměruji na Dashboard
+	 * Already logged in, redirect do dashboard
 	 */
 	public function actionDefault() {
-		$this->langRepository->switchToLanguage($this->session, "cs");
-
 		if ($this->user->isLoggedIn()) {
 			$this->redirect('Dashboard:Default');
 		}

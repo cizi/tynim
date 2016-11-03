@@ -23,7 +23,4 @@ $configurator->addConfig(__DIR__ . '/config/config.local.neon');
 
 $container = $configurator->createContainer();
 
-$translation = LANG_PATH . 'cs' . DIRECTORY_SEPARATOR . 'translation.php';
-require_once $translation;
-
 return $container;

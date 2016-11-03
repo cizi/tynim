@@ -316,6 +316,10 @@ define("LANG_CONFIRM", 'Uložit jazykové nastavení');
 define("LANG_TABLE_SHORTCUT", 'Jazyk');
 define("LANG_TABLE_FLAG", 'Ikona vlajky');
 define("LANG_TABLE_DELETE", 'Odstarnit mutaci');
+define("LANG_CONFIRM_MODAL_DELETE_TITLE", 'Smazaní jazykové mutace');
+define("LANG_CONFIRM_MODAL_DELETE_MSG", 'Opravdu chcete odstranit jazykovou mutaci?');
+define("LANG_CONFIRM_MODAL_OK", 'Smazat');
+define("LANG_CONFIRM_MODAL_CANCEL", 'Zpět');
 
 // common
 define("UNSUPPORTED_UPLOAD_FORMAT", "Pokoušíte se nahrát nepodporovaný formát. Podporované formáty jsou %s.");
