@@ -52,7 +52,7 @@
 	{if ($languageStrapShow)}
 		<div class="langStrap" style="width: {!$languageStrapWidth}; background-color: {!$languageStrapBgColor}; color: {!$languageStrapFontColor}">
 			{foreach $languageStrapLanguages as $langShort => $langDetail}
-				<a href="{link switchToLanguage, $langShort}"><img src="{$baseUrl}{$langDetail[$langFlagKey]}" class="flagStrap" title="{$langShort}" /></a>
+				<a href="{$langShort}"><img src="{$baseUrl}{$langDetail[$langFlagKey]}" class="flagStrap" title="{$langShort}" /></a>
 			{/foreach}
 		</div>
 	{/if}

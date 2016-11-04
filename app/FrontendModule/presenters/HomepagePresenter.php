@@ -84,24 +84,32 @@ class HomepagePresenter extends BasePresenter {
 	 * @param string $id
 	 */
 	public function renderDefault($id) {
-		$userBlocks = [];
-		if (empty($id) || ($id == "")) {	// try to find default
-			$id = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_WEB_HOME_BLOCK, WebconfigRepository::KEY_LANG_FOR_COMMON);
-			if (!empty($id)) {
-				$userBlocks[] = $this->blockRepository->getBlockById($this->langRepository->getCurrentLang($this->session), $id);
-			}
+		$availableLangs = $this->langRepository->findLanguages();
+		if (isset($availableLangs[$id])) {
+			$this->switchToLanguage($id);
+			$this->redirect("default");
 		} else {
-			$userBlocks = $this->blockRepository->findAddedBlockFronted($id, $this->langRepository->getCurrentLang($this->session));
+			$userBlocks = [];
+			if (empty($id) || ($id == "")) {    // try to find default
+				$id = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_WEB_HOME_BLOCK,
+					WebconfigRepository::KEY_LANG_FOR_COMMON);
+				if (!empty($id)) {
+					$userBlocks[] = $this->blockRepository->getBlockById($this->langRepository->getCurrentLang($this->session),
+						$id);
+				}
+			} else {
+				$userBlocks = $this->blockRepository->findAddedBlockFronted($id,
+					$this->langRepository->getCurrentLang($this->session));
+			}
+			$this->template->userBlocks = $userBlocks;
+			$this->template->widthEnum = new WebWidthEnum();
 		}
-
-		$this->template->userBlocks = $userBlocks;
-		$this->template->widthEnum = new WebWidthEnum();
 	}
 
 	/**
 	 * @param string $id of language
 	 */
-	public function actionSwitchToLanguage($id) {
+	public function switchToLanguage($id) {
 		$this->langRepository->switchToLanguage($this->session, $id);
 		$this->redirect("default");
 	}
