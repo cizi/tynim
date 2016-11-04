@@ -7,8 +7,9 @@ use App\Forms\BlockForm;
 use App\Model\BlockRepository;
 use App\Model\Entity\BlockContentEntity;
 use App\Model\Entity\BlockEntity;
-use App\Model\Entity\BlockPicsEntity;
+use App\Model\Entity\PicEntity;
 use App\Model\LangRepository;
+use App\Model\PicRepository;
 use Nette\Application\UI\Form;
 use Nette\Http\FileUpload;
 use Nette\Utils\ArrayHash;
@@ -24,14 +25,25 @@ class BlockPresenter extends SignPresenter {
 	/** @var LangRepository */
 	private $langRepository;
 
+	/** @var PicRepository */
+	private $picRepository;
+
+	/**
+	 * @param BlockForm $blockForm
+	 * @param BlockRepository $blockRepository
+	 * @param LangRepository $langRepository
+	 * @param PicRepository $picRepository
+	 */
 	public function __construct(
 		BlockForm $blockForm,
 		BlockRepository $blockRepository,
-		LangRepository $langRepository
+		LangRepository $langRepository,
+		PicRepository $picRepository
 	) {
 		$this->blockForm = $blockForm;
 		$this->blockRepository = $blockRepository;
 		$this->langRepository = $langRepository;
+		$this->picRepository = $picRepository;
 	}
 
 	public function actionDefault() {
@@ -64,7 +76,8 @@ class BlockPresenter extends SignPresenter {
 			$this['blockForm']->setDefaults($defaults);
 		}
 
-		$this->template->blockPics = $this->blockRepository->findBlockPictures();
+		$this->template->blockId = $id;
+		$this->template->blockPics = $this->picRepository->load();
 	}
 
 	/**
@@ -97,7 +110,7 @@ class BlockPresenter extends SignPresenter {
 							break;
 						}
 
-						$blockPic = new BlockPicsEntity();
+						$blockPic = new PicEntity();
 						$blockPic->setPath($fileController->getPathDb());
 						$pics[] = $blockPic;
 					}
@@ -130,6 +143,15 @@ class BlockPresenter extends SignPresenter {
 		}
 
 		$this->redirect("default");
+	}
+
+	/**
+	 * @param int $blockId
+	 * @param int $picId
+	 */
+	public function actionDeletePic($blockId, $picId) {
+		$this->picRepository->delete($picId);
+		$this->redirect("edit", $blockId);
 	}
 	
 }

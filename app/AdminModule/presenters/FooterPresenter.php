@@ -5,7 +5,7 @@ namespace App\AdminModule\Presenters;
 use App\Controller\FileController;
 use App\Forms\FooterForm;
 use App\Model\Entity\PicEntity;
-use App\Model\FooterPicRepository;
+use App\Model\PicRepository;
 use App\Model\WebconfigRepository;
 use Nette\Application\UI\Form;
 use Nette\Http\FileUpload;
@@ -19,36 +19,36 @@ class FooterPresenter extends SignPresenter {
 	/** @var FooterForm */
 	private $footerForm;
 
-	/** @var FooterPicRepository */
-	private $footerPicRepository;
+	/** @var PicRepository */
+	private $picRepository;
 
 	/**
 	 * @param WebconfigRepository $webconfigRepository
 	 * @param FooterForm $footerForm
-	 * @param FooterPicRepository $footerPicRepository
+	 * @param PicRepository $picRepository
 	 */
 	public function __construct(
 		WebconfigRepository $webconfigRepository,
 		FooterForm $footerForm,
-		FooterPicRepository $footerPicRepository
+		PicRepository $picRepository
 	) {
 		$this->webconfigRepository = $webconfigRepository;
 		$this->footerForm = $footerForm;
-		$this->footerPicRepository = $footerPicRepository;
+		$this->picRepository = $picRepository;
 	}
 
 	public function actionDefault() {
 		$defaults = $this->webconfigRepository->load(WebconfigRepository::KEY_LANG_FOR_COMMON);
 		$this['footerForm']->setDefaults($defaults);
 
-		$this->template->footerPics = $this->footerPicRepository->load();
+		$this->template->footerPics = $this->picRepository->load();
 	}
 
 	/**
 	 * @param int $id
 	 */
 	public function actionDeletePic($id) {
-		$this->footerPicRepository->delete($id);
+		$this->picRepository->delete($id);
 		$this->flashMessage(FOOTER_PIC_DELETED, "alert-success");
 		$this->redirect("default");
 	}
@@ -82,7 +82,7 @@ class FooterPresenter extends SignPresenter {
 					}
 					$pic = new PicEntity();
 					$pic->setPath($fileController->getPathDb());
-					$this->footerPicRepository->save($pic);
+					$this->picRepository->save($pic);
 				}
 			}
 		}

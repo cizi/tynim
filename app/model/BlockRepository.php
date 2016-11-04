@@ -5,9 +5,10 @@ namespace App\Model;
 use App\AdminModule\Presenters\BlockContentPresenter;
 use App\Model\Entity\BlockContentEntity;
 use App\Model\Entity\BlockEntity;
-use App\Model\Entity\BlockPicsEntity;
+use App\Model\Entity\PicEntity;
 use App\Model\Entity\MenuEntity;
 use App\Model\Entity\PageContentEntity;
+use App\Model\PicRepository;
 
 class BlockRepository extends BaseRepository {
 
@@ -35,19 +36,25 @@ class BlockRepository extends BaseRepository {
 	/** @var WebconfigRepository */
 	private $webconfigRepository;
 
+	/** @var PicRepository */
+	private $picRepository;
+
 	/**
 	 * @param \Dibi\Connection $connection
 	 * @param MenuRepository $menuRepository
 	 * @param WebconfigRepository $webconfigRepository
+	 * @param \App\Model\PicRepository $picRepository
 	 */
 	public function	__construct(
 		\Dibi\Connection $connection,
 		MenuRepository $menuRepository,
-		WebconfigRepository $webconfigRepository
+		WebconfigRepository $webconfigRepository,
+		PicRepository $picRepository
 	) {
 		parent::__construct($connection);
 		$this->menuRepository = $menuRepository;
 		$this->webconfigRepository = $webconfigRepository;
+		$this->picRepository = $picRepository;
 	}
 
 	/**
@@ -108,24 +115,6 @@ class BlockRepository extends BaseRepository {
 
 	/**
 	 * @param int $id
-	 * @return BlockPicsEntity[]
-	 */
-	public function findBlockPictures() {
-		$query = ["select * from block_pic"];
-		$result = $this->connection->query($query)->fetchAll();
-
-		$pics = [];
-		foreach ($result as $item) {
-			$blockPicEntity = new BlockPicsEntity();
-			$blockPicEntity->hydrate($item->toArray());
-			$pics[] = $blockPicEntity;
-		}
-
-		return $pics;
-	}
-
-	/**
-	 * @param int $id
 	 * @return bool
 	 */
 	public function deleteBlockItem($id) {
@@ -146,8 +135,8 @@ class BlockRepository extends BaseRepository {
 
 	/**
 	 * @param BlockEntity $blockEntity
-	 * @param array $blockContentEntities
-	 * @param array $blockPicsEntities
+	 * @param BlockContentEntity[] $blockContentEntities
+	 * @param PicEntity[] $blockPicsEntities
 	 * @return bool
 	 */
 	public function saveCompleteBlockItem(
@@ -162,7 +151,9 @@ class BlockRepository extends BaseRepository {
 				throw new \Exception("Block ID is missing.");
 			}
 			$this->saveBlockContents($blockContentEntities, $blockId);
-			$this->savePics($blockPicsEntities);
+			foreach ($blockPicsEntities as $picEnt) {
+				$this->picRepository->save($picEnt);
+			}
 		} catch (\Exception $e) {
 			$this->connection->rollback();
 			return false;
@@ -401,18 +392,6 @@ class BlockRepository extends BaseRepository {
 		}
 
 		return $blockEntity;
-	}
-
-	/**
-	 * @param BlockPicsEntity[] $pics
-	 */
-	private function savePics(array $pics) {
-		/** @var BlockPicsEntity $blockPicEntity */
-		foreach ($pics as $blockPicEntity) {
-			$query = ["insert into block_pic", $blockPicEntity->extract()];
-			$this->connection->query($query);
-		}
-
 	}
 
 	/**

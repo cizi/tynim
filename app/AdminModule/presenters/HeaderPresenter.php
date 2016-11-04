@@ -9,26 +9,26 @@ use App\Model\WebconfigRepository;
 use Nette\Application\UI\Form;
 use Nette\Http\FileUpload;
 use Nette\Utils\ArrayHash;
-use App\Model\HeaderPicRepository;
+use App\Model\PicRepository;
 
 class HeaderPresenter extends SignPresenter {
 
 	/** @var HeaderForm */
 	private $headerForm;
 
-	/** @var HeaderPicRepository */
-	private $headerPicRepository;
+	/** @var PicRepository */
+	private $picRepository;
 
 	/** @var WebconfigRepository */
 	private $webconfigRepository;
 
 	/**
 	 * @param HeaderForm $headerForm
-	 * @param HeaderPicRepository $headerPicRepository
+	 * @param PicRepository $picRepository
 	 */
-	public function __construct(HeaderForm $headerForm, HeaderPicRepository $headerPicRepository, WebconfigRepository $webconfigRepository) {
+	public function __construct(HeaderForm $headerForm, PicRepository $picRepository, WebconfigRepository $webconfigRepository) {
 		$this->headerForm = $headerForm;
-		$this->headerPicRepository = $headerPicRepository;
+		$this->picRepository = $picRepository;
 		$this->webconfigRepository = $webconfigRepository;
 	}
 
@@ -36,14 +36,14 @@ class HeaderPresenter extends SignPresenter {
 		$defaults = $this->webconfigRepository->load(WebconfigRepository::KEY_LANG_FOR_COMMON);
 		$this['headerForm']->setDefaults($defaults);
 
-		$this->template->headerPics = $this->headerPicRepository->load();
+		$this->template->headerPics = $this->picRepository->load();
 	}
 
 	/**
 	 * @param int $id
 	 */
 	public function actionDeletePic($id) {
-		$this->headerPicRepository->delete($id);
+		$this->picRepository->delete($id);
 		$this->flashMessage(FOOTER_PIC_DELETED, "alert-success");
 		$this->redirect("default");
 	}
@@ -78,7 +78,7 @@ class HeaderPresenter extends SignPresenter {
 					}
 					$pic = new PicEntity();
 					$pic->setPath($fileController->getPathDb());
-					$this->headerPicRepository->save($pic);
+					$this->picRepository->save($pic);
 				}
 			}
 		}
