@@ -2,19 +2,19 @@
 
 namespace App\Model;
 
-use App\Model\Entity\FooterPicEntity;
+use App\Model\Entity\PicEntity;
 
 class FooterPicRepository extends BaseRepository {
 
 	/**
-	 * @return FooterPicEntity[]
+	 * @return PicEntity[]
 	 */
 	public function load() {
 		$return = [];
 		$query = "select * from footer_pic";
 		$result = $this->connection->query($query)->fetchAll();
 		foreach ($result as $item) {
-			$footerPic = new FooterPicEntity();
+			$footerPic = new PicEntity();
 			$footerPic->hydrate($item->toArray());
 			$return[] = $footerPic;
 		}
@@ -23,10 +23,10 @@ class FooterPicRepository extends BaseRepository {
 	}
 
 	/**
-	 * @param FooterPicEntity $footerPicEntity
+	 * @param PicEntity $footerPicEntity
 	 * @return \Dibi\Result|int
 	 */
-	public function save(FooterPicEntity $footerPicEntity) {
+	public function save(PicEntity $footerPicEntity) {
 		$query = ["insert into footer_pic", $footerPicEntity->extract()];
 		return $this->connection->query($query);
 	}
@@ -44,7 +44,7 @@ class FooterPicRepository extends BaseRepository {
 	public function getById($id) {
 		$query = ["select * from footer_pic where id = %i", $id];
 		$result = $this->connection->query($query)->fetch();
-		$footerPic = new FooterPicEntity();
+		$footerPic = new PicEntity();
 		if ($result) {
 			$footerPic->hydrate($result->toArray());
 		}

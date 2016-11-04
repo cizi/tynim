@@ -97,5 +97,11 @@ CREATE TABLE `web_config` (
   UNIQUE KEY `lang_id` (`lang`,`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
 
+CREATE TABLE `header_pic` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Id',
+  `path` varchar(255) COLLATE utf8_czech_ci NOT NULL COMMENT 'Cesta k souboru',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
 
 -- 2016-06-30 13:20:58

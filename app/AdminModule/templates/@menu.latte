@@ -11,7 +11,9 @@
 			</a>
 		</li>
 		<li>
-			<a href="#"><span class="glyphicon glyphicon-bookmark menuItem"></span>{=MENU_HEADER}</a>
+			<a href={link Header:Default} {if $item == "header"} style="color: white" {/if}>
+				<span class="glyphicon glyphicon-bookmark menuItem"></span>{=MENU_HEADER}
+			</a>
 		</li>
 		<li>
 			<a href={link Slider:Default} {if $item == "slider"} style="color: white" {/if}>

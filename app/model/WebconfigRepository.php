@@ -49,7 +49,7 @@ class WebconfigRepository extends BaseRepository{
 	/** @const for enabling/disabling footer */
 	const KEY_SHOW_FOOTER = "SHOW_FOOTER";
 
-	/** @const for enabling/disabling footer */
+	/** @const for footer width in page */
 	const KEY_FOOTER_WIDTH = "FOOTER_WIDTH";
 
 	/** @const for showing contact form in footer */
@@ -66,6 +66,27 @@ class WebconfigRepository extends BaseRepository{
 
 	/** @const for footer font color */
 	const KEY_FOOTER_COLOR = "FOOTER_COLOR";
+
+	/** @const for enabling/disabling header */
+	const KEY_SHOW_HEADER = "SHOW_HEADER";
+
+	/** @const for header in page */
+	const KEY_HEADER_WIDTH = "HEADER_WIDTH";
+
+	/** @const for header content */
+	const KEY_HEADER_CONTENT = "HEADER_CONTENT";
+
+	/** @const for header files */
+	const KEY_HEADER_FILES = "HEADER_FILES";
+
+	/** @const for header background color */
+	const KEY_HEADER_BACKGROUND_COLOR = "HEADER_BACKGROUND_COLOR";
+
+	/** @const for header height */
+	const KEY_HEADER_HEIGHT = "HEADER_HEIGHT";
+
+	/** @const for header font color */
+	const KEY_HEADER_COLOR = "HEADER_COLOR";
 
 	// -- language depends --
 	/** @const for key in common parameters */

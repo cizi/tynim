@@ -47,15 +47,24 @@
 </head>
 
 <body {if $bodyBackgroundColor != ""}style="background-color: {!$bodyBackgroundColor}"{/if}>
+
 	{* language strap *}
 	{if ($languageStrapShow)}
-		<div class="langStrap" style="width: {$languageStrapWidth}; background-color: {$languageStrapBgColor}; color: {$languageStrapFontColor}">
+		<div class="langStrap" style="width: {!$languageStrapWidth}; background-color: {!$languageStrapBgColor}; color: {!$languageStrapFontColor}">
 			{foreach $languageStrapLanguages as $langShort => $langDetail}
 				<a href="{link switchToLanguage, $langShort}"><img src="{$baseUrl}{$langDetail[$langFlagKey]}" class="flagStrap" title="{$langShort}" /></a>
 			{/foreach}
 		</div>
 	{/if}
 	{* language strap end *}
+
+	{* static header *}
+	{if (showHeader)}
+		<div class="pageStaticHeader" style="width: {!$headerWidth}; background-color: {!$headerBg}; color: {!$headerColor}; height: {!$headerHeight}px;">
+			{!$headerContent}
+		</div>
+	{/if}
+	{* static header end *}
 
 	<div style="{if $bodyWidth != ""}width: {!$bodyWidth};{/if} margin: 0 auto;">
 

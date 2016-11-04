@@ -71,6 +71,7 @@ class HomepagePresenter extends BasePresenter {
 
 		// load another page settings
 		$this->loadWebConfig($lang);
+		$this->loadHeaderConfig();
 		$this->loadLanguageStrap();
 		$this->loadSliderConfig();
 		$this->loadFooterConfig();
@@ -200,7 +201,27 @@ class HomepagePresenter extends BasePresenter {
 			$this->template->languageStrapLanguages = $this->langRepository->findLanguagesWithFlags();
 		} else {
 			$this->template->languageStrapShow = false;
+		}
+	}
 
+	/**
+	 * Loads configuration for static header
+	 */
+	private function loadHeaderConfig() {
+		// language free
+		$langCommon = WebconfigRepository::KEY_LANG_FOR_COMMON;
+		$this->template->showHeader = $showHeader = ($this->webconfigRepository->getByKey(WebconfigRepository::KEY_SHOW_HEADER, $langCommon) == 1 ? true : false);
+		if ($showHeader) {
+			$widthEnum = new WebWidthEnum();
+
+			$this->template->headerBg = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_HEADER_BACKGROUND_COLOR, $langCommon);
+			$this->template->headerColor = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_HEADER_COLOR, $langCommon);
+			$this->template->headerWidth = $widthEnum->getValueByKey($this->webconfigRepository->getByKey(WebconfigRepository::KEY_HEADER_WIDTH, $langCommon));
+			$this->template->headerHeight = (int)$this->webconfigRepository->getByKey(WebconfigRepository::KEY_HEADER_HEIGHT, $langCommon);
+
+			// img path fixing
+			$headerContent = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_HEADER_CONTENT, $langCommon);
+			$this->template->headerContent = str_replace("../../upload/", "./upload/", $headerContent);
 		}
 	}
 

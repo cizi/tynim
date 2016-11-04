@@ -235,9 +235,16 @@ div.colorExample {
 .langStrap{
 	padding: 5px 20px 5px 0;
 	text-align: right;
+	margin: auto;
 }
 .flagStrap{
 	height: 20px;
 	width: 35px;
 	margin-right: 15px;
+}
+
+.pageStaticHeader{
+	vertical-align: middle;
+	text-align: center;
+	margin: auto;
 }

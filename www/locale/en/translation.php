@@ -311,5 +311,27 @@ define("LANG_CONFIRM_MODAL_DELETE_MSG", 'Are you really want to delete language 
 define("LANG_CONFIRM_MODAL_OK", 'Delete');
 define("LANG_CONFIRM_MODAL_CANCEL", 'Cancel');
 
+// header
+define("HEADER_SETTING_SAVED", 'Header settings have been successfully saved');
+define("HEADER_SETTING_COLOR", 'Font colour');
+define("HEADER_HEIGHT", 'Height of the header');
+define("HEADER_HEIGHT_INFO", 'Fill height of the header i pixels');
+define("HEADER_BACKGROUND_COLOR", 'Header background colour');
+define("HEADER_TITLE", 'Page header setting');
+define("HEADER_CONTENT", 'Content of the page header');
+define("HEADER_INFO", 'Here you can set static header properties which will be showed in each page');
+define("HEADER_SHOW_HEADER", 'Show header');
+define("HEADER_WIDTH", 'Width of the page header');
+define("HEADER_WIDTH_INFO", 'Width of the page header towards web browser');
+define("HEADER_CONTENT_TEXT", 'Content of the page header');
+define("HEADER_CONTENT_PICS", 'Images of the page header');
+define("HEADER_PIC_CONTENT", 'Available images for page header');
+define("HEADER_CONFIRM_DELETE_TITLE", 'Page header image deletions');
+define("HEADER_CONFIRM_DELETE", 'Are you really want to delete image of the web header?');
+define("HEADER_PIC_DELETE", 'Page header image deletions');
+define("HEADER_CONFIRM_DELETE_CANCEL", 'Cancel');
+define("HEADER_CONFIRM_DELETE_OK", 'Delete');
+define("HEADER_BUTTON_SAVE", 'Save header setting');
+
 // common
-define("UNSUPPORTED_UPLOAD_FORMAT", " You are trying to save unsupported format. Supported formats are %s.");
+define("UNSUPPORTED_UPLOAD_FORMAT", " You are trying to upload unsupported format. Supported formats are %s.");

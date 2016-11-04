@@ -321,6 +321,28 @@ define("LANG_CONFIRM_MODAL_DELETE_MSG", 'Opravdu chcete odstranit jazykovou muta
 define("LANG_CONFIRM_MODAL_OK", 'Smazat');
 define("LANG_CONFIRM_MODAL_CANCEL", 'Zpět');
 
+// header
+define("HEADER_SETTING_SAVED", 'Nastavení hlavičky uloženo');
+define("HEADER_SETTING_COLOR", 'Barva textu hlavičky');
+define("HEADER_HEIGHT", 'Výška hlavičky');
+define("HEADER_HEIGHT_INFO", 'Uveďte jak vysoká má být hlavička [pixel]');
+define("HEADER_BACKGROUND_COLOR", 'Barva pozadí hlavičky');
+define("HEADER_TITLE", 'Nastavení hlavičky webu');
+define("HEADER_CONTENT", 'Obsah hlavičky webu');
+define("HEADER_INFO", 'Zde je možné nastavit statickou hlavičku webu, která bude zobrazena na každé stránce');
+define("HEADER_SHOW_HEADER", 'Zobrazit hlavičku');
+define("HEADER_WIDTH", 'Šířka hlavičky');
+define("HEADER_WIDTH_INFO", 'Šířka hlavičky webu vůči oknu prohlížeče');
+define("HEADER_CONTENT_TEXT", 'Obsah hlavičky webu');
+define("HEADER_CONTENT_PICS", 'Obrázky hlavičky');
+define("HEADER_PIC_CONTENT", 'Dostupné obrázky pro hlavičku webu');
+define("HEADER_CONFIRM_DELETE_TITLE", 'Smazání obrázku hlavičky');
+define("HEADER_CONFIRM_DELETE", 'Opravdu smazat obrázek hlavičky?');
+define("HEADER_PIC_DELETE", 'Smazání obrázku hlavičky');
+define("HEADER_CONFIRM_DELETE_CANCEL", 'Zpět');
+define("HEADER_CONFIRM_DELETE_OK", 'Smazat');
+define("HEADER_BUTTON_SAVE", 'Uložit hlavičku');
+
 // common
 define("UNSUPPORTED_UPLOAD_FORMAT", "Pokoušíte se nahrát nepodporovaný formát. Podporované formáty jsou %s.");
 

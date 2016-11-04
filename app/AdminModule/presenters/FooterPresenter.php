@@ -4,7 +4,7 @@ namespace App\AdminModule\Presenters;
 
 use App\Controller\FileController;
 use App\Forms\FooterForm;
-use App\Model\Entity\FooterPicEntity;
+use App\Model\Entity\PicEntity;
 use App\Model\FooterPicRepository;
 use App\Model\WebconfigRepository;
 use Nette\Application\UI\Form;
@@ -80,9 +80,9 @@ class FooterPresenter extends SignPresenter {
 						$fileError = true;
 						break;
 					}
-					$footerPic = new FooterPicEntity();
-					$footerPic->setPath($fileController->getPathDb());
-					$this->footerPicRepository->save($footerPic);
+					$pic = new PicEntity();
+					$pic->setPath($fileController->getPathDb());
+					$this->footerPicRepository->save($pic);
 				}
 			}
 		}
