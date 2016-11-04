@@ -3,6 +3,7 @@
 namespace App\Forms;
 
 use App\Enum\WebWidthEnum;
+use App\Model\LangRepository;
 use App\Model\WebconfigRepository;
 use Nette;
 use Nette\Application\UI\Form;
@@ -12,19 +13,30 @@ class HeaderForm extends Nette\Object {
 	/** @var FormFactory */
 	private $factory;
 
+	/** @var LangRepository */
+	private $langRepository;
+
 	/**
 	 * @param FormFactory $factory
 	 */
-	public function __construct(FormFactory $factory) {
+	public function __construct(FormFactory $factory, LangRepository $langRepository) {
 		$this->factory = $factory;
+		$this->langRepository = $langRepository;
 	}
 
 	/**
 	 * @return Form
 	 */
-	public function create() {
+	public function create(Nette\Application\UI\Presenter $presenter, $webCurrentLanguage) {
 		$form = $this->factory->create();
 		$i=0;
+
+		$link = new Nette\Application\UI\Link($presenter, "Header:LangChange", []);
+		$form->addSelect(WebconfigRepository::KEY_WEB_MUTATION, WEBCONFIG_WEBMUTATION, $this->langRepository->findLanguages())
+			->setAttribute("class", "form-control")
+			->setAttribute("tabindex", $i++)
+			->setAttribute("id", "languageSwitcher")
+			->setAttribute("onchange", "langChangeRedir('". $link . "')");
 
 		$form->addCheckbox(WebconfigRepository::KEY_SHOW_HEADER)
 			->setAttribute("data-toggle", "toggle")

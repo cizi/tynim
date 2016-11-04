@@ -5,6 +5,7 @@ namespace App\AdminModule\Presenters;
 use App\Forms\HeaderForm;
 use App\Controller\FileController;
 use App\Model\Entity\PicEntity;
+use App\Model\LangRepository;
 use App\Model\WebconfigRepository;
 use Nette\Application\UI\Form;
 use Nette\Http\FileUpload;
@@ -12,6 +13,9 @@ use Nette\Utils\ArrayHash;
 use App\Model\PicRepository;
 
 class HeaderPresenter extends SignPresenter {
+
+	/** @consts depends on language */
+	private $LANG_DEPENDS = [WebconfigRepository::KEY_HEADER_CONTENT];
 
 	/** @var HeaderForm */
 	private $headerForm;
@@ -22,18 +26,29 @@ class HeaderPresenter extends SignPresenter {
 	/** @var WebconfigRepository */
 	private $webconfigRepository;
 
+	/** @var LangRepository */
+	private $langRepository;
+
 	/**
 	 * @param HeaderForm $headerForm
 	 * @param PicRepository $picRepository
 	 */
-	public function __construct(HeaderForm $headerForm, PicRepository $picRepository, WebconfigRepository $webconfigRepository) {
+	public function __construct(HeaderForm $headerForm, PicRepository $picRepository, WebconfigRepository $webconfigRepository, LangRepository $langRepository) {
 		$this->headerForm = $headerForm;
 		$this->picRepository = $picRepository;
 		$this->webconfigRepository = $webconfigRepository;
+		$this->langRepository = $langRepository;
 	}
 
 	public function actionDefault() {
-		$defaults = $this->webconfigRepository->load(WebconfigRepository::KEY_LANG_FOR_COMMON);
+		$webCurrentLang =  $this->langRepository->getCurrentLang($this->session);
+
+		$defaults = $this->webconfigRepository->load($webCurrentLang);
+		$defaultsCommon = $this->webconfigRepository->load(WebconfigRepository::KEY_LANG_FOR_COMMON);
+		foreach ($defaultsCommon as $key => $value) {
+			$defaults[$key] = $value;
+		}
+		$defaults[WebconfigRepository::KEY_WEB_MUTATION] = $webCurrentLang;
 		$this['headerForm']->setDefaults($defaults);
 
 		$this->template->headerPics = $this->picRepository->load();
@@ -48,12 +63,19 @@ class HeaderPresenter extends SignPresenter {
 		$this->redirect("default");
 	}
 
+	/**
+	 * @param string $id language code (shortcut)
+	 */
+	public function actionLangChange($id) {
+		$this->langRepository->switchToLanguage($this->session, $id);
+		$this->redirect("default");
+	}
 
 	/**
 	 * @return \Nette\Application\UI\Form
 	 */
 	public function createComponentHeaderForm() {
-		$form = $this->headerForm->create();
+		$form = $this->headerForm->create($this->presenter, $this->langRepository->getCurrentLang($this->session));
 		$form->onSuccess[] = $this->saveForm;
 
 		return $form;
@@ -64,6 +86,15 @@ class HeaderPresenter extends SignPresenter {
 	 * @param ArrayHash $values
 	 */
 	public function saveForm($form, $values) {
+		$lang = $values[WebconfigRepository::KEY_WEB_MUTATION];
+		unset($values[WebconfigRepository::KEY_WEB_MUTATION]); // no more needed
+		foreach ($values as $key => $value) {
+			if (in_array($key, $this->LANG_DEPENDS)) {
+				$this->webconfigRepository->save($key, $value, $lang);
+				unset($values[$key]);
+			}
+		}
+
 		$valuesToSave = (array)$values;
 		$supportedFilesFormat = ["png", "jpg", "bmp"];
 		$fileError = false;
@@ -88,9 +119,9 @@ class HeaderPresenter extends SignPresenter {
 			$this->flashMessage($flashMessage, "alert-danger");
 		} else {
 			unset($valuesToSave[WebconfigRepository::KEY_HEADER_FILES]);
-			$land = WebconfigRepository::KEY_LANG_FOR_COMMON;
+			$lang = WebconfigRepository::KEY_LANG_FOR_COMMON;	// its going on common parameters, no language need
 			foreach ($valuesToSave as $key => $value) {
-				$this->webconfigRepository->save($key, $value, $land);
+				$this->webconfigRepository->save($key, $value, $lang);
 
 			}
 			$this->flashMessage(HEADER_SETTING_SAVED, "alert-success");

@@ -686,7 +686,7 @@ class Container_461d22c33b extends Nette\DI\Container
 	 */
 	public function createService__32_App_Forms_HeaderForm()
 	{
-		$service = new App\Forms\HeaderForm($this->getService('31_App_Forms_FormFactory'));
+		$service = new App\Forms\HeaderForm($this->getService('31_App_Forms_FormFactory'), $this->getService('41_App_Model_LangRepository'));
 		return $service;
 	}
 
@@ -1071,7 +1071,7 @@ class Container_461d22c33b extends Nette\DI\Container
 	public function createServiceApplication__7()
 	{
 		$service = new App\AdminModule\Presenters\HeaderPresenter($this->getService('32_App_Forms_HeaderForm'), $this->getService('43_App_Model_PicRepository'),
-			$this->getService('47_App_Model_WebconfigRepository'));
+			$this->getService('47_App_Model_WebconfigRepository'), $this->getService('41_App_Model_LangRepository'));
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
