@@ -228,7 +228,7 @@ class HomepagePresenter extends BasePresenter {
 			$this->template->headerHeight = (int)$this->webconfigRepository->getByKey(WebconfigRepository::KEY_HEADER_HEIGHT, $langCommon);
 
 			// img path fixing
-			$headerContent = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_HEADER_CONTENT, $langCommon);
+			$headerContent = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_HEADER_CONTENT, $this->langRepository->getCurrentLang($this->session));
 			$this->template->headerContent = str_replace("../../upload/", "./upload/", $headerContent);
 		}
 	}
@@ -269,7 +269,7 @@ class HomepagePresenter extends BasePresenter {
 			$this->template->footerWidth = $widthEnum->getValueByKey($this->webconfigRepository->getByKey(WebconfigRepository::KEY_FOOTER_WIDTH, $langCommon));
 
 			// img path fixing
-			$footerContent = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_FOOTER_CONTENT, $langCommon);
+			$footerContent = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_FOOTER_CONTENT, $this->langRepository->getCurrentLang($this->session));
 			$this->template->footerContent = str_replace("../../upload/", "./upload/", $footerContent);
 		}
 
@@ -278,8 +278,8 @@ class HomepagePresenter extends BasePresenter {
 		$contactFormInMenu = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_CONTACT_FORM_IN_MENU, $langCommon);
 		$this->template->isContactFormInMenu = ($contactFormInMenu == "1" ? true : false);
 		if ($contactFormInFooter) {
-			$this->template->contactFormHeader = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_CONTACT_FORM_TITLE, $langCommon);
-			$this->template->contactFormContent = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_CONTACT_FORM_CONTENT, $langCommon);
+			$this->template->contactFormHeader = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_CONTACT_FORM_TITLE, $this->langRepository->getCurrentLang($this->session));
+			$this->template->contactFormContent = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_CONTACT_FORM_CONTENT, $this->langRepository->getCurrentLang($this->session));
 			$this->template->contactFormBackground = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_CONTACT_FORM_BACKGROUND_COLOR, $langCommon);
 			$this->template->contactFormColor = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_CONTACT_FORM_COLOR, $langCommon);
 

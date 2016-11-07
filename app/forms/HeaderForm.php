@@ -27,7 +27,7 @@ class HeaderForm extends Nette\Object {
 	/**
 	 * @return Form
 	 */
-	public function create(Nette\Application\UI\Presenter $presenter, $webCurrentLanguage) {
+	public function create(Nette\Application\UI\Presenter $presenter) {
 		$form = $this->factory->create();
 		$i=0;
 

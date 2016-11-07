@@ -75,7 +75,7 @@ class HeaderPresenter extends SignPresenter {
 	 * @return \Nette\Application\UI\Form
 	 */
 	public function createComponentHeaderForm() {
-		$form = $this->headerForm->create($this->presenter, $this->langRepository->getCurrentLang($this->session));
+		$form = $this->headerForm->create($this->presenter);
 		$form->onSuccess[] = $this->saveForm;
 
 		return $form;

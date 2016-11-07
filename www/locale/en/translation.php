@@ -208,67 +208,64 @@ define("CONTACT_FORM_UNSUPPORTED_FILE_FORMAT", 'You are trying to send unsupport
 define("CONTACT_FORM_EMAIL_MY_SUBJECT", 'Inquiry from web contact form');
 
 // footer
-define("FOOTER_CONTENT", 'Obsah patičky');
-define("FOOTER_BUTTON_SAVE", "Uložit");
-define("FOOTER_TITLE", "Nastavení patičky");
-define("FOOTER_INFO", "Patička slouží k zobrazení určitého obsahu na každé stránce. ");
-define("FOOTER_CONTACT", "Zobrazit kontaktní formulář v patičce stránek");
-define("FOOTER_CONTENT_TEXT", 'Obsah patičky můžete naformátovat pomocí WYSIWYG editoru. Pokud bude chtít zobrazit v patičce zobrazit obrázky
-								je nutné je prvně nahrát a následně vložit URL obrázku do editoru.');
-define("FOOTER_CONTENT_PICS", 'Zde nahrajde obrázky, které byste rádi vložily do patičky.');
-define("FOOTER_BACKGROUND_COLOR", 'Barva pozadí patičky');
-define("FOOTER_SETTING_COLOR", 'Barva textu patičky');
-define("FOOTER_SETTING_SAVED", 'Nastavení patičky bylo uloženo');
-define("FOOTER_PIC_FORMAT", "Jsou podporovány jen obrázky (BMP, JPG, PNG)! Nahrajte prosím obrázky v tomto formátu.");
-define("FOOTER_PIC_DELETE", 'Odstranění obrázku');
-define("FOOTER_PIC_DELETED", 'Obrázek byl úspěšně odstraněn');
-define("FOOTER_CONFIRM_DELETE_TITLE", 'Smazání obrázku');
-define("FOOTER_CONFIRM_DELETE", 'Opravdu smazat obrázek?');
-define("FOOTER_CONFIRM_DELETE_CANCEL", 'Zpět');
-define("FOOTER_CONFIRM_DELETE_OK", 'Smazat');
-define("FOOTER_SHOW_FOOTER", 'Zapnout patičku');
-define("FOOTER_WIDTH", 'Šířka patičky');
-define("FOOTER_WIDTH_INFO", 'Nastaví šíři patičky vůči celé možné šíři stránek (nepočítává se do šíře obsahu stránek)');
-define("FOOTER_PIC_CONTENT", 'Obrázky, které je možné vložit do patičky');
+define("FOOTER_CONTENT", 'Footer content');
+define("FOOTER_BUTTON_SAVE", "Save");
+define("FOOTER_TITLE", "Footer settings");
+define("FOOTER_INFO", "Footer is piece of content which will be showed in the bottom of each page.");
+define("FOOTER_CONTACT", "Show contact form in page footer");
+define("FOOTER_CONTENT_TEXT", 'Footer content you can format with text editor. If you want to show picture in the footer is necessary to load the picture first
+								and then paste the URL link of picture to the editor with picture wizard.');
+define("FOOTER_CONTENT_PICS", 'Here load a picture which you want to have in the footer content.');
+define("FOOTER_BACKGROUND_COLOR", 'Footer background colour');
+define("FOOTER_SETTING_COLOR", 'Footer text colour');
+define("FOOTER_SETTING_SAVED", 'Footer settings have been saved');
+define("FOOTER_PIC_FORMAT", "Supported image formats are BMP, JPG, PNG! Please load just these formats.");
+define("FOOTER_PIC_DELETE", 'Image deletions');
+define("FOOTER_PIC_DELETED", 'Image has been successfully removed');
+define("FOOTER_CONFIRM_DELETE_TITLE", 'Picture deletions');
+define("FOOTER_CONFIRM_DELETE", 'Are you really want to delete this image?');
+define("FOOTER_CONFIRM_DELETE_CANCEL", 'Cancel');
+define("FOOTER_CONFIRM_DELETE_OK", 'Delete');
+define("FOOTER_SHOW_FOOTER", 'Turn on the footer');
+define("FOOTER_WIDTH", 'Width of the footer');
+define("FOOTER_WIDTH_INFO", 'Footer width setting toward the whole width of the browser window');
+define("FOOTER_PIC_CONTENT", 'Images which is possible to paste into footer content');
 
 
 // block
-define("BLOCK_SETTING_TITLE", 'Obsahové bloky');
-define("BLOCK_SETTING_INFO", 'Obsahové bloky jsou části stráńek, které budou zobrazeny na webu. Jednu stránku může tvořit pouze jeden block,
-							nebo klidně více bloků. V této sekci nastavte jednotlivé bloky, prolinkování bloků s menu se nastavuje v
-							samostatné sekci.');
-define("BLOCK_SETTING_CONTENT", 'Obsah');
-define("BLOCK_SETTING_BG_COLOR", 'Barva pozadí');
-define("BLOCK_SETTING_COLOR", 'Barva textu');
-define("BLOCK_SETTING_EDIT_ITEM", 'Editovat blok');
-define("BLOCK_SETTING_DELETE_ITEM", 'Odstranit blok');
-define("BLOCK_SETTING_PICS", 'Dostupné obrázky');
-define("BLOCK_SETTING_WIDTH", 'Šířka bloku');
-define("BLOCK_SETTING_PICS_INFO", 'Dostuoné obrázky, které je možné vložit do obsahu bloku. Stačí zkopírovat adresu uloženou vedle obrázku a v editoru
- 								textu tuto adresu opět zadat i s rozměry obrázku. Obrázek se následně zobrazí v editoru kde bude možné donastavit obtékání
- 								textu a jiná nastavení. <br />
- 								<b>TIP: </b> Pro vložení obrázku, který nebyl zatím nahrán je nutné
-								 obrázek nejdříve nahrát (tedy uložit blok) a poté se vrátit zpět do editace bloku.');
-define("BLOCK_SETTING_ITEM_EDIT", 'Nastavení bloku');
-define("BLOCK_SETTING_ITEM_EDIT_INFO", 'Zde je veškeré nastavení jednoho bloku včetně jazykový mutací. ');
-define("BLOCK_SETTING_ITEM_CONTENT_LABEL", 'Obsah bloku');
-define("BLOCK_SETTING_ITEM_CONTENT_CONFIRM", 'Uložit blok');
-define("BLOCK_SETTING_ITEM_CONTENT_COLOR", 'Barva text v bloku');
-define("BLOCK_SETTING_ITEM_CONTENT_BG_COLOR", 'Barva pozadí bloku');
-define("BLOCK_SETTING_ITEM_WIDTH_INFO", 'Nastaví šíři bloku vůči šíři stránek. ');
-define("BLOCK_SETTING_PIC_WILL_DELETE", 'Odstranění obrázku');
-define("BLOCK_SETTING_PIC_DELETED", 'Obrázek byl úspěšně odstraněn');
-define("BLOCK_SETTING_PIC_DELETE_TITLE", 'Smazání obrázku');
-define("BLOCK_SETTING_PIC_DELETE", 'Opravdu smazat obrázek?');
-define("BLOCK_SETTING_PIC_DELETE_CANCEL", 'Zpět');
-define("BLOCK_SETTING_PIC_DELETE_OK", 'Smazat');
-define("BLOCK_SETTINGS_CONFIRM_MODAL_DELETE_TITLE", 'Smazaní bloku');
-define("BLOCK_SETTINGS_CONFIRM_MODAL_DELETE_MSG", 'Opravdu chcete smazat obsahový blok?');
-define("BLOCK_SETTINGS_CONFIRM_MODAL_OK", 'Smazat');
-define("BLOCK_SETTINGS_CONFIRM_MODAL_CANCEL", 'Zpět');
-define("BLOCK_SETTINGS_ITEM_DELETED", 'Položka byla úspěšně smazána.');
-define("BLOCK_SETTINGS_ITEM_DELETED_FAILED", 'Při mazání položky došlo k chybě!');
-define("BLOCK_SETTINGS_ITEM_SAVED_FAILED", 'Při uložení položky došlo k chybě!');
+define("BLOCK_SETTING_TITLE", 'Contents block');
+define("BLOCK_SETTING_INFO", 'Content block are pieces which is possible to assembly to whole content of the menu link. One page (menu link) can
+							creates just one or more page blocks. In this section you can sets this block (page contents).');
+define("BLOCK_SETTING_CONTENT", 'Content');
+define("BLOCK_SETTING_BG_COLOR", 'Background colour');
+define("BLOCK_SETTING_COLOR", 'Font colour');
+define("BLOCK_SETTING_EDIT_ITEM", 'Block editions');
+define("BLOCK_SETTING_DELETE_ITEM", 'Block deletions');
+define("BLOCK_SETTING_PICS", 'Available images');
+define("BLOCK_SETTING_WIDTH", 'Width of block');
+define("BLOCK_SETTING_PICS_INFO", 'Available images is possible to pasto to the page block. Just copy the url of the image and paste it in the text editor image wizard
+								then select resolution of this image and save the block content. <br />
+ 								<b>NOTE: </b> If you want to paste new image is necessary to save the image first and then you wil be able to paste them in to the content.');
+define("BLOCK_SETTING_ITEM_EDIT", 'Block settings');
+define("BLOCK_SETTING_ITEM_EDIT_INFO", 'Here you can set the whole block setting including its language(s).');
+define("BLOCK_SETTING_ITEM_CONTENT_LABEL", 'Block content');
+define("BLOCK_SETTING_ITEM_CONTENT_CONFIRM", 'Save the block');
+define("BLOCK_SETTING_ITEM_CONTENT_COLOR", 'Font colour');
+define("BLOCK_SETTING_ITEM_CONTENT_BG_COLOR", 'Background block colour');
+define("BLOCK_SETTING_ITEM_WIDTH_INFO", 'Block width setting toward width of the browser width.');
+define("BLOCK_SETTING_PIC_WILL_DELETE", 'Image deletions');
+define("BLOCK_SETTING_PIC_DELETED", 'Image has been successfully deleted');
+define("BLOCK_SETTING_PIC_DELETE_TITLE", 'Image deletions');
+define("BLOCK_SETTING_PIC_DELETE", 'Are you really want to delete this picture?');
+define("BLOCK_SETTING_PIC_DELETE_CANCEL", 'Cancel');
+define("BLOCK_SETTING_PIC_DELETE_OK", 'Delete');
+define("BLOCK_SETTINGS_CONFIRM_MODAL_DELETE_TITLE", 'Block deletions');
+define("BLOCK_SETTINGS_CONFIRM_MODAL_DELETE_MSG", 'Are you really wnat to delete block of content?');
+define("BLOCK_SETTINGS_CONFIRM_MODAL_OK", 'Delete');
+define("BLOCK_SETTINGS_CONFIRM_MODAL_CANCEL", 'Cancel');
+define("BLOCK_SETTINGS_ITEM_DELETED", 'Item has been successfully deleted.');
+define("BLOCK_SETTINGS_ITEM_DELETED_FAILED", 'During the deletions error occurred, please try it again later!');
+define("BLOCK_SETTINGS_ITEM_SAVED_FAILED", 'During saving the item, error occurred, please try again later!');
 
 // block and content
 define("BLOCK_CONTENT_SETTINGS", 'Web page content');

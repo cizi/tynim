@@ -8,7 +8,7 @@ use App\FrontendModule\Presenters\BasePresenter;
 class SignPresenter extends BasePresenter {
 
 	/**
-	 * Pokud není uživatel pøihlášen pøesmìruji ho a login page
+	 * If the user is not logged in is necessary to log him in
 	 */
 	public function startup() {
 		if($this->getUser()->isLoggedIn() == false){
