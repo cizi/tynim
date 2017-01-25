@@ -125,6 +125,21 @@
 										<div class="col-sm-10 field_info">
 											{!=WEBCONFIG_WEB_MENU_LINK_COLOR_INFO}
 										</div>
+
+										<div class="col-sm-10">
+											{input sitemapButton}
+										</div>
+										<div class="col-sm-10 field_info">
+											{!=USER_EDIT_SITEMAP_BTN_INFO}
+										</div>
+
+										<div class="col-sm-10">
+											<h5>{!=USER_EDIT_SITEMAP_AVAIL}</h5>
+											{foreach $sitemapfiles as $file}
+												<a href="#">{$file}</a><br />
+											{/foreach}
+										</div>
+
 									</fieldset>
 
 									<div class="form-group row alignRight">

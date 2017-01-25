@@ -656,7 +656,7 @@ class Container_461d22c33b extends Nette\DI\Container
 	 */
 	public function createService__29_App_Forms_ContactSettingForm()
 	{
-		$service = new App\Forms\ContactSettingForm($this->getService('31_App_Forms_FormFactory'));
+		$service = new App\Forms\ContactSettingForm($this->getService('31_App_Forms_FormFactory'), $this->getService('41_App_Model_LangRepository'));
 		return $service;
 	}
 
@@ -666,7 +666,7 @@ class Container_461d22c33b extends Nette\DI\Container
 	 */
 	public function createService__30_App_Forms_FooterForm()
 	{
-		$service = new App\Forms\FooterForm($this->getService('31_App_Forms_FormFactory'));
+		$service = new App\Forms\FooterForm($this->getService('31_App_Forms_FormFactory'), $this->getService('41_App_Model_LangRepository'));
 		return $service;
 	}
 
@@ -1008,7 +1008,7 @@ class Container_461d22c33b extends Nette\DI\Container
 	public function createServiceApplication__3()
 	{
 		$service = new App\AdminModule\Presenters\ContactPresenter($this->getService('47_App_Model_WebconfigRepository'),
-			$this->getService('29_App_Forms_ContactSettingForm'));
+			$this->getService('29_App_Forms_ContactSettingForm'), $this->getService('41_App_Model_LangRepository'));
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
@@ -1055,7 +1055,7 @@ class Container_461d22c33b extends Nette\DI\Container
 	public function createServiceApplication__6()
 	{
 		$service = new App\AdminModule\Presenters\FooterPresenter($this->getService('47_App_Model_WebconfigRepository'), $this->getService('30_App_Forms_FooterForm'),
-			$this->getService('43_App_Model_PicRepository'));
+			$this->getService('43_App_Model_PicRepository'), $this->getService('41_App_Model_LangRepository'));
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
@@ -1121,7 +1121,7 @@ class Container_461d22c33b extends Nette\DI\Container
 		$service = new Nette\Application\Application($this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'));
 		$service->catchExceptions = FALSE;
-		$service->errorPresenter = 'Error';
+		$service->errorPresenter = 'App\FrontendModule\Presenters\ErrorPresenter';
 		Nette\Bridges\ApplicationTracy\RoutingPanel::initializePanel($service);
 		$this->getService('tracy.bar')->addPanel(new Nette\Bridges\ApplicationTracy\RoutingPanel($this->getService('routing.router'), $this->getService('http.request'),
 			$this->getService('application.presenterFactory')));

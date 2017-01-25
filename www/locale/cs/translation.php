@@ -63,6 +63,9 @@ define("USER_EDIT_PASS_AGAIN_REQ", 'Položka potvrzení hesla je povinná!');
 define("USER_EDIT_ROLE_LABEL", 'Role');
 define("USER_EDIT_ACTIVE_LABEL", 'Aktivní');
 define("USER_EDIT_SAVE_BTN_LABEL", 'Uložit');
+define("USER_EDIT_SITEMAP_BTN_LABEL", 'Generovat soubory sitemap');
+define("USER_EDIT_SITEMAP_AVAIL", 'Dostupné sitemap soubory');
+define("USER_EDIT_SITEMAP_BTN_INFO", 'Vygeneruje soubor(y) sitemap pro vyhledáváče. Souborů bude tolik kolik je jazykových mutací webu.');
 define("USER_EDIT_BACK_BTN_LABEL", 'Zpět');
 define("USER_EDIT_SAVE_FAILED", 'Nepovedlo se zpracovat změny, opakujte prosím později');
 

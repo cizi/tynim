@@ -51,6 +51,8 @@ class WebconfigPresenter extends SignPresenter {
 		foreach ($defaultsCommon as $key => $value) {
 			$defaults[$key] = $value;
 		}
+
+		$this->template->sitemapfiles = ["bla.xml", "bob.xml"];
 		$this['configForm']->setDefaults($defaults);
 	}
 
