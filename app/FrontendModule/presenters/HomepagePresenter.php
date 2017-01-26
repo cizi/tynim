@@ -76,6 +76,7 @@ class HomepagePresenter extends BasePresenter {
 		$this->loadSliderConfig();
 		$this->loadFooterConfig();
 
+		$this->template->currentLang = $lang;
 		$this->template->menuHtml = $this->menuController->renderMenuInFrontend($lang);
 		$this->template->contactFormId = BlockContentPresenter::CONTACT_FORM_ID_AS_BLOCK;
 	}
@@ -101,6 +102,8 @@ class HomepagePresenter extends BasePresenter {
 				$userBlocks = $this->blockRepository->findAddedBlockFronted($id,
 					$this->langRepository->getCurrentLang($this->session));
 			}
+			$this->template->webAvailebleLangs = $availableLangs;
+			$this->template->webLinkId = $id;
 			$this->template->userBlocks = $userBlocks;
 			$this->template->widthEnum = new WebWidthEnum();
 		}

@@ -23,6 +23,14 @@
 	<link rel="stylesheet" href="{$basePath}/css/navbar-multilevel.css">
 	<meta name="viewport" content="width=device-width">
 
+	{if (is_numeric($webLinkId))}
+		{foreach $webAvailebleLangs as $landShortcut}
+			<link rel="alternate" href="{$baseUrl}/{$landShortcut}" hreflang="{$landShortcut}" />
+		{/foreach}
+		<link rel="alternate" href={$baseUrl} hreflang="x-default" />
+	{else}
+		<link rel="alternate" href="{$baseUrl}/{$currentLang}/{$webLinkId}" hreflang="{$currentLang}" />
+	{/if}
 	{block head}{/block}
 
 	{* menu links color *}

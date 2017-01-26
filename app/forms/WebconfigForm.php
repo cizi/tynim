@@ -104,9 +104,11 @@ class WebconfigForm extends Nette\Object {
 			->setAttribute("class", "form-control minicolors-input")
 			->setAttribute("tabindex", "12");
 
+		$link = new Nette\Application\UI\Link($presenter, "Webconfig:GenerateSiteMap", []);
 		$form->addButton("sitemapButton", USER_EDIT_SITEMAP_BTN_LABEL)
 			->setAttribute("class","btn")
-			->setAttribute("tabindex", "13");
+			->setAttribute("tabindex", "13")
+			->setAttribute("onclick", "window.location.href='" . $link . "'");
 
 		$form->addSubmit("confirm", USER_EDIT_SAVE_BTN_LABEL)
 			->setAttribute("class","btn btn-primary")

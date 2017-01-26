@@ -36,6 +36,23 @@ class MenuRepository extends BaseRepository {
 	}
 
 	/**
+	 * Finds all links in all languages
+	 */
+	public function findAllItems() {
+		$items = [];
+		$query = ["select * from menu_item order by `order`"];
+
+		$result = $this->connection->query($query)->fetchAll();
+		foreach ($result as $item) {
+			$menuItem = new MenuEntity();
+			$menuItem->hydrate($item->toArray());
+			$items[] = $menuItem;
+		}
+
+		return $items;
+	}
+
+	/**
 	 * @param string $link
 	 * @param string $lang
 	 * @return MenuEntity

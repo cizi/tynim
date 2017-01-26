@@ -912,7 +912,7 @@ class Container_461d22c33b extends Nette\DI\Container
 	public function createServiceApplication__13()
 	{
 		$service = new App\AdminModule\Presenters\WebconfigPresenter($this->getService('47_App_Model_WebconfigRepository'),
-			$this->getService('39_App_Forms_WebconfigForm'), $this->getService('41_App_Model_LangRepository'));
+			$this->getService('39_App_Forms_WebconfigForm'), $this->getService('42_App_Model_MenuRepository'), $this->getService('41_App_Model_LangRepository'));
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
