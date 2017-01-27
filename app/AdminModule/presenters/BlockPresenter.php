@@ -105,7 +105,7 @@ class BlockPresenter extends SignPresenter {
 				foreach ($value as $file) {
 					if ($file->name != "") {
 						$fileController = new FileController();
-						if ($fileController->upload($file, $supportedFileFormats) == false) {
+						if ($fileController->upload($file, $supportedFileFormats, $this->getHttpRequest()->getUrl()->getBaseUrl()) == false) {
 							$error = true;
 							break;
 						}

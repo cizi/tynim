@@ -7,7 +7,10 @@ use App\Controller\FileController;
 use App\Controller\MenuController;
 use App\Forms\ContactForm;
 use App\Model\BlockRepository;
+use App\Model\Entity\BlockContentEntity;
+use App\Model\Entity\MenuEntity;
 use App\Model\LangRepository;
+use App\Model\MenuRepository;
 use Nette;
 use App\Enum\WebWidthEnum;
 use App\Model\SliderSettingRepository;
@@ -33,6 +36,9 @@ class HomepagePresenter extends BasePresenter {
 	/** @var MenuController */
 	private $menuController;
 
+	/** @var MenuRepository */
+	private $menuRepository;
+
 	/** @var FileController */
 	private $fileController;
 
@@ -48,6 +54,7 @@ class HomepagePresenter extends BasePresenter {
 		SliderPicRepository $sliderPicRepository,
 		ContactForm $contactForm,
 		MenuController $menuController,
+		MenuRepository $menuRepository,
 		FileController $fileController,
 		BlockRepository $blockRepository,
 		LangRepository $langRepository
@@ -57,6 +64,7 @@ class HomepagePresenter extends BasePresenter {
 		$this->sliderPicRepository = $sliderPicRepository;
 		$this->contactForm = $contactForm;
 		$this->menuController = $menuController;
+		$this->menuRepository = $menuRepository;
 		$this->fileController = $fileController;
 		$this->blockRepository = $blockRepository;
 		$this->langRepository = $langRepository;
@@ -82,39 +90,47 @@ class HomepagePresenter extends BasePresenter {
 	}
 
 	/**
+	 * @param string $lang
 	 * @param string $id
 	 */
-	public function renderDefault($id) {
+	public function renderDefault($lang, $id) {
+		if (empty($lang)) {
+			$lang = $this->langRepository->getCurrentLang($this->session);
+			$this->redirect("default", [ 'lang' => $lang, 'id' => $id]);
+		}
+
+		$userBlocks = [];
 		$availableLangs = $this->langRepository->findLanguages();
-		if (isset($availableLangs[$id])) {
-			$this->switchToLanguage($id);
-			$this->redirect("default");
+		// what if link will have the same shortcut like language
+		if (isset($availableLangs[$lang]) && ($lang != $this->langRepository->getCurrentLang($this->session))) {
+			$this->langRepository->switchToLanguage($this->session, $lang);
+			$this->redirect("default", [ 'lang' => $lang, 'id' => $id ]);
 		} else {
-			$userBlocks = [];
+			if ((empty($id) || ($id == "")) && !empty($lang) && (!isset($availableLangs[$lang]))) {
+				$id = $lang;
+			}
 			if (empty($id) || ($id == "")) {    // try to find default
-				$id = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_WEB_HOME_BLOCK,
-					WebconfigRepository::KEY_LANG_FOR_COMMON);
-				if (!empty($id)) {
-					$userBlocks[] = $this->blockRepository->getBlockById($this->langRepository->getCurrentLang($this->session),
-						$id);
-				}
+				$userBlocks[] = $this->getDefaultBlock();
 			} else {
 				$userBlocks = $this->blockRepository->findAddedBlockFronted($id,
 					$this->langRepository->getCurrentLang($this->session));
+				if (empty($userBlocks)) {
+					$userBlocks[] = $this->getDefaultBlock();
+				}
 			}
+			// because of sitemap.xml
+			$allWebLinks = $this->menuRepository->findAllItems();
 			$this->template->webAvailebleLangs = $availableLangs;
-			$this->template->webLinkId = $id;
+			$this->template->availableLinks = $allWebLinks;
+			/** @var MenuEntity $menuLink */
+			foreach($allWebLinks as $menuLink) {
+				if ($menuLink->getLink() == $id) {
+					$this->template->currentLink = $menuLink;
+				}
+}			}
+
 			$this->template->userBlocks = $userBlocks;
 			$this->template->widthEnum = new WebWidthEnum();
-		}
-	}
-
-	/**
-	 * @param string $id of language
-	 */
-	public function switchToLanguage($id) {
-		$this->langRepository->switchToLanguage($this->session, $id);
-		$this->redirect("default");
 	}
 
 	/**
@@ -140,7 +156,7 @@ class HomepagePresenter extends BasePresenter {
 				$file = $values['attachment'];
 				if (!empty($file->name)) {
 					$fileController = new FileController();
-					if ($fileController->upload($file, $supportedFilesFormat) == false) {
+					if ($fileController->upload($file, $supportedFilesFormat, $this->getHttpRequest()->getUrl()->getBaseUrl()) == false) {
 						$fileError = true;
 						$this->flashMessage(CONTACT_FORM_UNSUPPORTED_FILE_FORMAT, "alert-danger");
 					} else {
@@ -289,5 +305,22 @@ class HomepagePresenter extends BasePresenter {
 			$allowAttachment = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_CONTACT_FORM_ATTACHMENT, $langCommon);
 			$this->template->allowAttachment =  ($allowAttachment == "1" ? true : false);
 		}
+	}
+
+	/**
+	 * returns default block
+	 *
+	 * @return BlockContentEntity|\App\Model\Entity\BlockEntity
+	 */
+	private function getDefaultBlock() {
+		$id = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_WEB_HOME_BLOCK,
+			WebconfigRepository::KEY_LANG_FOR_COMMON);
+
+		$blockContentEntity = new BlockContentEntity();
+		if (!empty($id)) {
+			$blockContentEntity = $this->blockRepository->getBlockById($this->langRepository->getCurrentLang($this->session), $id);
+		}
+
+		return $blockContentEntity;
 	}
 }

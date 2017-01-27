@@ -70,7 +70,7 @@ class SliderPresenter extends SignPresenter {
 					$file = $value;
 					if ($file->name != "") {
 						$fileController = new FileController();
-						if ($fileController->upload($file, $supportedFileFormats) == false) {
+						if ($fileController->upload($file, $supportedFileFormats, $this->getHttpRequest()->getUrl()->getBaseUrl()) == false) {
 							$fileError = true;
 							break;
 						}

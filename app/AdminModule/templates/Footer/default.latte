@@ -81,10 +81,10 @@
 									<table class="footerPic">
 									{foreach $footerPics as $pic}
 											<tr>
-												<td style="width: 100px"><img src="{!$basePath}{!$pic->getPath()}" class="footerList"/><td>
+												<td style="width: 100px"><img src="{!$pic->getPath()}" class="footerList"/><td>
 												<td>
 													<a href="#" data-href={link Footer:DeletePic, $pic->getId()} class="colorRed" data-toggle="modal" data-target="#confirm-delete" title={=FOOTER_PIC_DELETE}><span class="glyphicon glyphicon-remove"></span></a>
-													<pre style="width: 100%">{$basePath}{$pic->getPath()}</pre>
+													<pre style="width: 100%">{$pic->getPath()}</pre>
 												</td>
 											</tr>
 									{/foreach}
@@ -132,7 +132,10 @@
 		tinymce.init({
 			selector:'#mceFooterContent',
 			toolbar: "image",
-			plugins: "image imagetools"
+			plugins: "image imagetools",
+			relative_urls : false,
+			remove_script_host : false,
+			convert_urls : true
 		});
 
 		$("#footerBackgroundColor").minicolors({

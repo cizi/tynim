@@ -88,7 +88,10 @@
 		tinymce.init({
 			selector:'#mceContactContent',
 			toolbar: "image",
-			plugins: "image imagetools"
+			plugins: "image imagetools",
+			relative_urls : false,
+			remove_script_host : false,
+			convert_urls : true
 		});
 
 		$("#contactFormBackgroundColor").minicolors({

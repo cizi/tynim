@@ -17,12 +17,12 @@ class FileController {
 	 * @param array $formats example: ["jpg", "png", ...etc]
 	 * @return bool
 	 */
-	public function upload(FileUpload $fileUpload, array $formats) {
+	public function upload(FileUpload $fileUpload, array $formats, $baseUrl) {
 		$suffix = pathinfo($fileUpload->name, PATHINFO_EXTENSION);
 		if (!in_array($suffix, $formats)) {
 			return false;
 		}
-		$this->pathDb = '/upload/' . date("Ymd-His") . "-" . $fileUpload->name;
+		$this->pathDb = $baseUrl . 'upload/' . date("Ymd-His") . "-" . $fileUpload->name;
 		$this->path = UPLOAD_PATH . '/' . date("Ymd-His") . "-" . $fileUpload->name;
 		$fileUpload->move($this->path);
 

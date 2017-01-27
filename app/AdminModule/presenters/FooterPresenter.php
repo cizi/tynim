@@ -110,7 +110,7 @@ class FooterPresenter extends SignPresenter {
 			foreach ($valuesToSave[WebconfigRepository::KEY_FOOTER_FILES] as $file) {
 				if ($file->name != "") {
 					$fileController = new FileController();
-					if ($fileController->upload($file, $supportedFilesFormat) == false) {
+					if ($fileController->upload($file, $supportedFilesFormat, $this->getHttpRequest()->getUrl()->getBaseUrl()) == false) {
 						$fileError = true;
 						break;
 					}

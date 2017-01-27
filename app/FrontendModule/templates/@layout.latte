@@ -23,13 +23,25 @@
 	<link rel="stylesheet" href="{$basePath}/css/navbar-multilevel.css">
 	<meta name="viewport" content="width=device-width">
 
-	{if (is_numeric($webLinkId))}
+	{*if (is_numeric($webLinkId))}
 		{foreach $webAvailebleLangs as $landShortcut}
 			<link rel="alternate" href="{$baseUrl}/{$landShortcut}" hreflang="{$landShortcut}" />
 		{/foreach}
 		<link rel="alternate" href={$baseUrl} hreflang="x-default" />
 	{else}
 		<link rel="alternate" href="{$baseUrl}/{$currentLang}/{$webLinkId}" hreflang="{$currentLang}" />
+	{/if*}
+	{if isset($currentLink)}	{* probably any page absolutelly not root *}
+		{foreach $availableLinks as $li}
+			{if ($li->getOrder() == $currentLink->getOrder())}
+				<link rel="alternate" href="{$baseUrl}/{$li->getLang()}/{$li->getLink()}" hreflang="{$li->getLang()}" />
+			{/if}
+		{/foreach}
+	{else}						{* root because link is not specified *}
+		{foreach $webAvailebleLangs as $landShortcut}
+			<link rel="alternate" href="{$baseUrl}/{$landShortcut}" hreflang="{$landShortcut}" />
+		{/foreach}
+		<link rel="alternate" href={$baseUrl} hreflang="x-default" />
 	{/if}
 	{block head}{/block}
 
@@ -80,7 +92,7 @@
 		{if sliderEnabled}
 			<ul class="bxslider" style="opacity: 0">
 				{foreach $sliderPics as $pic}
-					<li><img src="{!$baseUrl}{$pic->getPath()}" /></li>
+					<li><img src="{$pic->getPath()}" /></li>
 				{/foreach}
 			</ul>
 		{/if}

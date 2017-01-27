@@ -36,7 +36,7 @@
 									</div><br />
 									{foreach $sliderPics as $sliderPic}
 										<a href="#" data-href={link Slider:PicDelete, $sliderPic->getId()} class="sliderPicDelete" data-toggle="modal" data-target="#confirm-delete" title={=SLIDER_SETTINGS_DELETE_TITLE}>
-											<img src="{!$basePath}{!$sliderPic->getPath()}" class="sliderPic"  />
+											<img src="{!$sliderPic->getPath()}" class="sliderPic"  />
 										</a>
 									{/foreach}
 								</div>

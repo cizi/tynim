@@ -4,9 +4,7 @@ namespace App\AdminModule\Presenters;
 
 use App\Controller\FileController;
 use App\Forms\WebconfigForm;
-use App\Model\Entity\MenuEntity;
 use App\Model\LangRepository;
-use App\Model\MenuRepository;
 use App\Model\WebconfigRepository;
 use Nette\Application\UI\Form;
 use Nette\Http\FileUpload;
@@ -22,9 +20,6 @@ class WebconfigPresenter extends SignPresenter {
 	/** @var LangRepository */
 	private $langRepository;
 
-	/** @var MenuRepository */
-	private $menuRepository;
-
 	/** @var WebconfigForm */
 	private $configForm;
 
@@ -34,18 +29,15 @@ class WebconfigPresenter extends SignPresenter {
 	/**
 	 * @param WebconfigRepository $webconfigRepository
 	 * @param WebconfigForm $webconfigForm
-	 * @param MenuRepository $menuRepository
 	 * @param LangRepository $langRepository
 	 */
 	public function __construct(
 		WebconfigRepository $webconfigRepository,
 		WebconfigForm $webconfigForm,
-		MenuRepository $menuRepository,
 		LangRepository $langRepository
 	) {
 		$this->webconfigRepository = $webconfigRepository;
 		$this->configForm = $webconfigForm;
-		$this->menuRepository = $menuRepository;
 		$this->langRepository = $langRepository;
 	}
 
@@ -88,42 +80,6 @@ class WebconfigPresenter extends SignPresenter {
 	}
 
 	/**
-	 * generates sitemap.xml in the root of the web
-	 *
-	 * @param bool|false $isRobot
-	 */
-	public function actionGenerateSiteMap($isRobot = false) {
-		$allWebLinks = $this->menuRepository->findAllItems();
-		if (count($allWebLinks)) {
-			$fileContent = [];
-			$fileContent[] = '<?xml version="1.0" encoding="UTF-8"?>';
-			$fileContent[] = '<urlset xmlns:xhtml="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">';
-			$lastOrder = "";
-			$base = $this->getHttpRequest()->getUrl()->getBaseUrl();
-			/** @var MenuEntity $link */
-			foreach($allWebLinks as $link) {
-				if ($lastOrder != $link->getOrder()) {
-					if ($lastOrder != "") {		// if previous order is not empty it means something were already generated
-						$fileContent[] = '</url>';
-					}
-					$fileContent[] = '<url>';
-					$fileContent[] = '<loc>' . $base . $link->getLang() . '/' . $link->getLink() . '</loc>';
-				}
-				$fileContent[] = '<xhtml:link rel="alternate" hreflang="' . $link->getLang() . '" href="' . $base . $link->getLang() . '/' . $link->getLink() . '" />';
-				$lastOrder = $link->getOrder();
-			}
-			$fileContent[] = '</url></urlset>';
-			file_put_contents(SITEMAP_PATH . 'sitemap.xml', $fileContent);
-			if ($isRobot) {
-				$this->terminate();
-			} else {
-				$this->flashMessage(USER_EDIT_SITEMAP_GENERATION_DONE, "alert-success");
-				$this->redirect("default");
-			}
-		}
-	}
-
-	/**
 	 * @param $form
 	 * @param $values
 	 */
@@ -146,7 +102,7 @@ class WebconfigPresenter extends SignPresenter {
 				$file = $value;
 				if ($file->name != "") {
 					$fileController = new FileController();
-					if ($fileController->upload($file, $supportedFileFormats) == false) {
+					if ($fileController->upload($file, $supportedFileFormats, $this->getHttpRequest()->getUrl()->getBaseUrl()) == false) {
 						$fileError = true;
 						break;
 					}
