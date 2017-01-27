@@ -248,3 +248,6 @@ div.colorExample {
 	text-align: center;
 	margin: auto;
 }
+.hidden{
+	display: none;
+}

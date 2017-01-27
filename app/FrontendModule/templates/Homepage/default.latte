@@ -9,6 +9,7 @@
 					{var text = str_replace("../../.", "",$block->getBlockContent()->getContentText(true))}
 					{!$text}
 				</div>
+				{if ($iterator->getCounter()%2 == 0) && ($pageKeywords != "")}<em class="hidden">{$pageKeywords}</em>{/if}
 			{/if}
 	{/foreach}
 {/block}

@@ -7,7 +7,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>{$title}</title>
+	<title>{$title}{if isset($currentLink)} - {$currentLink->getTitle()}{/if}</title>
 	<meta name="description" content={$title}>
 	{if $webKeywords != ""}<meta name="keywords" content={$webKeywords}>{/if}
 	<meta name="robots" content="index,follow">
@@ -23,14 +23,6 @@
 	<link rel="stylesheet" href="{$basePath}/css/navbar-multilevel.css">
 	<meta name="viewport" content="width=device-width">
 
-	{*if (is_numeric($webLinkId))}
-		{foreach $webAvailebleLangs as $landShortcut}
-			<link rel="alternate" href="{$baseUrl}/{$landShortcut}" hreflang="{$landShortcut}" />
-		{/foreach}
-		<link rel="alternate" href={$baseUrl} hreflang="x-default" />
-	{else}
-		<link rel="alternate" href="{$baseUrl}/{$currentLang}/{$webLinkId}" hreflang="{$currentLang}" />
-	{/if*}
 	{if isset($currentLink)}	{* probably any page absolutelly not root *}
 		{foreach $availableLinks as $li}
 			{if ($li->getOrder() == $currentLink->getOrder())}
@@ -67,6 +59,7 @@
 </head>
 
 <body {if $bodyBackgroundColor != ""}style="background-color: {!$bodyBackgroundColor}"{/if}>
+	<h1 class="hidden">{$title}{if isset($currentLink)} - {$currentLink->getTitle()}{/if}</h1>
 
 	{* language strap *}
 	{if ($languageStrapShow)}
@@ -152,7 +145,11 @@
 	</div>
 
 	<div class="container content" style="{if $bodyWidth != ""}width: {!$bodyWidth};{/if}">
-		{include content}
+		{if isset($currentLink)}
+			{include content, pageKeywords => $currentLink->getTitle()}
+		{else}
+			{include content,  pageKeywords => ""}
+		{/if}
 	</div>
 
 	{if $showFooter}
@@ -223,6 +220,10 @@
 				bxslider.css("opacity", "1.0");
 			});
 		</script>
+	{/if}
+
+	{if isset($currentLink)}	{* keywords in seo*}
+		<strong	class="hidden">{$currentLink->getTitle()}</strong>
 	{/if}
 </body>
 </html>
