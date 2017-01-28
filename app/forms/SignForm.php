@@ -39,6 +39,10 @@ class SignForm extends Nette\Object {
 			->setAttribute("required", "required")
 			->setRequired(ADMIN_LOGIN_PASS_REQ);
 
+		$form->addSelect('lang', ADMIN_LOGIN_LANG)
+			->setAttribute("id", "inputLang")
+			->setAttribute("class", "form-control");
+
 		$form->addCheckbox('remember', ADMIN_LOGIN_REMEMBER_ME);
 
 		$form->addSubmit('send', ADMIN_LOGIN_LOGIN)

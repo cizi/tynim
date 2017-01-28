@@ -8,6 +8,7 @@ use App\Forms\SignForm;
 use App\FrontendModule\Presenters\BasePresenter;
 use Nette\Application\UI\Form;
 use App\AdminModule\Presenters;
+use Tester\CodeCoverage\PhpParser;
 
 class DefaultPresenter extends BasePresenter {
 
@@ -46,6 +47,14 @@ class DefaultPresenter extends BasePresenter {
 	 */
 	public function createComponentSignInForm(){
 		$form = $this->singInForm->create();
+
+		$langs = $this->langRepository->findLanguages();
+		if (count($langs) == 0) {
+			$form['lang']->setAttribute("style", "display: none");
+		} else {
+			$form['lang']->setItems($langs);
+		}
+
 		$form->onSuccess[] = $this->formSucceeded;
 
 		return $form;
@@ -67,6 +76,11 @@ class DefaultPresenter extends BasePresenter {
 			$identity = $this->user->getAuthenticator()->authenticate($credentials);
 			$this->user->login($identity);
 			$this->userRepository->updateLostLogin($identity->getId());
+
+			$availableLnags = $this->langRepository->findLanguages();
+			if (isset($values['lang']) && isset($availableLnags[$values['lang']])) {
+				$this->langRepository->switchToLanguage($this->session, $values['lang']);
+			}
 			$this->redirect("Dashboard:Default");
 		} catch (\Nette\Security\AuthenticationException $e) {
 			$form->addError(ADMIN_LOGIN_FAILED);

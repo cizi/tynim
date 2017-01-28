@@ -6,6 +6,7 @@ define("ADMIN_LOGIN_EMAIL", 'Email');
 define("ADMIN_LOGIN_EMAIL_REQ", 'Please fill your login.');
 define("ADMIN_LOGIN_PASS", 'Password');
 define("ADMIN_LOGIN_PASS_REQ", 'Please fill your password');
+define("ADMIN_LOGIN_LANG", 'Language of inteface');
 define("ADMIN_LOGIN_REMEMBER_ME", 'Remember me');
 define("ADMIN_LOGIN_LOGIN", 'Login');
 define("ADMIN_LOGIN_EMAIL_PLACEHOLDER", 'Email');
