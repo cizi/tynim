@@ -203,8 +203,6 @@ define("CONTACT_FORM_SUBJECT", 'Předmět');
 define("CONTACT_FORM_SUBJECT_REQ", 'Pole předmět nesmí být prázdné');
 define("CONTACT_FORM_ATTACHMENT", 'Příloha');
 define("CONTACT_FORM_ATTACHMENT_INFO", 'Umožní do kontaktního fomuláře vložit uživateli přílohu a odeslat ji spolu s emailem.');
-define("CONTACT_FORM_IN_MENU", 'Zobrazit odkaz na formulář v menu');
-define("CONTACT_FORM_IN_MENU_INFO", 'V menu stránek bude zobrazena položka "kontaktní formulář, odkazující na stránku s kontakním formulářem.');
 define("CONTACT_FORM_TEXT", 'Vaše zpráva');
 define("CONTACT_FORM_TEXT_REQ", 'Tělo zprávy nesmí být prázdné');
 define("CONTACT_FORM_BUTTON_CONFIRM", 'Odeslat');
@@ -281,6 +279,7 @@ define("BLOCK_SETTINGS_CONFIRM_MODAL_DELETE_MSG", 'Opravdu chcete smazat obsahov
 define("BLOCK_SETTINGS_CONFIRM_MODAL_OK", 'Smazat');
 define("BLOCK_SETTINGS_CONFIRM_MODAL_CANCEL", 'Zpět');
 define("BLOCK_SETTINGS_ITEM_DELETED", 'Položka byla úspěšně smazána.');
+define("BLOCK_SETTINGS_ITEM_DEFAULT_BLOCK", 'Tento blok nelze smazat! Je nastaven jako block domací stránky.');
 define("BLOCK_SETTINGS_ITEM_DELETED_FAILED", 'Při mazání položky došlo k chybě!');
 define("BLOCK_SETTINGS_ITEM_SAVED_FAILED", 'Při uložení položky došlo k chybě!');
 

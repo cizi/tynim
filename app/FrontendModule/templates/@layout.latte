@@ -72,7 +72,7 @@
 	{* language strap end *}
 
 	{* static header *}
-	{if (showHeader)}
+	{if ($showHeader)}
 		<div class="pageStaticHeader" style="width: {!$headerWidth}; background-color: {!$headerBg}; color: {!$headerColor}; height: {!$headerHeight}px;">
 			{!$headerContent}
 		</div>
@@ -83,7 +83,7 @@
 
 		{* slider *}
 		{if sliderEnabled}
-			<ul class="bxslider" style="opacity: 0">
+			<ul class="bxslider" style="opacity: 0;">
 				{foreach $sliderPics as $pic}
 					<li><img src="{$pic->getPath()}" /></li>
 				{/foreach}
@@ -106,21 +106,21 @@
 						<span class="icon-bar"></span>
 					</button>
 
-					{if $showHomeButtonInMenu}
+					{*if $showHomeButtonInMenu}
 						<a class="navbar-brand" href="{$baseUrl}"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
-					{/if}
+					{/if*}
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					{if $showHomeButtonInMenu}
+						<ul class="nav navbar-nav">
+							<li><a href="{$baseUrl}" class="menuLink"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+						</ul>
+					{/if}
 					<ul class="nav navbar-nav">
 						{!$menuHtml}
 					</ul>
-					{if $isContactFormInMenu}
-						<ul class="nav navbar-nav">
-							<li><a href="#" class="menuLink">{=MENU_CONTACT_FORM}</a></li>
-						</ul>
-					{/if}
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
 		</nav>

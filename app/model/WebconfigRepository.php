@@ -19,6 +19,9 @@ class WebconfigRepository extends BaseRepository{
 	/** @const for background color for menu links */
 	const KEY_WEB_MENU_LINK_COLOR = "WEB_MENU_LINK_COLOR";
 
+	/** @const for site map button */
+	const KEY_WEB_SETTING_SITEMAP_BUTTON = "SITEMAP_BUTTON";
+
 	/** @const for web width */
 	const KEY_WEB_WIDTH = "WEB_WIDTH";
 
@@ -42,9 +45,6 @@ class WebconfigRepository extends BaseRepository{
 
 	/** @const for contact form attachment  */
 	const KEY_CONTACT_FORM_ATTACHMENT = "CONTACT_FORM_ATTACHMENT";
-
-	/** @const for to show contact form in menu */
-	const KEY_CONTACT_FORM_IN_MENU = "CONTACT_FORM_IN_MENU";
 
 	/** @const for enabling/disabling footer */
 	const KEY_SHOW_FOOTER = "SHOW_FOOTER";

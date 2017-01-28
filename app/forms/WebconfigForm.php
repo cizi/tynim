@@ -105,7 +105,7 @@ class WebconfigForm extends Nette\Object {
 			->setAttribute("tabindex", "12");
 
 		$link = new Nette\Application\UI\Link($presenter, "WebPublicUtils:GenerateSiteMap", []);
-		$form->addButton("sitemapButton", USER_EDIT_SITEMAP_BTN_LABEL)
+		$form->addButton(WebconfigRepository::KEY_WEB_SETTING_SITEMAP_BUTTON, USER_EDIT_SITEMAP_BTN_LABEL)
 			->setAttribute("class","btn")
 			->setAttribute("tabindex", "13")
 			->setAttribute("onclick", "window.location.href='" . $link . "'");

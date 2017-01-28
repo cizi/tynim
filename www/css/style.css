@@ -134,7 +134,21 @@ a.sliderPicDelete:hover{
 	-webkit-box-shadow: none!important;
 	box-shadow: none!important;
 }
+.bxslider li img {
+	display: block;
+	margin: 0 auto;
+}
 /* slider override end */
+/* navbar override */
+.navbar .navbar-nav {
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+}
+.navbar .navbar-collapse {
+	text-align: center;
+}
+/* navbar override end*/
 img.footerList{
 	width: auto;
 	height: 100px;

@@ -194,8 +194,6 @@ define("CONTACT_FORM_SUBJECT", 'Subject');
 define("CONTACT_FORM_SUBJECT_REQ", 'Field subject is mandatory');
 define("CONTACT_FORM_ATTACHMENT", 'Attachment');
 define("CONTACT_FORM_ATTACHMENT_INFO", 'Sender can attache the attachment to the contact message.');
-define("CONTACT_FORM_IN_MENU", 'Show link to the contact form in menu');
-define("CONTACT_FORM_IN_MENU_INFO", 'In menu of the pages will be displayed link to the contact form.');
 define("CONTACT_FORM_TEXT", 'Your message');
 define("CONTACT_FORM_TEXT_REQ", 'Message body is mandatory');
 define("CONTACT_FORM_BUTTON_CONFIRM", 'Send');
@@ -269,6 +267,7 @@ define("BLOCK_SETTINGS_CONFIRM_MODAL_DELETE_MSG", 'Are you really wnat to delete
 define("BLOCK_SETTINGS_CONFIRM_MODAL_OK", 'Delete');
 define("BLOCK_SETTINGS_CONFIRM_MODAL_CANCEL", 'Cancel');
 define("BLOCK_SETTINGS_ITEM_DELETED", 'Item has been successfully deleted.');
+define("BLOCK_SETTINGS_ITEM_DEFAULT_BLOCK", 'This cannot be deleted bacause it is default home block!');
 define("BLOCK_SETTINGS_ITEM_DELETED_FAILED", 'During the deletions error occurred, please try it again later!');
 define("BLOCK_SETTINGS_ITEM_SAVED_FAILED", 'During saving the item, error occurred, please try again later!');
 

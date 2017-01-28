@@ -86,6 +86,7 @@ class WebconfigPresenter extends SignPresenter {
 	public function saveValue($form, $values) {
 		$lang = $values[WebconfigRepository::KEY_WEB_MUTATION];
 		unset($values[WebconfigRepository::KEY_WEB_MUTATION]); // no more needed
+		unset($values[WebconfigRepository::KEY_WEB_SETTING_SITEMAP_BUTTON]);	// we don't saving this value
 		foreach ($values as $key => $value) {
 			if (in_array($key, $this->LANG_DEPENDS)) {
 				$this->webconfigRepository->save($key, $value, $lang);

@@ -67,13 +67,6 @@ class ContactSettingForm  extends Nette\Object {
 			->setDefaultValue("checked")
 			->setAttribute("tabindex", $i++);
 
-		$form->addCheckbox(WebconfigRepository::KEY_CONTACT_FORM_IN_MENU)
-			->setAttribute("data-toggle", "toggle")
-			->setAttribute("data-height", "25")
-			->setAttribute("data-width", "50")
-			->setDefaultValue("checked")
-			->setAttribute("tabindex", $i++);
-
 		$form->addSubmit("confirm", CONTACT_FORM_SETTING_SAVE)
 			->setAttribute("class","btn btn-primary")
 			->setAttribute("tabindex", $i++);

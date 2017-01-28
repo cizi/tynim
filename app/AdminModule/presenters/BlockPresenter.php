@@ -10,6 +10,7 @@ use App\Model\Entity\BlockEntity;
 use App\Model\Entity\PicEntity;
 use App\Model\LangRepository;
 use App\Model\PicRepository;
+use App\Model\WebconfigRepository;
 use Nette\Application\UI\Form;
 use Nette\Http\FileUpload;
 use Nette\Utils\ArrayHash;
@@ -28,22 +29,28 @@ class BlockPresenter extends SignPresenter {
 	/** @var PicRepository */
 	private $picRepository;
 
+	/** @var WebconfigRepository */
+	private $webconfigRepository;
+
 	/**
 	 * @param BlockForm $blockForm
 	 * @param BlockRepository $blockRepository
 	 * @param LangRepository $langRepository
 	 * @param PicRepository $picRepository
+	 * @param WebconfigRepository $webconfigRepository
 	 */
 	public function __construct(
 		BlockForm $blockForm,
 		BlockRepository $blockRepository,
 		LangRepository $langRepository,
-		PicRepository $picRepository
+		PicRepository $picRepository,
+		WebconfigRepository $webconfigRepository
 	) {
 		$this->blockForm = $blockForm;
 		$this->blockRepository = $blockRepository;
 		$this->langRepository = $langRepository;
 		$this->picRepository = $picRepository;
+		$this->webconfigRepository = $webconfigRepository;
 	}
 
 	public function actionDefault() {
@@ -136,10 +143,16 @@ class BlockPresenter extends SignPresenter {
 	 * @param int $id
 	 */
 	public function actionDelete($id) {
-		if ($this->blockRepository->deleteBlockItem($id) == true) {
-			$this->flashMessage(BLOCK_SETTINGS_ITEM_DELETED, "alert-success");
+		$idDefaultBlock = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_WEB_HOME_BLOCK,
+			WebconfigRepository::KEY_LANG_FOR_COMMON);
+		if ($idDefaultBlock == $id) {
+			$this->flashMessage(BLOCK_SETTINGS_ITEM_DEFAULT_BLOCK, "alert-danger");
 		} else {
-			$this->flashMessage(BLOCK_SETTINGS_ITEM_DELETED_FAILED, "alert-danger");
+			if ($this->blockRepository->deleteBlockItem($id) == true) {
+				$this->flashMessage(BLOCK_SETTINGS_ITEM_DELETED, "alert-success");
+			} else {
+				$this->flashMessage(BLOCK_SETTINGS_ITEM_DELETED_FAILED, "alert-danger");
+			}
 		}
 
 		$this->redirect("default");
