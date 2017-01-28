@@ -60,6 +60,12 @@ class ContactSettingForm  extends Nette\Object {
 			->setAttribute("class", "form-control minicolors-input")
 			->setAttribute("tabindex", $i++);
 
+		$form->addText(WebconfigRepository::KEY_CONTACT_FORM_RECIPIENT, CONTACT_FORM_SETTING_RECIPIENT)
+			->setAttribute("id", "contactFormRecipient")
+			->setAttribute("class", "form-control minicolors-input")
+			->addRule(Form::EMAIL, CONTACT_FORM_SETTING_RECIPIENT_VALIDATION)
+			->setAttribute("tabindex", $i++);
+
 		$form->addCheckbox(WebconfigRepository::KEY_CONTACT_FORM_ATTACHMENT)
 			->setAttribute("data-toggle", "toggle")
 			->setAttribute("data-height", "25")

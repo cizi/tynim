@@ -171,7 +171,7 @@ class HomepagePresenter extends BasePresenter {
 				$email->FromName = $values['name'];
 				$email->Subject = CONTACT_FORM_EMAIL_MY_SUBJECT . $values['subject'];
 				$email->Body = $values['text'];
-				$email->AddAddress('cizi@email.cz');
+				$email->AddAddress($this->webconfigRepository->getByKey(WebconfigRepository::KEY_CONTACT_FORM_RECIPIENT, WebconfigRepository::KEY_LANG_FOR_COMMON));
 				if (!empty($path)) {
 					$email->AddAttachment($path);
 				}
@@ -186,6 +186,9 @@ class HomepagePresenter extends BasePresenter {
 
 	public function createComponentContactForm() {
 		$form = $this->contactForm->create();
+		if ($this->webconfigRepository->getByKey(WebconfigRepository::KEY_CONTACT_FORM_RECIPIENT, WebconfigRepository::KEY_LANG_FOR_COMMON) == "") {
+			$form["confirm"]->setDisabled();
+		}
 		$form->onSuccess[] = $this->contactFormSubmitted;
 		return $form;
 	}

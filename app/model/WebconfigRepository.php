@@ -43,6 +43,9 @@ class WebconfigRepository extends BaseRepository{
 	/** @const for contact form font color */
 	const KEY_CONTACT_FORM_COLOR = "CONTACT_FORM_COLOR";
 
+	/** @const for recipient email address */
+	const KEY_CONTACT_FORM_RECIPIENT = "CONTACT_FORM_RECIPIENT";
+
 	/** @const for contact form attachment  */
 	const KEY_CONTACT_FORM_ATTACHMENT = "CONTACT_FORM_ATTACHMENT";
 
