@@ -19,7 +19,7 @@ class FileController {
 	 */
 	public function upload(FileUpload $fileUpload, array $formats, $baseUrl) {
 		$suffix = pathinfo($fileUpload->name, PATHINFO_EXTENSION);
-		if (!in_array($suffix, $formats)) {
+		if (!in_array(strtolower($suffix), $formats)) {
 			return false;
 		}
 		$this->pathDb = $baseUrl . 'upload/' . date("Ymd-His") . "-" . $fileUpload->name;

@@ -1,4 +1,6 @@
 {block content}
+	<div n:foreach="$flashes as $flash" n:class="alert, $flash->type">{$flash->message}</div>
+	{if count($flashes)}<br />{/if}
 	{foreach $userBlocks as $block}
 			{if $block->getId() == $contactFormId}
 				<div style="margin: auto; padding: 10px 0; background-color: {!$block->getBackgroundColor()}; color: {!$block->getColor()}; width: {!$widthEnum->getValueByKey($block->getWidth())};">
