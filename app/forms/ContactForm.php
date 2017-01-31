@@ -53,7 +53,7 @@ class ContactForm extends Nette\Object {
 			->setAttribute("placeholder", CONTACT_FORM_TEXT)
 			->setAttribute("validation", CONTACT_FORM_TEXT_REQ)
 			->setAttribute("class", "tinym_required_field form-control contactForm")
-			->setAttribute("style", "margin-top: 5px;");
+			->setAttribute("style", "margin-top: 5px; margin-left: 5px;");
 
 		$form->addSubmit("confirm", CONTACT_FORM_BUTTON_CONFIRM)
 			->setAttribute("tabindex", "6")
