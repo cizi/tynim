@@ -28,7 +28,7 @@ class MenuRepository extends BaseRepository {
 		foreach ($result as $item) {
 			$menuItem = new MenuEntity();
 			$menuItem->hydrate($item->toArray());
-			$menuItem->setHasSubItems($this->hasSubItems($menuItem->getId(), $lang, $level));
+			$menuItem->setHasSubItems($this->hasSubItems($lang, $level, $menuItem->getOrder()));
 			$items[] = $menuItem;
 		}
 
@@ -105,13 +105,20 @@ class MenuRepository extends BaseRepository {
 	 * @return bool
 	 */
 	public function findSubItems($menuId, $lang, $level) {
+		$menuItem = $this->getMenuEntityById($menuId);
+		$itemsByOrder = $this->findItemsByOrder($menuItem->getOrder());
+		$menuIds = [];
+		foreach($itemsByOrder as $itemOrder) {
+			$menuIds[] = $itemOrder->getId();
+		}
+
 		$items = [];
 		$query = ["select * from menu_item as mi
-			where submenu = %i
+			where submenu in %in
 			and `level` = %i
 			and lang = %s
 			order by `order`",
-			$menuId,
+			$menuIds,
 			$level,
 			$lang
 		];
@@ -120,7 +127,7 @@ class MenuRepository extends BaseRepository {
 		foreach ($result as $item) {
 			$menuItem = new MenuEntity();
 			$menuItem->hydrate($item->toArray());
-			$menuItem->setHasSubItems($this->hasSubItems($menuItem->getId(), $lang, $level));
+			$menuItem->setHasSubItems($this->hasSubItems($lang, $level, $menuItem->getOrder()));
 			$items[] = $menuItem;
 		}
 
@@ -128,18 +135,24 @@ class MenuRepository extends BaseRepository {
 	}
 
 	/**
-	 * @param int $menuId
-	 * @param string $lang
-	 * @param int $level
+	 * @param $lang
+	 * @param $level
+	 * @param $order
 	 * @return bool
 	 */
-	public function hasSubItems($menuId, $lang, $level) {
+	public function hasSubItems($lang, $level, $order) {
+		$itemsByOrder = $this->findItemsByOrder($order);
+		$menuIds = [];
+		foreach($itemsByOrder as $itemOrder) {
+			$menuIds[] = $itemOrder->getId();
+		}
+
 		$query = ["select * from menu_item as mi
-			where submenu = %i
+			where submenu in %in
 			and `level` = %i
 			and lang = %s
 			order by `order`",
-			$menuId,
+			$menuIds,
 			$level+1,
 			$lang
 		];
