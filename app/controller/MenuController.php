@@ -48,7 +48,7 @@ class MenuController {
 
 			if ($menuEntity->hasSubItems()) {
 				$anotherEntities = $this->menuRepository->findItems($menuEntity->getLang(),
-					$menuEntity->getLevel() + 1);
+					$menuEntity->getLevel() + 1, $menuEntity->getId());
 				$tableData .= $this->renderMenuItemWithSubItemsInBlockContent($presenter, $anotherEntities);
 			}
 			$counter++;
