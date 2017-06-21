@@ -70,6 +70,8 @@ define("USER_EDIT_SITEMAP_GENERATION_DONE", 'Soubor sitemap.xml byl úspěšně 
 define("USER_EDIT_SITEMAP_BTN_INFO", 'Vygeneruje soubor(y) sitemap pro vyhledáváče. Souborů bude tolik kolik je jazykových mutací webu.');
 define("USER_EDIT_BACK_BTN_LABEL", 'Zpět');
 define("USER_EDIT_SAVE_FAILED", 'Nepovedlo se zpracovat změny, opakujte prosím později');
+define("USER_SEARCH_FIELD",  "Fulltextové vyhledávání v uživatelích");
+define("USER_SEARCH_BUTTON",  "Hledat");
 
 // user roles - select
 define("USER_ROLE_LAYOUT_CHANGER", "Plná práva");

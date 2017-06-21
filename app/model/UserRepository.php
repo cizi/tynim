@@ -9,6 +9,10 @@ use Nette\Security\Passwords;
 
 class UserRepository extends BaseRepository implements Nette\Security\IAuthenticator {
 
+	const USER_CURRENT_PAGE = "user_current_page";
+
+	const USER_SEARCH_FIELD = "user_search_field";
+
 	const PASSWORD_COLUMN = 'password';
 
 	/**
@@ -42,8 +46,14 @@ class UserRepository extends BaseRepository implements Nette\Security\IAuthentic
 	/**
 	 * @return UserEntity[]
 	 */
-	public function findUsers() {
-		$query = "select * from user";
+	public function findUsers(Nette\Utils\Paginator $paginator, $filter) {
+		if ($filter != null) {
+			$dbDriver = $this->connection->getDriver();
+			$query = ["select * from user where `email` like %~like~ limit %i , %i", $filter, $paginator->getOffset(), $paginator->getLength()];
+
+		} else {
+			$query = ["select * from user limit %i , %i", $paginator->getOffset(), $paginator->getLength()];
+		}
 		$result = $this->connection->query($query);
 
 		$users = [];
@@ -54,6 +64,33 @@ class UserRepository extends BaseRepository implements Nette\Security\IAuthentic
 		}
 
 		return $users;
+	}
+
+	/**
+	 * @param int $id
+	 * @param string $newPassString
+	 * @return \Dibi\Result|int
+	 */
+	public function changePassword($id, $newPassString) {
+		$newPassHashed = Passwords::hash($newPassString);
+		$query = ["update user set password = %s where id = %i", $newPassHashed, $id];
+		return $this->connection->query($query);
+	}
+
+	/**
+	 * @param string $filter
+	 * @return int
+	 */
+	public function getUsersCount($filter) {
+		if ($filter != null) {
+			$dbDriver = $this->connection->getDriver();
+			$query = ["select count(id) as pocet from user where `email` like %~like~", $filter];
+		} else {
+			$query = "select count(id) as pocet from user";
+		}
+		$row = $this->connection->query($query);
+
+		return ($row ? $row->fetch()['pocet'] : 0);
 	}
 
 	/**
@@ -98,10 +135,6 @@ class UserRepository extends BaseRepository implements Nette\Security\IAuthentic
 		if (!$this->connection->query($query)) {
 			throw new InvalidStateException("Bad");
 		}
-	}
-
-	public function changePassword($id, $oldPass, $newPass) {
-
 	}
 
 	/**

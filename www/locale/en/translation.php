@@ -69,6 +69,8 @@ define("USER_EDIT_SITEMAP_GENERATION_DONE", 'Sitemap.xml file has been successfu
 define("USER_EDIT_SITEMAP_BTN_INFO", 'It will generate file(s) sitemap for search engines. For each language mutation will be generate one sitemap file.');
 define("USER_EDIT_BACK_BTN_LABEL", 'Cancel');
 define("USER_EDIT_SAVE_FAILED", 'Changes has not been processed, please repeat action later');
+define("USER_SEARCH_FIELD", "Fulltext searching in users");
+define("USER_SEARCH_BUTTON", "Search");
 
 // user roles - select
 define("USER_ROLE_LAYOUT_CHANGER", "Full access");

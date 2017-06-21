@@ -265,3 +265,24 @@ div.colorExample {
 .hidden{
 	display: none;
 }
+.paginatorBackend{
+	margin: auto;
+	text-align: center;
+	padding-top: 20px;
+}
+.paginatorBackend span{
+	color: white;
+	font-weight: bold;
+	background-color: #286090;
+	padding: 4px;
+	border-radius: 3px;
+}
+.paginatorBackend a{
+	color: white;
+	background-color: #286090;
+	padding: 4px;
+	border-radius: 3px;
+}
+.paginatorBackend a:hover{
+	color: white;
+}
