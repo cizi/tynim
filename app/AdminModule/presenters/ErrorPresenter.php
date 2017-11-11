@@ -1,6 +1,6 @@
 <?php
 
-namespace App\FrontendModule\Presenters;
+namespace App\AdminModule\Presenters;
 
 use App\Model\LangRepository;
 use Nette;
