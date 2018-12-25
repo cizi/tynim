@@ -2,6 +2,7 @@
 
 namespace App\AdminModule\Presenters;
 
+use App\FrontendModule\Presenters\BasePresenter;
 use Nette;
 
 class Error4xxPresenter extends BasePresenter {
