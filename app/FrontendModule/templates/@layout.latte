@@ -41,29 +41,29 @@
 	{if $showMenu && $menuLinkColor != ""}
 		<style type="text/css">
 			.navbar-default .navbar-nav li a {
-				color: {!$menuLinkColor}!important;
+				color: {$menuLinkColor|noescape}!important;
 			}
 			.navbar-brand{
-				color: {!$menuLinkColor}!important;
+				color: {$menuLinkColor|noescape}!important;
 			}
 			{if $menuColor != ""} {* if bg color for menu changed need to change submenu bgcolor *}
 				.dropdown-menu {
-					background-color: {!$menuColor}!important;
+					background-color: {$menuColor|noescape}!important;
 				}
 				.divider {
-					background-color: {!$menuColor}!important;
+					background-color: {$menuColor|noescape}!important;
 				}
 			{/if}
 		</style>
 	{/if}
 </head>
 
-<body {if $bodyBackgroundColor != ""}style="background-color: {!$bodyBackgroundColor}"{/if}>
+<body {if $bodyBackgroundColor != ""}style="background-color: {$bodyBackgroundColor|noescape}"{/if}>
 	<h1 class="hidden">{$title}{if isset($currentLink)} - {$currentLink->getTitle()}{/if}</h1>
 
 	{* language strap *}
 	{if ($languageStrapShow)}
-		<div class="langStrap" style="width: {!$languageStrapWidth}; background-color: {!$languageStrapBgColor}; color: {!$languageStrapFontColor}">
+		<div class="langStrap" style="width: {$languageStrapWidth|noescape}; background-color: {!$languageStrapBgColor}; color: {!$languageStrapFontColor}">
 			{foreach $languageStrapLanguages as $langShort => $langDetail}
 				<a href="{$langShort}"><img src="{$baseUrl}{$langDetail[$langFlagKey]}" class="flagStrap" title="{$langShort}" /></a>
 			{/foreach}
@@ -73,13 +73,13 @@
 
 	{* static header *}
 	{if ($showHeader)}
-		<div class="pageStaticHeader" style="width: {!$headerWidth}; background-color: {!$headerBg}; color: {!$headerColor}; height: {!$headerHeight}px;">
-			{!$headerContent}
+		<div class="pageStaticHeader" style="width: {$headerWidth|noescape}; background-color: {!$headerBg}; color: {!$headerColor}; height: {!$headerHeight}px;">
+			{$headerContent|noescape}
 		</div>
 	{/if}
 	{* static header end *}
 
-	<div style="{if $bodyWidth != ""}width: {!$bodyWidth};{/if} margin: 0 auto;">
+	<div style="{if $bodyWidth != ""}width: {$bodyWidth|noescape};{/if} margin: 0 auto;">
 
 		{* slider *}
 		{if sliderEnabled}
@@ -94,7 +94,7 @@
 		{* menu *}
 		<nav class="navbar navbar-default" style="
 			{if $showMenu == false} display: none;{/if}
-			{if $menuColor != ""}background-color: {!$menuColor}; border: 2px solid {!$menuColor};{/if}
+			{if $menuColor != ""}background-color: {$menuColor|noescape}; border: 2px solid {!$menuColor};{/if}
 		">
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
@@ -119,7 +119,7 @@
 						</ul>
 					{/if}
 					<ul class="nav navbar-nav">
-						{!$menuHtml}
+						{$menuHtml|noescape}
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
@@ -138,11 +138,11 @@
 		{/block}
 
 		{if $googleAnalytics != ""}
-			{!$googleAnalytics}
+			{$googleAnalytics|noescape}
 		{/if}
 	</div>
 
-	<div class="container content" style="{if $bodyWidth != ""}width: {!$bodyWidth};{/if}">
+	<div class="container content" style="{if $bodyWidth != ""}width: {$bodyWidth|noescape};{/if}">
 		{if isset($currentLink)}
 			{include content, pageKeywords => $currentLink->getTitle()}
 		{else}
@@ -152,14 +152,14 @@
 
 	{if $showFooter}
 		<div class="container" style="
-		{if $footerBg != ""} background-color: {!$footerBg}; {/if}
-		{if $footerColor != ""} color: {!$footerColor}; {/if}
-		{if $footerWidth != ""} width: {!$footerWidth}; {/if}
+		{if $footerBg != ""} background-color: {$footerBg|noescape}; {/if}
+		{if $footerColor != ""} color: {$footerColor|noescape}; {/if}
+		{if $footerWidth != ""} width: {$footerWidth|noescape}; {/if}
 				">
 			{if $isContactFormInFooter}
 				{include 'contactForm.latte'}
 			{/if}
-			{!$footerContent}
+			{$footerContent|noescape}
 		</div>
 	{/if}
 
@@ -210,7 +210,7 @@
 				bxslider.bxSlider({
 					slideWidth: parseInt(widthForSlider),
 					auto: {$slideShow},
-					pause: {!$sliderSpeed},
+					pause: {$sliderSpeed|noescape},
 					randomStart: true,
 					pager: false,
 					controls: {$sliderControls}

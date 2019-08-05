@@ -93,7 +93,7 @@ class HomepagePresenter extends BasePresenter {
 	 * @param string $lang
 	 * @param string $id
 	 */
-	public function renderDefault($lang, $id) {
+	public function actionDefault($lang, $id) {
 		if (empty($lang)) {
 			$lang = $this->langRepository->getCurrentLang($this->session);
 			$this->redirect("default", [ 'lang' => $lang, 'id' => $id]);
@@ -166,7 +166,7 @@ class HomepagePresenter extends BasePresenter {
 			}
 
 			if ($fileError == false) {
-				$email = new \PHPMailer();
+				$email = new \PHPMailer\PHPMailer\PHPMailer();
 				$email->CharSet = "UTF-8";
 				$email->From = $values['contactEmail'];
 				$email->FromName = $values['name'];
@@ -190,7 +190,7 @@ class HomepagePresenter extends BasePresenter {
 		if ($this->webconfigRepository->getByKey(WebconfigRepository::KEY_CONTACT_FORM_RECIPIENT, WebconfigRepository::KEY_LANG_FOR_COMMON) == "") {
 			$form["confirm"]->setDisabled();
 		}
-		$form->onSuccess[] = $this->contactFormSubmitted;
+		$form->onSuccess[] = [$this, 'contactFormSubmitted'];
 		return $form;
 	}
 
@@ -298,6 +298,12 @@ class HomepagePresenter extends BasePresenter {
 
 		$contactFormInFooter = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_SHOW_CONTACT_FORM_IN_FOOTER, $langCommon);
 		$this->template->isContactFormInFooter = ($contactFormInFooter == "1" ? true : false);
+		$this->template->contactFormBackground = "";
+		$this->template->contactFormColor = "";
+		$this->template->contactFormHeader = "";
+		$this->template->contactFormContent = "";
+		$this->template->allowAttachment = "";
+
 		if ($contactFormInFooter) {
 			$this->template->contactFormHeader = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_CONTACT_FORM_TITLE, $this->langRepository->getCurrentLang($this->session));
 			$this->template->contactFormContent = $this->webconfigRepository->getByKey(WebconfigRepository::KEY_CONTACT_FORM_CONTENT, $this->langRepository->getCurrentLang($this->session));

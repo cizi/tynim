@@ -64,7 +64,7 @@ class BlockPresenter extends SignPresenter {
 	 */
 	public function createComponentBlockForm() {
 		$form = $this->blockForm->create();
-		$form->onSuccess[] = $this->saveBlock;
+		$form->onSuccess[] = [$this, 'saveBlock'];
 
 		return $form;
 	}
@@ -107,7 +107,7 @@ class BlockPresenter extends SignPresenter {
 
 				$mutation[] = $blockContentEntity;
 			}
-			if (is_array($value)) {	// obrázky
+			if (is_array($value)) {	// obrï¿½zky
 				/** @var FileUpload $file */
 				foreach ($value as $file) {
 					if ($file->name != "") {

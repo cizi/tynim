@@ -215,6 +215,7 @@ define("CONTACT_FORM_SETTING_BACKGROUND_COLOR", 'Barva pozadí kontaktního form
 define("CONTACT_FORM_SETTING_COLOR", 'Barva textu kontaktního formuláře');
 define("CONTACT_FORM_SETTING_RECIPIENT", 'Příjemce emailu z kontaktního formuláře');
 define("CONTACT_FORM_SETTING_RECIPIENT_VALIDATION", 'Email příjemce z kontaktního formuláře je povinná položka!');
+define("CONTACT_FORM_SETTING_RECIPIENT_VALID_EMAIL", 'Neplatná emailová adresa!');
 define("CONTACT_FORM_SETTING_RECIPIENT_INFO", 'Na tento email bude zaslána poptávka z kontaktního formuláře.');
 define("CONTACT_FORM_SETTING_ATTACHMENT", 'Umožnit poslat přílohu');
 define("CONTACT_FORM_SETTING_SAVE", 'Uložit');

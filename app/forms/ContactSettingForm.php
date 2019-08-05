@@ -7,7 +7,9 @@ use App\Model\WebconfigRepository;
 use Nette;
 use Nette\Application\UI\Form;
 
-class ContactSettingForm  extends Nette\Object {
+class ContactSettingForm  {
+
+    use Nette\SmartObject;
 
 	/** @var FormFactory */
 	private $factory;
@@ -30,7 +32,7 @@ class ContactSettingForm  extends Nette\Object {
 	 */
 	public function create(Nette\Application\UI\Presenter $presenter) {
 		$form = $this->factory->create();
-		$i = 0;
+        $i = 0;
 
 		$link = new Nette\Application\UI\Link($presenter, "Contact:LangChange", []);
 		$form->addSelect(WebconfigRepository::KEY_WEB_MUTATION, WEBCONFIG_WEBMUTATION, $this->langRepository->findLanguages())
@@ -62,9 +64,10 @@ class ContactSettingForm  extends Nette\Object {
 
 		$form->addText(WebconfigRepository::KEY_CONTACT_FORM_RECIPIENT, CONTACT_FORM_SETTING_RECIPIENT)
 			->setAttribute("id", "contactFormRecipient")
-			->setAttribute("class", "form-control minicolors-input")
-			->addRule(Form::EMAIL, CONTACT_FORM_SETTING_RECIPIENT_VALIDATION)
-			->setAttribute("tabindex", $i++);
+			->setAttribute("class", "form-control")
+			->addRule(Form::EMAIL, CONTACT_FORM_SETTING_RECIPIENT_VALID_EMAIL)
+			->setAttribute("tabindex", $i++)
+            ->setRequired(FALSE);
 
 		$form->addCheckbox(WebconfigRepository::KEY_CONTACT_FORM_ATTACHMENT)
 			->setAttribute("data-toggle", "toggle")
