@@ -85,7 +85,7 @@ class LangRepository {
 	 * @param Session $sessionSection
 	 * @param string $lang
 	 */
-	public function switchToLanguage(Session $sessionSection, $lang) {
+	public function switchToLanguage(Session $sessionSection, $lang = 'cs') {
 		if ($this->languagesExists($lang)) {
 			$langSession = $sessionSection->getSection(self::KEY_SESSION_LANG);
 			$langSession->langId = $lang;
@@ -97,7 +97,7 @@ class LangRepository {
 	 *
 	 * @param string $langCode
 	 */
-	public function loadLanguageMutation($langCode) {
+	public function loadLanguageMutation($langCode = 'cs') {
 		$translation = LANG_PATH . $langCode . DIRECTORY_SEPARATOR . 'translation.php';
 		if (file_exists($translation)) {
 			require_once $translation;

@@ -110,7 +110,7 @@ class BlockPresenter extends SignPresenter {
 			if (is_array($value)) {	// obr�zky
 				/** @var FileUpload $file */
 				foreach ($value as $file) {
-					if ($file->name != "") {
+					if ($file->hasFile()) {
 						$fileController = new FileController();
 						if ($fileController->upload($file, $supportedFileFormats, $this->getHttpRequest()->getUrl()->getBaseUrl()) == false) {
 							$error = true;

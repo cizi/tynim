@@ -68,7 +68,7 @@ class SliderPresenter extends SignPresenter {
 				foreach ($values[SliderPicRepository::KEY_SLIDER_FILES_UPLOAD] as $value) {
 					/** @var FileUpload $file */
 					$file = $value;
-					if ($file->name != "") {
+					if ($file->hasFile()) {
 						$fileController = new FileController();
 						if ($fileController->upload($file, $supportedFileFormats, $this->getHttpRequest()->getUrl()->getBaseUrl()) == false) {
 							$fileError = true;

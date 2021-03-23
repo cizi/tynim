@@ -27,8 +27,7 @@ abstract class BasePresenter extends Presenter {
 		// language setting
 		$lang = $this->langRepository->getCurrentLang($this->session);
 		if (!isset($lang) || $lang == "") {
-			$lang = $this->context->parameters['language']['default'];
-			$this->langRepository->switchToLanguage($this->session, $lang);
+			$this->langRepository->switchToLanguage($this->session);
 		}
 		$this->langRepository->loadLanguageMutation($lang);
 	}

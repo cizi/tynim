@@ -1,6 +1,13 @@
--- Adminer 4.2.3 MySQL dump
+<?php
+declare(strict_types=1);
 
-SET NAMES utf8;
+use Phinx\Migration\AbstractMigration;
+
+final class BaseInit extends AbstractMigration
+{
+    public function change(): void
+    {
+        $this->execute("SET NAMES utf8;
 SET time_zone = '+00:00';
 
 CREATE TABLE `block` (
@@ -101,7 +108,6 @@ CREATE TABLE `header_pic` (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Id',
   `path` varchar(255) COLLATE utf8_czech_ci NOT NULL COMMENT 'Cesta k souboru',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
-
-
--- 2016-06-30 13:20:58
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;");
+    }
+}

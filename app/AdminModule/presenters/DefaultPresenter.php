@@ -7,8 +7,6 @@ use App\Model\UserRepository;
 use App\Forms\SignForm;
 use App\FrontendModule\Presenters\BasePresenter;
 use Nette\Application\UI\Form;
-use App\AdminModule\Presenters;
-use Tester\CodeCoverage\PhpParser;
 
 class DefaultPresenter extends BasePresenter {
 
@@ -30,6 +28,7 @@ class DefaultPresenter extends BasePresenter {
 		$this->singInForm = $signForm;
 		$this->userRepository = $userRepository;
 		$this->langRepository = $langRepository;
+		parent::__construct();
 	}
 
 	/**
@@ -66,9 +65,9 @@ class DefaultPresenter extends BasePresenter {
 	 */
 	public function formSucceeded(Form $form, $values) {
 		if ($values->remember) {
-			$this->user->setExpiration('14 days', false);
+			$this->user->setExpiration('14 days');
 		} else {
-			$this->user->setExpiration('20 minutes', true);
+			$this->user->setExpiration('20 minutes');
 		}
 
 		try {

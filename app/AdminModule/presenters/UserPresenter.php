@@ -76,7 +76,8 @@ class UserPresenter extends SignPresenter {
 	public function saveUser($form, $values) {
 		$userEntity = new UserEntity();
 		$userEntity->hydrate((array)$values);
-		$userEntity->setPassword(Passwords::hash($userEntity->getPassword()));
+        $passwords = new Passwords();
+		$userEntity->setPassword($passwords->hash($userEntity->getPassword()));
 
 		try {
 			$this->userRepository->saveUser($userEntity);
